@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tyromod",
+  "name": "TyroMod",
+  "description": "Le Mod Du Tyrolium Server",
+  "version": "01.04.20",
+  "mcversion": "1.7.10",
+  "url": "http://minecraft.tyrolium.fr/",
+  "updateUrl": "",
+  "authorList": ["Maxime Tournier"],
+  "credits": "Copyrite : Tyrolium Ent.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
