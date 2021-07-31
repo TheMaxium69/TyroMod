@@ -2,6 +2,7 @@
 
 Official Tyrolium Mod
 
+[![Tyrolium](https://img.shields.io/badge/Copyright-Tyrolium-3960ef?style=flat)](https://tyrolium.fr)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/TheMaxium69/TyroMod)
 
 mod that was intended for minecraft server **Tyrolium**, and now in public and unprotected
