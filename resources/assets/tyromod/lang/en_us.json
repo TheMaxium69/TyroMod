@@ -1,5 +1,8 @@
 {
   "item.tyromod.tyrolium": "Tyrolium",
   "item.tyromod.tyrolium_sword": "Tyrolium Sword",
+  "item.tyromod.tyrolium_pickaxe": "Tyrolium Pickaxe",
+  "item.tyromod.tyrolium_axe": "Tyrolium Axe",
+  "item.tyromod.tyrolium_shovel": "Tyrolium Shovel",
   "block.tyromod.tyrolium_block": "Tyrolium Block"
 }
