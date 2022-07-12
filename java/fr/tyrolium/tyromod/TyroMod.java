@@ -21,7 +21,7 @@ public class TyroMod {
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.ITEMS.register(bus);
-        //ModBlocks.BLOCKS.register(bus);
+        ModBlocks.BLOCKS.register(bus);
 
     }
 
