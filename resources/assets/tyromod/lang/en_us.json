@@ -4,5 +4,7 @@
   "item.tyromod.tyrolium_pickaxe": "Tyrolium Pickaxe",
   "item.tyromod.tyrolium_axe": "Tyrolium Axe",
   "item.tyromod.tyrolium_shovel": "Tyrolium Shovel",
-  "block.tyromod.tyrolium_block": "Tyrolium Block"
+  "block.tyromod.tyrolium_block": "Tyrolium Block",
+  "item.tyromod.rhodonite": "Rhodonite",
+  "item.tyromod.amethys": "Amethys"
 }
