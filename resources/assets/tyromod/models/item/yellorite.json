@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tyromod:item/rhodonite"
+    "layer0": "tyromod:item/yellorite"
   }
 }
