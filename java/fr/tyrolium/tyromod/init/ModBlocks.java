@@ -18,7 +18,16 @@ public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TyroMod.ModId);
 
+    
     public static RegistryObject<Block> TYROLIUM_BLOCK = createBlock("tyrolium_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).strength(5f, 20f).harvestLevel(1).harvestTool(ToolType.PICKAXE)));
+    public static RegistryObject<Block> RHODONITE_BLOCK = createBlock("rhodonite_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).strength(5f, 20f).harvestLevel(1).harvestTool(ToolType.PICKAXE)));
+    public static RegistryObject<Block> AMETHYS_BLOCK = createBlock("amethys_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).strength(5f, 20f).harvestLevel(1).harvestTool(ToolType.PICKAXE)));
+    public static RegistryObject<Block> AVENTURINE_BLOCK = createBlock("aventurine_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).strength(5f, 20f).harvestLevel(1).harvestTool(ToolType.PICKAXE)));
+    public static RegistryObject<Block> YELLORITE_BLOCK = createBlock("yellorite_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL).strength(5f, 20f).harvestLevel(1).harvestTool(ToolType.PICKAXE)));
+    
+
+
+
 
     public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier){
         RegistryObject<Block> block = BLOCKS.register(name, supplier);
