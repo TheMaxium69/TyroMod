@@ -134,7 +134,8 @@ public class ModItems {
     public static final RegistryObject<Item> MERCURE_SWORD = ITEMS.register("mercure_sword", () -> new SwordItem(CustomItemTiers.TYROLIUM, 2, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_COMBAT)));
     public static final RegistryObject<Item> MERCURE_PICKAXE = ITEMS.register("mercure_pickaxe", () -> new PickaxeItem(CustomItemTiers.TYROLIUM, 0, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_COMBAT)));
     public static final RegistryObject<Item> MERCURE_AXE = ITEMS.register("mercure_axe", () -> new AxeItem(CustomItemTiers.TYROLIUM, 0, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_COMBAT)));
-
+    public static final RegistryObject<Item> MERCURE_SHOVEL = ITEMS.register("mercure_shovel", () -> new ShovelItem(CustomItemTiers.TYROLIUM, 0, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_COMBAT)));
+    public static final RegistryObject<Item> MERCURE_HOE = ITEMS.register("mercure_hoe", () -> new HoeItem(CustomItemTiers.TYROLIUM, 0, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_TOOLS)));
 
     //Other Item
     //public static final RegistryObject<Item> ANGEL_RING = ITEMS.register("angel_ring", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
