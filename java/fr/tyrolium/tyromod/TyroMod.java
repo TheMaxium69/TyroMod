@@ -32,7 +32,7 @@ public class TyroMod {
     public TyroMod() {
 
         LauncherToken.Token();
-        System.out.println("GetToken : " + LauncherToken.getTokenUser() + " GetTokenOld : " + LauncherToken.getTokenUserOld());
+        System.out.println("GetToken : " + LauncherToken.getTokenUser() + " GetTokenA2F : " + LauncherToken.getTokenUserOld());
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
@@ -67,7 +67,7 @@ public class TyroMod {
 
                 System.out.println("Connecte");
                 Thread.sleep(4000);
-                NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser()));
+                NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
 
             }
         }

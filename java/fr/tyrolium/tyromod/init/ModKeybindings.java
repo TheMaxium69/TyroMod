@@ -24,7 +24,6 @@ public class ModKeybindings {
     public static void onKeyPress(InputEvent.KeyInputEvent e) {
         if(TEST_KEY.isDown()) {
             System.out.println("JE SUIS UN BOUTON");
-            TyroMod.NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser()));
 
         }
 
