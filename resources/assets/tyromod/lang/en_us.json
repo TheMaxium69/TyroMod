@@ -63,5 +63,8 @@
   "item.tyromod.copper_axe": "Copper Axe",
   "item.tyromod.copper_shovel": "Copper Shovel",
   "item.tyromod.copper_hoe": "Copper Hoe",
-  "item.tyromod.angel_ring": "Angel Ring"
+  "item.tyromod.angel_ring": "Angel Ring",
+
+  "key.tyromod.test_key": "Test Key",
+  "key.categories.tyromod": "TyroMod"
 }

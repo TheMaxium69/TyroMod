@@ -2,10 +2,12 @@ package fr.tyrolium.tyromod;
 
 import fr.tyrolium.tyromod.init.ModBlocks;
 import fr.tyrolium.tyromod.init.ModItems;
+import fr.tyrolium.tyromod.init.ModKeybindings;
 import fr.tyrolium.tyromod.network.PacketToken;
 import fr.tyrolium.tyromod.security.LauncherToken;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,10 +18,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.network.simple.SimpleChannel;
-import net.minecraftforge.fml.server.ServerLifecycleHooks;
-import org.apache.logging.log4j.LogManager;
-
-
 import java.util.Optional;
 
 @Mod(TyroMod.ModId)
@@ -45,32 +43,36 @@ public class TyroMod {
 
     }
 
-    private void setup(FMLCommonSetupEvent e){
+    private void setup(FMLCommonSetupEvent e) {
 
         int index = 0;
         NETWORK.registerMessage(index, PacketToken.class, PacketToken::encode, PacketToken::decode, PacketToken::handle, Optional.of(NetworkDirection.PLAY_TO_SERVER));
 
     }
 
-    private void clientSetup(FMLClientSetupEvent e){
+    private void clientSetup(FMLClientSetupEvent e) {
+
+        IEventBus bus = MinecraftForge.EVENT_BUS;
+        ModKeybindings.register();
+        bus.addListener(ModKeybindings::onKeyPress);
 
     }
 
-    /*@Mod.EventBusSubscriber
+    @Mod.EventBusSubscriber
     public static class EventBus {
 
         @SubscribeEvent
-        public static void onEvent(EntityJoinWorldEvent event) {
+        public static void onEvent(EntityJoinWorldEvent event) throws InterruptedException {
             if ((event.getEntity() instanceof PlayerEntity)) {
 
                 System.out.println("Connecte");
-
+                Thread.sleep(4000);
                 NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser()));
 
             }
         }
 
-    }*/
+    }
 
 
 

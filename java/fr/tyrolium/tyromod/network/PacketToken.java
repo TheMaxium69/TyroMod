@@ -3,10 +3,14 @@ package fr.tyrolium.tyromod.network;
 import fr.tyrolium.tyromod.security.LauncherToken;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.PacketBuffer;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraftforge.fml.network.NetworkEvent;
 
 import java.util.function.Supplier;
+
+import static net.minecraft.util.text.TextComponentUtils.getDisplayName;
 
 public class PacketToken {
 
@@ -27,11 +31,29 @@ public class PacketToken {
 
     public static void handle(PacketToken packet, Supplier<NetworkEvent.Context> contextSupplier) {
 
-        ServerPlayerEntity player = contextSupplier.get().getSender();
-
         String Token = packet.Token;
 
-        player.displayClientMessage(new StringTextComponent(Token), true);
+        ServerPlayerEntity Entity = contextSupplier.get().getSender();
+        MinecraftServer Server = Entity.getServer();
+        ITextComponent PlayerName = Entity.getName();
 
+
+
+
+
+
+
+
+
+/*RESULT
+
+        //KICK PLAYER - MAUVAIS TOKEN
+        Server.getCommands().performCommand(Server.createCommandSourceStack(), "kick " + PlayerName.getString() + " Token Invalide");
+
+
+        //TP PLAYER IN LOBBY - GOOD TOKEN
+        Server.getCommands().performCommand(Server.createCommandSourceStack(), "tp " + PlayerName.getString() + " ~ ~ ~ ");
+        player.displayClientMessage(new StringTextComponent("Connected"), true);
+*/
     }
 }
