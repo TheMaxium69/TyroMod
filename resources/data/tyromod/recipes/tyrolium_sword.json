@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "tyromod:mercure_sword"
+    },
+    "X": {
+      "item": "tyromod:tyrolium"
+    }
+  },
+  "result": {
+    "item": "tyromod:tyrolium_sword"
+  }
+}

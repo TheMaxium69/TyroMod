@@ -1,5 +1,9 @@
 {
   "item.tyromod.tyrolium": "Tyrolium",
+  "tooltip.tyromod.tyrolium": "Fusion: Tier IUM, MORE INFO SHIT",
+  "tooltip.tyromod.tyrolium_shift": "Fusion: Tier IUM, LONG DESCRIPTION AEZOJEZAL JELAZKJE EZAZA ELAZJEAZL KJKLAZ JEAZKEAZL KJZEAK ",
+
+
   "item.tyromod.tyrolium_nugget": "Tyrolium Nugget",
   "item.tyromod.tyrolium_sword_fire": "Tyrolium Sword Fire",
   "item.tyromod.tyrolium_sword": "Tyrolium Sword",
@@ -66,5 +70,6 @@
   "item.tyromod.angel_ring": "Angel Ring",
 
   "key.tyromod.test_key": "Test Key",
-  "key.categories.tyromod": "TyroMod"
+  "key.categories.tyromod": "TyroMod",
+  "itemGroup.tyroModTab": "TyroMod"
 }

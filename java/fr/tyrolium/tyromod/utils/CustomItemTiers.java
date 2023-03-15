@@ -6,7 +6,12 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 
 public enum CustomItemTiers implements IItemTier {
+
+
+
     TYROLIUM(1, 420, 4.8f, 1.5f, 10, new LazyValue<>(() -> { return Ingredient.of(ModItems.TYROLIUM.get());}));
+
+
 
     private final int harvestLevel;
     private final int maxUses;

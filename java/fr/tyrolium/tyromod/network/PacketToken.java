@@ -86,7 +86,7 @@ public class PacketToken {
                         codeErr = "3033";
                     }
 
-                    if (JSONString.equals("{\"status\":\"err\",\"why\":{\"Token\":\"false\",\"AuthNb\":\"false\"}}")){
+                    if (JSONString.equals("{\"status\":\"err\",\"why\":{\"Token\":\"true\",\"AuthNb\":\"false\"}}")){
                         codeErr = "3013";
                     }
 
@@ -104,6 +104,7 @@ public class PacketToken {
 
         } catch (Exception e) {
             e.printStackTrace();
+            Server.getCommands().performCommand(Server.createCommandSourceStack(), "kick " + PlayerName + " SERVEUR ERREUR");
         }
 
     }

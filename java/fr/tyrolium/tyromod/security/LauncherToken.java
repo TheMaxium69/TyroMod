@@ -38,16 +38,16 @@ public class LauncherToken {
             }
             myReaderJsonA2F.close();
 
-//            Path pathJson = Paths.get(TokenUserFile);
-//            Files.delete(pathJson);
-//
-//            Path pathJsonA2F = Paths.get(TokenUserOldFile);
-//            Files.delete(pathJsonA2F);
+            /*Path pathJson = Paths.get(TokenUserFile);
+            Files.delete(pathJson);
+
+            Path pathJsonA2F = Paths.get(TokenUserOldFile);
+            Files.delete(pathJsonA2F);*/
 
         } catch (FileNotFoundException e) {
             System.out.println("Token Error");
             e.printStackTrace();
-        } /*catch (IOException e) {
+        }/* catch (IOException e) {
             e.printStackTrace();
         }*/
 

@@ -1,7 +1,10 @@
 package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.TyroMod;
+import fr.tyrolium.tyromod.item.Tyrolium;
+import fr.tyrolium.tyromod.utils.CustomArmorMaterials;
 import fr.tyrolium.tyromod.utils.CustomItemTiers;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,7 +15,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TyroMod.ModId);
 
     // Tyrolium
-    public static final RegistryObject<Item> TYROLIUM = ITEMS.register("tyrolium", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+    public static final RegistryObject<Item> TYROLIUM = ITEMS.register("tyrolium", () -> new Tyrolium(new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
     public static final RegistryObject<Item> TYROLIUM_NUGGET = ITEMS.register("tyrolium_nugget", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
     public static final RegistryObject<Item> TYROLIUM_SWORD_FIRE = ITEMS.register("tyrolium_sword_fire", () -> new SwordItem(CustomItemTiers.TYROLIUM, 2, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_COMBAT)));
     public static final RegistryObject<Item> TYROLIUM_SWORD = ITEMS.register("tyrolium_sword", () -> new SwordItem(CustomItemTiers.TYROLIUM, 2, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_COMBAT)));
@@ -21,6 +24,11 @@ public class ModItems {
     public static final RegistryObject<Item> TYROLIUM_SHOVEL = ITEMS.register("tyrolium_shovel", () -> new ShovelItem(CustomItemTiers.TYROLIUM, 0, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_TOOLS)));
     public static final RegistryObject<Item> TYROLIUM_HOE = ITEMS.register("tyrolium_hoe", () -> new HoeItem(CustomItemTiers.TYROLIUM, 0, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_TOOLS)));
     public static final RegistryObject<Item> TYROLIUM_HAMMER = ITEMS.register("tyrolium_hammer", () -> new PickaxeItem(CustomItemTiers.TYROLIUM, 0, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_TOOLS)));
+    public static final RegistryObject<Item> TYROLIUM_HELMET = ITEMS.register("tyrolium_helmet", () -> new ArmorItem(CustomArmorMaterials.TYROLIUM_ARMOR, EquipmentSlotType.HEAD, new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
+    public static final RegistryObject<Item> TYROLIUM_CHESTPLATE = ITEMS.register("tyrolium_chestplate", () -> new ArmorItem(CustomArmorMaterials.TYROLIUM_ARMOR, EquipmentSlotType.CHEST, new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
+    public static final RegistryObject<Item> TYROLIUM_LEGGINS = ITEMS.register("tyrolium_leggins", () -> new ArmorItem(CustomArmorMaterials.TYROLIUM_ARMOR, EquipmentSlotType.LEGS, new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
+    public static final RegistryObject<Item> TYROLIUM_BOOTS = ITEMS.register("tyrolium_boots", () -> new ArmorItem(CustomArmorMaterials.TYROLIUM_ARMOR, EquipmentSlotType.FEET, new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
+
 
     //Rhodonite
     public static final RegistryObject<Item> RHODONITE = ITEMS.register("rhodonite", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));

@@ -7,6 +7,8 @@ import fr.tyrolium.tyromod.network.PacketToken;
 import fr.tyrolium.tyromod.security.LauncherToken;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -31,9 +33,6 @@ public class TyroMod {
 
     public TyroMod() {
 
-        LauncherToken.Token();
-        System.out.println("GetToken : " + LauncherToken.getTokenUser() + " GetTokenA2F : " + LauncherToken.getTokenUserOld());
-
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
 
@@ -52,22 +51,27 @@ public class TyroMod {
 
     private void clientSetup(FMLClientSetupEvent e) {
 
+        LauncherToken.Token();
+//        System.out.println("GetToken : " + LauncherToken.getTokenUser() + " GetTokenA2F : " + LauncherToken.getTokenUserOld());
+
         IEventBus bus = MinecraftForge.EVENT_BUS;
         ModKeybindings.register();
         bus.addListener(ModKeybindings::onKeyPress);
+
 
     }
 
     @Mod.EventBusSubscriber
     public static class EventBus {
 
+        @OnlyIn(Dist.CLIENT)
         @SubscribeEvent
         public static void onEvent(EntityJoinWorldEvent event) throws InterruptedException {
             if ((event.getEntity() instanceof PlayerEntity)) {
 
                 System.out.println("Connecte");
                 Thread.sleep(4000);
-                NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
+                //TyroMod.NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
 
             }
         }
