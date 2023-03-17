@@ -96,7 +96,7 @@ public class PacketToken {
 
                     System.out.println("TOKEN INVALIDE DE "+ PlayerName +" Err:" + codeErr);
                     //KICK PLAYER
-                    Server.getCommands().performCommand(Server.createCommandSourceStack(), "kick " + PlayerName + " Token Invalide Err:" + codeErr);
+                    Server.getCommands().performCommand(Server.createCommandSourceStack(), "kick " + PlayerName + " Token Invalide - Restart Game Please - Err:" + codeErr);
                 }
 
 

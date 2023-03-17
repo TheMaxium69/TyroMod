@@ -26,9 +26,8 @@ public class ModItems {
     public static final RegistryObject<Item> TYROLIUM_HAMMER = ITEMS.register("tyrolium_hammer", () -> new PickaxeItem(CustomItemTiers.TYROLIUM, 0, -2.4f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_TOOLS)));
     public static final RegistryObject<Item> TYROLIUM_HELMET = ITEMS.register("tyrolium_helmet", () -> new ArmorItem(CustomArmorMaterials.TYROLIUM_ARMOR, EquipmentSlotType.HEAD, new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
     public static final RegistryObject<Item> TYROLIUM_CHESTPLATE = ITEMS.register("tyrolium_chestplate", () -> new ArmorItem(CustomArmorMaterials.TYROLIUM_ARMOR, EquipmentSlotType.CHEST, new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
-    public static final RegistryObject<Item> TYROLIUM_LEGGINS = ITEMS.register("tyrolium_leggins", () -> new ArmorItem(CustomArmorMaterials.TYROLIUM_ARMOR, EquipmentSlotType.LEGS, new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
+    public static final RegistryObject<Item> TYROLIUM_LEGGINGS = ITEMS.register("tyrolium_leggings", () -> new ArmorItem(CustomArmorMaterials.TYROLIUM_ARMOR, EquipmentSlotType.LEGS, new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
     public static final RegistryObject<Item> TYROLIUM_BOOTS = ITEMS.register("tyrolium_boots", () -> new ArmorItem(CustomArmorMaterials.TYROLIUM_ARMOR, EquipmentSlotType.FEET, new Item.Properties().tab(ModItemGroup.TAB_TYROMOD)));
-
 
     //Rhodonite
     public static final RegistryObject<Item> RHODONITE = ITEMS.register("rhodonite", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));

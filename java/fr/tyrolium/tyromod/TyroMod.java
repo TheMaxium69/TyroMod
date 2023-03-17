@@ -52,7 +52,7 @@ public class TyroMod {
     private void clientSetup(FMLClientSetupEvent e) {
 
         LauncherToken.Token();
-//        System.out.println("GetToken : " + LauncherToken.getTokenUser() + " GetTokenA2F : " + LauncherToken.getTokenUserOld());
+        System.out.println("GetToken : " + LauncherToken.getTokenUser() + " GetTokenA2F : " + LauncherToken.getTokenUserOld());
 
         IEventBus bus = MinecraftForge.EVENT_BUS;
         ModKeybindings.register();
@@ -71,7 +71,7 @@ public class TyroMod {
 
                 System.out.println("Connecte");
                 Thread.sleep(4000);
-                //TyroMod.NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
+//                TyroMod.NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
 
             }
         }

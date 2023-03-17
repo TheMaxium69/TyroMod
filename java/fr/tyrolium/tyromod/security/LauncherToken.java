@@ -27,14 +27,12 @@ public class LauncherToken {
             Scanner myReaderJson = new Scanner(myJson);
             while (myReaderJson.hasNextLine()) {
                 TokenUser = myReaderJson.nextLine();
-//                System.out.println("Token : " + TokenUser);
             }
             myReaderJson.close();
 
             Scanner myReaderJsonA2F = new Scanner(myJsonA2F);
             while (myReaderJsonA2F.hasNextLine()) {
                 TokenUserOld = myReaderJsonA2F.nextLine();
-//                System.out.println("Token A2F : " + TokenUserOld);
             }
             myReaderJsonA2F.close();
 
@@ -47,7 +45,7 @@ public class LauncherToken {
         } catch (FileNotFoundException e) {
             System.out.println("Token Error");
             e.printStackTrace();
-        }/* catch (IOException e) {
+        } /*catch (IOException e) {
             e.printStackTrace();
         }*/
 
