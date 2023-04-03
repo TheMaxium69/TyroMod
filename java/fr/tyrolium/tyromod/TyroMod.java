@@ -71,7 +71,7 @@ public class TyroMod {
 
                 System.out.println("Connecte");
                 Thread.sleep(4000);
-                TyroMod.NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
+//                TyroMod.NETWORK.sendToServer(new PacketToken(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
 
             }
         }

@@ -10,16 +10,17 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class Tyrolium extends Item {
+public class TyroliumNugget extends Item {
 
-    public static String itemString = "tyrolium";
+    public static String itemString = "tyrolium_nugget";
     public static ItemGroup modItemGroup = ModItemGroup.TAB_TYROMOD;
     public static Properties properties = new Item.Properties().tab(modItemGroup);;
 
-    public Tyrolium() {
+    public TyroliumNugget() {
         super(properties);
     }
 
