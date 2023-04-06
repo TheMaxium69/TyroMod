@@ -9,7 +9,15 @@ public enum CustomItemTiers implements IItemTier {
 
 
 
-    TYROLIUM(1, 420, 4.8f, 1.5f, 10, new LazyValue<>(() -> { return Ingredient.of(ModItems.TYROLIUM.get());}));
+    TYROLIUM_TOOL(1, 420, 4.8f, 1.5f, 10, new LazyValue<>(() -> {
+        return Ingredient.of(ModItems.TYROLIUM.get());
+    }));
+
+//    TYROLIUM(1, 420, 4.8f, 1.5f, 10, new LazyValue<>(() -> { return Ingredient.of(ModItems.TYROLIUM.get()); }));
+
+
+//    temp
+
 
 
 

@@ -19,7 +19,7 @@ public class TyroliumSword extends SwordItem {
     public static ItemGroup modItemGroup = ModItemGroup.TAB_TYROMOD;
     public static Properties properties = new Item.Properties().stacksTo(1).tab(modItemGroup);
 
-    public static IItemTier toolTier = CustomItemTiers.TYROLIUM;
+    public static IItemTier toolTier = CustomItemTiers.TYROLIUM_TOOL;
     public static int attackDamageIn = 2;
     public static float attackSpeedIn = -2.4f;
 
