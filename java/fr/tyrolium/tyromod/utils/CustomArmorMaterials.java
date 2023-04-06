@@ -17,7 +17,13 @@ public enum CustomArmorMaterials implements IArmorMaterial {
 
     TYROLIUM_ARMOR(TyroMod.ModId + ":tyrolium", 18, new int[]{2, 5, 7, 3}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> {
         return Ingredient.of(ModItems.TYROLIUM.get());
-    });
+    }),
+
+    ADAMENTIUM_ARMOR(TyroMod.ModId + ":adamentium", 18, new int[]{2, 5, 7, 3}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> {
+        return Ingredient.of(ModItems.ADAMENTIUM.get());
+    }),
+
+    ;
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
     private final String name;
