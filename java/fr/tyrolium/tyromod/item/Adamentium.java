@@ -1,6 +1,5 @@
 package fr.tyrolium.tyromod.item;
 
-
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.init.ModItemGroup;
 import net.minecraft.client.gui.screen.Screen;
@@ -18,7 +17,7 @@ public class Adamentium extends Item {
 
     public static String itemString = "adamentium";
     public static ItemGroup modItemGroup = ModItemGroup.TAB_TYROMOD;
-    public static Properties properties = new Item.Properties().tab(modItemGroup);;
+    public static Properties properties = new Item.Properties().tab(modItemGroup);
 
     public Adamentium() {
         super(properties);

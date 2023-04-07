@@ -18,7 +18,7 @@ public class TyroliumNugget extends Item {
 
     public static String itemString = "tyrolium_nugget";
     public static ItemGroup modItemGroup = ModItemGroup.TAB_TYROMOD;
-    public static Properties properties = new Item.Properties().tab(modItemGroup);;
+    public static Properties properties = new Item.Properties().tab(modItemGroup);
 
     public TyroliumNugget() {
         super(properties);

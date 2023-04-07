@@ -17,7 +17,7 @@ public class Tyrolium extends Item {
 
     public static String itemString = "tyrolium";
     public static ItemGroup modItemGroup = ModItemGroup.TAB_TYROMOD;
-    public static Properties properties = new Item.Properties().tab(modItemGroup);;
+    public static Properties properties = new Item.Properties().tab(modItemGroup);
 
     public Tyrolium() {
         super(properties);
