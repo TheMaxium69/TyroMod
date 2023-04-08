@@ -2,32 +2,25 @@ package fr.tyrolium.tyromod.item;
 
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.init.ModItemGroup;
-import fr.tyrolium.tyromod.utils.CustomArmorMaterials;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
-
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class TyroliumBoots extends ArmorItem {
+public class RhodoniteNugget extends Item {
 
-    public static String itemString = "tyrolium_boots";
+    public static String itemString = "rhodonite_nugget";
     public static ItemGroup modItemGroup = ModItemGroup.TAB_TYROMOD;
-    public static Properties properties = new Item.Properties().tab(modItemGroup);
+    public static Properties properties = new Item.Properties().tab(modItemGroup);;
 
-    public static IArmorMaterial armorTier = CustomArmorMaterials.TYROLIUM_ARMOR;
-    public static EquipmentSlotType equipmentSlotType = EquipmentSlotType.FEET;
-
-
-    public TyroliumBoots() {
-
-        super(armorTier, equipmentSlotType, properties);
-
+    public RhodoniteNugget() {
+        super(properties);
     }
 
     @Override
@@ -41,4 +34,6 @@ public class TyroliumBoots extends ArmorItem {
 
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
     }
+
 }
+

@@ -14,20 +14,18 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class TyroliumBoots extends ArmorItem {
+public class RhodoniteChestplate extends ArmorItem {
 
-    public static String itemString = "tyrolium_boots";
+    public static String itemString = "rhodonite_chestplate";
     public static ItemGroup modItemGroup = ModItemGroup.TAB_TYROMOD;
     public static Properties properties = new Item.Properties().tab(modItemGroup);
 
-    public static IArmorMaterial armorTier = CustomArmorMaterials.TYROLIUM_ARMOR;
-    public static EquipmentSlotType equipmentSlotType = EquipmentSlotType.FEET;
+    public static IArmorMaterial armorTier = CustomArmorMaterials.RHODONITE_ARMOR;
+    public static EquipmentSlotType equipmentSlotType = EquipmentSlotType.CHEST;
 
 
-    public TyroliumBoots() {
-
+    public RhodoniteChestplate() {
         super(armorTier, equipmentSlotType, properties);
-
     }
 
     @Override
@@ -42,3 +40,4 @@ public class TyroliumBoots extends ArmorItem {
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
     }
 }
+

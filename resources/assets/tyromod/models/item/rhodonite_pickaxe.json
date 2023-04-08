@@ -3,4 +3,9 @@
     "textures": {
       "layer0": "tyromod:item/rhodonite_pickaxe"
     }
+  }{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "tyromod:item/rhodonite_pickaxe"
   }
+}

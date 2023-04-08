@@ -21,7 +21,7 @@ public class TyroliumChestplate extends ArmorItem {
     public static Properties properties = new Item.Properties().tab(modItemGroup);
 
     public static IArmorMaterial armorTier = CustomArmorMaterials.TYROLIUM_ARMOR;
-    public static EquipmentSlotType equipmentSlotType = EquipmentSlotType.HEAD;
+    public static EquipmentSlotType equipmentSlotType = EquipmentSlotType.CHEST;
 
 
     public TyroliumChestplate() {

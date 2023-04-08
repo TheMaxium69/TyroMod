@@ -2,10 +2,9 @@ package fr.tyrolium.tyromod.item;
 
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.init.ModItemGroup;
-import fr.tyrolium.tyromod.utils.CustomArmorMaterials;
+import fr.tyrolium.tyromod.utils.CustomItemTiers;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
@@ -14,20 +13,18 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class TyroliumBoots extends ArmorItem {
+public class RhodoniteSword extends SwordItem {
 
-    public static String itemString = "tyrolium_boots";
+    public static String itemString = "rhodonite_sword";
     public static ItemGroup modItemGroup = ModItemGroup.TAB_TYROMOD;
-    public static Properties properties = new Item.Properties().tab(modItemGroup);
+    public static Properties properties = new Item.Properties().stacksTo(1).tab(modItemGroup);
 
-    public static IArmorMaterial armorTier = CustomArmorMaterials.TYROLIUM_ARMOR;
-    public static EquipmentSlotType equipmentSlotType = EquipmentSlotType.FEET;
+    public static IItemTier toolTier = CustomItemTiers.RHODONITE_TOOL;
+    public static int attackDamageIn = 2;
+    public static float attackSpeedIn = -2.4f;
 
-
-    public TyroliumBoots() {
-
-        super(armorTier, equipmentSlotType, properties);
-
+    public RhodoniteSword() {
+        super(toolTier, attackDamageIn, attackSpeedIn, properties);
     }
 
     @Override
@@ -41,4 +38,6 @@ public class TyroliumBoots extends ArmorItem {
 
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
     }
+
 }
+
