@@ -19,16 +19,6 @@ public enum CustomArmorMaterials implements IArmorMaterial {
         return Ingredient.of(ModItems.TYROLIUM.get());
     }),
 
-    ADAMENTIUM_ARMOR(TyroMod.ModId + ":adamentium", 18, new int[]{2, 5, 7, 3}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> {
-        return Ingredient.of(ModItems.ADAMENTIUM.get());
-    }),
-
-    RHODONITE_ARMOR(TyroMod.ModId + ":rhodonite", 18, new int[]{2, 5, 7, 3}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> {
-        return Ingredient.of(ModItems.RHODONITE.get());
-    }),
-
-
-
 
 
 

@@ -1,0 +1,41 @@
+{
+  "itemGroup.tyroModTab": "TyroMod",
+
+  "key.categories.tyromod": "TyroMod",
+  "key.tyromod.test_key": "Touche de Teste",
+
+
+
+  "item.tyromod.tyrolium": "Tyrolium",
+  "tooltip.tyromod.tyrolium": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_nugget": "Pépite de Tyrolium",
+
+  "item.tyromod.tyrolium_sword_fire": "Épée Enflammer en Tyrolium",
+
+  "item.tyromod.tyrolium_sword": "Épée en Tyrolium",
+
+  "item.tyromod.tyrolium_pickaxe": "Pioche en Tyrolium",
+
+  "item.tyromod.tyrolium_axe": "Hache en Tyrolium",
+
+  "item.tyromod.tyrolium_shovel": "Pelle en Tyrolium",
+
+  "item.tyromod.tyrolium_hoe": "Houe en Tyrolium",
+
+  "item.tyromod.tyrolium_hammer": "Marteau en Tyrolium",
+
+  "item.tyromod.tyrolium_helmet": "Casque en Tyrolium",
+
+  "item.tyromod.tyrolium_chestplate": "Plastron en Tyrolium",
+
+  "item.tyromod.tyrolium_leggings": "Jambières en Tyrolium",
+
+  "item.tyromod.tyrolium_boots": "Bottes en Tyrolium",
+
+  "block.tyromod.tyrolium_block": "Bloc de Tyrolium",
+
+  "block.tyromod.tyrolium_ore": "Minerai de Tyrolium"
+
+}

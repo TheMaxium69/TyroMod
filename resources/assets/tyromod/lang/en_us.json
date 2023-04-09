@@ -7,119 +7,34 @@
 
 
   "item.tyromod.tyrolium": "Tyrolium",
-  "tooltip.tyromod.tyrolium": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
+  "tooltip.tyromod.tyrolium": "§7Fusion: §1Tier IUM",
   "tooltip.tyromod.tyrolium_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_nugget": "Tyrolium Nugget",
-  "tooltip.tyromod.tyrolium_nugget": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_nugget_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_sword_fire": "Tyrolium Sword Fire",
-  "tooltip.tyromod.tyrolium_sword_fire": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_sword_fire_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_sword": "Tyrolium Sword",
-  "tooltip.tyromod.tyrolium_sword": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_sword_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_pickaxe": "Tyrolium Pickaxe",
-  "tooltip.tyromod.tyrolium_pickaxe": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_pickaxe_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_axe": "Tyrolium Axe",
-  "tooltip.tyromod.tyrolium_axe": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_axe_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_shovel": "Tyrolium Shovel",
-  "tooltip.tyromod.tyrolium_shovel": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_shovel_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_hoe": "Tyrolium Hoe",
-  "tooltip.tyromod.tyrolium_hoe": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_hoe_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_hammer": "Tyrolium Hammer",
-  "tooltip.tyromod.tyrolium_hammer": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_hammer_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_helmet": "Tyrolium Helmet",
-  "tooltip.tyromod.tyrolium_helmet": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_helmet_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_chestplate": "Tyrolium Chestplate",
-  "tooltip.tyromod.tyrolium_chestplate": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_chestplate_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_leggings": "Tyrolium Leggings",
-  "tooltip.tyromod.tyrolium_leggings": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_leggings_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
   "item.tyromod.tyrolium_boots": "Tyrolium Boots",
-  "tooltip.tyromod.tyrolium_boots": "§fFusion: §1Tier IUM §f, MORE INFO SHIT",
-  "tooltip.tyromod.tyrolium_boots_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
-  "block.tyromod.tyrolium_block": "Tyrolium Block",
-
-  "item.tyromod.rhodonite": "Rhodonite",
-  "item.tyromod.rhodonite_nugget": "Rhodonite Nugget",
-  "item.tyromod.rhodonite_sword_fire": "Rhodonite Sword Fire",
-  "item.tyromod.rhodonite_sword": "Rhodonite Sword",
-  "item.tyromod.rhodonite_pickaxe": "Rhodonite Pickaxe",
-  "item.tyromod.rhodonite_axe": "Rhodonite Axe",
-  "item.tyromod.rhodonite_shovel": "Rhodonite Shovel",
-  "item.tyromod.rhodonite_hoe": "Rhodonite Hoe",
-  "item.tyromod.rhodonite_hammer": "Rhodonite Hammer",
-  "block.tyromod.rhodonite_block": "Rhodonite Block",
-
-  "item.tyromod.amethys": "Amethys",
-  "item.tyromod.amethys_nugget": "Amethys Nugget",
-  "item.tyromod.amethys_sword_fire": "Amethys Sword Fire",
-  "item.tyromod.amethys_sword": "Amethys Sword",
-  "item.tyromod.amethys_pickaxe": "Amethys Pickaxe",
-  "item.tyromod.amethys_axe": "Amethys Axe",
-  "item.tyromod.amethys_shovel": "Amethys Shovel",
-  "item.tyromod.amethys_hoe": "Amethys Hoe",
-  "item.tyromod.amethys_hammer": "Amethys Hammer",
-  "block.tyromod.amethys_block": "Amethys Block",
-
-  "item.tyromod.aventurine": "Aventurine",
-  "item.tyromod.aventurine_nugget": "Aventurine Nugget",
-  "item.tyromod.aventurine_gem": "Aventurine Gem",
-  "item.tyromod.aventurine_powder": "Aventurine Powder",
-  "item.tyromod.aventurine_sword_fire": "Aventurine Sword Fire",
-  "item.tyromod.aventurine_sword": "Aventurine Sword",
-  "item.tyromod.aventurine_pickaxe": "Aventurine Pickaxe",
-  "item.tyromod.aventurine_axe": "Aventurine Axe",
-  "item.tyromod.aventurine_shovel": "Aventurine Shovel",
-  "item.tyromod.aventurine_hoe": "Aventurine Hoe",
-  "item.tyromod.aventurine_hammer": "Aventurine Hammer",
-  "block.tyromod.aventurine_block": "Aventurine Block",
-
-  "item.tyromod.yellorite": "yellorite",
-  "item.tyromod.yellorite_nugget": "Yellorite Nugget",
-  "item.tyromod.yellorite_sword_fire": "Yellorite Sword Fire",
-  "item.tyromod.yellorite_sword": "Yellorite Sword",
-  "item.tyromod.yellorite_pickaxe": "Yellorite Pickaxe",
-  "item.tyromod.yellorite_axe": "Yellorite Axe",
-  "item.tyromod.yellorite_shovel": "Yellorite Shovel",
-  "item.tyromod.yellorite_hoe": "Yellorite Hoe",
-  "item.tyromod.yellorite_hammer": "Yellorite Hammer",
-  "block.tyromod.yellorite_block": "Yellorite Block",
-
-  "item.tyromod.aurore": "Aurore",
-  "item.tyromod.aurore_sword": "Aurore Sword",
-  "item.tyromod.aurore_pickaxe": "Aurore Pickaxe",
-  "item.tyromod.aurore_axe": "Aurore Axe",
-  "item.tyromod.aurore_shovel": "Aurore Shovel",
-  "item.tyromod.aurore_hoe": "Aurore Hoe",
-
-  "item.tyromod.copper_ingot": "Copper Ingot",
-  "item.tyromod.copper_sword": "Copper Sword",
-  "item.tyromod.copper_pickaxe": "Copper Pickaxe",
-  "item.tyromod.copper_axe": "Copper Axe",
-  "item.tyromod.copper_shovel": "Copper Shovel",
-  "item.tyromod.copper_hoe": "Copper Hoe",
-
-  "item.tyromod.angel_ring": "Angel Ring"
+  "block.tyromod.tyrolium_block": "Tyrolium Block"
 
 }
+
