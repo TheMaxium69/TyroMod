@@ -34,7 +34,11 @@
 
   "item.tyromod.tyrolium_boots": "Tyrolium Boots",
 
-  "block.tyromod.tyrolium_block": "Tyrolium Block"
+  "block.tyromod.tyrolium_block": "Tyrolium Block",
+  "tooltip.tyromod.tyrolium_block": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_block_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
 
+  "block.tyromod.tyrolium_ore": "Tyrolium Ore",
+  "tooltip.tyromod.tyrolium_ore": "§7Fusion: IUM",
+  "tooltip.tyromod.tyrolium_ore_shift": "§fFusion: IUM §f, Version: §cTyroMod V1"
 }
-

@@ -17,10 +17,6 @@ public enum CustomItemTiers implements IItemTier {
 
 
 
-
-
-
-
     ;
 
     private final int harvestLevel;
@@ -69,5 +65,4 @@ public enum CustomItemTiers implements IItemTier {
         return repairMaterial.get();
     }
 }
-
 

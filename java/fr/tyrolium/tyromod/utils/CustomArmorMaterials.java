@@ -26,10 +26,6 @@ public enum CustomArmorMaterials implements IArmorMaterial {
 
 
 
-
-
-
-
     ;
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
@@ -94,3 +90,4 @@ public enum CustomArmorMaterials implements IArmorMaterial {
         return this.knockbackResistance;
     }
 }
+
