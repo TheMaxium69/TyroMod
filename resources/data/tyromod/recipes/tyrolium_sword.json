@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "X",
-    "X",
-    "#"
+    "*X*",
+    "X#X",
+    "*X*"
   ],
   "key": {
     "#": {
@@ -11,6 +11,9 @@
     },
     "X": {
       "item": "tyromod:tyrolium"
+    },
+    "*": {
+      "item": "tyromod:tyrolium_nugget"
     }
   },
   "result": {

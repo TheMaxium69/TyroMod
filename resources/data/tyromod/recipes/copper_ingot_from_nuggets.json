@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tyromod:copper_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tyromod:copper_nugget"
+    }
+  },
+  "result": {
+    "item": "tyromod:copper_ingot"
+  }
+}

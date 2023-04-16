@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  {
+    "item": "tyromod:copper_ingot"
+  }
+  ],
+  "result": {
+    "item": "tyromod:copper_nugget",
+    "count": 9
+  }
+}

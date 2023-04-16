@@ -19,6 +19,10 @@ public class ModBlocks {
     public static RegistryObject<Block> TYROLIUM_BLOCK = createBlock("tyrolium_block", () -> new TyroliumBlock());
     public static RegistryObject<Block> TYROLIUM_ORE = createBlock("tyrolium_ore", () -> new TyroliumOre());
 
+    // Copper
+    public static RegistryObject<Block> COPPER_BLOCK = createBlock("copper_block", () -> new CopperBlock());
+    public static RegistryObject<Block> COPPER_ORE = createBlock("copper_ore", () -> new CopperOre());
+
 
     public static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier){
         RegistryObject<Block> block = BLOCKS.register(name, supplier);
@@ -26,3 +30,5 @@ public class ModBlocks {
         return block;
     }
 }
+
+

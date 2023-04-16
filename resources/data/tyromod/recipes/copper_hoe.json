@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+    "##",
+    " *",
+    " *"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:copper_ingot"
+        },
+        "*": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "tyromod:copper_hoe"
+    }
+}

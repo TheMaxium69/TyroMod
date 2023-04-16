@@ -11,6 +11,9 @@ public enum CustomItemTiers implements IItemTier {
         return Ingredient.of(ModItems.TYROLIUM.get());
     })),
 
+    COPPER_TOOL(1, 420, 4.8f, 1.5f, 10, new LazyValue<>(() -> {
+        return Ingredient.of(ModItems.COPPER_INGOT.get());
+    })),
 
 
 
@@ -65,4 +68,3 @@ public enum CustomItemTiers implements IItemTier {
         return repairMaterial.get();
     }
 }
-

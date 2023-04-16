@@ -20,6 +20,9 @@ public enum CustomArmorMaterials implements IArmorMaterial {
     }),
 
 
+    COPPER_ARMOR(TyroMod.ModId + ":copper", 18, new int[]{2, 5, 7, 3}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> {
+        return Ingredient.of(ModItems.COPPER_INGOT.get());
+    }),
 
 
 
@@ -90,4 +93,3 @@ public enum CustomArmorMaterials implements IArmorMaterial {
         return this.knockbackResistance;
     }
 }
-
