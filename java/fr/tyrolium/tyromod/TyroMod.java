@@ -1,6 +1,7 @@
 package fr.tyrolium.tyromod;
 
 import fr.tyrolium.tyromod.init.BlocksMod;
+import fr.tyrolium.tyromod.init.ItemsMod;
 import fr.tyrolium.tyromod.proxy.Server;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
@@ -23,7 +24,8 @@ public class TyroMod
     {
         logger = event.getModLog();
 
-        BlocksMod.ini();
+        BlocksMod.init();
+        ItemsMod.init();
     }
 
     @EventHandler

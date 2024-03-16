@@ -22,7 +22,7 @@ public class BlocksMod {
     public static Block tyrolium_ore;
     public static Block rhodonite_block;
 
-    public static void ini(){
+    public static void init(){
         tyrolium_block = new TyroliumBlock("tyrolium_block", Material.IRON);
         tyrolium_ore = new TyroliumOre("tyrolium_ore", Material.IRON);
         rhodonite_block = new RhodoniteBlock("rhodonite_block", Material.IRON);
