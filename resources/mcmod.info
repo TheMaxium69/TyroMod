@@ -1,15 +1,15 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "tyromod",
+  "name": "TyroMod",
+  "description": "Mod de la saison 3 de TyroServ.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://tyrolium.fr",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
+  "authorList": ["Maxime Tournier"],
+  "credits": "Thanks for Tyrolium",
+  "logoFile": "logo.png",
   "screenshots": [],
   "dependencies": []
 }

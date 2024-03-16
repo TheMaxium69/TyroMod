@@ -1,0 +1,122 @@
+{
+  "itemGroup.tyroModTab": "TyroMod",
+
+  "key.categories.tyromod": "TyroMod",
+  "key.tyromod.test_key": "Touche de Teste",
+
+
+
+  "item.tyromod.tyrolium": "Tyrolium",
+  "tooltip.tyromod.tyrolium": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_nugget": "Pépite de Tyrolium",
+  "tooltip.tyromod.tyrolium_nugget": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_nugget_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_sword_fire": "Épée Enflammer en Tyrolium",
+  "tooltip.tyromod.tyrolium_sword_fire": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_sword_fire_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_sword": "Épée en Tyrolium",
+  "tooltip.tyromod.tyrolium_sword": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_sword_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_pickaxe": "Pioche en Tyrolium",
+  "tooltip.tyromod.tyrolium_pickaxe": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_pickaxe_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_axe": "Hache en Tyrolium",
+  "tooltip.tyromod.tyrolium_axe": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_axe_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_shovel": "Pelle en Tyrolium",
+  "tooltip.tyromod.tyrolium_shovel": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_shovel_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_hoe": "Houe en Tyrolium",
+  "tooltip.tyromod.tyrolium_hoe": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_hoe_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_hammer": "Marteau en Tyrolium",
+  "tooltip.tyromod.tyrolium_hammer": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_hammer_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_helmet": "Casque en Tyrolium",
+  "tooltip.tyromod.tyrolium_helmet": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_helmet_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_chestplate": "Plastron en Tyrolium",
+  "tooltip.tyromod.tyrolium_chestplate": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_chestplate_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_leggings": "Jambières en Tyrolium",
+  "tooltip.tyromod.tyrolium_leggings": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_leggings_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "item.tyromod.tyrolium_boots": "Bottes en Tyrolium",
+  "tooltip.tyromod.tyrolium_boots": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_boots_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "block.tyromod.tyrolium_block": "Bloc de Tyrolium",
+  "tooltip.tyromod.tyrolium_block": "§7Fusion: §1Tier IUM",
+  "tooltip.tyromod.tyrolium_block_shift": "§fFusion: §1Tier IUM §f, Version: §cTyroMod V1",
+
+  "block.tyromod.tyrolium_ore": "Minerai de Tyrolium",
+  "tooltip.tyromod.tyrolium_ore": "§7Fusion: IUM",
+  "tooltip.tyromod.tyrolium_ore_shift": "§fFusion: IUM §f, Version: §cTyroMod V1",
+
+
+
+"item.tyromod.copper_ingot": "L'Ingot de Copper",
+"tooltip.tyromod.copper_ingot": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_ingot_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_nugget": "Pépite de Copper",
+"tooltip.tyromod.copper_nugget": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_nugget_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_sword": "Épée en Copper",
+"tooltip.tyromod.copper_sword": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_sword_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_pickaxe": "Pioche en Copper",
+"tooltip.tyromod.copper_pickaxe": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_pickaxe_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_axe": "Hache en Copper",
+"tooltip.tyromod.copper_axe": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_axe_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_shovel": "Pelle en Copper",
+"tooltip.tyromod.copper_shovel": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_shovel_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_hoe": "Houe en Copper",
+"tooltip.tyromod.copper_hoe": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_hoe_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_helmet": "Casque en Copper",
+"tooltip.tyromod.copper_helmet": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_helmet_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_chestplate": "Plastron en Copper",
+"tooltip.tyromod.copper_chestplate": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_chestplate_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_leggings": "Jambières en Copper",
+"tooltip.tyromod.copper_leggings": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_leggings_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"item.tyromod.copper_boots": "Bottes en Copper",
+"tooltip.tyromod.copper_boots": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_boots_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"block.tyromod.copper_block": "Bloc de Copper",
+"tooltip.tyromod.copper_block": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_block_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1",
+
+"block.tyromod.copper_ore": "Minerai de Copper",
+"tooltip.tyromod.copper_ore": "§7Fusion: §dTier 1",
+"tooltip.tyromod.copper_ore_shift": "§fFusion: §dTier 1 §f, Version: §cTyroMod V1"
+}
