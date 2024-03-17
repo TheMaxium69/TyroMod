@@ -17,6 +17,7 @@ public class ItemsMod {
     public static Item tyrolium;
     public static Item rhodonite;
 
+
     public static void init()
     {
         tyrolium = new Tyrolium("tyrolium");
