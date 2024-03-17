@@ -19,7 +19,7 @@ public class AdamItemMod {
 
     public static void init()
     {
-        yellorite = new Tyrolium("yellorite");
+        yellorite = new Yellorite("yellorite");
     }
 
     @SubscribeEvent
