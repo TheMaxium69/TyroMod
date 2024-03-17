@@ -2,6 +2,7 @@ package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.blocks.RhodoniteBlock;
+import fr.tyrolium.tyromod.blocks.RhodoniteOre;
 import fr.tyrolium.tyromod.blocks.TyroliumBlock;
 import fr.tyrolium.tyromod.blocks.TyroliumOre;
 import net.minecraft.block.Block;
@@ -21,16 +22,18 @@ public class BlocksMod {
     public static Block tyrolium_block;
     public static Block tyrolium_ore;
     public static Block rhodonite_block;
+    public static Block rhodonite_ore;
 
     public static void init(){
         tyrolium_block = new TyroliumBlock("tyrolium_block", Material.IRON);
-        tyrolium_ore = new TyroliumOre("tyrolium_ore", Material.IRON);
+        tyrolium_ore = new TyroliumOre("tyrolium_ore", Material.ROCK);
         rhodonite_block = new RhodoniteBlock("rhodonite_block", Material.IRON);
+        rhodonite_ore = new RhodoniteOre("rhodonite_ore", Material.ROCK);
     }
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event){
-        event.getRegistry().registerAll(tyrolium_block, rhodonite_block);
+        event.getRegistry().registerAll(tyrolium_block, tyrolium_ore, rhodonite_block, rhodonite_ore);
     }
 
     @SubscribeEvent
@@ -38,8 +41,8 @@ public class BlocksMod {
         event.getRegistry().registerAll(
                 new ItemBlock(tyrolium_block).setRegistryName(tyrolium_block.getRegistryName()),
                 new ItemBlock(tyrolium_ore).setRegistryName(tyrolium_ore.getRegistryName()),
-                new ItemBlock(rhodonite_block).setRegistryName(rhodonite_block.getRegistryName())
-
+                new ItemBlock(rhodonite_block).setRegistryName(rhodonite_block.getRegistryName()),
+                new ItemBlock(rhodonite_ore).setRegistryName(rhodonite_ore.getRegistryName())
         );
     }
 
@@ -48,6 +51,7 @@ public class BlocksMod {
         registerRender(Item.getItemFromBlock(tyrolium_block));
         registerRender(Item.getItemFromBlock(tyrolium_ore));
         registerRender(Item.getItemFromBlock(rhodonite_block));
+        registerRender(Item.getItemFromBlock(rhodonite_ore));
     }
 
     private static void registerRender(Item item){

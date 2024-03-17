@@ -3,7 +3,6 @@ package fr.tyrolium.tyromod;
 import fr.tyrolium.tyromod.init.BlocksMod;
 import fr.tyrolium.tyromod.init.ItemsMod;
 import fr.tyrolium.tyromod.proxy.Server;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -35,6 +34,7 @@ public class TyroMod
 
         logger.info("TyroMod a bien charger");
         logger.info("TYROLIUM BLOCK >> {}", BlocksMod.tyrolium_block.getRegistryName());
+        
     }
 
     @EventHandler
