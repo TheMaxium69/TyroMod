@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -29,6 +30,7 @@ public class RegistryHandler {
     public static void registerBlocks(RegistryEvent.Register<Block> event)
     {
         event.getRegistry().registerAll(BlocksMod.BLOCKS.toArray(new Block[0]));
+        TileEntityHandler.registerTileEntities();
     }
 
     @SubscribeEvent
@@ -59,7 +61,7 @@ public class RegistryHandler {
 
     public static void initRegistries(FMLInitializationEvent event)
     {
-
+        NetworkRegistry.INSTANCE.registerGuiHandler(TyroMod.instance, new GuiHandler());
         RecipesMod.init();
 
     }

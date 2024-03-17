@@ -7,6 +7,7 @@ import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Table;
 
+import fr.tyrolium.tyromod.init.ItemsMod;
 import net.minecraft.item.ItemStack;
 
 public class FusionBlockRecipes
@@ -22,11 +23,11 @@ public class FusionBlockRecipes
 	
 	private FusionBlockRecipes()
 	{
-		//addSinteringRecipe(new ItemStack(Blocks.ACACIA_FENCE), new ItemStack(Blocks.ACACIA_FENCE_GATE), new ItemStack(BlockInit.COPPER_CHEST), 5.0F);
+		addFusionRecipe(new ItemStack(ItemsMod.amethys), new ItemStack(ItemsMod.yellorite), new ItemStack(ItemsMod.tyrolium), 5.0F);
 	}
 
 	
-	public void addSinteringRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience) 
+	public void addFusionRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience)
 	{
 		if(getSinteringResult(input1, input2) != ItemStack.EMPTY) return;
 		this.smeltingList.put(input1, input2, result);

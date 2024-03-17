@@ -7,6 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.*;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -22,7 +23,7 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraft.util.ITickable;
 
-public class TileEntityFusionBlock extends TileEntity implements ITickable
+public class TileEntityFusionBlock extends TileEntity implements IInventory, ITickable
 {
     private ItemStackHandler handler = new ItemStackHandler(4);
     private String customName;
@@ -45,6 +46,11 @@ public class TileEntityFusionBlock extends TileEntity implements ITickable
     {
         if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return (T) this.handler;
         return super.getCapability(capability, facing);
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 
     public boolean hasCustomName()
@@ -221,9 +227,59 @@ public class TileEntityFusionBlock extends TileEntity implements ITickable
         return getItemBurnTime(fuel) > 0;
     }
 
+    @Override
+    public int getSizeInventory() {
+        return 0;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public ItemStack getStackInSlot(int index) {
+        return null;
+    }
+
+    @Override
+    public ItemStack decrStackSize(int index, int count) {
+        return null;
+    }
+
+    @Override
+    public ItemStack removeStackFromSlot(int index) {
+        return null;
+    }
+
+    @Override
+    public void setInventorySlotContents(int index, ItemStack stack) {
+
+    }
+
+    @Override
+    public int getInventoryStackLimit() {
+        return 0;
+    }
+
     public boolean isUsableByPlayer(EntityPlayer player)
     {
         return this.world.getTileEntity(this.pos) != this ? false : player.getDistanceSq((double)this.pos.getX() + 0.5D, (double)this.pos.getY() + 0.5D, (double)this.pos.getZ() + 0.5D) <= 64.0D;
+    }
+
+    @Override
+    public void openInventory(EntityPlayer player) {
+
+    }
+
+    @Override
+    public void closeInventory(EntityPlayer player) {
+
+    }
+
+    @Override
+    public boolean isItemValidForSlot(int index, ItemStack stack) {
+        return false;
     }
 
     public int getField(int id)
@@ -259,5 +315,15 @@ public class TileEntityFusionBlock extends TileEntity implements ITickable
             case 3:
                 this.totalCookTime = value;
         }
+    }
+
+    @Override
+    public int getFieldCount() {
+        return 0;
+    }
+
+    @Override
+    public void clear() {
+
     }
 }

@@ -52,7 +52,6 @@ public class FusionBlock extends DefaultBlock {
         return new ItemStack(BlocksMod.fusion_block);
     }
 
-
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
@@ -88,14 +87,20 @@ public class FusionBlock extends DefaultBlock {
         IBlockState state = worldIn.getBlockState(pos);
         TileEntity tileentity = worldIn.getTileEntity(pos);
 
-        if(active) worldIn.setBlockState(pos, BlocksMod.fusion_block.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true), 3);
-        else worldIn.setBlockState(pos, BlocksMod.fusion_block.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false), 3);
+        //if(active) worldIn.setBlockState(pos, BlockInit.SINTERING_FURNACE.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true), 3);
+        //else worldIn.setBlockState(pos, BlockInit.SINTERING_FURNACE.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false), 3);
 
         if(tileentity != null)
         {
             tileentity.validate();
             worldIn.setTileEntity(pos, tileentity);
         }
+    }
+
+    @Override
+    public boolean hasTileEntity(IBlockState state)
+    {
+        return true;
     }
 
     @Override
