@@ -4,6 +4,7 @@ import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.global.DefaultBlock;
 import fr.tyrolium.tyromod.init.BlocksMod;
+import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
@@ -24,9 +25,10 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.Random;
 
-public class FusionBlock extends DefaultBlock implements ITileEntityProvider {
+public class FusionBlock extends DefaultBlock {
 
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
     public static final PropertyBool BURNING = PropertyBool.create("burning");
@@ -118,9 +120,9 @@ public class FusionBlock extends DefaultBlock implements ITileEntityProvider {
     public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
     {
         TileEntityFusionBlock tileentity = (TileEntityFusionBlock)worldIn.getTileEntity(pos);
-        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
-        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(1)));
-        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(2)));
+//        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
+//        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(1)));
+//        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(2)));
         super.breakBlock(worldIn, pos, state);
     }
 
