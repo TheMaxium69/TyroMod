@@ -9,7 +9,10 @@ public class RecipesMod {
 
     public static void init()
     {
+        /*FURNACE*/
         GameRegistry.addSmelting(new ItemStack(Blocks.STONE), new ItemStack(Items.DYE, 5, 3), 1.5F);
+
+//        GameRegistry.add
     }
 
 }
