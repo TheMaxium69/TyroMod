@@ -1,18 +1,20 @@
 package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
+import fr.tyrolium.tyromod.global.DefaultArmor;
 import fr.tyrolium.tyromod.items.Amethys;
 import fr.tyrolium.tyromod.items.Rhodonite;
 import fr.tyrolium.tyromod.items.Tyrolium;
 import fr.tyrolium.tyromod.items.Yellorite;
-import fr.tyrolium.tyromod.proxy.Client;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+
+import fr.tyrolium.tyromod.items.armor.TyroliumArmor;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +24,29 @@ public class ItemsMod {
 
     public static final List<Item> ITEMS = new ArrayList<Item>();
 
+    // Item
     public static Item tyrolium = new Tyrolium("tyrolium");
     public static Item rhodonite = new Rhodonite("rhodonite");
     public static Item amethys = new Amethys("amethys");
     public static Item yellorite = new Yellorite("yellorite");
+
+    //Armour Materials
+    public static final ArmorMaterial TYROLIUM_MATERIAL = EnumHelper.addArmorMaterial("tyrolium_material", Global.MODID + ":tyrolium_material", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+
+    //Tool Materials
+    public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
+
+    //Armour
+    public static final Item tyrolium_helmet = new TyroliumArmor("tyrolium_helmet", TYROLIUM_MATERIAL, EntityEquipmentSlot.HEAD);
+    public static final Item tyrolium_chestplate = new TyroliumArmor("tyrolium_chestplate", TYROLIUM_MATERIAL, EntityEquipmentSlot.CHEST);
+    public static final Item tyrolium_leggings = new TyroliumArmor("tyrolium_leggings", TYROLIUM_MATERIAL, EntityEquipmentSlot.LEGS);
+    public static final Item tyrolium_boots = new TyroliumArmor("tyrolium_boots", TYROLIUM_MATERIAL, EntityEquipmentSlot.FEET);
+
+    //Tools
+//    public static final Item tyrolium_sword = new ToolSwordBase("tyrolium_sword", TYROLIUM_TOOL);
+//    public static final Item tyrolium_pickaxe = new ToolPickaxeBase("tyrolium_pickaxe", TYROLIUM_TOOL);
+//    public static final Item tyrolium_axe = new ToolAxeBase("tyrolium_axe", TYROLIUM_TOOL);
+//    public static final Item tyrolium_shovel = new ToolShovelBase("tyrolium_shovel", TYROLIUM_TOOL);
+//    public static final Item tyrolium_hoe = new ToolHoeBase("tyrolium_hoe", TYROLIUM_TOOL);
 
 }
