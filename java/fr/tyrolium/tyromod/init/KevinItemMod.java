@@ -12,28 +12,23 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod.EventBusSubscriber(modid = Global.MODID)
-public class ItemsMod {
-
-    public static Item tyrolium;
-    public static Item rhodonite;
+public class KevinItemMod {
 
     public static void init()
     {
-        tyrolium = new Tyrolium("tyrolium");
-        rhodonite = new Rhodonite("rhodonite");
+
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event)
     {
-        event.getRegistry().registerAll(tyrolium, rhodonite);
+        event.getRegistry().registerAll();
     }
 
     @SubscribeEvent
     public static void registerRenders(ModelRegistryEvent event)
     {
-        registerRender(tyrolium);
-        registerRender(rhodonite);
+        registerRender();
     }
 
     private static void registerRender(Item item)
