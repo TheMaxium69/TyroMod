@@ -1,7 +1,9 @@
 package fr.tyrolium.tyromod;
 
+import fr.tyrolium.tyromod.init.AdamBlockMod;
 import fr.tyrolium.tyromod.init.BlocksMod;
 import fr.tyrolium.tyromod.init.ItemsMod;
+import fr.tyrolium.tyromod.init.KevinBlockMod;
 import fr.tyrolium.tyromod.proxy.Server;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -24,6 +26,8 @@ public class TyroMod
         logger = event.getModLog();
 
         BlocksMod.init();
+        KevinBlockMod.init();
+        AdamBlockMod.init();
         ItemsMod.init();
     }
 
@@ -34,7 +38,7 @@ public class TyroMod
 
         logger.info("TyroMod a bien charger");
         logger.info("TYROLIUM BLOCK >> {}", BlocksMod.tyrolium_block.getRegistryName());
-        
+
     }
 
     @EventHandler
