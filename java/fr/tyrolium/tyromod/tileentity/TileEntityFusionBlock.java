@@ -1,6 +1,7 @@
 package fr.tyrolium.tyromod.tileentity;
 
 import fr.tyrolium.tyromod.blocks.FusionBlock;
+import fr.tyrolium.tyromod.init.ItemsMod;
 import fr.tyrolium.tyromod.tileentity.recipes.FusionBlockRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -217,6 +218,8 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
             if (item == Items.LAVA_BUCKET) return 20000;
             if (item == Item.getItemFromBlock(Blocks.SAPLING)) return 100;
             if (item == Items.BLAZE_ROD) return 2400;
+
+            if (item == ItemsMod.yellorite) return 1600;
 
             return GameRegistry.getFuelValue(fuel);
         }
