@@ -1,16 +1,10 @@
 package fr.tyrolium.tyromod.items;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import fr.tyrolium.tyromod.global.DefaultItem;
 
-public class Amethys extends Item {
+public class Amethys extends DefaultItem {
     public Amethys(String name) {
 
-        setUnlocalizedName(name);
-        setRegistryName(name);
-
-        setCreativeTab(CreativeTabs.MISC);
-
-        setMaxStackSize(23);
+        super(name);
     }
 }

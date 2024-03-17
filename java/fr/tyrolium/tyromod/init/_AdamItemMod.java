@@ -1,10 +1,7 @@
 package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
-import fr.tyrolium.tyromod.items.Amethys;
-import fr.tyrolium.tyromod.items.Rhodonite;
-import fr.tyrolium.tyromod.items.Tyrolium;
-import net.minecraft.block.Block;
+import fr.tyrolium.tyromod.items.Yellorite;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -14,26 +11,25 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod.EventBusSubscriber(modid = Global.MODID)
-public class KevinItemMod {
+public class _AdamItemMod {
 
-    public static Item amethys;
-    public static Block amethys_ore;
+    public static Item yellorite;
 
     public static void init()
     {
-        amethys = new Amethys("amethys");
+        yellorite = new Yellorite("yellorite");
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event)
     {
-        event.getRegistry().registerAll(amethys);
+        event.getRegistry().registerAll(yellorite);
     }
 
     @SubscribeEvent
     public static void registerRenders(ModelRegistryEvent event)
     {
-        registerRender(amethys);
+        registerRender(yellorite);
     }
 
     private static void registerRender(Item item)

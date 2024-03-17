@@ -1,7 +1,9 @@
 package fr.tyrolium.tyromod;
 
+import fr.tyrolium.tyromod.creativetabs.TyroModTab;
 import fr.tyrolium.tyromod.init.*;
 import fr.tyrolium.tyromod.proxy.Server;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -17,17 +19,20 @@ public class TyroMod
     public static Server proxy;
     private static Logger logger;
 
+    public static final CreativeTabs TyroModTab = new TyroModTab();
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
 
         BlocksMod.init();
-        KevinBlockMod.init();
-        AdamBlockMod.init();
+        _KevinBlockMod.init();
+        _AdamBlockMod.init();
         ItemsMod.init();
-        KevinItemMod.init();
-        AdamItemMod.init();
+        _KevinItemMod.init();
+        _AdamItemMod.init();
+        RecipesMod.init();
     }
 
     @EventHandler

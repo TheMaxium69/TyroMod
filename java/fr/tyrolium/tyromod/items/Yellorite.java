@@ -1,15 +1,10 @@
 package fr.tyrolium.tyromod.items;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import fr.tyrolium.tyromod.global.DefaultItem;
 
-public class Yellorite extends Item
-{
+public class Yellorite extends DefaultItem {
     public Yellorite(String name)
     {
-        setUnlocalizedName(name);
-        setRegistryName(name);
-
-        setCreativeTab(CreativeTabs.MISC);
+        super(name);
     }
 }

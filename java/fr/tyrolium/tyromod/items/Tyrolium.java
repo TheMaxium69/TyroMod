@@ -1,12 +1,10 @@
 package fr.tyrolium.tyromod.items;
 
-import net.minecraft.item.Item;
+import fr.tyrolium.tyromod.global.DefaultItem;
 
-public class Tyrolium extends Item
-{
+public class Tyrolium extends DefaultItem {
     public Tyrolium(String name)
     {
-        setUnlocalizedName(name);
-        setRegistryName(name);
+        super(name);
     }
 }

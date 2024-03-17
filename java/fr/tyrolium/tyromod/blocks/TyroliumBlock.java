@@ -1,13 +1,10 @@
 package fr.tyrolium.tyromod.blocks;
 
-import net.minecraft.block.Block;
+import fr.tyrolium.tyromod.global.DefaultBlock;
 import net.minecraft.block.material.Material;
 
-public class TyroliumBlock extends Block {
-
-    public TyroliumBlock(String name, Material materialIn) {
-        super(materialIn);
-        setUnlocalizedName(name);
-        setRegistryName(name);
+public class TyroliumBlock extends DefaultBlock {
+    public TyroliumBlock(String name,Material materialIn) {
+        super(name, materialIn);
     }
 }

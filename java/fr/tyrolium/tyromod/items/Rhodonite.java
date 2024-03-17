@@ -1,18 +1,11 @@
 package fr.tyrolium.tyromod.items;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import fr.tyrolium.tyromod.global.DefaultItem;
 
-public class Rhodonite extends Item {
+public class Rhodonite extends DefaultItem {
     public Rhodonite(String name) {
 
-        setUnlocalizedName(name);
-        setRegistryName(name);
-
-        setCreativeTab(CreativeTabs.MISC);
-
-        setMaxStackSize(23);
-
+        super(name);
 
     }
 }
