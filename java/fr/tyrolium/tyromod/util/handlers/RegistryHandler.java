@@ -1,8 +1,10 @@
 package fr.tyrolium.tyromod.util.handlers;
 
+import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.init.BlocksMod;
 import fr.tyrolium.tyromod.init.ItemsMod;
+import fr.tyrolium.tyromod.init.RecipesMod;
 import fr.tyrolium.tyromod.proxy.Client;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -32,6 +34,7 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event)
     {
+
         for(Item item : ItemsMod.ITEMS)
         {
             if(item instanceof IHasModel)
@@ -56,6 +59,8 @@ public class RegistryHandler {
 
     public static void initRegistries(FMLInitializationEvent event)
     {
+
+        RecipesMod.init();
 
     }
 

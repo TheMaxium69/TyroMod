@@ -30,14 +30,6 @@ public class TyroMod
     public void preInit(FMLPreInitializationEvent event){
         logger = event.getModLog();
 
-//        BlocksMod.init();
-//        _KevinBlockMod.init();
-//        _AdamBlockMod.init();
-//        ItemsMod.init();
-//        _KevinItemMod.init();
-//        _AdamItemMod.init();
-//        RecipesMod.init();
-
         RegistryHandler.preInitRegistries(event);
     }
 
