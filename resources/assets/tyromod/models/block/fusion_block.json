@@ -1,0 +1,12 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "particle": "tyromod:blocks/fusion_block_side",
+        "up": "tyromod:blocks/fusion_block_side",
+        "down": "tyromod:blocks/fusion_block_side",
+        "north": "tyromod:blocks/fusion_block_front_off",
+        "east": "tyromod:blocks/fusion_block_side",
+        "south": "tyromod:blocks/fusion_block_side",
+        "west": "tyromod:blocks/fusion_block_side"
+    }
+}

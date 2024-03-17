@@ -9,5 +9,7 @@ public class Global {
     public static final String CLIENT_PROXY = "fr.tyrolium.tyromod.proxy.Client";
     public static final String SERVER_PROXY = "fr.tyrolium.tyromod.proxy.Server";
 
+    public static final int GUI_FUSION_BLOCK = 0;
+
 
 }
