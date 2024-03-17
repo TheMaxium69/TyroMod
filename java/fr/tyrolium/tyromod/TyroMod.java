@@ -1,9 +1,6 @@
 package fr.tyrolium.tyromod;
 
-import fr.tyrolium.tyromod.init.AdamBlockMod;
-import fr.tyrolium.tyromod.init.BlocksMod;
-import fr.tyrolium.tyromod.init.ItemsMod;
-import fr.tyrolium.tyromod.init.KevinBlockMod;
+import fr.tyrolium.tyromod.init.*;
 import fr.tyrolium.tyromod.proxy.Server;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -29,6 +26,8 @@ public class TyroMod
         KevinBlockMod.init();
         AdamBlockMod.init();
         ItemsMod.init();
+        KevinItemMod.init();
+        AdamItemMod.init();
     }
 
     @EventHandler
