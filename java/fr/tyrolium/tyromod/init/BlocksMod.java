@@ -21,18 +21,18 @@ public class BlocksMod {
 
     /* GENERATION */
     public static BlockGenerateClass[] BlockList = {
-            new BlockGenerateClass("tyrolium_ore", false),
-            new BlockGenerateClass("tyrolium_block", false),
-            new BlockGenerateClass("rhodonite_ore", false),
-            new BlockGenerateClass("rhodonite_block", false),
-            new BlockGenerateClass("amethys_ore", false),
-            new BlockGenerateClass("amethys_block", false),
-            new BlockGenerateClass("yellorite_ore", false),
-            new BlockGenerateClass("yellorite_block", false),
-            new BlockGenerateClass("adamentium_ore", false),
-            new BlockGenerateClass("adamentium_block", false),
-            new BlockGenerateClass("argonite_ore", false),
-            new BlockGenerateClass("argonite_block", false)
+            new BlockGenerateClass("tyrolium", "ore", false),
+            new BlockGenerateClass("tyrolium", "block", false),
+            new BlockGenerateClass("rhodonite", "ore", false),
+            new BlockGenerateClass("rhodonite", "block", false),
+            new BlockGenerateClass("amethys", "ore", false),
+            new BlockGenerateClass("amethys", "block", false),
+            new BlockGenerateClass("yellorite", "ore", false),
+            new BlockGenerateClass("yellorite", "block", false),
+            new BlockGenerateClass("adamentium", "ore", false),
+            new BlockGenerateClass("adamentium", "block", false),
+            new BlockGenerateClass("argonite", "ore", false),
+            new BlockGenerateClass("argonite", "block", false)
     };
 
 
@@ -45,12 +45,10 @@ public class BlocksMod {
 
         for (int i = 0; i < BlockList.length; i++) {
 
-            if (BlockList[i].getName().contains("_ore")) {
-                blocks[i] = new DefaultBlock(BlockList[i].getName(), Material.ROCK);
-            } else if (BlockList[i].getName().contains("_block")) {
-                blocks[i] = new DefaultBlock(BlockList[i].getName(), Material.IRON);
+            if (BlockList[i].getType() == "classic") {
+                blocks[i] = new DefaultBlock(BlockList[i].getName(), BlockList[i].getMaterial());
             } else {
-                blocks[i] = new DefaultBlock(BlockList[i].getName(), Material.AIR);
+                blocks[i] = new DefaultBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial());
             }
 
         }

@@ -3,9 +3,7 @@ package fr.tyrolium.tyromod.init;
 import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.generate.BlockGenerateClass;
 import fr.tyrolium.tyromod.generate.ItemGenerateClass;
-import fr.tyrolium.tyromod.global.DefaultBlock;
-import fr.tyrolium.tyromod.global.DefaultItem;
-import fr.tyrolium.tyromod.global.DefaultSword;
+import fr.tyrolium.tyromod.global.*;
 import fr.tyrolium.tyromod.items.Amethys;
 import fr.tyrolium.tyromod.items.Rhodonite;
 import fr.tyrolium.tyromod.items.Tyrolium;
@@ -57,26 +55,93 @@ public class ItemsMod {
 
 
     /* GENERATION */
-//    public static ItemGenerateClass[] ItemList = {
-//            new ItemGenerateClass("rhodonite", "sword", false),
-//            new ItemGenerateClass("rhodonite", "pickaxe", false),
-//    };
-//
-//
-//    public static DefaultItem[] items;
-//
-//    static {
-//
-//        items = new DefaultItem[ItemList.length];
-//
-//        for (int i = 0; i < ItemList.length; i++) {
-//
-//            items[i] = new DefaultItem(ItemList[i].getName());
-//
-//        }
-//
-//    }
-//
+    public static ItemGenerateClass[] ItemList = {
+            new ItemGenerateClass("rhodonite", "sword", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("rhodonite", "pickaxe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("rhodonite", "axe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("rhodonite", "shovel", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("rhodonite", "hoe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("rhodonite", "helmet", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("rhodonite", "chestplate", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("rhodonite", "leggings", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("rhodonite", "boots", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("adamentium", "classic", false),
+            new ItemGenerateClass("argonite", "classic", false),
+    };
+
+
+    public static DefaultItem[] items;
+    public static DefaultSword[] swords;
+    public static DefaultPickaxe[] pickaxes;
+    public static DefaultAxe[] axes;
+    public static DefaultShovel[] shovels;
+    public static DefaultHoe[] hoes;
+    public static DefaultArmor[] armors;
+
+    static {
+
+        items = new DefaultItem[ItemList.length];
+        swords = new DefaultSword[ItemList.length];
+        pickaxes = new DefaultPickaxe[ItemList.length];
+        axes = new DefaultAxe[ItemList.length];
+        shovels = new DefaultShovel[ItemList.length];
+        hoes = new DefaultHoe[ItemList.length];
+        armors = new DefaultArmor[ItemList.length];
+
+        for (int i = 0; i < ItemList.length; i++) {
+
+
+            /* className NoCustom */
+            if (!ItemList[i].getClassName()) {
+
+
+                if (ItemList[i].getType() == "classic") {
+
+                    items[i] = new DefaultItem(ItemList[i].getName());
+
+                } else if (ItemList[i].getType() == "sword"){
+
+                    swords[i] = new DefaultSword(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial());
+
+                } else if (ItemList[i].getType() == "pickaxe"){
+
+                    pickaxes[i] = new DefaultPickaxe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial());
+
+                } else if (ItemList[i].getType() == "axe"){
+
+                    axes[i] = new DefaultAxe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial());
+
+                } else if (ItemList[i].getType() == "shovel"){
+
+                    shovels[i] = new DefaultShovel(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial());
+
+                } else if (ItemList[i].getType() == "hoe"){
+
+                    hoes[i] = new DefaultHoe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial());
+
+                } else if (ItemList[i].isArmor()){
+
+                    armors[i] = new DefaultArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot());
+
+                } else {
+
+                    items[i] = new DefaultItem(ItemList[i].getName() + ItemList[i].getTypeName());
+
+                }
+
+            } else {
+            /* custom className*/
+
+                // a faire
+
+            }
+
+
+
+        }
+
+    }
+
 
 
 
