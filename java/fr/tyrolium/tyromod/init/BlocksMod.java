@@ -2,6 +2,7 @@ package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.blocks.FusionBlock;
+import fr.tyrolium.tyromod.generate.BlockGenerateClass;
 import fr.tyrolium.tyromod.global.DefaultBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -15,38 +16,45 @@ public class BlocksMod {
 
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
-//    public static Block tyrolium_block = new TyroliumBlock("tyrolium_block", Material.IRON);
-//    public static Block tyrolium_ore = new TyroliumOre("tyrolium_ore", Material.ROCK);
-//    public static Block rhodonite_block = new RhodoniteBlock("rhodonite_block", Material.IRON);
-//    public static Block rhodonite_ore = new RhodoniteOre("rhodonite_ore", Material.ROCK);
-//    public static Block amethys_block = new AmethysBlock("amethys_block", Material.IRON);
-//    public static Block amethys_ore = new AmethysOre("amethys_ore", Material.ROCK);
-//    public static Block yellorite_block = new YelloriteBlock("yellorite_block", Material.IRON);
-//    public static Block yellorite_ore = new YelloriteOre("yellorite_ore", Material.IRON);
+    /* MANUEL */
+    public static Block fusion_block = new FusionBlock("fusion_block", Material.ANVIL);
 
-    public static MineraiClass[] MineraiList = {
-            new MineraiClass("tyrolium", false),
-            new MineraiClass("rhodonite", false),
-            new MineraiClass("amethys", false),
-            new MineraiClass("yellorite", false),
-            new MineraiClass("adamentium", false),
-            new MineraiClass("argonite", false)
+    /* GENERATION */
+    public static BlockGenerateClass[] BlockList = {
+            new BlockGenerateClass("tyrolium_ore", false),
+            new BlockGenerateClass("tyrolium_block", false),
+            new BlockGenerateClass("rhodonite_ore", false),
+            new BlockGenerateClass("rhodonite_block", false),
+            new BlockGenerateClass("amethys_ore", false),
+            new BlockGenerateClass("amethys_block", false),
+            new BlockGenerateClass("yellorite_ore", false),
+            new BlockGenerateClass("yellorite_block", false),
+            new BlockGenerateClass("adamentium_ore", false),
+            new BlockGenerateClass("adamentium_block", false),
+            new BlockGenerateClass("argonite_ore", false),
+            new BlockGenerateClass("argonite_block", false)
     };
+
+
 
     public static DefaultBlock[] blocks;
 
     static {
-        blocks = new DefaultBlock[MineraiList.length];
 
-        for (int i = 0; i < MineraiList.length; i++) {
-            blocks[i] = new DefaultBlock(MineraiList[i].getName() + "_ore", Material.ROCK);
-            blocks[i] = new DefaultBlock(MineraiList[i].getName()+ "_block", Material.IRON);
+        blocks = new DefaultBlock[BlockList.length];
+
+        for (int i = 0; i < BlockList.length; i++) {
+
+            if (BlockList[i].getName().contains("_ore")) {
+                blocks[i] = new DefaultBlock(BlockList[i].getName(), Material.ROCK);
+            } else if (BlockList[i].getName().contains("_block")) {
+                blocks[i] = new DefaultBlock(BlockList[i].getName(), Material.IRON);
+            } else {
+                blocks[i] = new DefaultBlock(BlockList[i].getName(), Material.AIR);
+            }
+
         }
+
     }
-
-
-
-    public static Block fusion_block = new FusionBlock("fusion_block", Material.ANVIL);
-
 
 }

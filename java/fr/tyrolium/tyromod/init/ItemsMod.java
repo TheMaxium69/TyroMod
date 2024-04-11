@@ -1,6 +1,10 @@
 package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
+import fr.tyrolium.tyromod.generate.BlockGenerateClass;
+import fr.tyrolium.tyromod.generate.ItemGenerateClass;
+import fr.tyrolium.tyromod.global.DefaultBlock;
+import fr.tyrolium.tyromod.global.DefaultItem;
 import fr.tyrolium.tyromod.global.DefaultSword;
 import fr.tyrolium.tyromod.items.Amethys;
 import fr.tyrolium.tyromod.items.Rhodonite;
@@ -9,6 +13,7 @@ import fr.tyrolium.tyromod.items.Yellorite;
 
 import fr.tyrolium.tyromod.items.armor.TyroliumArmor;
 import fr.tyrolium.tyromod.items.tool.*;
+import net.minecraft.block.material.Material;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -49,5 +54,30 @@ public class ItemsMod {
     public static final Item tyrolium_axe = new TyroliumAxe("tyrolium_axe", TYROLIUM_TOOL);
     public static final Item tyrolium_shovel = new TyroliumShovel("tyrolium_shovel", TYROLIUM_TOOL);
     public static final Item tyrolium_hoe = new TyroliumHoe("tyrolium_hoe", TYROLIUM_TOOL);
+
+
+    /* GENERATION */
+//    public static ItemGenerateClass[] ItemList = {
+//            new ItemGenerateClass("rhodonite", "sword", false),
+//            new ItemGenerateClass("rhodonite", "pickaxe", false),
+//    };
+//
+//
+//    public static DefaultItem[] items;
+//
+//    static {
+//
+//        items = new DefaultItem[ItemList.length];
+//
+//        for (int i = 0; i < ItemList.length; i++) {
+//
+//            items[i] = new DefaultItem(ItemList[i].getName());
+//
+//        }
+//
+//    }
+//
+
+
 
 }

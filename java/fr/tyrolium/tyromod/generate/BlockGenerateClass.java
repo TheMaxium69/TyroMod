@@ -1,10 +1,10 @@
-package fr.tyrolium.tyromod.init;
+package fr.tyrolium.tyromod.generate;
 
-public class MineraiClass {
+public class BlockGenerateClass {
     private String name;
     private Boolean className;
 
-    public MineraiClass(String name, Boolean className) {
+    public BlockGenerateClass(String name, Boolean className) {
         this.name = name;
         this.className = className;
     }
