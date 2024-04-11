@@ -47,7 +47,7 @@ public class ItemsMod {
     public static final Item tyrolium_boots = new TyroliumArmor("tyrolium_boots", TYROLIUM_ARMOR, EntityEquipmentSlot.FEET);
 
     //Tools
-    public static final Item tyrolium_sword = new TyroliumSword("tyrolium_sword", TYROLIUM_TOOL);
+//    public static final Item tyrolium_sword = new TyroliumSword("tyrolium_sword", TYROLIUM_TOOL);
     public static final Item tyrolium_pickaxe = new TyroliumPickaxe("tyrolium_pickaxe", TYROLIUM_TOOL);
     public static final Item tyrolium_axe = new TyroliumAxe("tyrolium_axe", TYROLIUM_TOOL);
     public static final Item tyrolium_shovel = new TyroliumShovel("tyrolium_shovel", TYROLIUM_TOOL);
@@ -56,6 +56,7 @@ public class ItemsMod {
 
     /* GENERATION */
     public static ItemGenerateClass[] ItemList = {
+            new ItemGenerateClass("tyrolium", "sword", false, TYROLIUM_TOOL),
             new ItemGenerateClass("rhodonite", "sword", false, TYROLIUM_TOOL),
             new ItemGenerateClass("rhodonite", "pickaxe", false, TYROLIUM_TOOL),
             new ItemGenerateClass("rhodonite", "axe", false, TYROLIUM_TOOL),
@@ -94,7 +95,6 @@ public class ItemsMod {
             /* className NoCustom */
             if (!ItemList[i].getClassName()) {
 
-
                 if (ItemList[i].getType() == "classic") {
 
                     items[i] = new DefaultItem(ItemList[i].getName());
@@ -132,7 +132,31 @@ public class ItemsMod {
             } else {
             /* custom className*/
 
-                // a faire
+                /*TYROLIUM*/
+                if (ItemList[i].getName() == "tyrolium") {
+
+
+                    if (ItemList[i].getType() == "classic") {
+
+                    } else if (ItemList[i].getType() == "sword"){
+                        final Item tyrolium_sword = new TyroliumSword(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial());
+                    } else if (ItemList[i].getType() == "pickaxe"){
+
+                    } else if (ItemList[i].getType() == "axe"){
+
+                    } else if (ItemList[i].getType() == "shovel"){
+
+                    } else if (ItemList[i].getType() == "hoe"){
+
+                    } else if (ItemList[i].isArmor()){
+
+                    } else {
+
+                    }
+
+
+
+                }
 
             }
 
