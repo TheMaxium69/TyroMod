@@ -19,6 +19,7 @@ public class ItemGenerateClass {
         this.name = name;
         this.type = type;
         this.className = className;
+        this.isArmor = false;
     }
 
     /*TOOL ITEM*/
@@ -27,6 +28,7 @@ public class ItemGenerateClass {
         this.type = type;
         this.className = className;
         this.toolMaterial = ToolMaterial;
+        this.isArmor = false;
     }
 
     /*ARMOR ITEM*/
@@ -82,12 +84,12 @@ public class ItemGenerateClass {
 
     }
 
-    public Boolean isArmor() {
+    public String isArmor() {
 
         if (this.isArmor) {
-            return true;
+            return "true";
         } else {
-            return false;
+            return "false";
         }
 
     }
