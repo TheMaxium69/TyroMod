@@ -318,17 +318,17 @@ public class ItemsMod {
             new ItemGenerateClass("volcanium", "leggings", false, TYROLIUM_ARMOR),
             new ItemGenerateClass("volcanium", "boots", false, TYROLIUM_ARMOR),
 
-            /*ADAMENTIUM*/
-            new ItemGenerateClass("adamentium", "ingot", false),
-            new ItemGenerateClass("adamentium", "sword", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("adamentium", "pickaxe", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("adamentium", "axe", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("adamentium", "shovel", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("adamentium", "hoe", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("adamentium", "helmet", false, TYROLIUM_ARMOR),
-            new ItemGenerateClass("adamentium", "chestplate", false, TYROLIUM_ARMOR),
-            new ItemGenerateClass("adamentium", "leggings", false, TYROLIUM_ARMOR),
-            new ItemGenerateClass("adamentium", "boots", false, TYROLIUM_ARMOR),
+            /*ADAMANTIUM*/
+            new ItemGenerateClass("adamantium", "ingot", false),
+            new ItemGenerateClass("adamantium", "sword", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamantium", "pickaxe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamantium", "axe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamantium", "shovel", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamantium", "hoe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamantium", "helmet", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("adamantium", "chestplate", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("adamantium", "leggings", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("adamantium", "boots", false, TYROLIUM_ARMOR),
 
             /*ARGONITE*/
             new ItemGenerateClass("argonite", "ingot", false),

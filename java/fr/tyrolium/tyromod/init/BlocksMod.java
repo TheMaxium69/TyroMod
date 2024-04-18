@@ -91,9 +91,9 @@ public class BlocksMod {
             new BlockGenerateClass("volcanium", "cave", false),
             new BlockGenerateClass("fake_lava", "classic", false),
 
-            /*ADAMENTIUM*/
-            new BlockGenerateClass("adamentium", "ore", false),
-            new BlockGenerateClass("adamentium", "block", false),
+            /*ADAMANTIUM*/
+            new BlockGenerateClass("adamantium", "ore", false),
+            new BlockGenerateClass("adamantium", "block", false),
 
             /*ARGONITE*/
             new BlockGenerateClass("argonite", "block", false)

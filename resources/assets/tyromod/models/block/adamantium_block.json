@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "tyromod:blocks/adamentium_block"
+    "all": "tyromod:blocks/adamantium_block"
   }
 }
