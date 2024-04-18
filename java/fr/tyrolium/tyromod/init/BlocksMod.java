@@ -65,7 +65,7 @@ public class BlocksMod {
             new BlockGenerateClass("fake_bedrock", "classic", false),
 
             /*OBSIDIAN RED*/
-            new BlockGenerateClass("obsidian_red", "block", false),
+            new BlockGenerateClass("obsidian_renforced", "classic", false),
 
             /*PURIFIED GOLD*/
             new BlockGenerateClass("purified_gold", "block", false),

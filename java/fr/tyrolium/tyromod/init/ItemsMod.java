@@ -229,17 +229,17 @@ public class ItemsMod {
             new ItemGenerateClass("obsidian_red", "boots", false, TYROLIUM_ARMOR),
 
             /*PURIFIED GOLD*/
-            new ItemGenerateClass("prufied_gold", "ingot", false),
-            new ItemGenerateClass("prufied_gold", "nugget", false),
-            new ItemGenerateClass("prufied_gold", "sword", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("prufied_gold", "pickaxe", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("prufied_gold", "axe", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("prufied_gold", "shovel", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("prufied_gold", "hoe", false, TYROLIUM_TOOL),
-            new ItemGenerateClass("prufied_gold", "helmet", false, TYROLIUM_ARMOR),
-            new ItemGenerateClass("prufied_gold", "chestplate", false, TYROLIUM_ARMOR),
-            new ItemGenerateClass("prufied_gold", "leggings", false, TYROLIUM_ARMOR),
-            new ItemGenerateClass("prufied_gold", "boots", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("purified_gold", "ingot", false),
+            new ItemGenerateClass("purified_gold", "nugget", false),
+            new ItemGenerateClass("purified_gold", "sword", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("purified_gold", "pickaxe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("purified_gold", "axe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("purified_gold", "shovel", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("purified_gold", "hoe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("purified_gold", "helmet", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("purified_gold", "chestplate", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("purified_gold", "leggings", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("purified_gold", "boots", false, TYROLIUM_ARMOR),
 
             /*REDSTONE*/
             new ItemGenerateClass("redstone", "ingot", false),
