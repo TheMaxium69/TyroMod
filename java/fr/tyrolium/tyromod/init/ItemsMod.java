@@ -319,10 +319,28 @@ public class ItemsMod {
             new ItemGenerateClass("volcanium", "boots", false, TYROLIUM_ARMOR),
 
             /*ADAMENTIUM*/
-            new ItemGenerateClass("adamentium", "classic", false),
+            new ItemGenerateClass("adamentium", "ingot", false),
+            new ItemGenerateClass("adamentium", "sword", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamentium", "pickaxe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamentium", "axe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamentium", "shovel", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamentium", "hoe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("adamentium", "helmet", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("adamentium", "chestplate", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("adamentium", "leggings", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("adamentium", "boots", false, TYROLIUM_ARMOR),
 
             /*ARGONITE*/
-            new ItemGenerateClass("argonite", "classic", false),
+            new ItemGenerateClass("argonite", "ingot", false),
+            new ItemGenerateClass("argonite", "sword", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("argonite", "pickaxe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("argonite", "axe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("argonite", "shovel", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("argonite", "hoe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("argonite", "helmet", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("argonite", "chestplate", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("argonite", "leggings", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("argonite", "boots", false, TYROLIUM_ARMOR),
     };
 
 
