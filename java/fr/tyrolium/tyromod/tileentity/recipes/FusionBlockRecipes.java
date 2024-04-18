@@ -23,7 +23,7 @@ public class FusionBlockRecipes
 	
 	private FusionBlockRecipes()
 	{
-		addFusionRecipe(new ItemStack(ItemsMod.amethys), new ItemStack(ItemsMod.yellorite), new ItemStack(ItemsMod.tyrolium), 5.0F);
+		addFusionRecipe(new ItemStack(ItemsMod.items[21]), new ItemStack(ItemsMod.items[31]), new ItemStack(ItemsMod.items[0]), 5.0F);
 	}
 
 	

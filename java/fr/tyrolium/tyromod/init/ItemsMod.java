@@ -28,35 +28,29 @@ public class ItemsMod {
 
     public static final List<Item> ITEMS = new ArrayList<Item>();
 
-    // Item
-    public static Item tyrolium = new Tyrolium("tyrolium");
-    public static Item rhodonite = new Rhodonite("rhodonite");
-    public static Item amethys = new Amethys("amethys");
-    public static Item yellorite = new Yellorite("yellorite");
-
     //Armour Materials
     public static final ArmorMaterial TYROLIUM_ARMOR = EnumHelper.addArmorMaterial("tyrolium_armor", Global.MODID + ":tyrolium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
 
-    //Armour
-    public static final Item tyrolium_helmet = new TyroliumArmor("tyrolium_helmet", TYROLIUM_ARMOR, EntityEquipmentSlot.HEAD);
-    public static final Item tyrolium_chestplate = new TyroliumArmor("tyrolium_chestplate", TYROLIUM_ARMOR, EntityEquipmentSlot.CHEST);
-    public static final Item tyrolium_leggings = new TyroliumArmor("tyrolium_leggings", TYROLIUM_ARMOR, EntityEquipmentSlot.LEGS);
-    public static final Item tyrolium_boots = new TyroliumArmor("tyrolium_boots", TYROLIUM_ARMOR, EntityEquipmentSlot.FEET);
-
-    //Tools
-//    public static final Item tyrolium_sword = new TyroliumSword("tyrolium_sword", TYROLIUM_TOOL);
-    public static final Item tyrolium_pickaxe = new TyroliumPickaxe("tyrolium_pickaxe", TYROLIUM_TOOL);
-    public static final Item tyrolium_axe = new TyroliumAxe("tyrolium_axe", TYROLIUM_TOOL);
-    public static final Item tyrolium_shovel = new TyroliumShovel("tyrolium_shovel", TYROLIUM_TOOL);
-    public static final Item tyrolium_hoe = new TyroliumHoe("tyrolium_hoe", TYROLIUM_TOOL);
-
 
     /* GENERATION */
     public static ItemGenerateClass[] ItemList = {
+            /*TYROLIUM */
+            new ItemGenerateClass("tyrolium", "classic", false),
             new ItemGenerateClass("tyrolium", "sword", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("tyrolium", "pickaxe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("tyrolium", "axe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("tyrolium", "shovel", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("tyrolium", "hoe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("tyrolium", "helmet", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("tyrolium", "chestplate", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("tyrolium", "leggings", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("tyrolium", "boots", false, TYROLIUM_ARMOR),
+
+            /*RHODONITE*/
+            new ItemGenerateClass("rhodonite", "classic", false),
             new ItemGenerateClass("rhodonite", "sword", false, TYROLIUM_TOOL),
             new ItemGenerateClass("rhodonite", "pickaxe", false, TYROLIUM_TOOL),
             new ItemGenerateClass("rhodonite", "axe", false, TYROLIUM_TOOL),
@@ -66,7 +60,36 @@ public class ItemsMod {
             new ItemGenerateClass("rhodonite", "chestplate", false, TYROLIUM_ARMOR),
             new ItemGenerateClass("rhodonite", "leggings", false, TYROLIUM_ARMOR),
             new ItemGenerateClass("rhodonite", "boots", false, TYROLIUM_ARMOR),
+
+            /*AMETHYS*/
+            new ItemGenerateClass("amethys", "classic", false),
+            new ItemGenerateClass("amethys", "sword", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("amethys", "pickaxe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("amethys", "axe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("amethys", "shovel", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("amethys", "hoe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("amethys", "helmet", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("amethys", "chestplate", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("amethys", "leggings", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("amethys", "boots", false, TYROLIUM_ARMOR),
+
+            /*YELLORITE*/
+            new ItemGenerateClass("yellorite", "classic", false),
+            new ItemGenerateClass("yellorite", "sword", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("yellorite", "pickaxe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("yellorite", "axe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("yellorite", "shovel", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("yellorite", "hoe", false, TYROLIUM_TOOL),
+            new ItemGenerateClass("yellorite", "helmet", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("yellorite", "chestplate", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("yellorite", "leggings", false, TYROLIUM_ARMOR),
+            new ItemGenerateClass("yellorite", "boots", false, TYROLIUM_ARMOR),
+
+            /*ADAMENTIUM*/
             new ItemGenerateClass("adamentium", "classic", false),
+
+
+            /*ARGONITE*/
             new ItemGenerateClass("argonite", "classic", false),
     };
 

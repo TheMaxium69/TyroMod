@@ -219,7 +219,7 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
             if (item == Item.getItemFromBlock(Blocks.SAPLING)) return 100;
             if (item == Items.BLAZE_ROD) return 2400;
 
-            if (item == ItemsMod.yellorite) return 1600;
+            if (item == ItemsMod.items[0]) return 1600;
 
             return GameRegistry.getFuelValue(fuel);
         }
