@@ -96,7 +96,6 @@ public class BlocksMod {
             new BlockGenerateClass("adamentium", "block", false),
 
             /*ARGONITE*/
-            new BlockGenerateClass("argonite", "ore", false),
             new BlockGenerateClass("argonite", "block", false)
     };
 
