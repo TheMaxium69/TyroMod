@@ -10,14 +10,14 @@ public class BlockGenerateClass {
     private String modVersion;
     private String oreTier;
 
-    public BlockGenerateClass(String name, String type,  Boolean className, String version) {
+    public BlockGenerateClass(String name, String type, Boolean className, String version) {
         this.name = name;
         this.type = type;
         this.className = className;
         this.isOre = false;
         this.modVersion = version;
     }
-    public BlockGenerateClass(String name, String type,  Boolean className, String version, String tier) {
+    public BlockGenerateClass(String name, String type, Boolean className, String version, String tier) {
         this.name = name;
         this.type = type;
         this.className = className;

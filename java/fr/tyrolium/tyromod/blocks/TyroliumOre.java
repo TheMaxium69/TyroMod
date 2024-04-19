@@ -5,7 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 public class TyroliumOre extends DefaultBlock {
-    public TyroliumOre(String name,Material materialIn) {
-        super(name, materialIn);
+    public TyroliumOre(String name,Material materialIn, String version, String tier, String id) {
+        super(name, materialIn, version, tier, id);
     }
 }
