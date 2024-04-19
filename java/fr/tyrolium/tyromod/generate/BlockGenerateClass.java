@@ -6,11 +6,24 @@ public class BlockGenerateClass {
     private String name;
     private Boolean className;
     private String type;
+    private Boolean isOre;
+    private String modVersion;
+    private String oreTier;
 
-    public BlockGenerateClass(String name, String type,  Boolean className) {
+    public BlockGenerateClass(String name, String type,  Boolean className, String version) {
         this.name = name;
         this.type = type;
         this.className = className;
+        this.isOre = false;
+        this.modVersion = version;
+    }
+    public BlockGenerateClass(String name, String type,  Boolean className, String version, String tier) {
+        this.name = name;
+        this.type = type;
+        this.className = className;
+        this.isOre = true;
+        this.modVersion = version;
+        this.oreTier = tier;
     }
 
     public String getName() {
@@ -45,6 +58,28 @@ public class BlockGenerateClass {
             return Material.ROCK;
         } else {
             return Material.AIR;
+        }
+
+    }
+
+    public String getModVersion() {
+
+        return this.modVersion;
+
+    }
+
+    public String getOreTier() {
+
+        return this.oreTier;
+
+    }
+
+    public String isOre() {
+
+        if (this.isOre) {
+            return "true";
+        } else {
+            return "false";
         }
 
     }

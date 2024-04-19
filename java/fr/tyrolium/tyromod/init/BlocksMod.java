@@ -88,7 +88,7 @@ public class BlocksMod {
             /*VOLCANIUM*/
             new BlockGenerateClass("volcanium", "ore", false),
             new BlockGenerateClass("volcanium", "block", false),
-            new BlockGenerateClass("volcanium", "cave", false),
+            new BlockGenerateClass("volcanium_cave", "classic", false),
             new BlockGenerateClass("fake_lava", "classic", false),
 
             /*ADAMANTIUM*/
@@ -109,14 +109,25 @@ public class BlocksMod {
 
         for (int i = 0; i < BlockList.length; i++) {
 
-            System.out.println("New Block : " + BlockList[i].getName() + BlockList[i].getTypeName() + " (" + i + ") ");
+//            System.out.println("New Block : " + BlockList[i].getName() + BlockList[i].getTypeName() + " (" + i + ") ");
 
-            if (BlockList[i].getType() == "classic") {
-                blocks[i] = new DefaultBlock(BlockList[i].getName(), BlockList[i].getMaterial());
+            /* className NoCustom */
+            if (!BlockList[i].getClassName()) {
+
+                if (BlockList[i].getType() == "classic") {
+                    if (BlockList[i].isOre() == "true") {
+                        blocks[i] = new DefaultBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "b" + i);
+                    } else {
+                        blocks[i] = new DefaultBlock(BlockList[i].getName(), BlockList[i].getMaterial());
+                    }
+                } else {
+                    blocks[i] = new DefaultBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial());
+                }
+
             } else {
-                blocks[i] = new DefaultBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial());
-            }
+            /* custom className*/
 
+            }
         }
 
     }
