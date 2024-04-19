@@ -4,14 +4,14 @@ import fr.tyrolium.tyromod.init.ItemsMod;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class TyroModTab extends CreativeTabs {
-    public TyroModTab()
+public class TyroModTabV1 extends CreativeTabs {
+    public TyroModTabV1()
     {
-        super("TyroMod");
+        super("TyroMod Ore V1");
     }
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(ItemsMod.items[0]);
+        return new ItemStack(ItemsMod.getItemCustomClass("c2"));
     }
 }

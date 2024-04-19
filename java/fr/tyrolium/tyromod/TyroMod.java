@@ -1,7 +1,8 @@
 package fr.tyrolium.tyromod;
 
-import fr.tyrolium.tyromod.creativetabs.TyroModTab;
-import fr.tyrolium.tyromod.init.*;
+import fr.tyrolium.tyromod.creativetabs.TyroModTabUtils;
+import fr.tyrolium.tyromod.creativetabs.TyroModTabV1;
+import fr.tyrolium.tyromod.creativetabs.TyroModTabV3;
 import fr.tyrolium.tyromod.proxy.CommonProxy;
 import fr.tyrolium.tyromod.util.handlers.RegistryHandler;
 import net.minecraft.creativetab.CreativeTabs;
@@ -24,7 +25,10 @@ public class TyroMod
     public static CommonProxy proxy;
     private static Logger logger;
 
-    public static final CreativeTabs TyroModTab = new TyroModTab();
+    public static final CreativeTabs TyroModTabV1 = new TyroModTabV1();
+    public static final CreativeTabs TyroModTab = TyroModTabV1; /* OLD NAME */
+    public static final CreativeTabs TyroModTabV3 = new TyroModTabV3();
+    public static final CreativeTabs TyroModTabUtils = new TyroModTabUtils();
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){

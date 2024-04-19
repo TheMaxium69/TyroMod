@@ -9,8 +9,8 @@ import net.minecraft.item.ItemArmor;
 
 public class TyroliumArmor extends DefaultArmor implements IHasModel {
 
-    public TyroliumArmor(String name, ArmorMaterial materialIn, EntityEquipmentSlot equipmentSlotIn){
-        super(name, materialIn, equipmentSlotIn);
+    public TyroliumArmor(String name, ArmorMaterial materialIn, EntityEquipmentSlot equipmentSlotIn, String version, String tier, String id){
+        super(name, materialIn, equipmentSlotIn, version, tier, id);
     }
 
 

@@ -109,6 +109,8 @@ public class BlocksMod {
 
         for (int i = 0; i < BlockList.length; i++) {
 
+            System.out.println("New Block : " + BlockList[i].getName() + BlockList[i].getTypeName() + " (" + i + ") ");
+
             if (BlockList[i].getType() == "classic") {
                 blocks[i] = new DefaultBlock(BlockList[i].getName(), BlockList[i].getMaterial());
             } else {
