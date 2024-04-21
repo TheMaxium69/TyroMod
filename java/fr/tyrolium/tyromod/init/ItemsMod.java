@@ -67,6 +67,16 @@ public class ItemsMod {
     public static final ArmorMaterial THYRIUM_ARMOR = EnumHelper.addArmorMaterial("thyrium_armor", Global.MODID + ":thyrium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial SUNSTONE_ARMOR = EnumHelper.addArmorMaterial("sunstone_armor", Global.MODID + ":sunstone", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial LAPIS_LAZULI_ARMOR = EnumHelper.addArmorMaterial("lapis_lazuli_armor", Global.MODID + ":lapis_lazuli", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial NETHERITE_ARMOR = EnumHelper.addArmorMaterial("netherite_armor", Global.MODID + ":netherite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial COAL_ARMOR = EnumHelper.addArmorMaterial("coal_armor", Global.MODID + ":coal", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial OAK_ARMOR = EnumHelper.addArmorMaterial("oak_armor", Global.MODID + ":oak", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial SPRUCE_ARMOR = EnumHelper.addArmorMaterial("spruce_armor", Global.MODID + ":spruce", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial BIRCH_ARMOR = EnumHelper.addArmorMaterial("birch_armor", Global.MODID + ":birch", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial JUNGLE_ARMOR = EnumHelper.addArmorMaterial("jungle_armor", Global.MODID + ":jungle", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial ACACIA_ARMOR = EnumHelper.addArmorMaterial("acacia_armor", Global.MODID + ":acacia", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial DARKOAK_ARMOR = EnumHelper.addArmorMaterial("darkoak_armor", Global.MODID + ":darkoak", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial STONE_ARMOR = EnumHelper.addArmorMaterial("stone_armor", Global.MODID + ":stone", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial CLAY_ARMOR = EnumHelper.addArmorMaterial("clay_armor", Global.MODID + ":clay", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -111,6 +121,9 @@ public class ItemsMod {
     public static final ToolMaterial THYRIUM_TOOL = EnumHelper.addToolMaterial("thyrium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial SUNSTONE_TOOL = EnumHelper.addToolMaterial("sunstone_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial LAPIS_LAZULI_TOOL = EnumHelper.addToolMaterial("lapis_lazuli_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial NETHERITE_TOOL = EnumHelper.addToolMaterial("netherite_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial COAL_TOOL = EnumHelper.addToolMaterial("coal_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial CLAY_TOOL = EnumHelper.addToolMaterial("clay_tool", 2, 400, 3.0f, 5.0f, 20);
 
 
     /* GENERATION */
@@ -627,17 +640,85 @@ public class ItemsMod {
             new ItemGenerateClass("sunstone", "boots", false, SUNSTONE_ARMOR, "3", "0"),
 
             /*LAPIS LAZULI*/
-            new ItemGenerateClass("lapis_lazuli", "ingot", false, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "stick", false, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "sword", false, LAPIS_LAZULI_TOOL, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "pickaxe", false, LAPIS_LAZULI_TOOL, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "axe", false, LAPIS_LAZULI_TOOL, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "shovel", false, LAPIS_LAZULI_TOOL, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "hoe", false, LAPIS_LAZULI_TOOL, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "helmet", false, LAPIS_LAZULI_ARMOR, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "chestplate", false, LAPIS_LAZULI_ARMOR, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "leggings", false, LAPIS_LAZULI_ARMOR, "3", "0"),
-            new ItemGenerateClass("lapis_lazuli", "boots", false, LAPIS_LAZULI_ARMOR, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "ingot", false, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "stick", false, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "sword", false, LAPIS_LAZULI_TOOL, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "pickaxe", false, LAPIS_LAZULI_TOOL, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "axe", false, LAPIS_LAZULI_TOOL, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "shovel", false, LAPIS_LAZULI_TOOL, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "hoe", false, LAPIS_LAZULI_TOOL, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "helmet", false, LAPIS_LAZULI_ARMOR, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "chestplate", false, LAPIS_LAZULI_ARMOR, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "leggings", false, LAPIS_LAZULI_ARMOR, "v3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "boots", false, LAPIS_LAZULI_ARMOR, "v3", "0"),
+
+            /*NETHERITE*/
+            new ItemGenerateClass("netherite", "ingot", false, "v3", "3"),
+            new ItemGenerateClass("netherite", "scrap", false, "v3", "3"),
+            new ItemGenerateClass("netherite", "sword", false, NETHERITE_TOOL, "v3", "3"),
+            new ItemGenerateClass("netherite", "pickaxe", false, NETHERITE_TOOL, "v3", "3"),
+            new ItemGenerateClass("netherite", "axe", false, NETHERITE_TOOL, "v3", "3"),
+            new ItemGenerateClass("netherite", "shovel", false, NETHERITE_TOOL, "v3", "3"),
+            new ItemGenerateClass("netherite", "hoe", false, NETHERITE_TOOL, "v3", "3"),
+            new ItemGenerateClass("netherite", "helmet", false, NETHERITE_ARMOR, "v3", "3"),
+            new ItemGenerateClass("netherite", "chestplate", false, NETHERITE_ARMOR, "v3", "3"),
+            new ItemGenerateClass("netherite", "leggings", false, NETHERITE_ARMOR, "v3", "3"),
+            new ItemGenerateClass("netherite", "boots", false, NETHERITE_ARMOR, "v3", "3"),
+
+            /*COAL*/
+            new ItemGenerateClass("coal", "ingot", false, "v3", "0"),
+            new ItemGenerateClass("coal", "sword", false, COAL_TOOL, "v3", "0"),
+            new ItemGenerateClass("coal", "pickaxe", false, COAL_TOOL, "v3", "0"),
+            new ItemGenerateClass("coal", "axe", false, COAL_TOOL, "v3", "0"),
+            new ItemGenerateClass("coal", "shovel", false, COAL_TOOL, "v3", "0"),
+            new ItemGenerateClass("coal", "hoe", false, COAL_TOOL, "v3", "0"),
+            new ItemGenerateClass("coal", "helmet", false, COAL_ARMOR, "v3", "0"),
+            new ItemGenerateClass("coal", "chestplate", false, COAL_ARMOR, "v3", "0"),
+            new ItemGenerateClass("coal", "leggings", false, COAL_ARMOR, "v3", "0"),
+            new ItemGenerateClass("coal", "boots", false, COAL_ARMOR, "v3", "0"),
+
+            /*WOOD*/
+            new ItemGenerateClass("oak", "helmet", false, OAK_ARMOR, "v1", "0"),
+            new ItemGenerateClass("oak", "chestplate", false, OAK_ARMOR, "v1", "0"),
+            new ItemGenerateClass("oak", "leggings", false, OAK_ARMOR, "v1", "0"),
+            new ItemGenerateClass("oak", "boots", false, OAK_ARMOR, "v1", "0"),
+            new ItemGenerateClass("spruce", "helmet", false, SPRUCE_ARMOR, "v3", "0"),
+            new ItemGenerateClass("spruce", "chestplate", false, SPRUCE_ARMOR, "v3", "0"),
+            new ItemGenerateClass("spruce", "leggings", false, SPRUCE_ARMOR, "v3", "0"),
+            new ItemGenerateClass("spruce", "boots", false, SPRUCE_ARMOR, "v3", "0"),
+            new ItemGenerateClass("birch", "helmet", false, BIRCH_ARMOR, "v3", "0"),
+            new ItemGenerateClass("birch", "chestplate", false, BIRCH_ARMOR, "v3", "0"),
+            new ItemGenerateClass("birch", "leggings", false, BIRCH_ARMOR, "v3", "0"),
+            new ItemGenerateClass("birch", "boots", false, BIRCH_ARMOR, "v3", "0"),
+            new ItemGenerateClass("jungle", "helmet", false, JUNGLE_ARMOR, "v3", "0"),
+            new ItemGenerateClass("jungle", "chestplate", false, JUNGLE_ARMOR, "v3", "0"),
+            new ItemGenerateClass("jungle", "leggings", false, JUNGLE_ARMOR, "v3", "0"),
+            new ItemGenerateClass("jungle", "boots", false, JUNGLE_ARMOR, "v3", "0"),
+            new ItemGenerateClass("acacia", "helmet", false, ACACIA_ARMOR, "v3", "0"),
+            new ItemGenerateClass("acacia", "chestplate", false, ACACIA_ARMOR, "v3", "0"),
+            new ItemGenerateClass("acacia", "leggings", false, ACACIA_ARMOR, "v3", "0"),
+            new ItemGenerateClass("acacia", "boots", false, ACACIA_ARMOR, "v3", "0"),
+            new ItemGenerateClass("darkoak", "helmet", false, DARKOAK_ARMOR, "v3", "0"),
+            new ItemGenerateClass("darkoak", "chestplate", false, DARKOAK_ARMOR, "v3", "0"),
+            new ItemGenerateClass("darkoak", "leggings", false, DARKOAK_ARMOR, "v3", "0"),
+            new ItemGenerateClass("darkoak", "boots", false, DARKOAK_ARMOR, "v3", "0"),
+
+            /*STONE*/
+            new ItemGenerateClass("stone", "helmet", false, STONE_ARMOR, "v1", "0"),
+            new ItemGenerateClass("stone", "chestplate", false, STONE_ARMOR, "v1", "0"),
+            new ItemGenerateClass("stone", "leggings", false, STONE_ARMOR, "v1", "0"),
+            new ItemGenerateClass("stone", "boots", false, STONE_ARMOR, "v1", "0"),
+
+            /*CLAY*/
+            new ItemGenerateClass("clay", "sword", false, CLAY_TOOL, "v3", "0"),
+            new ItemGenerateClass("clay", "pickaxe", false, CLAY_TOOL, "v3", "0"),
+            new ItemGenerateClass("clay", "axe", false, CLAY_TOOL, "v3", "0"),
+            new ItemGenerateClass("clay", "shovel", false, CLAY_TOOL, "v3", "0"),
+            new ItemGenerateClass("clay", "hoe", false, CLAY_TOOL, "v3", "0"),
+            new ItemGenerateClass("clay", "helmet", false, CLAY_ARMOR, "v3", "0"),
+            new ItemGenerateClass("clay", "chestplate", false, CLAY_ARMOR, "v3", "0"),
+            new ItemGenerateClass("clay", "leggings", false, CLAY_ARMOR, "v3", "0"),
+            new ItemGenerateClass("clay", "boots", false, CLAY_ARMOR, "v3", "0"),
     };
 
     public static DefaultItem[] items;

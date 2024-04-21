@@ -160,6 +160,10 @@ public class BlocksMod {
 
             /*THYRIUM*/
             new BlockGenerateClass("sunstone", "block", false, "3", "0"),
+
+            /*NETHERITE*/
+            new BlockGenerateClass("netherite", "ore", false, "3", "3"),
+            new BlockGenerateClass("netherite", "block", false, "3", "3"),
     };
 
 

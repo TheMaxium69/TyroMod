@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "tyromod:blocks/lapis_lazuli_block"
+    "all": "tyromod:blocks/netherite_block"
   }
 }

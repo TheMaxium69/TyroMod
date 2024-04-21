@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "tyromod:blocks/netherite_ore_top",
+    "side": "tyromod:blocks/netherite_ore"
+  }
+}
