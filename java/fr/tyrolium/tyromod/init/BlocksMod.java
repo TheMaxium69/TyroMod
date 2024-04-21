@@ -5,6 +5,7 @@ import fr.tyrolium.tyromod.blocks.FusionBlock;
 import fr.tyrolium.tyromod.blocks.TyroliumBlock;
 import fr.tyrolium.tyromod.blocks.TyroliumOre;
 import fr.tyrolium.tyromod.generate.BlockGenerateClass;
+import fr.tyrolium.tyromod.generate.ItemGenerateClass;
 import fr.tyrolium.tyromod.global.DefaultBlock;
 import fr.tyrolium.tyromod.items.Tyrolium;
 import net.minecraft.block.Block;
@@ -115,6 +116,47 @@ public class BlocksMod {
 
             /*BRONZE*/
             new BlockGenerateClass("bronze", "block", false, "3", "2"),
+
+            /*DRACONITE*/
+            new BlockGenerateClass("draconite", "block", false, "3", "3"),
+
+            /*DRACONIUM*/
+            new BlockGenerateClass("draconium", "block", false, "3", "IUM"),
+
+            /*DRAGONSTONE*/
+            new BlockGenerateClass("dragonstone", "block", false, "3", "3"),
+
+            /*FYRITE*/
+            new BlockGenerateClass("fyrite", "block", false, "3", "3"),
+
+            /*ILLUMENITE*/
+            new BlockGenerateClass("illumenite", "block", false, "3", "3"),
+
+            /*JADE*/
+            new BlockGenerateClass("jade", "ore", false, "3", "3"),
+            new BlockGenerateClass("jade", "block", false, "3", "3"),
+
+            /*MALACHITE*/
+            new BlockGenerateClass("malachite", "block", false, "3", "3"),
+
+            /*MYTHRIL*/
+            new BlockGenerateClass("mythril", "ore", false, "3", "2"),
+            new BlockGenerateClass("mythril", "block", false, "3", "2"),
+
+            /*ONIX*/
+            new BlockGenerateClass("onix", "block", false, "3", "3"),
+
+            /*SINISITE*/
+            new BlockGenerateClass("sinisite", "block", false, "3", "3"),
+
+            /*STEEL*/
+            new BlockGenerateClass("steel", "block", false, "3", "2"),
+
+            /*STEELIUM*/
+            new BlockGenerateClass("steelium", "block", false, "3", "IUM"),
+
+            /*THYRIUM*/
+            new BlockGenerateClass("thyrium", "block", false, "3", "IUM"),
     };
 
 
@@ -128,7 +170,7 @@ public class BlocksMod {
 
         for (int i = 0; i < BlockList.length; i++) {
 
-            System.out.println("New Block : " + BlockList[i].getName() + BlockList[i].getTypeName() + " (" + i + ") ");
+//            System.out.println("New Block : " + BlockList[i].getName() + BlockList[i].getTypeName() + " (" + i + ") ");
 
             /* className NoCustom */
             if (!BlockList[i].getClassName()) {
