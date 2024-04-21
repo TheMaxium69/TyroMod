@@ -1,0 +1,35 @@
+		=============================
+		#	LIST OF CHANGES TO DO   #
+		=============================
+
+[V] = can be changed in "PT - Divers" tab
+[X] = can't be changed with the program
+
+Old Minecraft version : 1.14
+New Minecraft version : 1.12
+
+[X] Changed shape "particles.png"
+[X] Changed the texture of the block "water_flow.png"
+[X] Changed the texture of the block "water_still.png"
+[X] Changed the texture of the block "water_overlay.png"
+[X] Changed shape of the entity "donkey.png"
+[X] Changed shape of the entity "horse_black.png"
+[X] Changed shape of the entity "horse_brown.png"
+[X] Changed shape of the entity "horse_chestnut.png"
+[X] Changed shape of the entity "horse_creamy.png"
+[X] Changed shape of the entity "horse_darkbrown.png"
+[X] Changed shape of the entity "horse_gray.png"
+[X] Changed shape of the entity "horse_skeleton.png"
+[X] Changed shape of the entity "horse_white.png"
+[X] Changed shape of the entity "horse_zombie.png"
+[X] Changed shape of the entity "mule.png"
+[X] Changed the texture shape of the horse armor "horse_armor_diamond.png"
+[X] Changed the texture shape of the horse armor "horse_armor_gold.png"
+[X] Changed the texture shape of the horse armor "horse_armor_iron.png"
+[X] Changed the texture location of the "sign.png" entity
+[X] Changed location and functioning of villagers' textures
+[X] Changed location and functioning of village zombie textures
+[X] Splitted "paintings_kristoffer_zetterstrand.png" texture
+[X] Splitted "particles.png" texture
+[X] Splitted effects texture
+[X] Modified of the villagers interface
