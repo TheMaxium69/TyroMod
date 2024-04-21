@@ -2,14 +2,20 @@ package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.blocks.FusionBlock;
+import fr.tyrolium.tyromod.blocks.TyroliumBlock;
+import fr.tyrolium.tyromod.blocks.TyroliumOre;
 import fr.tyrolium.tyromod.generate.BlockGenerateClass;
 import fr.tyrolium.tyromod.global.DefaultBlock;
+import fr.tyrolium.tyromod.items.Tyrolium;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Mod.EventBusSubscriber(modid = Global.MODID)
 public class BlocksMod {
@@ -17,14 +23,14 @@ public class BlocksMod {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
     /* MANUEL */
-    public static Block fusion_block = new FusionBlock("fusion_block", Material.ANVIL);
+//    public static Block fusion_block = new FusionBlock("fusion_block", Material.ANVIL);
 
     /* GENERATION */
     public static BlockGenerateClass[] BlockList = {
 
             /*TYROLIUM*/
-            new BlockGenerateClass("tyrolium", "ore", false, "1", "IUM"),
-            new BlockGenerateClass("tyrolium", "block", false, "1", "IUM"),
+            new BlockGenerateClass("tyrolium", "ore", true, "1", "IUM"),
+            new BlockGenerateClass("tyrolium", "block", true, "1", "IUM"),
             new BlockGenerateClass("tyrolium", "command_block", false, "1"),
 
             /*RHODONITE*/
@@ -60,8 +66,8 @@ public class BlocksMod {
             new BlockGenerateClass("guardian", "block", false, "1", "3"),
 
             /*MERCURE*/
-            new BlockGenerateClass("mercure", "ore", false, "1"),
-            new BlockGenerateClass("mercure", "block", false, "1"),
+            new BlockGenerateClass("mercure", "ore", false, "1", "0"),
+            new BlockGenerateClass("mercure", "block", false, "1", "0"),
             new BlockGenerateClass("fake_bedrock", "classic", false, "1"),
 
             /*OBSIDIAN RED*/
@@ -91,17 +97,30 @@ public class BlocksMod {
             new BlockGenerateClass("volcanium_cave", "classic", false, "1"),
             new BlockGenerateClass("fake_lava", "classic", false, "1"),
 
+            /*OTHER*/
+            new BlockGenerateClass("fusion_block", "classic", true, "3"),
+
             /*ADAMANTIUM*/
             new BlockGenerateClass("adamantium", "ore", false, "3", "IUM"),
             new BlockGenerateClass("adamantium", "block", false, "3", "IUM"),
 
             /*ARGONITE*/
-            new BlockGenerateClass("argonite", "block", false, "3", "3")
+            new BlockGenerateClass("argonite", "block", false, "3", "3"),
+
+            /*ASHSTONE*/
+            new BlockGenerateClass("ashstone", "block", false, "3", "3"),
+
+            /*AURORE*/
+            new BlockGenerateClass("aurore", "block", false, "3", "2"),
+
+            /*BRONZE*/
+            new BlockGenerateClass("bronze", "block", false, "3", "2"),
     };
 
 
 
     public static DefaultBlock[] blocks;
+    private static final Map<String, Block> blockCustomClass = new HashMap<>();
 
     static {
 
@@ -109,7 +128,7 @@ public class BlocksMod {
 
         for (int i = 0; i < BlockList.length; i++) {
 
-//            System.out.println("New Block : " + BlockList[i].getName() + BlockList[i].getTypeName() + " (" + i + ") ");
+            System.out.println("New Block : " + BlockList[i].getName() + BlockList[i].getTypeName() + " (" + i + ") ");
 
             /* className NoCustom */
             if (!BlockList[i].getClassName()) {
@@ -133,9 +152,23 @@ public class BlocksMod {
             } else {
             /* custom className*/
 
+                if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "block") {
+                    blockCustomClass.put("bc"+i, new TyroliumBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "bc" + i));
+                }
+                if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "ore") {
+                    blockCustomClass.put("bc"+i, new TyroliumOre(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "bc" + i));
+                }
+                if (BlockList[i].getName() == "fusion_block" && BlockList[i].getType() == "classic") {
+                    blockCustomClass.put("bc"+i, new FusionBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                }
+
             }
         }
 
+    }
+
+    public static Block getBlockCustomClass(String nameBlock) {
+        return blockCustomClass.get(nameBlock);
     }
 
 }

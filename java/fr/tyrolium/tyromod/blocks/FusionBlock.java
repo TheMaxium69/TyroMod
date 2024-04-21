@@ -33,8 +33,8 @@ public class FusionBlock extends DefaultBlock {
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
     public static final PropertyBool BURNING = PropertyBool.create("burning");
 
-    public FusionBlock(String name, Material materialIn) {
-        super(name, materialIn, "3", "custom");
+    public FusionBlock(String name, Material materialIn, String version, String id) {
+        super(name, materialIn, version, id);
         setSoundType(SoundType.ANVIL);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(BURNING, false));
 
@@ -43,13 +43,13 @@ public class FusionBlock extends DefaultBlock {
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return Item.getItemFromBlock(BlocksMod.fusion_block);
+        return Item.getItemFromBlock(BlocksMod.getBlockCustomClass("bc33"));
     }
 
     @Override
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
-        return new ItemStack(BlocksMod.fusion_block);
+        return new ItemStack(BlocksMod.getBlockCustomClass("bc33"));
     }
 
     @Override

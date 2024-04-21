@@ -35,17 +35,17 @@ public class ItemsMod {
     public static ItemGenerateClass[] ItemList = {
 
             /*TYROLIUM */
-            new ItemGenerateClass("tyrolium", "classic", false, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "classic", true, "1", "IUM"),
             new ItemGenerateClass("tyrolium", "nugget", false, "1", "IUM"),
             new ItemGenerateClass("tyrolium", "sword", true, TYROLIUM_TOOL, "1", "IUM"),
-            new ItemGenerateClass("tyrolium", "pickaxe", false, TYROLIUM_TOOL, "1", "IUM"),
-            new ItemGenerateClass("tyrolium", "axe", false, TYROLIUM_TOOL, "1", "IUM"),
-            new ItemGenerateClass("tyrolium", "shovel", false, TYROLIUM_TOOL, "1", "IUM"),
-            new ItemGenerateClass("tyrolium", "hoe", false, TYROLIUM_TOOL, "1", "IUM"),
-            new ItemGenerateClass("tyrolium", "helmet", false, TYROLIUM_ARMOR, "1", "IUM"),
-            new ItemGenerateClass("tyrolium", "chestplate", false, TYROLIUM_ARMOR, "1", "IUM"),
-            new ItemGenerateClass("tyrolium", "leggings", false, TYROLIUM_ARMOR, "1", "IUM"),
-            new ItemGenerateClass("tyrolium", "boots", false, TYROLIUM_ARMOR, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "pickaxe", true, TYROLIUM_TOOL, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "axe", true, TYROLIUM_TOOL, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "shovel", true, TYROLIUM_TOOL, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "hoe", true, TYROLIUM_TOOL, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "helmet", true, TYROLIUM_ARMOR, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "chestplate", true, TYROLIUM_ARMOR, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "leggings", true, TYROLIUM_ARMOR, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "boots", true, TYROLIUM_ARMOR, "1", "IUM"),
 
             /*RHODONITE*/
             new ItemGenerateClass("rhodonite", "classic", false, "1", "3"),
@@ -337,8 +337,43 @@ public class ItemsMod {
             new ItemGenerateClass("argonite", "chestplate", false, TYROLIUM_ARMOR, "3", "3"),
             new ItemGenerateClass("argonite", "leggings", false, TYROLIUM_ARMOR, "3", "3"),
             new ItemGenerateClass("argonite", "boots", false, TYROLIUM_ARMOR, "3", "3"),
-    };
 
+            /*ASHSTONE*/
+            new ItemGenerateClass("ashstone", "gem", false, "3", "3"),
+            new ItemGenerateClass("ashstone", "sword", false, TYROLIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("ashstone", "pickaxe", false, TYROLIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("ashstone", "axe", false, TYROLIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("ashstone", "shovel", false, TYROLIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("ashstone", "hoe", false, TYROLIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("ashstone", "helmet", false, TYROLIUM_ARMOR, "3", "3"),
+            new ItemGenerateClass("ashstone", "chestplate", false, TYROLIUM_ARMOR, "3", "3"),
+            new ItemGenerateClass("ashstone", "leggings", false, TYROLIUM_ARMOR, "3", "3"),
+            new ItemGenerateClass("ashstone", "boots", false, TYROLIUM_ARMOR, "3", "3"),
+
+            /*AURORE*/
+            new ItemGenerateClass("aurore", "classic", false, "3", "2"),
+            new ItemGenerateClass("aurore", "sword", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("aurore", "pickaxe", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("aurore", "axe", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("aurore", "shovel", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("aurore", "hoe", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("aurore", "helmet", false, TYROLIUM_ARMOR, "3", "2"),
+            new ItemGenerateClass("aurore", "chestplate", false, TYROLIUM_ARMOR, "3", "2"),
+            new ItemGenerateClass("aurore", "leggings", false, TYROLIUM_ARMOR, "3", "2"),
+            new ItemGenerateClass("aurore", "boots", false, TYROLIUM_ARMOR, "3", "2"),
+
+            /*BRONZE*/
+            new ItemGenerateClass("bronze", "ingot", false, "3", "2"),
+            new ItemGenerateClass("bronze", "sword", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("bronze", "pickaxe", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("bronze", "axe", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("bronze", "shovel", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("bronze", "hoe", false, TYROLIUM_TOOL, "3", "2"),
+            new ItemGenerateClass("bronze", "helmet", false, TYROLIUM_ARMOR, "3", "2"),
+            new ItemGenerateClass("bronze", "chestplate", false, TYROLIUM_ARMOR, "3", "2"),
+            new ItemGenerateClass("bronze", "leggings", false, TYROLIUM_ARMOR, "3", "2"),
+            new ItemGenerateClass("bronze", "boots", false, TYROLIUM_ARMOR, "3", "2"),
+    };
 
     public static DefaultItem[] items;
     public static DefaultSword[] swords;
@@ -348,7 +383,6 @@ public class ItemsMod {
     public static DefaultHoe[] hoes;
     public static DefaultArmor[] armors;
     private static final Map<String, Item> itemCustomClass = new HashMap<>();
-
 
     static {
 
@@ -416,26 +450,21 @@ public class ItemsMod {
                 /*TYROLIUM*/
                 if (ItemList[i].getName() == "tyrolium") {
 
-
                     if (ItemList[i].getType() == "classic") {
-                        itemCustomClass.put("c"+i, new Tyrolium(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        itemCustomClass.put("c"+i, new Tyrolium(ItemList[i].getName(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
                     } else if (ItemList[i].getType() == "sword"){
                         itemCustomClass.put("c"+i, new TyroliumSword(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
                     } else if (ItemList[i].getType() == "pickaxe"){
-
+                        itemCustomClass.put("c"+i, new TyroliumPickaxe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
                     } else if (ItemList[i].getType() == "axe"){
-
+                        itemCustomClass.put("c"+i, new TyroliumAxe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
                     } else if (ItemList[i].getType() == "shovel"){
-
+                        itemCustomClass.put("c"+i, new TyroliumShovel(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
                     } else if (ItemList[i].getType() == "hoe"){
-
+                        itemCustomClass.put("c"+i, new TyroliumHoe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
                     } else if (ItemList[i].isArmor() == "true"){
                         itemCustomClass.put("c"+i, new TyroliumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
-                    } else {
-
                     }
-
-
 
                 }
 

@@ -13,6 +13,6 @@ public class TyroModTabUtils extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(BlocksMod.fusion_block);
+        return new ItemStack(BlocksMod.getBlockCustomClass("bc33"));
     }
 }
