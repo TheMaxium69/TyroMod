@@ -157,6 +157,9 @@ public class BlocksMod {
 
             /*THYRIUM*/
             new BlockGenerateClass("thyrium", "block", false, "3", "IUM"),
+
+            /*THYRIUM*/
+            new BlockGenerateClass("sunstone", "block", false, "3", "0"),
     };
 
 
