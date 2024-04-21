@@ -66,6 +66,7 @@ public class ItemsMod {
     public static final ArmorMaterial STEELIUM_ARMOR = EnumHelper.addArmorMaterial("steelium_armor", Global.MODID + ":steelium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial THYRIUM_ARMOR = EnumHelper.addArmorMaterial("thyrium_armor", Global.MODID + ":thyrium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial SUNSTONE_ARMOR = EnumHelper.addArmorMaterial("sunstone_armor", Global.MODID + ":sunstone", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial LAPIS_LAZULI_ARMOR = EnumHelper.addArmorMaterial("lapis_lazuli_armor", Global.MODID + ":lapis_lazuli", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -109,6 +110,7 @@ public class ItemsMod {
     public static final ToolMaterial STEELIUM_TOOL = EnumHelper.addToolMaterial("steelium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial THYRIUM_TOOL = EnumHelper.addToolMaterial("thyrium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial SUNSTONE_TOOL = EnumHelper.addToolMaterial("sunstone_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial LAPIS_LAZULI_TOOL = EnumHelper.addToolMaterial("lapis_lazuli_tool", 2, 400, 3.0f, 5.0f, 20);
 
 
     /* GENERATION */
@@ -623,6 +625,19 @@ public class ItemsMod {
             new ItemGenerateClass("sunstone", "chestplate", false, SUNSTONE_ARMOR, "3", "0"),
             new ItemGenerateClass("sunstone", "leggings", false, SUNSTONE_ARMOR, "3", "0"),
             new ItemGenerateClass("sunstone", "boots", false, SUNSTONE_ARMOR, "3", "0"),
+
+            /*LAPIS LAZULI*/
+            new ItemGenerateClass("lapis_lazuli", "ingot", false, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "stick", false, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "sword", false, LAPIS_LAZULI_TOOL, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "pickaxe", false, LAPIS_LAZULI_TOOL, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "axe", false, LAPIS_LAZULI_TOOL, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "shovel", false, LAPIS_LAZULI_TOOL, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "hoe", false, LAPIS_LAZULI_TOOL, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "helmet", false, LAPIS_LAZULI_ARMOR, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "chestplate", false, LAPIS_LAZULI_ARMOR, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "leggings", false, LAPIS_LAZULI_ARMOR, "3", "0"),
+            new ItemGenerateClass("lapis_lazuli", "boots", false, LAPIS_LAZULI_ARMOR, "3", "0"),
     };
 
     public static DefaultItem[] items;
