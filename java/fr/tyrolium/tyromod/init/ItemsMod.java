@@ -653,17 +653,17 @@ public class ItemsMod {
             new ItemGenerateClass("lapis_lazuli", "boots", false, LAPIS_LAZULI_ARMOR, "v3", "0"),
 
             /*NETHERITE*/
-            new ItemGenerateClass("netherite", "ingot", false, "v3", "3"),
-            new ItemGenerateClass("netherite", "scrap", false, "v3", "3"),
-            new ItemGenerateClass("netherite", "sword", false, NETHERITE_TOOL, "v3", "3"),
-            new ItemGenerateClass("netherite", "pickaxe", false, NETHERITE_TOOL, "v3", "3"),
-            new ItemGenerateClass("netherite", "axe", false, NETHERITE_TOOL, "v3", "3"),
-            new ItemGenerateClass("netherite", "shovel", false, NETHERITE_TOOL, "v3", "3"),
-            new ItemGenerateClass("netherite", "hoe", false, NETHERITE_TOOL, "v3", "3"),
-            new ItemGenerateClass("netherite", "helmet", false, NETHERITE_ARMOR, "v3", "3"),
-            new ItemGenerateClass("netherite", "chestplate", false, NETHERITE_ARMOR, "v3", "3"),
-            new ItemGenerateClass("netherite", "leggings", false, NETHERITE_ARMOR, "v3", "3"),
-            new ItemGenerateClass("netherite", "boots", false, NETHERITE_ARMOR, "v3", "3"),
+            new ItemGenerateClass("netherite", "ingot", false, "V", "3"),
+            new ItemGenerateClass("netherite", "scrap", false, "V", "3"),
+            new ItemGenerateClass("netherite", "sword", false, NETHERITE_TOOL, "V", "3"),
+            new ItemGenerateClass("netherite", "pickaxe", false, NETHERITE_TOOL, "V", "3"),
+            new ItemGenerateClass("netherite", "axe", false, NETHERITE_TOOL, "V", "3"),
+            new ItemGenerateClass("netherite", "shovel", false, NETHERITE_TOOL, "V", "3"),
+            new ItemGenerateClass("netherite", "hoe", false, NETHERITE_TOOL, "V", "3"),
+            new ItemGenerateClass("netherite", "helmet", false, NETHERITE_ARMOR, "V", "3"),
+            new ItemGenerateClass("netherite", "chestplate", false, NETHERITE_ARMOR, "V", "3"),
+            new ItemGenerateClass("netherite", "leggings", false, NETHERITE_ARMOR, "V", "3"),
+            new ItemGenerateClass("netherite", "boots", false, NETHERITE_ARMOR, "V", "3"),
 
             /*COAL*/
             new ItemGenerateClass("coal", "ingot", false, "v3", "0"),

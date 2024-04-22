@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -62,11 +63,10 @@ public class DefaultBlock extends Block implements IHasModel {
     @Override
     public void addInformation(ItemStack stack, World player, List<String> tooltip, ITooltipFlag advanced) {
 
-
         if (Minecraft.getMinecraft().gameSettings.advancedItemTooltips) {
 
             /*FUSION TOOLTIP*/
-            if (this.isOre && this.oreTier != "0") {
+            if (this.oreTier != "0") {
 
                 if (this.oreTier == "IUM"){
                     tooltip.add("\u00a77Fusion: \u00a79\u00a7lTier " + this.oreTier);
@@ -78,7 +78,6 @@ public class DefaultBlock extends Block implements IHasModel {
                     tooltip.add("\u00a77Fusion: \u00a75\u00a7lTier " + this.oreTier);
                 }
 
-
             }
 
             /*VERSION TOOLTIP*/
@@ -86,19 +85,21 @@ public class DefaultBlock extends Block implements IHasModel {
                 tooltip.add("\u00a77Version: \u00a7cTyroMod V1");
             } else if (this.modVersion == "13") {
                 tooltip.add("\u00a77Version: \u00a7cTyroMod V1 \u00a77- \u00a7aV3");
-            } else if (this.modVersion == "V1") {
+            } else if (this.modVersion == "V1" || this.modVersion == "v1") {
                 tooltip.add("\u00a77Version: \u00a7fVanilla \u00a77- \u00a7cTyroMod V1");
             } else if (this.modVersion == "3") {
                 tooltip.add("\u00a77Version: \u00a7aTyroMod V3");
-            } else if (this.modVersion == "V3") {
+            } else if (this.modVersion == "V3" || this.modVersion == "v3") {
                 tooltip.add("\u00a77Version: \u00a7fVanilla \u00a77- \u00a7aTyroMod V3");
+            } else {
+                tooltip.add("\u00a77Version: \u00a7fCreate By TyroMod");
             }
 
             /*ID TOOLTIP*/
             tooltip.add("\u00a78tyro-id:" + this.tyroId);
         }
 
-        if (!Minecraft.getMinecraft().gameSettings.advancedItemTooltips && this.isOre && this.oreTier != "0") {
+        if (!Minecraft.getMinecraft().gameSettings.advancedItemTooltips && this.oreTier != "0") {
 
             if (this.oreTier == "IUM"){
                 tooltip.add("\u00a77Fusion: \u00a79\u00a7lTier " + this.oreTier);
@@ -114,6 +115,7 @@ public class DefaultBlock extends Block implements IHasModel {
         super.addInformation(stack, player, tooltip, advanced);
     }
 
+
     public void chooseCreativeTab(String version, Boolean isOre) {
 
         if (!isOre) {
@@ -122,15 +124,15 @@ public class DefaultBlock extends Block implements IHasModel {
 
         } else {
 
-            if (version == "1" || version == "13" || version == "V1") {
+            if (version == "1" || version == "13" || version == "V1" || version == "v1") {
                 setCreativeTab(TyroMod.TyroModTabV1);
-            } else {
+            } else if (version == "3" || version == "V3" || version == "v3"){
                 setCreativeTab(TyroMod.TyroModTabV3);
+            } else {
+                setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
             }
 
         }
-
-
 
     }
 }

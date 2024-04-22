@@ -9,6 +9,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
@@ -76,12 +77,14 @@ public class DefaultAxe extends ItemTool implements IHasModel {
                 tooltip.add("\u00a77Version: \u00a7cTyroMod V1");
             } else if (this.modVersion == "13") {
                 tooltip.add("\u00a77Version: \u00a7cTyroMod V1 \u00a77- \u00a7aV3");
-            } else if (this.modVersion == "V1") {
+            } else if (this.modVersion == "V1" || this.modVersion == "v1") {
                 tooltip.add("\u00a77Version: \u00a7fVanilla \u00a77- \u00a7cTyroMod V1");
             } else if (this.modVersion == "3") {
                 tooltip.add("\u00a77Version: \u00a7aTyroMod V3");
-            } else if (this.modVersion == "V3") {
+            } else if (this.modVersion == "V3" || this.modVersion == "v3") {
                 tooltip.add("\u00a77Version: \u00a7fVanilla \u00a77- \u00a7aTyroMod V3");
+            } else {
+                tooltip.add("\u00a77Version: \u00a7fCreate By TyroMod");
             }
 
             /*ID TOOLTIP*/
@@ -113,10 +116,12 @@ public class DefaultAxe extends ItemTool implements IHasModel {
 
         } else {
 
-            if (version == "1" || version == "13" || version == "V1") {
+            if (version == "1" || version == "13" || version == "V1" || version == "v1") {
                 setCreativeTab(TyroMod.TyroModTabV1);
-            } else {
+            } else if (version == "3" || version == "V3" || version == "v3"){
                 setCreativeTab(TyroMod.TyroModTabV3);
+            } else {
+                setCreativeTab(CreativeTabs.TOOLS);
             }
 
         }

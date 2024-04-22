@@ -162,8 +162,8 @@ public class BlocksMod {
             new BlockGenerateClass("sunstone", "block", false, "3", "0"),
 
             /*NETHERITE*/
-            new BlockGenerateClass("netherite", "ore", false, "3", "3"),
-            new BlockGenerateClass("netherite", "block", false, "3", "3"),
+            new BlockGenerateClass("netherite", "ore", false, "V", "3"),
+            new BlockGenerateClass("netherite", "block", false, "V", "3"),
     };
 
 
