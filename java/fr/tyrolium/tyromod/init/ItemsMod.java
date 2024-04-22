@@ -77,6 +77,7 @@ public class ItemsMod {
     public static final ArmorMaterial DARKOAK_ARMOR = EnumHelper.addArmorMaterial("darkoak_armor", Global.MODID + ":darkoak", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial STONE_ARMOR = EnumHelper.addArmorMaterial("stone_armor", Global.MODID + ":stone", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial CLAY_ARMOR = EnumHelper.addArmorMaterial("clay_armor", Global.MODID + ":clay", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial VOLCANITE_ARMOR = EnumHelper.addArmorMaterial("volcanite_armor", Global.MODID + ":volcanite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -124,6 +125,7 @@ public class ItemsMod {
     public static final ToolMaterial NETHERITE_TOOL = EnumHelper.addToolMaterial("netherite_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial COAL_TOOL = EnumHelper.addToolMaterial("coal_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial CLAY_TOOL = EnumHelper.addToolMaterial("clay_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial VOLCANITE_TOOL = EnumHelper.addToolMaterial("volcanite_tool", 2, 400, 3.0f, 5.0f, 20);
 
 
     /* GENERATION */
@@ -719,6 +721,18 @@ public class ItemsMod {
             new ItemGenerateClass("clay", "chestplate", false, CLAY_ARMOR, "v3", "0"),
             new ItemGenerateClass("clay", "leggings", false, CLAY_ARMOR, "v3", "0"),
             new ItemGenerateClass("clay", "boots", false, CLAY_ARMOR, "v3", "0"),
+
+            /*VOLCANITE*/
+            new ItemGenerateClass("volcanite", "classic", false, "3", "2"),
+            new ItemGenerateClass("volcanite", "sword", false, VOLCANITE_TOOL, "3", "2"),
+            new ItemGenerateClass("volcanite", "pickaxe", false, VOLCANITE_TOOL, "3", "2"),
+            new ItemGenerateClass("volcanite", "axe", false, VOLCANITE_TOOL, "3", "2"),
+            new ItemGenerateClass("volcanite", "shovel", false, VOLCANITE_TOOL, "3", "2"),
+            new ItemGenerateClass("volcanite", "hoe", false, VOLCANITE_TOOL, "3", "2"),
+            new ItemGenerateClass("volcanite", "helmet", false, VOLCANITE_ARMOR, "3", "2"),
+            new ItemGenerateClass("volcanite", "chestplate", false, VOLCANITE_ARMOR, "3", "2"),
+            new ItemGenerateClass("volcanite", "leggings", false, VOLCANITE_ARMOR, "3", "2"),
+            new ItemGenerateClass("volcanite", "boots", false, VOLCANITE_ARMOR, "3", "2"),
     };
 
     public static DefaultItem[] items;

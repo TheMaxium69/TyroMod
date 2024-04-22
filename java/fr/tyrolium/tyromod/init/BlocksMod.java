@@ -93,7 +93,6 @@ public class BlocksMod {
             new BlockGenerateClass("titane", "block", false, "1", "2"),
 
             /*VOLCANIUM*/
-            new BlockGenerateClass("volcanium", "ore", false, "1", "IUM"),
             new BlockGenerateClass("volcanium", "block", false, "1", "IUM"),
             new BlockGenerateClass("volcanium_cave", "classic", false, "1"),
             new BlockGenerateClass("fake_lava", "classic", false, "1"),
@@ -164,6 +163,10 @@ public class BlocksMod {
             /*NETHERITE*/
             new BlockGenerateClass("netherite", "ore", false, "V", "3"),
             new BlockGenerateClass("netherite", "block", false, "V", "3"),
+
+            /*VOLCANITE*/
+            new BlockGenerateClass("volcanite", "ore", false, "3", "2"),
+            new BlockGenerateClass("volcanite", "block", false, "3", "2"),
     };
 
 
