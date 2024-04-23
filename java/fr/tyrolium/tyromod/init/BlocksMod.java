@@ -157,7 +157,7 @@ public class BlocksMod {
             /*THYRIUM*/
             new BlockGenerateClass("thyrium", "block", false, "3", "IUM"),
 
-            /*THYRIUM*/
+            /*SUNSTONE*/
             new BlockGenerateClass("sunstone", "block", false, "3", "0"),
 
             /*NETHERITE*/
@@ -167,6 +167,9 @@ public class BlocksMod {
             /*VOLCANITE*/
             new BlockGenerateClass("volcanite", "ore", false, "3", "2"),
             new BlockGenerateClass("volcanite", "block", false, "3", "2"),
+
+            /*TYROLITE*/
+            new BlockGenerateClass("tyrolite", "block", false, "3", "3"),
     };
 
 

@@ -78,6 +78,7 @@ public class ItemsMod {
     public static final ArmorMaterial STONE_ARMOR = EnumHelper.addArmorMaterial("stone_armor", Global.MODID + ":stone", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial CLAY_ARMOR = EnumHelper.addArmorMaterial("clay_armor", Global.MODID + ":clay", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial VOLCANITE_ARMOR = EnumHelper.addArmorMaterial("volcanite_armor", Global.MODID + ":volcanite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial TYROLITE_ARMOR = EnumHelper.addArmorMaterial("tyrolite_armor", Global.MODID + ":tyrolite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -126,6 +127,7 @@ public class ItemsMod {
     public static final ToolMaterial COAL_TOOL = EnumHelper.addToolMaterial("coal_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial CLAY_TOOL = EnumHelper.addToolMaterial("clay_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial VOLCANITE_TOOL = EnumHelper.addToolMaterial("volcanite_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial TYROLITE_TOOL = EnumHelper.addToolMaterial("tyrolite_tool", 2, 400, 3.0f, 5.0f, 20);
 
 
     /* GENERATION */
@@ -448,7 +450,7 @@ public class ItemsMod {
             new ItemGenerateClass("ashstone", "boots", false, ASHSTONE_ARMOR, "3", "3"),
 
             /*AURORE*/
-            new ItemGenerateClass("aurore", "classic", false, "3", "2"),
+            new ItemGenerateClass("aurore", "ingot", false, "3", "2"),
             new ItemGenerateClass("aurore", "sword", false, AURORE_TOOL, "3", "2"),
             new ItemGenerateClass("aurore", "pickaxe", false, AURORE_TOOL, "3", "2"),
             new ItemGenerateClass("aurore", "axe", false, AURORE_TOOL, "3", "2"),
@@ -618,7 +620,7 @@ public class ItemsMod {
             new ItemGenerateClass("steelium", "boots", false, STEELIUM_ARMOR, "3", "IUM"),
 
             /*THYRIUM*/
-            new ItemGenerateClass("thyrium", "ingot", false, "3", "IUM"),
+            new ItemGenerateClass("thyrium", "classic", false, "3", "IUM"),
             new ItemGenerateClass("thyrium", "sword", false, THYRIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("thyrium", "pickaxe", false, THYRIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("thyrium", "axe", false, THYRIUM_TOOL, "3", "IUM"),
@@ -733,6 +735,18 @@ public class ItemsMod {
             new ItemGenerateClass("volcanite", "chestplate", false, VOLCANITE_ARMOR, "3", "2"),
             new ItemGenerateClass("volcanite", "leggings", false, VOLCANITE_ARMOR, "3", "2"),
             new ItemGenerateClass("volcanite", "boots", false, VOLCANITE_ARMOR, "3", "2"),
+
+            /*TYROLITE*/
+            new ItemGenerateClass("tyrolite", "ingot", false, "3", "3"),
+            new ItemGenerateClass("tyrolite", "sword", false, TYROLITE_TOOL, "3", "3"),
+            new ItemGenerateClass("tyrolite", "pickaxe", false, TYROLITE_TOOL, "3", "3"),
+            new ItemGenerateClass("tyrolite", "axe", false, TYROLITE_TOOL, "3", "3"),
+            new ItemGenerateClass("tyrolite", "shovel", false, TYROLITE_TOOL, "3", "3"),
+            new ItemGenerateClass("tyrolite", "hoe", false, TYROLITE_TOOL, "3", "3"),
+            new ItemGenerateClass("tyrolite", "helmet", false, TYROLITE_ARMOR, "3", "3"),
+            new ItemGenerateClass("tyrolite", "chestplate", false, TYROLITE_ARMOR, "3", "3"),
+            new ItemGenerateClass("tyrolite", "leggings", false, TYROLITE_ARMOR, "3", "3"),
+            new ItemGenerateClass("tyrolite", "boots", false, TYROLITE_ARMOR, "3", "3"),
     };
 
     public static DefaultItem[] items;
