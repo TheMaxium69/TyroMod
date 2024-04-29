@@ -170,6 +170,9 @@ public class BlocksMod {
 
             /*TYROLITE*/
             new BlockGenerateClass("tyrolite", "block", false, "3", "3"),
+
+            /*RHODONIUM*/
+            new BlockGenerateClass("rhodonium", "block", false, "3", "IUM"),
     };
 
 

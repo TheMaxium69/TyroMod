@@ -79,6 +79,7 @@ public class ItemsMod {
     public static final ArmorMaterial CLAY_ARMOR = EnumHelper.addArmorMaterial("clay_armor", Global.MODID + ":clay", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial VOLCANITE_ARMOR = EnumHelper.addArmorMaterial("volcanite_armor", Global.MODID + ":volcanite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial TYROLITE_ARMOR = EnumHelper.addArmorMaterial("tyrolite_armor", Global.MODID + ":tyrolite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial RHODONIUM_ARMOR = EnumHelper.addArmorMaterial("rhodonium_armor", Global.MODID + ":rhodonium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -128,6 +129,7 @@ public class ItemsMod {
     public static final ToolMaterial CLAY_TOOL = EnumHelper.addToolMaterial("clay_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial VOLCANITE_TOOL = EnumHelper.addToolMaterial("volcanite_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial TYROLITE_TOOL = EnumHelper.addToolMaterial("tyrolite_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial RHODONIUM_TOOL = EnumHelper.addToolMaterial("rhodonium_tool", 2, 400, 3.0f, 5.0f, 20);
 
 
     /* GENERATION */
@@ -747,6 +749,19 @@ public class ItemsMod {
             new ItemGenerateClass("tyrolite", "chestplate", false, TYROLITE_ARMOR, "3", "3"),
             new ItemGenerateClass("tyrolite", "leggings", false, TYROLITE_ARMOR, "3", "3"),
             new ItemGenerateClass("tyrolite", "boots", false, TYROLITE_ARMOR, "3", "3"),
+
+            /*RHODONIUM*/
+            new ItemGenerateClass("rhodonium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "nugget", false, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "sword", false, RHODONIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "pickaxe", false, RHODONIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "axe", false, RHODONIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "shovel", false, RHODONIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "hoe", false, RHODONIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "helmet", false, RHODONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "chestplate", false, RHODONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "leggings", false, RHODONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "boots", false, RHODONIUM_ARMOR, "3", "IUM"),
     };
 
     public static DefaultItem[] items;
@@ -757,6 +772,7 @@ public class ItemsMod {
     public static DefaultHoe[] hoes;
     public static DefaultArmor[] armors;
     private static final Map<String, Item> itemCustomClass = new HashMap<>();
+
 
     static {
 
