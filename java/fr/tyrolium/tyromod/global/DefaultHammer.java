@@ -42,12 +42,16 @@ public class DefaultHammer extends ItemPickaxe implements IHasModel {
     {
         if(living instanceof EntityPlayer && !world.isRemote)
         {
-            for(int x1 = -2; x1 < 3; x1++)
-            {
-                for(int y1 = -2; y1 < 3; y1++)
-                {
-                    for(int z1 = -2; z1 < 3; z1++)
-                    {
+
+            int taille = 2;
+
+//            for (int x1 = -taille + 1; x1 < taille; x1++) {
+            int x1 = 0;
+
+                for (int y1 = -taille + 1; y1 < taille; y1++) {
+
+                    for (int z1 = -taille + 1; z1 < taille; z1++) {
+
                         int x = pos.getX();
                         int y = pos.getY();
                         int z = pos.getZ();
@@ -67,7 +71,7 @@ public class DefaultHammer extends ItemPickaxe implements IHasModel {
                         }
                     }
                 }
-            }
+//            }
         }
         return super.onBlockDestroyed(stack, world, block, pos, living);
     }
