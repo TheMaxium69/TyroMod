@@ -131,6 +131,7 @@ public class ItemsMod {
     public static final ToolMaterial TYROLITE_TOOL = EnumHelper.addToolMaterial("tyrolite_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial RHODONIUM_TOOL = EnumHelper.addToolMaterial("rhodonium_tool", 2, 400, 3.0f, 5.0f, 20);
 
+    public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
 
     /* GENERATION */
     public static ItemGenerateClass[] ItemList = {
@@ -770,6 +771,7 @@ public class ItemsMod {
     public static DefaultAxe[] axes;
     public static DefaultShovel[] shovels;
     public static DefaultHoe[] hoes;
+    public static DefaultHammer[] hammers;
     public static DefaultArmor[] armors;
     private static final Map<String, Item> itemCustomClass = new HashMap<>();
 
@@ -782,6 +784,7 @@ public class ItemsMod {
         axes = new DefaultAxe[ItemList.length];
         shovels = new DefaultShovel[ItemList.length];
         hoes = new DefaultHoe[ItemList.length];
+        hammers = new DefaultHammer[ItemList.length];
         armors = new DefaultArmor[ItemList.length];
 
         for (int i = 0; i < ItemList.length; i++) {
@@ -818,6 +821,10 @@ public class ItemsMod {
                 } else if (ItemList[i].getType() == "hoe"){
 
                     hoes[i] = new DefaultHoe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "h" + i);
+
+                } else if (ItemList[i].getType() == "hammer"){
+
+                    hammers[i] = new DefaultHammer(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "ha" + i);
 
                 } else if (ItemList[i].isArmor() == "true"){
 
