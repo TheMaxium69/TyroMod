@@ -4,6 +4,7 @@ import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.generate.ItemGenerateClass;
 import fr.tyrolium.tyromod.global.*;
 
+import fr.tyrolium.tyromod.items.Radar;
 import fr.tyrolium.tyromod.items.Tyrolium;
 import fr.tyrolium.tyromod.items.armor.TyroliumArmor;
 import fr.tyrolium.tyromod.items.tool.*;
@@ -140,6 +141,7 @@ public class ItemsMod {
     public static final ToolMaterial ENDERITE_TOOL = EnumHelper.addToolMaterial("enderite_tool", 2, 400, 3.0f, 5.0f, 20);
 
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
+    public static Item RADAR = new Radar("radar", "3", "c999");
 
     /* GENERATION */
     public static ItemGenerateClass[] ItemList = {
