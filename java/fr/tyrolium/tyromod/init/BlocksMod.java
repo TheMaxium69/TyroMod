@@ -22,13 +22,10 @@ public class BlocksMod {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
     /* MANUEL */
-    public static Block ELEVATOR_BLOCK = new ElevatorBlock("elevator_block", Material.ANVIL, "3", "cb999999");
+    public static Block ELEVATOR_BLOCK = new ElevatorBlock("elevetor_block", Material.ANVIL, "3", "cb999999");
 
     /* GENERATION */
     public static BlockGenerateClass[] BlockList = {
-
-
-            new BlockGenerateClass("tyrolium", "ore", true, "1", "IUM"),
 
             /*TYROLIUM*/
             new BlockGenerateClass("tyrolium", "ore", true, "1", "IUM"),
