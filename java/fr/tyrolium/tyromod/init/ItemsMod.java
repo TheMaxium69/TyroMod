@@ -87,6 +87,8 @@ public class ItemsMod {
     public static final ArmorMaterial ENDERITE_ARMOR = EnumHelper.addArmorMaterial("enderite_armor", Global.MODID + ":enderite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial COPPERIUM_ARMOR = EnumHelper.addArmorMaterial("copperium_armor", Global.MODID + ":copperium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial AVENTURIUM_ARMOR = EnumHelper.addArmorMaterial("aventurium_armor", Global.MODID + ":aventurium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial PURIFIED_IRON_ARMOR = EnumHelper.addArmorMaterial("purified_iron_armor", Global.MODID + ":purified_iron", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial PURIFIED_DIAMOND_ARMOR = EnumHelper.addArmorMaterial("purified_diamond_armor", Global.MODID + ":purified_diamond", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -143,6 +145,8 @@ public class ItemsMod {
     public static final ToolMaterial ENDERITE_TOOL = EnumHelper.addToolMaterial("enderite_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial COPPERIUM_TOOL = EnumHelper.addToolMaterial("copperium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial AVENTURIUM_TOOL = EnumHelper.addToolMaterial("aventurium_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial PURIFIED_IRON_TOOL = EnumHelper.addToolMaterial("purified_iron_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial PURIFIED_DIAMOND_TOOL = EnumHelper.addToolMaterial("purified_diamond_tool", 2, 400, 3.0f, 5.0f, 20);
 
     /* MANUEL */
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
@@ -858,6 +862,32 @@ public class ItemsMod {
             new ItemGenerateClass("aventurium", "chestplate", false, AVENTURIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("aventurium", "leggings", false, AVENTURIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("aventurium", "boots", false, AVENTURIUM_ARMOR, "3", "IUM"),
+
+            /*PURIFIED IRON*/
+            new ItemGenerateClass("purified_iron", "ingot", false, "3", "1"),
+            new ItemGenerateClass("purified_iron", "nugget", false, "3", "1"),
+            new ItemGenerateClass("purified_iron", "sword", false, PURIFIED_IRON_TOOL, "3", "1"),
+            new ItemGenerateClass("purified_iron", "pickaxe", false, PURIFIED_IRON_TOOL, "3", "1"),
+            new ItemGenerateClass("purified_iron", "axe", false, PURIFIED_IRON_TOOL, "3", "1"),
+            new ItemGenerateClass("purified_iron", "shovel", false, PURIFIED_IRON_TOOL, "3", "1"),
+            new ItemGenerateClass("purified_iron", "hoe", false, PURIFIED_IRON_TOOL, "3", "1"),
+            new ItemGenerateClass("purified_iron", "helmet", false, PURIFIED_IRON_ARMOR, "3", "1"),
+            new ItemGenerateClass("purified_iron", "chestplate", false, PURIFIED_IRON_ARMOR, "3", "1"),
+            new ItemGenerateClass("purified_iron", "leggings", false, PURIFIED_IRON_ARMOR, "3", "1"),
+            new ItemGenerateClass("purified_iron", "boots", false, PURIFIED_IRON_ARMOR, "3", "1"),
+
+            /*PURIFIED DIAMOND*/
+            new ItemGenerateClass("purified_diamond", "ingot", false, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "nugget", false, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "sword", false, PURIFIED_DIAMOND_TOOL, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "pickaxe", false, PURIFIED_DIAMOND_TOOL, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "axe", false, PURIFIED_DIAMOND_TOOL, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "shovel", false, PURIFIED_DIAMOND_TOOL, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "hoe", false, PURIFIED_DIAMOND_TOOL, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "helmet", false, PURIFIED_DIAMOND_ARMOR, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "chestplate", false, PURIFIED_DIAMOND_ARMOR, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "leggings", false, PURIFIED_DIAMOND_ARMOR, "3", "2"),
+            new ItemGenerateClass("purified_diamond", "boots", false, PURIFIED_DIAMOND_ARMOR, "3", "2"),
     };
 
     public static DefaultItem[] items;

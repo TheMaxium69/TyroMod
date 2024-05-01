@@ -189,6 +189,12 @@ public class BlocksMod {
 
             /*AVENTURIUM*/
             new BlockGenerateClass("aventurium", "block", false, "3", "IUM"),
+
+            /*PURIFIED IRON*/
+            new BlockGenerateClass("purified_iron", "block", false, "3", "IUM"),
+
+            /*PURIFIED DIAMOND*/
+            new BlockGenerateClass("purified_diamond", "block", false, "3", "IUM"),
     };
 
 
