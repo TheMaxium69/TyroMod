@@ -143,6 +143,7 @@ public class ItemsMod {
     public static final ToolMaterial COPPERIUM_TOOL = EnumHelper.addToolMaterial("copperium_tool", 2, 400, 3.0f, 5.0f, 20);
 
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
+    public static Item tyrolium_sword_fire = new DefaultSwordFire("tyrolium_sword_fire", TYROLIUM_TOOL, "1", "IUM", "c999999");
     public static Item RADAR = new Radar("radar", "3", "c999");
 
     /* GENERATION */

@@ -30,7 +30,7 @@ public class BlocksMod {
             /*TYROLIUM*/
             new BlockGenerateClass("tyrolium", "ore", true, "1", "IUM"),
             new BlockGenerateClass("tyrolium", "block", true, "1", "IUM"),
-            new BlockGenerateClass("tyrolium", "command_block", false, "1"),
+            new BlockGenerateClass("tyrolium", "command_block", true, "1"),
 
             /*RHODONITE*/
             new BlockGenerateClass("rhodonite", "ore", false, "1", "3"),
@@ -234,6 +234,9 @@ public class BlocksMod {
                 }
                 if (BlockList[i].getName() == "volcanium_cave" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new VolcaniumCave(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "bc" + i));
+                }
+                if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "command_block") {
+                    blockCustomClass.put("bc"+i, new TyroliumCommandBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
                 }
 
             }

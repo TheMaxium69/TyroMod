@@ -1,5 +1,16 @@
 {
   "variants": {
-    "normal": { "model": "tyromod:tyrolium_command_block" }
+    "conditional=false,facing=down":  { "model": "tyromod:tyrolium_command_block", "x": 90 },
+    "conditional=false,facing=up":    { "model": "tyromod:tyrolium_command_block", "x": 270 },
+    "conditional=false,facing=north": { "model": "tyromod:tyrolium_command_block" },
+    "conditional=false,facing=south": { "model": "tyromod:tyrolium_command_block", "y": 180 },
+    "conditional=false,facing=west":  { "model": "tyromod:tyrolium_command_block", "y": 270 },
+    "conditional=false,facing=east":  { "model": "tyromod:tyrolium_command_block", "y": 90 },
+    "conditional=true,facing=down":  { "model": "tyromod:tyrolium_command_block", "x": 90 },
+    "conditional=true,facing=up":    { "model": "tyromod:tyrolium_command_block", "x": 270 },
+    "conditional=true,facing=north": { "model": "tyromod:tyrolium_command_block" },
+    "conditional=true,facing=south": { "model": "tyromod:tyrolium_command_block", "y": 180 },
+    "conditional=true,facing=west":  { "model": "tyromod:tyrolium_command_block", "y": 270 },
+    "conditional=true,facing=east":  { "model": "tyromod:tyrolium_command_block", "y": 90 }
   }
 }
