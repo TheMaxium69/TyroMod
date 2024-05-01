@@ -9,6 +9,7 @@ public class TyroModTabUtils extends CreativeTabs {
     public TyroModTabUtils()
     {
         super("TyroMod Utils");
+        this.setBackgroundImageName("tyromod2.png");
     }
 
     @Override

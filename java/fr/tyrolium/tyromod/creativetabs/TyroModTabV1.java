@@ -8,6 +8,7 @@ public class TyroModTabV1 extends CreativeTabs {
     public TyroModTabV1()
     {
         super("TyroMod Ore V1");
+        this.setBackgroundImageName("tyromod1.png");
     }
 
     @Override
