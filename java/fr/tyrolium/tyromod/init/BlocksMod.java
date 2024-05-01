@@ -1,10 +1,7 @@
 package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
-import fr.tyrolium.tyromod.blocks.FusionBlock;
-import fr.tyrolium.tyromod.blocks.TyroliumBlock;
-import fr.tyrolium.tyromod.blocks.TyroliumOre;
-import fr.tyrolium.tyromod.blocks.VolcaniumCave;
+import fr.tyrolium.tyromod.blocks.*;
 import fr.tyrolium.tyromod.generate.BlockGenerateClass;
 import fr.tyrolium.tyromod.generate.ItemGenerateClass;
 import fr.tyrolium.tyromod.global.DefaultBlock;
@@ -25,7 +22,7 @@ public class BlocksMod {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
     /* MANUEL */
-//    public static Block fusion_block = new FusionBlock("fusion_block", Material.ANVIL);
+    public static Block ELEVATOR_BLOCK = new ElevatorBlock("fusion_block", Material.ANVIL, "3", "cb999999");
 
     /* GENERATION */
     public static BlockGenerateClass[] BlockList = {
