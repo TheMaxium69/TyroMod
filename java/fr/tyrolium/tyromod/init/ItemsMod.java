@@ -85,6 +85,7 @@ public class ItemsMod {
     public static final ArmorMaterial OBSIDIUM_ARMOR = EnumHelper.addArmorMaterial("obsidium_armor", Global.MODID + ":obsidium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial ENDERIUM_ARMOR = EnumHelper.addArmorMaterial("enderium_armor", Global.MODID + ":enderium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial ENDERITE_ARMOR = EnumHelper.addArmorMaterial("enderite_armor", Global.MODID + ":enderite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial COPPERIUM_ARMOR = EnumHelper.addArmorMaterial("copperium_armor", Global.MODID + ":copperium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -139,6 +140,7 @@ public class ItemsMod {
     public static final ToolMaterial OBSIDIUM_TOOL = EnumHelper.addToolMaterial("obsidium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial ENDERIUM_TOOL = EnumHelper.addToolMaterial("enderium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial ENDERITE_TOOL = EnumHelper.addToolMaterial("enderite_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial COPPERIUM_TOOL = EnumHelper.addToolMaterial("copperium_tool", 2, 400, 3.0f, 5.0f, 20);
 
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
     public static Item RADAR = new Radar("radar", "3", "c999");
@@ -825,6 +827,19 @@ public class ItemsMod {
             new ItemGenerateClass("enderite", "chestplate", false, ENDERITE_ARMOR, "3", "2"),
             new ItemGenerateClass("enderite", "leggings", false, ENDERITE_ARMOR, "3", "2"),
             new ItemGenerateClass("enderite", "boots", false, ENDERITE_ARMOR, "3", "2"),
+
+            /*COPPERIUM*/
+            new ItemGenerateClass("copperium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("copperium", "nugget", false, "3", "IUM"),
+            new ItemGenerateClass("copperium", "sword", false, COPPERIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("copperium", "pickaxe", false, COPPERIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("copperium", "axe", false, COPPERIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("copperium", "shovel", false, COPPERIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("copperium", "hoe", false, COPPERIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("copperium", "helmet", false, COPPERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("copperium", "chestplate", false, COPPERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("copperium", "leggings", false, COPPERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("copperium", "boots", false, COPPERIUM_ARMOR, "3", "IUM"),
     };
 
     public static DefaultItem[] items;

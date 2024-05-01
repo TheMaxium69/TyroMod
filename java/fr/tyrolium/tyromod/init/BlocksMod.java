@@ -183,6 +183,9 @@ public class BlocksMod {
 
             /*ENDERITE*/
             new BlockGenerateClass("enderite", "block", false, "3", "IUM"),
+
+            /*COPPERIUM*/
+            new BlockGenerateClass("copperium", "block", false, "3", "IUM"),
     };
 
 
