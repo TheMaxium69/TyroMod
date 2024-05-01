@@ -174,6 +174,9 @@ public class BlocksMod {
 
             /*YELLORIUM*/
             new BlockGenerateClass("yellorium", "block", false, "3", "IUM"),
+
+            /*OBSIDIUM*/
+            new BlockGenerateClass("obsidium", "block", false, "3", "IUM"),
     };
 
 
