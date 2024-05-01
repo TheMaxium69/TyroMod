@@ -171,6 +171,9 @@ public class BlocksMod {
 
             /*RHODONIUM*/
             new BlockGenerateClass("rhodonium", "block", false, "3", "IUM"),
+
+            /*YELLORIUM*/
+            new BlockGenerateClass("yellorium", "block", false, "3", "IUM"),
     };
 
 
