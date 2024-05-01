@@ -4,6 +4,7 @@ import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.blocks.FusionBlock;
 import fr.tyrolium.tyromod.blocks.TyroliumBlock;
 import fr.tyrolium.tyromod.blocks.TyroliumOre;
+import fr.tyrolium.tyromod.blocks.VolcaniumCave;
 import fr.tyrolium.tyromod.generate.BlockGenerateClass;
 import fr.tyrolium.tyromod.generate.ItemGenerateClass;
 import fr.tyrolium.tyromod.global.DefaultBlock;
@@ -94,7 +95,7 @@ public class BlocksMod {
 
             /*VOLCANIUM*/
             new BlockGenerateClass("volcanium", "block", false, "1", "IUM"),
-            new BlockGenerateClass("volcanium_cave", "classic", false, "1"),
+            new BlockGenerateClass("volcanium_cave", "classic", true, "1"),
             new BlockGenerateClass("fake_lava", "classic", false, "1"),
 
             /*OTHER*/
@@ -218,6 +219,9 @@ public class BlocksMod {
                 }
                 if (BlockList[i].getName() == "fusion_block" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new FusionBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                }
+                if (BlockList[i].getName() == "volcanium_cave" && BlockList[i].getType() == "classic") {
+                    blockCustomClass.put("bc"+i, new VolcaniumCave(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "bc" + i));
                 }
 
             }
