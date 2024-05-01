@@ -83,6 +83,7 @@ public class ItemsMod {
     public static final ArmorMaterial YELLORIUM_ARMOR = EnumHelper.addArmorMaterial("yellorium_armor", Global.MODID + ":yellorium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial OBSIDIUM_ARMOR = EnumHelper.addArmorMaterial("obsidium_armor", Global.MODID + ":obsidium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial ENDERIUM_ARMOR = EnumHelper.addArmorMaterial("enderium_armor", Global.MODID + ":enderium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial ENDERITE_ARMOR = EnumHelper.addArmorMaterial("enderite_armor", Global.MODID + ":enderite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -136,6 +137,7 @@ public class ItemsMod {
     public static final ToolMaterial YELLORIUM_TOOL = EnumHelper.addToolMaterial("yellorium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial OBSIDIUM_TOOL = EnumHelper.addToolMaterial("obsidium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial ENDERIUM_TOOL = EnumHelper.addToolMaterial("enderium_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial ENDERITE_TOOL = EnumHelper.addToolMaterial("enderite_tool", 2, 400, 3.0f, 5.0f, 20);
 
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
 
@@ -808,6 +810,19 @@ public class ItemsMod {
             new ItemGenerateClass("enderium", "chestplate", false, ENDERIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("enderium", "leggings", false, ENDERIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("enderium", "boots", false, ENDERIUM_ARMOR, "3", "IUM"),
+
+            /*ENDERITE*/
+            new ItemGenerateClass("enderite", "classic", false, "3", "2"),
+            new ItemGenerateClass("enderite", "nugget", false, "3", "2"),
+            new ItemGenerateClass("enderite", "sword", false, ENDERITE_TOOL, "3", "2"),
+            new ItemGenerateClass("enderite", "pickaxe", false, ENDERITE_TOOL, "3", "2"),
+            new ItemGenerateClass("enderite", "axe", false, ENDERITE_TOOL, "3", "2"),
+            new ItemGenerateClass("enderite", "shovel", false, ENDERITE_TOOL, "3", "2"),
+            new ItemGenerateClass("enderite", "hoe", false, ENDERITE_TOOL, "3", "2"),
+            new ItemGenerateClass("enderite", "helmet", false, ENDERITE_ARMOR, "3", "2"),
+            new ItemGenerateClass("enderite", "chestplate", false, ENDERITE_ARMOR, "3", "2"),
+            new ItemGenerateClass("enderite", "leggings", false, ENDERITE_ARMOR, "3", "2"),
+            new ItemGenerateClass("enderite", "boots", false, ENDERITE_ARMOR, "3", "2"),
     };
 
     public static DefaultItem[] items;

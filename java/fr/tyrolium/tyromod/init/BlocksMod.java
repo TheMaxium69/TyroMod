@@ -180,6 +180,9 @@ public class BlocksMod {
 
             /*ENDERIUM*/
             new BlockGenerateClass("enderium", "block", false, "3", "IUM"),
+
+            /*ENDERITE*/
+            new BlockGenerateClass("enderite", "block", false, "3", "IUM"),
     };
 
 
