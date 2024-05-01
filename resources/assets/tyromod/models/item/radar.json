@@ -1,0 +1,34 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "tyromod:items/radar_empty"
+    },
+    "overrides": [
+        { "predicate": { "percent": 1 }, "model": "tyromod:item/radar0_5" },
+        { "predicate": { "percent": 2 }, "model": "tyromod:item/radar0_5" },
+        { "predicate": { "percent": 3 }, "model": "tyromod:item/radar0_5" },
+        { "predicate": { "percent": 4 }, "model": "tyromod:item/radar0_5" },
+        { "predicate": { "percent": 5 }, "model": "tyromod:item/radar0_5" },
+        { "predicate": { "percent": 6 }, "model": "tyromod:item/radar6_10" },
+        { "predicate": { "percent": 7 }, "model": "tyromod:item/radar6_10" },
+        { "predicate": { "percent": 8 }, "model": "tyromod:item/radar6_10" },
+        { "predicate": { "percent": 9 }, "model": "tyromod:item/radar6_10" },
+        { "predicate": { "percent": 10 }, "model": "tyromod:item/radar6_10" },
+        { "predicate": { "percent": 11 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 12 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 13 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 14 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 15 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 16 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 17 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 18 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 19 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 20 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 21 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 22 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 23 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 24 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 25 }, "model": "tyromod:item/radar11_25" },
+        { "predicate": { "percent": 26 }, "model": "tyromod:item/radar26_more" }
+   ]
+}
