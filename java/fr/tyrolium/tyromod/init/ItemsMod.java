@@ -90,6 +90,7 @@ public class ItemsMod {
     public static final ArmorMaterial PURIFIED_IRON_ARMOR = EnumHelper.addArmorMaterial("purified_iron_armor", Global.MODID + ":purified_iron", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial PURIFIED_DIAMOND_ARMOR = EnumHelper.addArmorMaterial("purified_diamond_armor", Global.MODID + ":purified_diamond", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial TITANIUM_ARMOR = EnumHelper.addArmorMaterial("titanium_armor", Global.MODID + ":titanium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial SAPPHIRIUM_ARMOR = EnumHelper.addArmorMaterial("sapphirium_armor", Global.MODID + ":sapphirium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -149,6 +150,7 @@ public class ItemsMod {
     public static final ToolMaterial PURIFIED_IRON_TOOL = EnumHelper.addToolMaterial("purified_iron_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial PURIFIED_DIAMOND_TOOL = EnumHelper.addToolMaterial("purified_diamond_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial TITANIUM_TOOL = EnumHelper.addToolMaterial("titanium_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial SAPPHIRIUM_TOOL = EnumHelper.addToolMaterial("sapphirium_tool", 2, 400, 3.0f, 5.0f, 20);
 
     /* MANUEL */
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
@@ -891,7 +893,6 @@ public class ItemsMod {
             new ItemGenerateClass("purified_diamond", "leggings", false, PURIFIED_DIAMOND_ARMOR, "3", "2"),
             new ItemGenerateClass("purified_diamond", "boots", false, PURIFIED_DIAMOND_ARMOR, "3", "2"),
 
-
             /*TITANIUM*/
             new ItemGenerateClass("titanium", "classic", false, "3", "IUM"),
             new ItemGenerateClass("titanium", "nugget", false, "3", "IUM"),
@@ -904,6 +905,19 @@ public class ItemsMod {
             new ItemGenerateClass("titanium", "chestplate", false, TITANIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("titanium", "leggings", false, TITANIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("titanium", "boots", false, TITANIUM_ARMOR, "3", "IUM"),
+
+            /*SAPPHIRIUM*/
+            new ItemGenerateClass("sapphirium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "nugget", false, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "sword", false, SAPPHIRIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "pickaxe", false, SAPPHIRIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "axe", false, SAPPHIRIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "shovel", false, SAPPHIRIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "hoe", false, SAPPHIRIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "helmet", false, SAPPHIRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "chestplate", false, SAPPHIRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "leggings", false, SAPPHIRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "boots", false, SAPPHIRIUM_ARMOR, "3", "IUM"),
     };
 
     public static DefaultItem[] items;

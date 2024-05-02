@@ -198,6 +198,9 @@ public class BlocksMod {
 
             /*TITANIUM*/
             new BlockGenerateClass("titanium", "block", false, "3", "IUM"),
+
+            /*SAPPHIRIUM*/
+            new BlockGenerateClass("sapphirium", "block", false, "3", "IUM"),
     };
 
 
