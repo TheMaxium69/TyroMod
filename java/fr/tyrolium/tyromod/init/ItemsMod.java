@@ -92,6 +92,7 @@ public class ItemsMod {
     public static final ArmorMaterial TITANIUM_ARMOR = EnumHelper.addArmorMaterial("titanium_armor", Global.MODID + ":titanium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial SAPPHIRIUM_ARMOR = EnumHelper.addArmorMaterial("sapphirium_armor", Global.MODID + ":sapphirium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial MERCURIUM_ARMOR = EnumHelper.addArmorMaterial("mercurium_armor", Global.MODID + ":mercurium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial PLATINE_ARMOR = EnumHelper.addArmorMaterial("platine_armor", Global.MODID + ":platine", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -153,6 +154,7 @@ public class ItemsMod {
     public static final ToolMaterial TITANIUM_TOOL = EnumHelper.addToolMaterial("titanium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial SAPPHIRIUM_TOOL = EnumHelper.addToolMaterial("sapphirium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial MERCURIUM_TOOL = EnumHelper.addToolMaterial("mercurium_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial PLATINE_TOOL = EnumHelper.addToolMaterial("platine_tool", 2, 400, 3.0f, 5.0f, 20);
 
     /* MANUEL */
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
@@ -933,6 +935,19 @@ public class ItemsMod {
             new ItemGenerateClass("mercurium", "chestplate", false, MERCURIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("mercurium", "leggings", false, MERCURIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("mercurium", "boots", false, MERCURIUM_ARMOR, "3", "IUM"),
+
+            /*PLATINE*/
+            new ItemGenerateClass("platine", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("platine", "nugget", false, "3", "IUM"),
+            new ItemGenerateClass("platine", "sword", false, PLATINE_TOOL, "3", "IUM"),
+            new ItemGenerateClass("platine", "pickaxe", false, PLATINE_TOOL, "3", "IUM"),
+            new ItemGenerateClass("platine", "axe", false, PLATINE_TOOL, "3", "IUM"),
+            new ItemGenerateClass("platine", "shovel", false, PLATINE_TOOL, "3", "IUM"),
+            new ItemGenerateClass("platine", "hoe", false, PLATINE_TOOL, "3", "IUM"),
+            new ItemGenerateClass("platine", "helmet", false, PLATINE_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("platine", "chestplate", false, PLATINE_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("platine", "leggings", false, PLATINE_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("platine", "boots", false, PLATINE_ARMOR, "3", "IUM"),
     };
 
     public static DefaultItem[] items;

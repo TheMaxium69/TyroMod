@@ -204,6 +204,9 @@ public class BlocksMod {
 
             /*MERCURIUM*/
             new BlockGenerateClass("mercurium", "block", false, "3", "IUM"),
+
+            /*PLATINE*/
+            new BlockGenerateClass("platine", "block", false, "3", "IUM"),
     };
 
 
