@@ -195,6 +195,9 @@ public class BlocksMod {
 
             /*PURIFIED DIAMOND*/
             new BlockGenerateClass("purified_diamond", "block", false, "3", "IUM"),
+
+            /*TITANIUM*/
+            new BlockGenerateClass("titanium", "block", false, "3", "IUM"),
     };
 
 

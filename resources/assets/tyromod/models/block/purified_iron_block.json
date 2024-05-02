@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tyromod:blocks/purified_iron_block"
+  }
+}
