@@ -937,17 +937,18 @@ public class ItemsMod {
             new ItemGenerateClass("mercurium", "boots", false, MERCURIUM_ARMOR, "3", "IUM"),
 
             /*PLATINE*/
-            new ItemGenerateClass("platine", "classic", false, "3", "IUM"),
-            new ItemGenerateClass("platine", "nugget", false, "3", "IUM"),
-            new ItemGenerateClass("platine", "sword", false, PLATINE_TOOL, "3", "IUM"),
-            new ItemGenerateClass("platine", "pickaxe", false, PLATINE_TOOL, "3", "IUM"),
-            new ItemGenerateClass("platine", "axe", false, PLATINE_TOOL, "3", "IUM"),
-            new ItemGenerateClass("platine", "shovel", false, PLATINE_TOOL, "3", "IUM"),
-            new ItemGenerateClass("platine", "hoe", false, PLATINE_TOOL, "3", "IUM"),
-            new ItemGenerateClass("platine", "helmet", false, PLATINE_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("platine", "chestplate", false, PLATINE_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("platine", "leggings", false, PLATINE_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("platine", "boots", false, PLATINE_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("platine", "classic", false, "3", "3"),
+            new ItemGenerateClass("platine", "nugget", false, "3", "3"),
+            new ItemGenerateClass("platine", "sword", false, PLATINE_TOOL, "3", "3"),
+            new ItemGenerateClass("platine", "pickaxe", false, PLATINE_TOOL, "3", "3"),
+            new ItemGenerateClass("platine", "axe", false, PLATINE_TOOL, "3", "3"),
+            new ItemGenerateClass("platine", "shovel", false, PLATINE_TOOL, "3", "3"),
+            new ItemGenerateClass("platine", "hoe", false, PLATINE_TOOL, "3", "3"),
+            new ItemGenerateClass("platine", "helmet", false, PLATINE_ARMOR, "3", "3"),
+            new ItemGenerateClass("platine", "chestplate", false, PLATINE_ARMOR, "3", "3"),
+            new ItemGenerateClass("platine", "leggings", false, PLATINE_ARMOR, "3", "3"),
+            new ItemGenerateClass("platine", "boots", false, PLATINE_ARMOR, "3", "3"),
+            
     };
 
     public static DefaultItem[] items;
