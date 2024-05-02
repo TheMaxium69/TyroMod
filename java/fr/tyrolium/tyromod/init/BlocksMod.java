@@ -201,6 +201,9 @@ public class BlocksMod {
 
             /*SAPPHIRIUM*/
             new BlockGenerateClass("sapphirium", "block", false, "3", "IUM"),
+
+            /*MERCURIUM*/
+            new BlockGenerateClass("mercurium", "block", false, "3", "IUM"),
     };
 
 
