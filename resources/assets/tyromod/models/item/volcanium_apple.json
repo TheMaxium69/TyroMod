@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "tyromod:items/volcanite_apple"
+    "layer0": "tyromod:items/volcanium_apple"
   }
 }
