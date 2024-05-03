@@ -21,7 +21,7 @@ public class DefaultFood extends ItemFood implements IHasModel
     private String oreTier;
     private String tyroId;
 
-    public DefaultFood(String name, ToolMaterial materialIn, String version, String id, int amount, boolean isWolfFood)
+    public DefaultFood(String name, String version, String id, int amount, boolean isWolfFood)
     {
         super(amount, isWolfFood);
 

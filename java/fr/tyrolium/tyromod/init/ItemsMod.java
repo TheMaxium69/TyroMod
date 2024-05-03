@@ -163,7 +163,8 @@ public class ItemsMod {
     /* MANUEL */
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
     public static Item tyrolium_sword_fire = new DefaultSwordFire("tyrolium_sword_fire", TYROLIUM_TOOL, "1", "IUM", "c999999");
-    public static Item tyrolium_apple = new DefaultFood("tyrolium_apple", TYROLIUM_TOOL, "1", "c999999", 6, false);
+    public static Item tyrolium_apple = new DefaultFood("tyrolium_apple", "1", "c999999", 6, false);
+    public static Item volcanium_apple = new DefaultFood("volcanium_apple", "1", "c9999990", 6, false);
     public static Item RADAR = new Radar("radar", "3", "c999");
 
     /* GENERATION */
