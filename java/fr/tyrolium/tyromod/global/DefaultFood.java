@@ -30,6 +30,7 @@ public class DefaultFood extends ItemFood implements IHasModel
 
         setUnlocalizedName(name);
         setRegistryName(name);
+        setAlwaysEdible();
         chooseCreativeTab(version, true);
 
         ItemsMod.ITEMS.add(this);
