@@ -22,7 +22,7 @@ public class BlocksMod {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
     /* MANUEL */
-    public static Block ELEVATOR_BLOCK = new ElevatorBlock("elevetor_block", Material.ANVIL, "3", "cb999999");
+    public static Block ELEVATOR_BLOCK = new ElevatorBlock("elevator_block", Material.ANVIL, "3", "cb999999");
 
     /* GENERATION */
     public static BlockGenerateClass[] BlockList = {
@@ -260,7 +260,7 @@ public class BlocksMod {
                     blockCustomClass.put("bc"+i, new FusionBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
                 }
                 if (BlockList[i].getName() == "volcanium_cave" && BlockList[i].getType() == "classic") {
-                    blockCustomClass.put("bc"+i, new VolcaniumCave(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "bc" + i));
+                    blockCustomClass.put("bc"+i, new VolcaniumCave(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
                 }
                 if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "command_block") {
                     blockCustomClass.put("bc"+i, new TyroliumCommandBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));

@@ -7,8 +7,8 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class VolcaniumCave extends DefaultBlock {
-    public VolcaniumCave(String name, Material materialIn, String version, String tier, String id) {
-        super(name, materialIn, version, tier, id);
+    public VolcaniumCave(String name, Material materialIn, String version, String id) {
+        super(name, materialIn, version, id);
     }
 
     @SideOnly(Side.CLIENT)

@@ -437,9 +437,7 @@ public class ItemsMod {
             new ItemGenerateClass("titane", "boots", false, TITANE_ARMOR, "1", "2"),
 
             /*VOLCANIUM*/
-            new ItemGenerateClass("volcanium", "classic", false, "1", "IUM"),
             new ItemGenerateClass("volcanium", "ingot", false, "1", "IUM"),
-            new ItemGenerateClass("volcanium", "stick", false, "1", "IUM"),
             new ItemGenerateClass("volcanium", "sword", false, VOLCANIUM_TOOL, "1", "IUM"),
             new ItemGenerateClass("volcanium", "pickaxe", false, VOLCANIUM_TOOL, "1", "IUM"),
             new ItemGenerateClass("volcanium", "axe", false, VOLCANIUM_TOOL, "1", "IUM"),

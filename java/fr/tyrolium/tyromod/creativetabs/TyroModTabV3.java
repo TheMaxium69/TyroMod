@@ -13,6 +13,6 @@ public class TyroModTabV3 extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(ItemsMod.swords[237]);
+        return new ItemStack(ItemsMod.swords[235]);
     }
 }
