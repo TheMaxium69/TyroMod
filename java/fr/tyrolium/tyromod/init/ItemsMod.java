@@ -95,6 +95,7 @@ public class ItemsMod {
     public static final ArmorMaterial PLATINE_ARMOR = EnumHelper.addArmorMaterial("platine_armor", Global.MODID + ":platine", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial PLATINIUM_ARMOR = EnumHelper.addArmorMaterial("platinium_armor", Global.MODID + ":platinium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial VAPONITE_ARMOR = EnumHelper.addArmorMaterial("vaponite_armor", Global.MODID + ":vaponite", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial VAPORIUM_ARMOR = EnumHelper.addArmorMaterial("vaporium_armor", Global.MODID + ":vaporium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -159,6 +160,7 @@ public class ItemsMod {
     public static final ToolMaterial PLATINE_TOOL = EnumHelper.addToolMaterial("platine_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial PLATINIUM_TOOL = EnumHelper.addToolMaterial("platinium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial VAPONITE_TOOL = EnumHelper.addToolMaterial("vaponite_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial VAPORIUM_TOOL = EnumHelper.addToolMaterial("vaporium_tool", 2, 400, 3.0f, 5.0f, 20);
 
     /* MANUEL */
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
@@ -784,7 +786,7 @@ public class ItemsMod {
             new ItemGenerateClass("tyrolite", "boots", false, TYROLITE_ARMOR, "3", "3"),
 
             /*RHODONIUM*/
-            new ItemGenerateClass("rhodonium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("rhodonium", "nugget", false, "3", "IUM"),
             new ItemGenerateClass("rhodonium", "sword", false, RHODONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("rhodonium", "pickaxe", false, RHODONIUM_TOOL, "3", "IUM"),
@@ -810,8 +812,8 @@ public class ItemsMod {
             new ItemGenerateClass("yellorium", "boots", false, YELLORIUM_ARMOR, "3", "IUM"),
 
             /*OBSIDIUM*/
-            new ItemGenerateClass("obsidium", "classic", false, "3", "IUM"),
-            new ItemGenerateClass("obsidium", "nugget", false, "3", "IUM"),
+            new ItemGenerateClass("obsidium", "ingot", false, "3", "IUM"),
+            new ItemGenerateClass("obsidium", "gem", false, "3", "IUM"),
             new ItemGenerateClass("obsidium", "sword", false, OBSIDIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("obsidium", "pickaxe", false, OBSIDIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("obsidium", "axe", false, OBSIDIUM_TOOL, "3", "IUM"),
@@ -824,7 +826,6 @@ public class ItemsMod {
 
             /*ENDERIUM*/
             new ItemGenerateClass("enderium", "classic", false, "3", "IUM"),
-            new ItemGenerateClass("enderium", "nugget", false, "3", "IUM"),
             new ItemGenerateClass("enderium", "sword", false, ENDERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("enderium", "pickaxe", false, ENDERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("enderium", "axe", false, ENDERIUM_TOOL, "3", "IUM"),
@@ -977,6 +978,19 @@ public class ItemsMod {
             new ItemGenerateClass("vaponite", "chestplate", false, VAPONITE_ARMOR, "3", "IUM"),
             new ItemGenerateClass("vaponite", "leggings", false, VAPONITE_ARMOR, "3", "IUM"),
             new ItemGenerateClass("vaponite", "boots", false, VAPONITE_ARMOR, "3", "IUM"),
+
+            /*VAPORIUM*/
+            new ItemGenerateClass("vaporium", "ingot", false, "3", "3"),
+            new ItemGenerateClass("vaporium", "nugget", false, "3", "3"),
+            new ItemGenerateClass("vaporium", "sword", false, VAPORIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("vaporium", "pickaxe", false, VAPORIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("vaporium", "axe", false, VAPORIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("vaporium", "shovel", false, VAPORIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("vaporium", "hoe", false, VAPORIUM_TOOL, "3", "3"),
+            new ItemGenerateClass("vaporium", "helmet", false, VAPORIUM_ARMOR, "3", "3"),
+            new ItemGenerateClass("vaporium", "chestplate", false, VAPORIUM_ARMOR, "3", "3"),
+            new ItemGenerateClass("vaporium", "leggings", false, VAPORIUM_ARMOR, "3", "3"),
+            new ItemGenerateClass("vaporium", "boots", false, VAPORIUM_ARMOR, "3", "3"),
 
     };
 

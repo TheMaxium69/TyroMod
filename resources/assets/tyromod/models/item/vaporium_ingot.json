@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tyromod:items/obsidium"
+    "layer0": "tyromod:items/vaporium_ingot"
   }
 }

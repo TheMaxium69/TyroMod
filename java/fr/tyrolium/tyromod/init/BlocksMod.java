@@ -213,6 +213,9 @@ public class BlocksMod {
 
             /*VAPONITE*/
             new BlockGenerateClass("vaponite", "block", false, "3", "IUM"),
+
+            /*VAPONIUM*/
+            new BlockGenerateClass("vaporium", "block", false, "3", "3"),
     };
 
 
