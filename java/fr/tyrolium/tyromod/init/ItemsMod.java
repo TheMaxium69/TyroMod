@@ -473,7 +473,7 @@ public class ItemsMod {
             new ItemGenerateClass("argonite", "boots", false, ARGONITE_ARMOR, "3", "3"),
 
             /*ASHSTONE*/
-            new ItemGenerateClass("ashstone", "gem", false, "3", "3"),
+            new ItemGenerateClass("ashstone", "ingot", false, "3", "3"),
             new ItemGenerateClass("ashstone", "sword", false, ASHSTONE_TOOL, "3", "3"),
             new ItemGenerateClass("ashstone", "pickaxe", false, ASHSTONE_TOOL, "3", "3"),
             new ItemGenerateClass("ashstone", "axe", false, ASHSTONE_TOOL, "3", "3"),
@@ -643,7 +643,7 @@ public class ItemsMod {
             new ItemGenerateClass("steel", "boots", false, STEEL_ARMOR, "3", "2"),
 
             /*STEELIUM*/
-            new ItemGenerateClass("steelium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("steelium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("steelium", "sword", false, STEELIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("steelium", "pickaxe", false, STEELIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("steelium", "axe", false, STEELIUM_TOOL, "3", "IUM"),
