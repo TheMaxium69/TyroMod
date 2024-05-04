@@ -231,6 +231,21 @@ public class BlocksMod {
 
             /*GOLDONIUM*/
             new BlockGenerateClass("goldonium", "block", false, "3", "IUM"),
+
+            /*OMEGA*/
+            new BlockGenerateClass("omega", "block", false, "3", "3"),
+
+            /*OMEGANIUM*/
+            new BlockGenerateClass("omeganium", "block", false, "3", "IUM"),
+
+            /*NETHERIUM*/
+            new BlockGenerateClass("netherium", "block", false, "3", "IUM"),
+
+            /*URANITE*/
+            new BlockGenerateClass("uranite", "block", false, "3", "3"),
+
+            /*URANIUM*/
+            new BlockGenerateClass("uranium", "block", false, "3", "IUM"),
     };
 
 
