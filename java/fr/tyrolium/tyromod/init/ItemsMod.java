@@ -800,7 +800,6 @@ public class ItemsMod {
 
             /*YELLORIUM*/
             new ItemGenerateClass("yellorium", "classic", false, "3", "IUM"),
-            new ItemGenerateClass("yellorium", "nugget", false, "3", "IUM"),
             new ItemGenerateClass("yellorium", "sword", false, YELLORIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("yellorium", "pickaxe", false, YELLORIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("yellorium", "axe", false, YELLORIUM_TOOL, "3", "IUM"),
@@ -837,8 +836,7 @@ public class ItemsMod {
             new ItemGenerateClass("enderium", "boots", false, ENDERIUM_ARMOR, "3", "IUM"),
 
             /*ENDERITE*/
-            new ItemGenerateClass("enderite", "classic", false, "3", "2"),
-            new ItemGenerateClass("enderite", "nugget", false, "3", "2"),
+            new ItemGenerateClass("enderite", "ingot", false, "3", "2"),
             new ItemGenerateClass("enderite", "sword", false, ENDERITE_TOOL, "3", "2"),
             new ItemGenerateClass("enderite", "pickaxe", false, ENDERITE_TOOL, "3", "2"),
             new ItemGenerateClass("enderite", "axe", false, ENDERITE_TOOL, "3", "2"),
