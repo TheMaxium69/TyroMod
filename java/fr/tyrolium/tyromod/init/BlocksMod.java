@@ -246,6 +246,51 @@ public class BlocksMod {
 
             /*URANIUM*/
             new BlockGenerateClass("uranium", "block", false, "3", "IUM"),
+
+            /*PLUTONITE*/
+            new BlockGenerateClass("plutonite", "block", false, "3", "3"),
+
+            /*PLUTONIUM*/
+            new BlockGenerateClass("plutonium", "block", false, "3", "IUM"),
+
+            /*POLONITE*/
+            new BlockGenerateClass("polonite", "block", false, "3", "3"),
+
+            /*POLONIUM*/
+            new BlockGenerateClass("polonium", "block", false, "3", "IUM"),
+
+            /*CHRONITE*/
+            new BlockGenerateClass("chronite", "block", false, "3", "3"),
+
+            /*CHROMITIUM*/
+            new BlockGenerateClass("chromitium", "block", false, "3", "IUM"),
+
+            /*CORANITE*/
+            new BlockGenerateClass("coranite", "block", false, "3", "3"),
+
+            /*CORANIUM*/
+            new BlockGenerateClass("coranium", "block", false, "3", "IUM"),
+
+            /*MACRONITE*/
+            new BlockGenerateClass("macronite", "block", false, "3", "3"),
+
+            /*MACRONIUM*/
+            new BlockGenerateClass("macronium", "block", false, "3", "IUM"),
+
+            /*GALACTITE*/
+            new BlockGenerateClass("galactite", "block", false, "3", "3"),
+
+            /*TOPAZ*/
+            new BlockGenerateClass("topaz", "block", false, "3", "3"),
+
+            /*PROTONIUM*/
+            new BlockGenerateClass("protonium", "block", false, "3", "IUM"),
+
+            /*SILVERIUM*/
+            new BlockGenerateClass("silverium", "block", false, "3", "IUM"),
+
+            /*SILICIUM*/
+            new BlockGenerateClass("silicium", "block", false, "3", "IUM"),
     };
 
 
