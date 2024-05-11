@@ -215,6 +215,11 @@ public class ItemsMod {
 
     /* MANUEL */
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
+    public static Item rhodonite_hammer = new DefaultHammer("rhodonite_hammer", RHODONITE_TOOL, "1", "IUM", "c99999");
+    public static Item yellorite_hammer = new DefaultHammer("yellorite_hammer", YELLORITE_TOOL, "1", "IUM", "c99999");
+    public static Item aventurine_hammer = new DefaultHammer("aventurine_hammer", AVENTURINE_TOOL, "1", "IUM", "c99999");
+    public static Item amethys_hammer = new DefaultHammer("amethys_hammer", AMETHYS_TOOL, "1", "IUM", "c99999");
+    public static Item mercure_hammer = new DefaultHammer("mercure_hammer", MERCURE_TOOL, "1", "IUM", "c99999");
     public static Item tyrolium_sword_fire = new DefaultSwordFire("tyrolium_sword_fire", TYROLIUM_TOOL, "1", "IUM", "c999999");
     public static Item tyrolium_apple = new DefaultFood("tyrolium_apple", "1", "c999999", 6, false);
     public static Item volcanium_apple = new DefaultFood("volcanium_apple", "1", "c9999990", 6, false);
