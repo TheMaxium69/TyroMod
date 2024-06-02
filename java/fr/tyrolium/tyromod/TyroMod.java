@@ -35,7 +35,6 @@ public class TyroMod
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
         logger = event.getModLog();
-        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
 
         RegistryHandler.preInitRegistries(event);
     }

@@ -6,6 +6,7 @@ import fr.tyrolium.tyromod.init.BlocksMod;
 import fr.tyrolium.tyromod.init.ItemsMod;
 import fr.tyrolium.tyromod.init.RecipesMod;
 import fr.tyrolium.tyromod.proxy.Client;
+import fr.tyrolium.tyromod.world.generation.WorldGenOres;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -20,6 +21,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -114,6 +116,8 @@ public class RegistryHandler {
 
     public static void preInitRegistries(FMLPreInitializationEvent event)
     {
+
+        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
 
     }
 
