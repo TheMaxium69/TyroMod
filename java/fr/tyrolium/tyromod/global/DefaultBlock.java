@@ -24,6 +24,7 @@ public class DefaultBlock extends Block implements IHasModel {
     private String modVersion;
     private String oreTier;
     private String tyroId;
+    private Item ItemLoot = ItemsMod.RADAR;
 
     public DefaultBlock(String name, Material materialIn, String version, String id) {
         super(materialIn);
@@ -35,6 +36,11 @@ public class DefaultBlock extends Block implements IHasModel {
         setUnlocalizedName(name);
         setRegistryName(name);
         chooseCreativeTab(version, this.isOre);
+
+        // A RENDRE DIRENT PAR BLOCK
+        setHardness(5.0f);
+        setResistance(15.0f);
+        setHarvestLevel("pickaxe", 2);
 
         BlocksMod.BLOCKS.add(this);
         ItemsMod.ITEMS.add(new ItemBlock(this).setRegistryName(name));
@@ -51,6 +57,11 @@ public class DefaultBlock extends Block implements IHasModel {
         setUnlocalizedName(name);
         setRegistryName(name);
         chooseCreativeTab(version, this.isOre);
+
+        // A RENDRE DIRENT PAR BLOCK
+        setHardness(5.0f);
+        setResistance(15.0f);
+        setHarvestLevel("pickaxe", 2);
 
         BlocksMod.BLOCKS.add(this);
         ItemsMod.ITEMS.add(new ItemBlock(this).setRegistryName(name));
@@ -142,7 +153,7 @@ public class DefaultBlock extends Block implements IHasModel {
     {
         if(isOre)
         {
-            return ItemsMod.RADAR;
+            return ItemLoot;
         }
         else
         {
@@ -150,10 +161,13 @@ public class DefaultBlock extends Block implements IHasModel {
         }
     }
 
-//    public int quantityDropped(Random rand)
-//    {
-//        return this.multipleQuantity ? this.minDrop + rand.nextInt(this.maxDrop - this.minDrop) : 1;
-//    }
+    public int quantityDropped(Random rand)
+    {
+        int max = 4;
+        int min = 1;
+        return rand.nextInt(max) + min;
+    }
+
 
 
 }
