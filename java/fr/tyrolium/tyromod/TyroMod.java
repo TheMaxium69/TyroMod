@@ -5,6 +5,7 @@ import fr.tyrolium.tyromod.creativetabs.TyroModTabV1;
 import fr.tyrolium.tyromod.creativetabs.TyroModTabV3;
 import fr.tyrolium.tyromod.proxy.CommonProxy;
 import fr.tyrolium.tyromod.util.handlers.RegistryHandler;
+import fr.tyrolium.tyromod.world.generation.WorldGenOres;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -13,6 +14,7 @@ import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = Global.MODID, name = Global.NAME, version = Global.VERSION, acceptedMinecraftVersions = Global.MINECRAFT_VERSION)
@@ -33,6 +35,7 @@ public class TyroMod
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
         logger = event.getModLog();
+        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
 
         RegistryHandler.preInitRegistries(event);
     }
