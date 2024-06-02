@@ -7,6 +7,7 @@ import fr.tyrolium.tyromod.proxy.Client;
 import fr.tyrolium.tyromod.util.handlers.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
@@ -16,6 +17,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.Random;
 
 public class DefaultBlock extends Block implements IHasModel {
     private Boolean isOre;
@@ -135,4 +137,23 @@ public class DefaultBlock extends Block implements IHasModel {
         }
 
     }
+
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    {
+        if(isOre)
+        {
+            return ItemsMod.RADAR;
+        }
+        else
+        {
+            return Item.getItemFromBlock(this);
+        }
+    }
+
+//    public int quantityDropped(Random rand)
+//    {
+//        return this.multipleQuantity ? this.minDrop + rand.nextInt(this.maxDrop - this.minDrop) : 1;
+//    }
+
+
 }
