@@ -30,6 +30,9 @@ public class TyroMod
     public static CommonProxy proxy;
     private static Logger logger;
 
+
+
+    /* CREATIVE TAB*/
     public static final CreativeTabs TyroModTabV1 = new TyroModTabV1();
     public static final CreativeTabs TyroModTab = TyroModTabV1; /* OLD NAME */
     public static final CreativeTabs TyroModTabV3 = new TyroModTabV3();
@@ -50,6 +53,7 @@ public class TyroMod
 //        logger.info("ITEM >> {}", ItemsMod.items[25].getRegistryName());
 
         LauncherToken.Token();
+        System.out.println("GetToken : " + LauncherToken.getTokenUser() + " GetTokenA2F : " + LauncherToken.getTokenUserOld());
 
         RegistryHandler.initRegistries(event);
 
