@@ -6,6 +6,7 @@ import fr.tyrolium.tyromod.creativetabs.TyroModTabV3;
 import fr.tyrolium.tyromod.init.BlocksMod;
 import fr.tyrolium.tyromod.init.ItemsMod;
 import fr.tyrolium.tyromod.proxy.CommonProxy;
+import fr.tyrolium.tyromod.security.LauncherToken;
 import fr.tyrolium.tyromod.util.handlers.RegistryHandler;
 import fr.tyrolium.tyromod.world.generation.WorldGenOres;
 import net.minecraft.creativetab.CreativeTabs;
@@ -47,6 +48,8 @@ public class TyroMod
         logger.info("TyroMod a bien charger");
 //        logger.info("BLOCK >> {}", BlocksMod.blocks[25].getRegistryName());
 //        logger.info("ITEM >> {}", ItemsMod.items[25].getRegistryName());
+
+        LauncherToken.Token();
 
         RegistryHandler.initRegistries(event);
 
