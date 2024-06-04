@@ -3,6 +3,8 @@ package fr.tyrolium.tyromod;
 import fr.tyrolium.tyromod.creativetabs.TyroModTabUtils;
 import fr.tyrolium.tyromod.creativetabs.TyroModTabV1;
 import fr.tyrolium.tyromod.creativetabs.TyroModTabV3;
+import fr.tyrolium.tyromod.init.BlocksMod;
+import fr.tyrolium.tyromod.init.ItemsMod;
 import fr.tyrolium.tyromod.proxy.CommonProxy;
 import fr.tyrolium.tyromod.util.handlers.RegistryHandler;
 import fr.tyrolium.tyromod.world.generation.WorldGenOres;
@@ -43,7 +45,8 @@ public class TyroMod
     public void init(FMLInitializationEvent event){
 
         logger.info("TyroMod a bien charger");
-//        logger.info("TYROLIUM BLOCK >> {}", BlocksMod.tyrolium_block.getRegistryName());
+//        logger.info("BLOCK >> {}", BlocksMod.blocks[25].getRegistryName());
+//        logger.info("ITEM >> {}", ItemsMod.items[25].getRegistryName());
 
         RegistryHandler.initRegistries(event);
 

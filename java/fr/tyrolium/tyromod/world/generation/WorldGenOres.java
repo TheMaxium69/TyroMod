@@ -19,7 +19,7 @@ public class WorldGenOres implements IWorldGenerator
 
     public WorldGenOres()
     {
-        tin_ore = new WorldGenMinable(BlocksMod.BLOCKS.get(26).getDefaultState(), 6, BlockMatcher.forBlock(Blocks.STONE));
+        tin_ore = new WorldGenMinable(BlocksMod.blocks[26].getDefaultState(), 6, BlockMatcher.forBlock(Blocks.STONE));
     }
 
     @Override
