@@ -28,6 +28,7 @@ public class EventSecurity {
 
 //            if(iterationEvent == 0) {
                 System.out.println("Loading Security");
+                System.out.println("-------------------------------- players verif : " + TyroMod.playersVerif);
 
                 for (EntityPlayer playerEntity : event.getWorld().playerEntities) {
 
@@ -37,16 +38,44 @@ public class EventSecurity {
                     if (playerEntity instanceof EntityPlayerMP && !isClient) {
                         System.out.println("Tu est est un serveur");
 
-                        System.out.println("players verif : " + TyroMod.playersVerif);
                         ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
                         executorService.schedule(() -> {
 
+                            int pseudoExisting = 1;
+                            for (EntityPlayer player : TyroMod.playersVerif) {
+                                System.out.println("boucle verified -> " + player.getName());
+
+                                if (player.getName().equals(pseudo)) {
+                                    pseudoExisting = 2;
+                                    System.out.println("Tu est verifier -> " + player.getName());
+
+                                }
+
+                            }
+
+                            if (pseudoExisting == 2) {
+
+                                playerEntity.sendMessage(new TextComponentString("Time out is skipped !"));
+
+//                                /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
+//                                for (EntityPlayer player : TyroMod.playersVerif) {
+//                                    if (player.getName().equals(pseudo)) {
+//                                        TyroMod.playersVerif.remove(player);
+//                                    }
+//                                }
+
+                            } else {
+
+                                System.out.println("TOKEN TIME OUT DE "+ pseudo);
+                                playerEntity.sendMessage(new TextComponentString("Connexion Time Out !"));
+                                ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
+
+                            }
 
 
-                            System.out.println("TOKEN TIME OUT DE "+ pseudo);
-                            playerEntity.sendMessage(new TextComponentString("Connexion Time Out !"));
-                            ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
+
+
 
                         }, 10, TimeUnit.SECONDS);
 

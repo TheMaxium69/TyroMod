@@ -74,13 +74,14 @@ public class PacketToken {
                 for (EntityPlayer player : TyroMod.playersVerif) {
                     System.out.println(player.getName());
 
-                    if (player.getName() == pseudo) {
+                    if (player.getName().equals(pseudo)) {
                         pseudoExisting = 2;
                     }
                 }
 
                 if (pseudoExisting == 1) {
                     TyroMod.playersVerif.add(playerEntity);
+                    System.out.println("adding in player verified -> " + playerEntity.getName());
                 }
 
 
