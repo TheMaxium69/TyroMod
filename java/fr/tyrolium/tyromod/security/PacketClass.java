@@ -1,0 +1,45 @@
+package fr.tyrolium.tyromod.security;
+
+import io.netty.buffer.ByteBuf;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraftforge.fml.common.network.ByteBufUtils;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
+import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
+
+public class PacketClass implements IMessage {
+
+    public PacketClass() {}
+
+    private String token;
+    private String tokenOld;
+
+    public PacketClass(String token, String tokenOld) {
+        this.token = token;
+        this.tokenOld = tokenOld;
+    }
+
+    @Override
+    public void toBytes(ByteBuf buf) {
+        ByteBufUtils.writeUTF8String(buf, token);
+        ByteBufUtils.writeUTF8String(buf, tokenOld);
+    }
+
+    @Override
+    public void fromBytes(ByteBuf buf) {
+        token = ByteBufUtils.readUTF8String(buf);
+        tokenOld = ByteBufUtils.readUTF8String(buf);
+    }
+
+    public static class Handler implements IMessageHandler<PacketClass, IMessage> {
+
+        @Override
+        public IMessage onMessage(PacketClass message, MessageContext ctx) {
+            EntityPlayerMP playerEntity = ctx.getServerHandler().player;
+            System.out.println("Received from client: " + message.token + " " + message.tokenOld);
+            System.out.println("Message by " + playerEntity.getName());
+            PacketToken.postDataToApi(message.token, message.tokenOld, (EntityPlayerMP) playerEntity);
+            return null;
+        }
+    }
+}

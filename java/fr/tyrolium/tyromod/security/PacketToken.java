@@ -11,6 +11,7 @@ import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Objects;
 
 /*
  *
@@ -39,8 +40,8 @@ public class PacketToken {
             }
 
             int responseCode = conn.getResponseCode();
-            System.out.println("POST Response Code :  " + responseCode);
-            System.out.println("POST Response Message : " + conn.getResponseMessage());
+//            System.out.println("POST Response Code :  " + responseCode);
+//            System.out.println("POST Response Message : " + conn.getResponseMessage());
 
 
             BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
@@ -53,18 +54,18 @@ public class PacketToken {
             // Tout fermer
             in.close();
             conn.disconnect();
-            System.out.println("Reponse du serveur : " + content.toString());
+//            System.out.println("Reponse du serveur : " + content.toString());
 
 
             if (content.toString().equals(createReponse(pseudo))) {
 
                 //Connexion
-                System.out.println("TOKEN VALIDE DE "+ pseudo);
-                playerEntity.sendMessage(new TextComponentString("Connexion Effectuez!"));
+//                System.out.println("TOKEN VALIDE DE "+ pseudo);
+//                playerEntity.sendMessage(new TextComponentString("Connexion Effectuez!"));
 
                 MinecraftServer server = playerEntity.getServer();
                 if (server != null) {
-                    server.getCommandManager().executeCommand(playerEntity.getCommandSenderEntity(), "say " + tokenOld + " " + token + "");
+//                    server.getCommandManager().executeCommand(playerEntity.getCommandSenderEntity(), "say " + pseudo + " is connecetd : " + tokenOld + " " + token + "");
                 }
 
 
@@ -90,9 +91,7 @@ public class PacketToken {
 
                 MinecraftServer server = playerEntity.getServer();
                 if (server != null) {
-                    server.getCommandManager().executeCommand(playerEntity.getCommandSenderEntity(), "modtoken kick");
-
-                    server.getPlayerList().playerLoggedOut(playerEntity);
+                    playerEntity.connection.disconnect(new TextComponentString("Your Token Useritium is invalide - Code : " + codeErr));
                 }
 
             }
