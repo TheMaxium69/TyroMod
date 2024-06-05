@@ -12,6 +12,7 @@ import fr.tyrolium.tyromod.security.PacketToken;
 import fr.tyrolium.tyromod.util.handlers.RegistryHandler;
 import fr.tyrolium.tyromod.world.generation.WorldGenOres;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -26,6 +27,9 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import org.apache.logging.log4j.Logger;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 @Mod(modid = Global.MODID, name = Global.NAME, version = Global.VERSION, acceptedMinecraftVersions = Global.MINECRAFT_VERSION)
 public class TyroMod
@@ -42,6 +46,9 @@ public class TyroMod
     public static final CreativeTabs TyroModTab = TyroModTabV1; /* OLD NAME */
     public static final CreativeTabs TyroModTabV3 = new TyroModTabV3();
     public static final CreativeTabs TyroModTabUtils = new TyroModTabUtils();
+
+    /*PLAYER CONNECTED*/
+    public static final ArrayList<EntityPlayer> playersVerif = new ArrayList<>();
 
     /* CHANNEL PAQUET */
     public static SimpleNetworkWrapper networkWrapper;

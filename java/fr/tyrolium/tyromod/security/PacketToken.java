@@ -1,6 +1,8 @@
 package fr.tyrolium.tyromod.security;
 
+import fr.tyrolium.tyromod.TyroMod;
 import net.minecraft.command.ICommandSender;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.server.MinecraftServer;
@@ -40,8 +42,8 @@ public class PacketToken {
             }
 
             int responseCode = conn.getResponseCode();
-//            System.out.println("POST Response Code :  " + responseCode);
-//            System.out.println("POST Response Message : " + conn.getResponseMessage());
+            System.out.println("POST Response Code :  " + responseCode);
+            System.out.println("POST Response Message : " + conn.getResponseMessage());
 
 
             BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
@@ -54,19 +56,33 @@ public class PacketToken {
             // Tout fermer
             in.close();
             conn.disconnect();
-//            System.out.println("Reponse du serveur : " + content.toString());
+            System.out.println("Reponse du serveur : " + content.toString());
 
 
             if (content.toString().equals(createReponse(pseudo))) {
 
                 //Connexion
-//                System.out.println("TOKEN VALIDE DE "+ pseudo);
-//                playerEntity.sendMessage(new TextComponentString("Connexion Effectuez!"));
+                System.out.println("TOKEN VALIDE DE "+ pseudo);
+                playerEntity.sendMessage(new TextComponentString("Connexion Effectuez!"));
 
                 MinecraftServer server = playerEntity.getServer();
                 if (server != null) {
 //                    server.getCommandManager().executeCommand(playerEntity.getCommandSenderEntity(), "say " + pseudo + " is connecetd : " + tokenOld + " " + token + "");
                 }
+
+                int pseudoExisting = 1;
+                for (EntityPlayer player : TyroMod.playersVerif) {
+                    System.out.println(player.getName());
+
+                    if (player.getName() == pseudo) {
+                        pseudoExisting = 2;
+                    }
+                }
+
+                if (pseudoExisting == 1) {
+                    TyroMod.playersVerif.add(playerEntity);
+                }
+
 
 
             } else {
@@ -87,12 +103,8 @@ public class PacketToken {
 
                 System.out.println("TOKEN INVALIDE DE "+ pseudo +" Err:" + codeErr);
                 playerEntity.sendMessage(new TextComponentString("Connexion Refuser! | CodeErr : " + codeErr));
+                playerEntity.connection.disconnect(new TextComponentString("Your Token Useritium is invalide - Code : " + codeErr));
 
-
-                MinecraftServer server = playerEntity.getServer();
-                if (server != null) {
-                    playerEntity.connection.disconnect(new TextComponentString("Your Token Useritium is invalide - Code : " + codeErr));
-                }
 
             }
 
