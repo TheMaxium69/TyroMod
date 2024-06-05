@@ -4,12 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-/*
-*
-* CODE DE LA 1.16
-*
-* */
-
 public class LauncherToken {
     private static String TokenUser = null;
     private static String TokenUserOld = null;
