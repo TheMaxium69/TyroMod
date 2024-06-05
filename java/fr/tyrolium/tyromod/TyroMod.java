@@ -56,7 +56,7 @@ public class TyroMod
 //        logger.info("BLOCK >> {}", BlocksMod.blocks[25].getRegistryName());
 //        logger.info("ITEM >> {}", ItemsMod.items[25].getRegistryName());
 
-        LauncherToken.Token();
+//        LauncherToken.Token();
 
         RegistryHandler.initRegistries(event);
 

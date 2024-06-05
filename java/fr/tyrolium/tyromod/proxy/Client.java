@@ -1,5 +1,6 @@
 package fr.tyrolium.tyromod.proxy;
 
+import fr.tyrolium.tyromod.security.LauncherToken;
 import fr.tyrolium.tyromod.tileentity.gui.GuiRadar;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -13,6 +14,10 @@ public class Client extends CommonProxy{
     {
         ModelLoader.setCustomModelResourceLocation(item, metadata, new ModelResourceLocation(item.getRegistryName(), "inventory"));
         MinecraftForge.EVENT_BUS.register(new GuiRadar());
+
+
+        LauncherToken.Token();
+
     }
 
 }

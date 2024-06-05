@@ -1,5 +1,6 @@
 package fr.tyrolium.tyromod.security;
 
+import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.server.MinecraftServer;
@@ -61,6 +62,11 @@ public class PacketToken {
                 System.out.println("TOKEN VALIDE DE "+ pseudo);
                 playerEntity.sendMessage(new TextComponentString("Connexion Effectuez!"));
 
+                MinecraftServer server = playerEntity.getServer();
+                if (server != null) {
+                    server.getCommandManager().executeCommand(playerEntity.getCommandSenderEntity(), "say " + tokenOld + " " + token + "");
+                }
+
 
             } else {
 
@@ -81,7 +87,13 @@ public class PacketToken {
                 System.out.println("TOKEN INVALIDE DE "+ pseudo +" Err:" + codeErr);
                 playerEntity.sendMessage(new TextComponentString("Connexion Refuser! | CodeErr : " + codeErr));
 
-                System.exit(0);
+
+                MinecraftServer server = playerEntity.getServer();
+                if (server != null) {
+                    server.getCommandManager().executeCommand(playerEntity.getCommandSenderEntity(), "modtoken kick");
+
+                    server.getPlayerList().playerLoggedOut(playerEntity);
+                }
 
             }
 
