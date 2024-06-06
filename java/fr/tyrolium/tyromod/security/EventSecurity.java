@@ -7,6 +7,7 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import java.util.concurrent.Executors;
@@ -26,83 +27,86 @@ public class EventSecurity {
         @SubscribeEvent
         public static void onEvent(EntityJoinWorldEvent event) {
 
-//            if(iterationEvent == 0) {
-                System.out.println("Loading Security");
-                System.out.println("-------------------------------- players verif : " + TyroMod.playersVerif);
+            System.out.println("Loading Security");
+            System.out.println("-------------------------------- players verif : " + TyroMod.playersVerif);
 
-                for (EntityPlayer playerEntity : event.getWorld().playerEntities) {
+            for (EntityPlayer playerEntity : event.getWorld().playerEntities) {
 
-                    boolean isClient = event.getWorld().isRemote;
-                    String pseudo = playerEntity.getName();
+                boolean isClient = event.getWorld().isRemote;
+                String pseudo = playerEntity.getName();
 
-                    if (playerEntity instanceof EntityPlayerMP && !isClient) {
-                        System.out.println("Tu est est un serveur");
+                if (playerEntity instanceof EntityPlayerMP && !isClient) {
 
-                        ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+                    /******************
+                    *
+                    *  SERVEUR ACTION
+                    *
+                    * ****************/
 
-                        executorService.schedule(() -> {
+                    ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
-                            int pseudoExisting = 1;
-                            for (EntityPlayer player : TyroMod.playersVerif) {
-                                System.out.println("boucle verified -> " + player.getName());
+                    /* LANCE LE DELAI */
+                    executorService.schedule(() -> {
 
+                        /* VERIFIE SI TU A BIEN ENVOYER LES TOKENS*/
+                        int pseudoExisting = 1;
+                        for (EntityPlayer player : TyroMod.playersVerif) {
+
+                            if (player.getName().equals(pseudo)) {
+                                pseudoExisting = 2;
+                            }
+
+                        }
+
+                        if (pseudoExisting == 2) {
+
+                            playerEntity.sendMessage(new TextComponentString("Time out is skipped !"));
+
+                            /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
+                            /*for (EntityPlayer player : TyroMod.playersVerif) {
                                 if (player.getName().equals(pseudo)) {
-                                    pseudoExisting = 2;
-                                    System.out.println("Tu est verifier -> " + player.getName());
-
+                                    TyroMod.playersVerif.remove(player);
                                 }
+                            }*/
 
-                            }
+                        } else {
 
-                            if (pseudoExisting == 2) {
+                            System.out.println("TOKEN TIME OUT DE "+ pseudo);
+                            playerEntity.sendMessage(new TextComponentString("Connexion Time Out !"));
+                            ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
 
-                                playerEntity.sendMessage(new TextComponentString("Time out is skipped !"));
+                        }
 
-//                                /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
-//                                for (EntityPlayer player : TyroMod.playersVerif) {
-//                                    if (player.getName().equals(pseudo)) {
-//                                        TyroMod.playersVerif.remove(player);
-//                                    }
-//                                }
+                    }, 10, TimeUnit.SECONDS);
 
-                            } else {
+                    /*DEBUG INFO*/
 
-                                System.out.println("TOKEN TIME OUT DE "+ pseudo);
-                                playerEntity.sendMessage(new TextComponentString("Connexion Time Out !"));
-                                ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
-
-                            }
+                    /*String ip = ((EntityPlayerMP) playerEntity).getPlayerIP();
+                    System.out.println("pseudo : " + pseudo + " ip : " + ip);*/
 
 
+                } else if (isClient) {
 
-                        }, 10, TimeUnit.SECONDS);
+                    /******************
+                     *
+                     *  CLIENT ACTION
+                     *
+                     * ****************/
 
+                    System.out.println("ENVOIE DU PAQUET");
+                    TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
 
-                        /* SERVEUR ACTION */
-                        String ip = ((EntityPlayerMP) playerEntity).getPlayerIP();
-                        System.out.println("pseudo : " + pseudo + " ip : " + ip);
-
-
-                    } else if (isClient) {
-                        System.out.println("Tu est est un client");
-
-
-                        /* CLIENT ACTION */
-//                        if(iterationEvent == 0) {
-                            System.out.println("ENVOIE DU PAQUET");
-                            TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
-//                        }
-//                        iterationEvent = 1;
-
-                    }
                 }
-
-//            }
-
+            }
 
 
 
+        }
 
+
+        @SubscribeEvent
+        public void onPlayerLoggedOut(PlayerEvent.PlayerLoggedOutEvent event) {
+            System.out.println(event.player.getName() + " has left the game.");
         }
 
     }
