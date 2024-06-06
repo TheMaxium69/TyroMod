@@ -36,8 +36,8 @@ public class PacketClass implements IMessage {
         @Override
         public IMessage onMessage(PacketClass message, MessageContext ctx) {
             EntityPlayerMP playerEntity = ctx.getServerHandler().player;
-            System.out.println("Received from client: " + message.token + " " + message.tokenOld);
-            System.out.println("Message by " + playerEntity.getName());
+//            System.out.println("Received from client: " + message.token + " " + message.tokenOld);
+//            System.out.println("Message by " + playerEntity.getName());
             PacketToken.postDataToApi(message.token, message.tokenOld, (EntityPlayerMP) playerEntity);
             return null;
         }

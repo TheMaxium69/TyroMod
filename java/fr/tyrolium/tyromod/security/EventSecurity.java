@@ -1,6 +1,7 @@
 package fr.tyrolium.tyromod.security;
 
 import fr.tyrolium.tyromod.TyroMod;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.util.text.TextComponentString;
@@ -27,8 +28,8 @@ public class EventSecurity {
         @SubscribeEvent
         public static void onEvent(EntityJoinWorldEvent event) {
 
-            System.out.println("Loading Security");
-            System.out.println("-------------------------------- players verif : " + TyroMod.playersVerif);
+//            System.out.println("Loading Security");
+//            System.out.println("-------------------------------- players verif : " + TyroMod.playersVerif);
 
             for (EntityPlayer playerEntity : event.getWorld().playerEntities) {
 
@@ -45,40 +46,55 @@ public class EventSecurity {
 
                     ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
-                    /* LANCE LE DELAI */
-                    executorService.schedule(() -> {
 
-                        /* VERIFIE SI TU A BIEN ENVOYER LES TOKENS*/
-                        int pseudoExisting = 1;
-                        for (EntityPlayer player : TyroMod.playersVerif) {
+                    int playerADejaUneBoucle = 0;
+                    for (EntityPlayer player : TyroMod.playerEnAttente) {
 
-                            if (player.getName().equals(pseudo)) {
-                                pseudoExisting = 2;
+                        if (player.getName().equals(pseudo)) {
+                            playerADejaUneBoucle = 1;
+                        }
+
+                    }
+
+                    if (playerADejaUneBoucle == 0) {
+
+                        /*Ajouter le player dans la liste d'attente*/
+                        TyroMod.playerEnAttente.add(playerEntity);
+
+                        /* LANCE LE DELAI */
+                        executorService.schedule(() -> {
+
+                            /* VERIFIE SI TU A BIEN ENVOYER LES TOKENS*/
+                            int pseudoExisting = 1;
+                            for (EntityPlayer player : TyroMod.playersVerif) {
+
+                                if (player.getName().equals(pseudo)) {
+                                    pseudoExisting = 2;
+                                }
+
                             }
 
-                        }
+                            if (pseudoExisting == 2) {
 
-                        if (pseudoExisting == 2) {
+                                playerEntity.sendMessage(new TextComponentString("Connected !"));
 
-                            playerEntity.sendMessage(new TextComponentString("Time out is skipped !"));
-
-                            /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
-                            /*for (EntityPlayer player : TyroMod.playersVerif) {
-                                if (player.getName().equals(pseudo)) {
-                                    TyroMod.playersVerif.remove(player);
+                                /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
+                                for (EntityPlayer player : TyroMod.playersVerif) {
+                                    if (player.getName().equals(pseudo)) {
+                                        TyroMod.playersVerif.remove(player);
+                                    }
                                 }
-                            }*/
 
-                        } else {
+                            } else {
 
-                            System.out.println("TOKEN TIME OUT DE "+ pseudo);
-                            playerEntity.sendMessage(new TextComponentString("Connexion Time Out !"));
-                            ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
+                                System.out.println("TOKEN TIME OUT DE "+ pseudo);
+                                playerEntity.sendMessage(new TextComponentString("Connexion Time Out !"));
+                                ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
 
-                        }
+                            }
 
-                    }, 10, TimeUnit.SECONDS);
-
+                        }, 5, TimeUnit.SECONDS);
+                    }
                     /*DEBUG INFO*/
 
                     /*String ip = ((EntityPlayerMP) playerEntity).getPlayerIP();
@@ -93,20 +109,28 @@ public class EventSecurity {
                      *
                      * ****************/
 
-                    System.out.println("ENVOIE DU PAQUET");
-                    TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
+//                    if (iterationEvent != 1) {
+//                        System.out.println("ENVOIE DU PAQUET");
+                        TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
+//                        iterationEvent = 1;
+//                    }
 
                 }
             }
-
-
 
         }
 
 
         @SubscribeEvent
-        public void onPlayerLoggedOut(PlayerEvent.PlayerLoggedOutEvent event) {
-            System.out.println(event.player.getName() + " has left the game.");
+        public static void onEvent(PlayerEvent.PlayerLoggedOutEvent event) {
+            EntityPlayer player = event.player;
+
+            System.out.println(player.getName() + " has disconnected.");
+
+            /* SERVEUR */
+            TyroMod.playerEnAttente.remove(player);
+            TyroMod.playersVerif.remove(player);
+
         }
 
     }

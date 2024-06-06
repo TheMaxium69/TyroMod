@@ -49,6 +49,7 @@ public class TyroMod
 
     /*PLAYER CONNECTED*/
     public static final ArrayList<EntityPlayer> playersVerif = new ArrayList<>();
+    public static final ArrayList<EntityPlayer> playerEnAttente = new ArrayList<>();
 
     /* CHANNEL PAQUET */
     public static SimpleNetworkWrapper networkWrapper;
