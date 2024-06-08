@@ -76,7 +76,7 @@ public class EventSecurity {
 
                             if (pseudoExisting == 2) {
 
-                                playerEntity.sendMessage(new TextComponentString("Connected !"));
+                                playerEntity.sendMessage(new TextComponentString("§f[TyroPlugin] §aConnexion établie !"));
 
                                 /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
                                 for (EntityPlayer player : TyroMod.playersVerif) {
@@ -93,7 +93,7 @@ public class EventSecurity {
 
                             }
 
-                        }, 5, TimeUnit.SECONDS);
+                        }, 2, TimeUnit.SECONDS);
                     }
                     /*DEBUG INFO*/
 
