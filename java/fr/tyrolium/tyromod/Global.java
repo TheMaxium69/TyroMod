@@ -2,6 +2,8 @@ package fr.tyrolium.tyromod;
 
 public class Global {
 
+    public static final int USERITIUM_VERIF = 2; /* 1 = YES*/
+
     public static final String MODID = "tyromod";
     public static final String NAME = "TyroMod";
     public static final String VERSION = "0.2";

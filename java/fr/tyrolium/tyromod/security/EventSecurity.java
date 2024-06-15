@@ -1,5 +1,6 @@
 package fr.tyrolium.tyromod.security;
 
+import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
@@ -28,93 +29,95 @@ public class EventSecurity {
         @SubscribeEvent
         public static void onEvent(EntityJoinWorldEvent event) {
 
-            for (EntityPlayer playerEntity : event.getWorld().playerEntities) {
+            if (Global.USERITIUM_VERIF == 1) {
 
-                boolean isClient = event.getWorld().isRemote;
-                String pseudo = playerEntity.getName();
+                for (EntityPlayer playerEntity : event.getWorld().playerEntities) {
 
-                if (playerEntity instanceof EntityPlayerMP && !isClient) {
+                    boolean isClient = event.getWorld().isRemote;
+                    String pseudo = playerEntity.getName();
 
-                    /******************
-                    *
-                    *  SERVEUR ACTION
-                    *
-                    * ****************/
+                    if (playerEntity instanceof EntityPlayerMP && !isClient) {
 
-                    ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+                        /******************
+                        *
+                        *  SERVEUR ACTION
+                        *
+                        * ****************/
+
+                        ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
 
-                    int playerADejaUneBoucle = 0;
-                    for (EntityPlayer player : TyroMod.playerEnAttente) {
+                        int playerADejaUneBoucle = 0;
+                        for (EntityPlayer player : TyroMod.playerEnAttente) {
 
-                        if (player.getName().equals(pseudo)) {
-                            playerADejaUneBoucle = 1;
+                            if (player.getName().equals(pseudo)) {
+                                playerADejaUneBoucle = 1;
+                            }
+
                         }
 
-                    }
+                        if (playerADejaUneBoucle == 0) {
 
-                    if (playerADejaUneBoucle == 0) {
+                            /*Ajouter le player dans la liste d'attente*/
+                            TyroMod.playerEnAttente.add(playerEntity);
 
-                        /*Ajouter le player dans la liste d'attente*/
-                        TyroMod.playerEnAttente.add(playerEntity);
+                            /* LANCE LE DELAI */
+                            executorService.schedule(() -> {
 
-                        /* LANCE LE DELAI */
-                        executorService.schedule(() -> {
-
-                            /* VERIFIE SI TU A BIEN ENVOYER LES TOKENS*/
-                            int pseudoExisting = 1;
-                            for (EntityPlayer player : TyroMod.playersVerif) {
-
-                                if (player.getName().equals(pseudo)) {
-                                    pseudoExisting = 2;
-                                }
-
-                            }
-
-                            if (pseudoExisting == 2) {
-
-                                playerEntity.sendMessage(new TextComponentString("\u00A7f[TyroPlugin] \u00A7aConnexion \u00E9tablie !"));
-
-                                /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
+                                /* VERIFIE SI TU A BIEN ENVOYER LES TOKENS*/
+                                int pseudoExisting = 1;
                                 for (EntityPlayer player : TyroMod.playersVerif) {
+
                                     if (player.getName().equals(pseudo)) {
-                                        TyroMod.playersVerif.remove(player);
+                                        pseudoExisting = 2;
                                     }
+
                                 }
 
-                            } else {
+                                if (pseudoExisting == 2) {
 
-                                System.out.println("TOKEN TIME OUT DE "+ pseudo);
-                                playerEntity.sendMessage(new TextComponentString("Connexion Time Out !"));
-                                ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
+                                    playerEntity.sendMessage(new TextComponentString("\u00A7f[TyroPlugin] \u00A7aConnexion \u00E9tablie !"));
 
-                            }
+                                    /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
+                                    for (EntityPlayer player : TyroMod.playersVerif) {
+                                        if (player.getName().equals(pseudo)) {
+                                            TyroMod.playersVerif.remove(player);
+                                        }
+                                    }
 
-                        }, 2, TimeUnit.SECONDS);
+                                } else {
+
+                                    System.out.println("TOKEN TIME OUT DE "+ pseudo);
+                                    playerEntity.sendMessage(new TextComponentString("Connexion Time Out !"));
+                                    ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
+
+                                }
+
+                            }, 2, TimeUnit.SECONDS);
+                        }
+                        /*DEBUG INFO*/
+
+                        /*String ip = ((EntityPlayerMP) playerEntity).getPlayerIP();
+                        System.out.println("pseudo : " + pseudo + " ip : " + ip);*/
+
+
+                    } else if (isClient) {
+
+                        /******************
+                         *
+                         *  CLIENT ACTION
+                         *
+                         * ****************/
+
+    //                    if (iterationEvent != 1) {
+    //                        System.out.println("ENVOIE DU PAQUET");
+                            TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
+    //                        iterationEvent = 1;
+    //                    }
+
                     }
-                    /*DEBUG INFO*/
-
-                    /*String ip = ((EntityPlayerMP) playerEntity).getPlayerIP();
-                    System.out.println("pseudo : " + pseudo + " ip : " + ip);*/
-
-
-                } else if (isClient) {
-
-                    /******************
-                     *
-                     *  CLIENT ACTION
-                     *
-                     * ****************/
-
-//                    if (iterationEvent != 1) {
-//                        System.out.println("ENVOIE DU PAQUET");
-                        TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
-//                        iterationEvent = 1;
-//                    }
-
                 }
             }
-
         }
 
 
