@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:draconium",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:draconium_boots",
+		"data": 0
+    }
+}

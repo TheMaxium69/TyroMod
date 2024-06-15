@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:topaz_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:topaz_boots",
+		"data": 0
+    }
+}

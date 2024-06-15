@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:polonite_block",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:polonite_ingot",
+        "count": 9,
+		"data": 0
+    }
+}

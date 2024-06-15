@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:galactite",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:galactite_helmet",
+		"data": 0
+    }
+}

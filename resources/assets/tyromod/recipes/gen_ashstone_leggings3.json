@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:ashstone_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:ashstone_leggings",
+		"data": 0
+    }
+}

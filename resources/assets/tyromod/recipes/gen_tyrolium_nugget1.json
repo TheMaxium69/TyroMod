@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:tyrolium",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:tyrolium_nugget",
+        "count": 9,
+		"data": 0
+    }
+}

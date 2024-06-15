@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:titane_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:titane_boots",
+		"data": 0
+    }
+}

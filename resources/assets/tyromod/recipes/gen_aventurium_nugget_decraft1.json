@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:aventurium_nugget",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:aventurium",
+		"data": 0
+    }
+}

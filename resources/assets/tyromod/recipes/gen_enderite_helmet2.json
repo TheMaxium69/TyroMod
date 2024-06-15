@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:enderite_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:enderite_helmet",
+		"data": 0
+    }
+}

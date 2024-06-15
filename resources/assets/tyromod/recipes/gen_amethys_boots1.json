@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:amethys",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:amethys_boots",
+		"data": 0
+    }
+}

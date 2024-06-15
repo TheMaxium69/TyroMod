@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:clay_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:clay_boots",
+		"data": 0
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:sapphirium_block",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:sapphirium_ingot",
+        "count": 9,
+		"data": 0
+    }
+}

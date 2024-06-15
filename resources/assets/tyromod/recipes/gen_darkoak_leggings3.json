@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:darkoak_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:darkoak_leggings",
+		"data": 0
+    }
+}

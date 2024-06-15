@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:silverium",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:silverium_helmet",
+		"data": 0
+    }
+}

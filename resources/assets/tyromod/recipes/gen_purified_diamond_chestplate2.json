@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:purified_diamond_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:purified_diamond_chestplate",
+		"data": 0
+    }
+}

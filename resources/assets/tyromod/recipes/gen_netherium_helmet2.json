@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:netherium_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:netherium_helmet",
+		"data": 0
+    }
+}

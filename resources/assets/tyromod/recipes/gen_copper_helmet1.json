@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:copper",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:copper_helmet",
+		"data": 0
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:coranite",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:coranite_helmet",
+		"data": 0
+    }
+}

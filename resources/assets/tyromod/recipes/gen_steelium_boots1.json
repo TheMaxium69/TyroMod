@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:steelium",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:steelium_boots",
+		"data": 0
+    }
+}

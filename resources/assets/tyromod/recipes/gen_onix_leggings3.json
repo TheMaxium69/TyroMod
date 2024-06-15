@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:onix_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:onix_leggings",
+		"data": 0
+    }
+}

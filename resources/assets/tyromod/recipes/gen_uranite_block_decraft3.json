@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:uranite_block",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:uranite_gem",
+        "count": 9,
+		"data": 0
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:bronze_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:bronze_boots",
+		"data": 0
+    }
+}

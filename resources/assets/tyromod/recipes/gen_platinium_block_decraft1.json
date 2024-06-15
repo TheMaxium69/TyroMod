@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:platinium_block",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:platinium",
+        "count": 9,
+		"data": 0
+    }
+}

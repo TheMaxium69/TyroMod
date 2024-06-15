@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:polonium_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:polonium_boots",
+		"data": 0
+    }
+}

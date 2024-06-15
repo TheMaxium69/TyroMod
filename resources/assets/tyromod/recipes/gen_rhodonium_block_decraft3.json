@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:rhodonium_block",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:rhodonium_gem",
+        "count": 9,
+		"data": 0
+    }
+}

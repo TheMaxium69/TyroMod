@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:dragonstone",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:dragonstone_leggings",
+		"data": 0
+    }
+}

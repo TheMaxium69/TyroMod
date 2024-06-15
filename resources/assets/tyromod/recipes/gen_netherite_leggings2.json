@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:netherite_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:netherite_leggings",
+		"data": 0
+    }
+}

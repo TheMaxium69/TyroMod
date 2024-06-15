@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:yellorium",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:yellorium_boots",
+		"data": 0
+    }
+}

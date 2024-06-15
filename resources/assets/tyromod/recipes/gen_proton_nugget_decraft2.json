@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:proton_nugget",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:proton_ingot",
+		"data": 0
+    }
+}

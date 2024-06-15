@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:thyrium_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:thyrium_leggings",
+		"data": 0
+    }
+}

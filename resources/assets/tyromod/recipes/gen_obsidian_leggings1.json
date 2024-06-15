@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:obsidian",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:obsidian_leggings",
+		"data": 0
+    }
+}

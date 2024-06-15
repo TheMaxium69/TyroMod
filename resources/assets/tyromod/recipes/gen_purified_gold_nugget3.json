@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:purified_gold_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:purified_gold_nugget",
+        "count": 9,
+		"data": 0
+    }
+}

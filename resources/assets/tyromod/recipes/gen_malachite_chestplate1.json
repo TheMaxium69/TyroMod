@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:malachite",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:malachite_chestplate",
+		"data": 0
+    }
+}

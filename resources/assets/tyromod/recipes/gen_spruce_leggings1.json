@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:spruce",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:spruce_leggings",
+		"data": 0
+    }
+}

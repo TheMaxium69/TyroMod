@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:plutonium_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:plutonium_chestplate",
+		"data": 0
+    }
+}

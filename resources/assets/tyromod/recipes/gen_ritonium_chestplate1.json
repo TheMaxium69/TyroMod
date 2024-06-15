@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:ritonium",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:ritonium_chestplate",
+		"data": 0
+    }
+}

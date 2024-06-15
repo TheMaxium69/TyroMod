@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:acacia",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:acacia_helmet",
+		"data": 0
+    }
+}

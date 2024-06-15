@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:obsidian_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:obsidian_boots",
+		"data": 0
+    }
+}

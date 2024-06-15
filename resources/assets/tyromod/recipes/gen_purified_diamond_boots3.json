@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:purified_diamond_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:purified_diamond_boots",
+		"data": 0
+    }
+}

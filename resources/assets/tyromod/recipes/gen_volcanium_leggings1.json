@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:volcanium",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:volcanium_leggings",
+		"data": 0
+    }
+}

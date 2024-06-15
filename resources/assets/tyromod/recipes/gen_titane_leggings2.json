@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:titane_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:titane_leggings",
+		"data": 0
+    }
+}
