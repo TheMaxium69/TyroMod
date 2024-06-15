@@ -28,9 +28,6 @@ public class EventSecurity {
         @SubscribeEvent
         public static void onEvent(EntityJoinWorldEvent event) {
 
-//            System.out.println("Loading Security");
-//            System.out.println("-------------------------------- players verif : " + TyroMod.playersVerif);
-
             for (EntityPlayer playerEntity : event.getWorld().playerEntities) {
 
                 boolean isClient = event.getWorld().isRemote;
@@ -76,7 +73,7 @@ public class EventSecurity {
 
                             if (pseudoExisting == 2) {
 
-                                playerEntity.sendMessage(new TextComponentString("§f[TyroPlugin] §aConnexion établie !"));
+                                playerEntity.sendMessage(new TextComponentString("\u00A7f[TyroPlugin] \u00A7aConnexion \u00E9tablie !"));
 
                                 /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
                                 for (EntityPlayer player : TyroMod.playersVerif) {
