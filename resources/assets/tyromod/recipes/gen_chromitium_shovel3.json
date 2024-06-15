@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "/",
+        "/"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:chromitium_gem",
+			"data": 0
+        },
+        "/": {
+            "item": "minecraft:stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:chromitium_shovel",
+		"data": 0
+    }
+}

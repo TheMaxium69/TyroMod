@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "/",
+        "/"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:redstone_ingot",
+			"data": 0
+        },
+        "/": {
+            "item": "minecraft:stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:redstone_shovel",
+		"data": 0
+    }
+}

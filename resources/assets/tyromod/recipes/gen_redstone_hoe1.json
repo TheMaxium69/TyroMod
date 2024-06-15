@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        " /",
+        " /"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:redstone",
+			"data": 0
+        },
+        "/": {
+            "item": "minecraft:stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:redstone_hoe",
+		"data": 0
+    }
+}

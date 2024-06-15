@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "/",
+        "/"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:emerald_ingot",
+			"data": 0
+        },
+        "/": {
+            "item": "minecraft:stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:emerald_shovel",
+		"data": 0
+    }
+}

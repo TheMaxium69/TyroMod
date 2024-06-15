@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "#/",
+        " /"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:chronite_gem",
+			"data": 0
+        },
+        "/": {
+            "item": "minecraft:stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:chronite_axe",
+		"data": 0
+    }
+}

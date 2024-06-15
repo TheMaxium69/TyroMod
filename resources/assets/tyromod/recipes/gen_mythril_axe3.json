@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "#/",
+        " /"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:mythril_gem",
+			"data": 0
+        },
+        "/": {
+            "item": "minecraft:stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:mythril_axe",
+		"data": 0
+    }
+}
