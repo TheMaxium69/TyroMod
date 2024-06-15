@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:thyrium_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:thyrium_block",
+		"data": 0
+    }
+}

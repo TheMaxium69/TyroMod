@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:draconium_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:draconium_block",
+		"data": 0
+    }
+}

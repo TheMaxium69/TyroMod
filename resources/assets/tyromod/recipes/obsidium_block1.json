@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:obsidium",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:obsidium_block",
+		"data": 0
+    }
+}

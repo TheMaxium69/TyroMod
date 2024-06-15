@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:titane",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:titane_block",
+		"data": 0
+    }
+}

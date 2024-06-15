@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:ruby_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:ruby_block",
+		"data": 0
+    }
+}

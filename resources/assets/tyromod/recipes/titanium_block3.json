@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:titanium_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:titanium_block",
+		"data": 0
+    }
+}

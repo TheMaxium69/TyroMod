@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:mercurium_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:mercurium_block",
+		"data": 0
+    }
+}

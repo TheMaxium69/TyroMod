@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:dragonstone_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:dragonstone_block",
+		"data": 0
+    }
+}

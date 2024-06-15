@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:sunstone",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:sunstone_block",
+		"data": 0
+    }
+}
