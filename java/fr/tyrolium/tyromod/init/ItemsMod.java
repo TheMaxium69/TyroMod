@@ -1,11 +1,10 @@
 package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
-import fr.tyrolium.tyromod.generate.BlockGenerateClass;
 import fr.tyrolium.tyromod.generate.ItemGenerateClass;
 import fr.tyrolium.tyromod.global.*;
 
-import fr.tyrolium.tyromod.items.CreatifItem;
+import fr.tyrolium.tyromod.items.ServerItem;
 import fr.tyrolium.tyromod.items.Radar;
 import fr.tyrolium.tyromod.items.Tyrolium;
 import fr.tyrolium.tyromod.items.armor.TyroliumArmor;
@@ -1377,7 +1376,7 @@ public class ItemsMod {
             new ItemGenerateClass("ultium", "boots", false, ULTIUM_ARMOR, "3", "IUM"),
 
                 /* *******
-                 * CREATIF
+                 * SERVER
                  * *******/
 
             /*RING*/
@@ -1530,7 +1529,7 @@ public class ItemsMod {
                 }
 
                 if (ItemList[i].getType() == "keycard" || ItemList[i].getType() == "symbol" || ItemList[i].getType() == "wrench" || ItemList[i].getType() == "gear" || ItemList[i].getType() == "coin" || ItemList[i].getType() == "ring" || ItemList[i].getType() == "plate") {
-                    itemCustomClass.put("c"+i, new CreatifItem(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "c" + i));
+                    itemCustomClass.put("c"+i, new ServerItem(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "c" + i));
                 }
 
             }

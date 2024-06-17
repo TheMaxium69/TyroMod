@@ -298,6 +298,40 @@ public class BlocksMod {
 
             /*ULTIUM*/
             new BlockGenerateClass("ultium", "block", false, "3", "IUM"),
+
+            /* *******
+            * SERVER
+            * *******/
+
+            /*FLAG*/
+            new BlockGenerateClass("amethys", "flag", true, "1"),
+            new BlockGenerateClass("amethys_sword", "flag", true, "1"),
+            new BlockGenerateClass("amethys_pickaxe", "flag", true, "1"),
+            new BlockGenerateClass("amethys_1", "flag", true, "1"),
+            new BlockGenerateClass("amethys_2", "flag", true, "1"),
+            new BlockGenerateClass("amethys_3", "flag", true, "1"),
+            new BlockGenerateClass("amethys_4", "flag", true, "1"),
+            new BlockGenerateClass("rhodonite", "flag", true, "1"),
+            new BlockGenerateClass("rhodonite_sword", "flag", true, "1"),
+            new BlockGenerateClass("rhodonite_pickaxe", "flag", true, "1"),
+            new BlockGenerateClass("rhodonite_1", "flag", true, "1"),
+            new BlockGenerateClass("rhodonite_2", "flag", true, "1"),
+            new BlockGenerateClass("rhodonite_3", "flag", true, "1"),
+            new BlockGenerateClass("rhodonite_4", "flag", true, "1"),
+            new BlockGenerateClass("tyrolium", "flag", true, "1"),
+            new BlockGenerateClass("tyrolium_sword", "flag", true, "1"),
+            new BlockGenerateClass("tyrolium_pickaxe", "flag", true, "1"),
+            new BlockGenerateClass("tyrolium_1", "flag", true, "1"),
+            new BlockGenerateClass("tyrolium_2", "flag", true, "1"),
+            new BlockGenerateClass("tyrolium_3", "flag", true, "1"),
+            new BlockGenerateClass("tyrolium_4", "flag", true, "1"),
+            new BlockGenerateClass("yellorite", "flag", true, "1"),
+            new BlockGenerateClass("yellorite_sword", "flag", true, "1"),
+            new BlockGenerateClass("yellorite_pickaxe", "flag", true, "1"),
+            new BlockGenerateClass("yellorite_1", "flag", true, "1"),
+            new BlockGenerateClass("yellorite_2", "flag", true, "1"),
+            new BlockGenerateClass("yellorite_3", "flag", true, "1"),
+            new BlockGenerateClass("yellorite_4", "flag", true, "1"),
     };
 
 
@@ -349,6 +383,10 @@ public class BlocksMod {
                 }
                 if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "command_block") {
                     blockCustomClass.put("bc"+i, new TyroliumCommandBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                }
+
+                if (BlockList[i].getType() == "flag") {
+                    blockCustomClass.put("bc"+i, new ServerBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
                 }
 
             }
