@@ -1069,7 +1069,7 @@ public class ItemsMod {
             new ItemGenerateClass("ritonite", "boots", false, RITONITE_ARMOR, "3", "3"),
 
             /*RITONIUM*/
-            new ItemGenerateClass("ritonium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("ritonium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("ritonium", "nugget", false, "3", "IUM"),
             new ItemGenerateClass("ritonium", "sword", false, RITONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("ritonium", "pickaxe", false, RITONIUM_TOOL, "3", "IUM"),
@@ -1325,7 +1325,7 @@ public class ItemsMod {
             new ItemGenerateClass("protonium", "boots", false, PROTONIUM_ARMOR, "3", "IUM"),
 
             /*SILVERIUM*/
-            new ItemGenerateClass("silverium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("silverium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("silverium", "sword", false, SILVERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("silverium", "pickaxe", false, SILVERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("silverium", "axe", false, SILVERIUM_TOOL, "3", "IUM"),
