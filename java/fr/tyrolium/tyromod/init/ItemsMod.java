@@ -729,7 +729,8 @@ public class ItemsMod {
             new ItemGenerateClass("thyrium", "boots", false, THYRIUM_ARMOR, "3", "IUM"),
 
             /*SUNSTONE*/
-            new ItemGenerateClass("sunstone", "gem", false, "3", "0"),
+            new ItemGenerateClass("sunstone", "ingot", false, "3", "0"),
+            new ItemGenerateClass("sunstone", "powder", false, "3", "0"),
             new ItemGenerateClass("sunstone", "sword", false, SUNSTONE_TOOL, "3", "0"),
             new ItemGenerateClass("sunstone", "pickaxe", false, SUNSTONE_TOOL, "3", "0"),
             new ItemGenerateClass("sunstone", "axe", false, SUNSTONE_TOOL, "3", "0"),
@@ -920,8 +921,7 @@ public class ItemsMod {
             new ItemGenerateClass("copperium", "boots", false, COPPERIUM_ARMOR, "3", "IUM"),
 
             /*AVENTURIUM*/
-            new ItemGenerateClass("aventurium", "classic", false, "3", "IUM"),
-            new ItemGenerateClass("aventurium", "nugget", false, "3", "IUM"),
+            new ItemGenerateClass("aventurium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("aventurium", "sword", false, AVENTURIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("aventurium", "pickaxe", false, AVENTURIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("aventurium", "axe", false, AVENTURIUM_TOOL, "3", "IUM"),
@@ -1044,8 +1044,7 @@ public class ItemsMod {
             new ItemGenerateClass("vaporium", "boots", false, VAPORIUM_ARMOR, "3", "IUM"),
 
             /*PROTON*/
-            new ItemGenerateClass("proton", "classic", false, "3", "3"),
-            new ItemGenerateClass("proton", "nugget", false, "3", "3"),
+            new ItemGenerateClass("proton", "ingot", false, "3", "3"),
             new ItemGenerateClass("proton", "sword", false, PROTON_TOOL, "3", "3"),
             new ItemGenerateClass("proton", "pickaxe", false, PROTON_TOOL, "3", "3"),
             new ItemGenerateClass("proton", "axe", false, PROTON_TOOL, "3", "3"),
@@ -1169,7 +1168,7 @@ public class ItemsMod {
             new ItemGenerateClass("uranium", "boots", false, URANIUM_ARMOR, "3", "IUM"),
 
             /*PLUTONITE*/
-            new ItemGenerateClass("plutonite", "classic", false, "3", "3"),
+            new ItemGenerateClass("plutonite", "ingot", false, "3", "3"),
             new ItemGenerateClass("plutonite", "sword", false, PLUTONITE_TOOL, "3", "3"),
             new ItemGenerateClass("plutonite", "pickaxe", false, PLUTONITE_TOOL, "3", "3"),
             new ItemGenerateClass("plutonite", "axe", false, PLUTONITE_TOOL, "3", "3"),
@@ -1181,7 +1180,7 @@ public class ItemsMod {
             new ItemGenerateClass("plutonite", "boots", false, PLUTONITE_ARMOR, "3", "3"),
 
             /*PLUTONIUM*/
-            new ItemGenerateClass("plutonium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("plutonium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("plutonium", "sword", false, PLUTONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("plutonium", "pickaxe", false, PLUTONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("plutonium", "axe", false, PLUTONIUM_TOOL, "3", "IUM"),
@@ -1314,7 +1313,7 @@ public class ItemsMod {
             new ItemGenerateClass("topaz", "boots", false, TOPAZ_ARMOR, "3", "3"),
 
             /*PROTONIUM*/
-            new ItemGenerateClass("protonium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("protonium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("protonium", "sword", false, PROTONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("protonium", "pickaxe", false, PROTONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("protonium", "axe", false, PROTONIUM_TOOL, "3", "IUM"),

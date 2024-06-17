@@ -295,6 +295,9 @@ public class BlocksMod {
             /*IUM*/
             new BlockGenerateClass("ium", "ore", false, "3", "IUM"),
             new BlockGenerateClass("ium", "block", false, "3", "IUM"),
+
+            /*ULTIUM*/
+            new BlockGenerateClass("ultium", "block", false, "3", "IUM"),
     };
 
 
