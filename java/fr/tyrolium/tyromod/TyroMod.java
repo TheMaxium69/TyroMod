@@ -3,6 +3,7 @@ package fr.tyrolium.tyromod;
 import fr.tyrolium.tyromod.creativetabs.TyroModTabUtils;
 import fr.tyrolium.tyromod.creativetabs.TyroModTabV1;
 import fr.tyrolium.tyromod.creativetabs.TyroModTabV3;
+import fr.tyrolium.tyromod.creativetabs.TyroModTabServ;
 import fr.tyrolium.tyromod.init.BlocksMod;
 import fr.tyrolium.tyromod.init.ItemsMod;
 import fr.tyrolium.tyromod.proxy.CommonProxy;
@@ -46,6 +47,7 @@ public class TyroMod
     public static final CreativeTabs TyroModTab = TyroModTabV1; /* OLD NAME */
     public static final CreativeTabs TyroModTabV3 = new TyroModTabV3();
     public static final CreativeTabs TyroModTabUtils = new TyroModTabUtils();
+    public static final CreativeTabs TyroModTabServ = new TyroModTabServ();
 
     /*PLAYER CONNECTED*/
     public static final ArrayList<EntityPlayer> playersVerif = new ArrayList<>();

@@ -5,6 +5,7 @@ import fr.tyrolium.tyromod.generate.BlockGenerateClass;
 import fr.tyrolium.tyromod.generate.ItemGenerateClass;
 import fr.tyrolium.tyromod.global.*;
 
+import fr.tyrolium.tyromod.items.CreatifItem;
 import fr.tyrolium.tyromod.items.Radar;
 import fr.tyrolium.tyromod.items.Tyrolium;
 import fr.tyrolium.tyromod.items.armor.TyroliumArmor;
@@ -806,6 +807,7 @@ public class ItemsMod {
             new ItemGenerateClass("darkoak", "boots", false, DARKOAK_ARMOR, "v3", "0"),
 
             /*STONE*/
+            new ItemGenerateClass("stone", "nugget", false, "v1", "0"),
             new ItemGenerateClass("stone", "helmet", false, STONE_ARMOR, "v1", "0"),
             new ItemGenerateClass("stone", "chestplate", false, STONE_ARMOR, "v1", "0"),
             new ItemGenerateClass("stone", "leggings", false, STONE_ARMOR, "v1", "0"),
@@ -1374,6 +1376,57 @@ public class ItemsMod {
             new ItemGenerateClass("ultium", "leggings", false, ULTIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("ultium", "boots", false, ULTIUM_ARMOR, "3", "IUM"),
 
+                /* *******
+                 * CREATIF
+                 * *******/
+
+            /*RING*/
+            new ItemGenerateClass("angel","ring", true, "1"),
+
+            /*COIN*/
+            new ItemGenerateClass("blue","coin", true, "1"),
+            new ItemGenerateClass("bronze","coin", true, "1"),
+            new ItemGenerateClass("gold","coin", true, "1"),
+            new ItemGenerateClass("iron","coin", true, "1"),
+            new ItemGenerateClass("red","coin", true, "1"),
+
+            /*GEAR*/
+            new ItemGenerateClass("blue","gear", true, "1"),
+            new ItemGenerateClass("bronze","gear", true, "1"),
+            new ItemGenerateClass("gold","gear", true, "1"),
+            new ItemGenerateClass("iron","gear", true, "1"),
+            new ItemGenerateClass("red","gear", true, "1"),
+
+            /*KEYCARD*/
+            new ItemGenerateClass("blue","keycard", true, "1"),
+            new ItemGenerateClass("orange","keycard", true, "1"),
+            new ItemGenerateClass("pink","keycard", true, "1"),
+            new ItemGenerateClass("purple","keycard", true, "1"),
+            new ItemGenerateClass("red","keycard", true, "1"),
+            new ItemGenerateClass("yellow","keycard", true, "1"),
+            new ItemGenerateClass("tyrolium","keycard", true, "1"),
+
+            /*PLATE*/
+            new ItemGenerateClass("iron","plate", true, "1"),
+
+            /*SYMBOL*/
+            new ItemGenerateClass("doom","symbol", true, "1"),
+            new ItemGenerateClass("error","symbol", true, "1"),
+            new ItemGenerateClass("lock","symbol", true, "1"),
+            new ItemGenerateClass("love","symbol", true, "1"),
+            new ItemGenerateClass("no","symbol", true, "1"),
+            new ItemGenerateClass("question","symbol", true, "1"),
+            new ItemGenerateClass("relapse","symbol", true, "1"),
+            new ItemGenerateClass("troll","symbol", true, "1"),
+            new ItemGenerateClass("unvalide","symbol", true, "1"),
+            new ItemGenerateClass("valide","symbol", true, "1"),
+
+            /*WRENCH*/
+            new ItemGenerateClass("blue","wrench", true, "1"),
+            new ItemGenerateClass("gold","wrench", true, "1"),
+            new ItemGenerateClass("iron","wrench", true, "1"),
+            new ItemGenerateClass("red","wrench", true, "1"),
+
     };
 
     public static DefaultItem[] items;
@@ -1456,7 +1509,7 @@ public class ItemsMod {
             /* custom className*/
 
                 /*TYROLIUM*/
-                if (ItemList[i].getName() == "tyrolium") {
+                if (ItemList[i].getName() == "tyrolium" && ItemList[i].getType() != "keycard") {
 
                     if (ItemList[i].getType() == "classic") {
                         itemCustomClass.put("c"+i, new Tyrolium(ItemList[i].getName(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
@@ -1474,6 +1527,10 @@ public class ItemsMod {
                         itemCustomClass.put("c"+i, new TyroliumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
                     }
 
+                }
+
+                if (ItemList[i].getType() == "keycard" || ItemList[i].getType() == "symbol" || ItemList[i].getType() == "wrench" || ItemList[i].getType() == "gear" || ItemList[i].getType() == "coin" || ItemList[i].getType() == "ring" || ItemList[i].getType() == "plate") {
+                    itemCustomClass.put("c"+i, new CreatifItem(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "c" + i));
                 }
 
             }
