@@ -122,6 +122,8 @@ public class ItemsMod {
     public static final ArmorMaterial PROTONIUM_ARMOR = EnumHelper.addArmorMaterial("protonium_armor", Global.MODID + ":protonium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial SILVERIUM_ARMOR = EnumHelper.addArmorMaterial("silverium_armor", Global.MODID + ":silverium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
     public static final ArmorMaterial SILICIUM_ARMOR = EnumHelper.addArmorMaterial("silicium_armor", Global.MODID + ":silicium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial IUM_ARMOR = EnumHelper.addArmorMaterial("ium_armor", Global.MODID + ":ium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ArmorMaterial ULTIUM_ARMOR = EnumHelper.addArmorMaterial("ultium_armor", Global.MODID + ":ultium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     //Tool Materials
     public static final ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 2, 400, 3.0f, 5.0f, 20);
@@ -212,6 +214,8 @@ public class ItemsMod {
     public static final ToolMaterial PROTONIUM_TOOL = EnumHelper.addToolMaterial("protonium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial SILVERIUM_TOOL = EnumHelper.addToolMaterial("silverium_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final ToolMaterial SILICIUM_TOOL = EnumHelper.addToolMaterial("silicium_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial IUM_TOOL = EnumHelper.addToolMaterial("ium_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final ToolMaterial ULTIUM_TOOL = EnumHelper.addToolMaterial("ultium_tool", 2, 400, 3.0f, 5.0f, 20);
 
     /* MANUEL */
     public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
@@ -954,8 +958,7 @@ public class ItemsMod {
             new ItemGenerateClass("purified_diamond", "boots", false, PURIFIED_DIAMOND_ARMOR, "3", "2"),
 
             /*TITANIUM*/
-            new ItemGenerateClass("titanium", "classic", false, "3", "IUM"),
-            new ItemGenerateClass("titanium", "nugget", false, "3", "IUM"),
+            new ItemGenerateClass("titanium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("titanium", "sword", false, TITANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("titanium", "pickaxe", false, TITANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("titanium", "axe", false, TITANIUM_TOOL, "3", "IUM"),
@@ -992,8 +995,7 @@ public class ItemsMod {
             new ItemGenerateClass("mercurium", "boots", false, MERCURIUM_ARMOR, "3", "IUM"),
 
             /*PLATINE*/
-            new ItemGenerateClass("platine", "classic", false, "3", "3"),
-            new ItemGenerateClass("platine", "nugget", false, "3", "3"),
+            new ItemGenerateClass("platine", "ingot", false, "3", "3"),
             new ItemGenerateClass("platine", "sword", false, PLATINE_TOOL, "3", "3"),
             new ItemGenerateClass("platine", "pickaxe", false, PLATINE_TOOL, "3", "3"),
             new ItemGenerateClass("platine", "axe", false, PLATINE_TOOL, "3", "3"),
@@ -1006,7 +1008,6 @@ public class ItemsMod {
 
             /*PLATINIUM*/
             new ItemGenerateClass("platinium", "classic", false, "3", "IUM"),
-            new ItemGenerateClass("platinium", "nugget", false, "3", "IUM"),
             new ItemGenerateClass("platinium", "sword", false, PLATINIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("platinium", "pickaxe", false, PLATINIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("platinium", "axe", false, PLATINIUM_TOOL, "3", "IUM"),
@@ -1083,7 +1084,6 @@ public class ItemsMod {
 
             /*GOLDONITE*/
             new ItemGenerateClass("goldonite", "classic", false, "3", "3"),
-            new ItemGenerateClass("goldonite", "nugget", false, "3", "3"),
             new ItemGenerateClass("goldonite", "sword", false, GOLDONITE_TOOL, "3", "3"),
             new ItemGenerateClass("goldonite", "pickaxe", false, GOLDONITE_TOOL, "3", "3"),
             new ItemGenerateClass("goldonite", "axe", false, GOLDONITE_TOOL, "3", "3"),
@@ -1132,7 +1132,7 @@ public class ItemsMod {
             new ItemGenerateClass("omeganium", "boots", false, OMEGANIUM_ARMOR, "3", "IUM"),
 
             /*NETHERIUM*/
-            new ItemGenerateClass("netherium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("netherium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("netherium", "sword", false, NETHERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("netherium", "pickaxe", false, NETHERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("netherium", "axe", false, NETHERIUM_TOOL, "3", "IUM"),
@@ -1205,7 +1205,7 @@ public class ItemsMod {
             new ItemGenerateClass("polonite", "boots", false, POLONITE_ARMOR, "3", "3"),
 
             /*POLONIUM*/
-            new ItemGenerateClass("polonium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("polonium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("polonium", "sword", false, POLONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("polonium", "pickaxe", false, POLONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("polonium", "axe", false, POLONIUM_TOOL, "3", "IUM"),
@@ -1229,7 +1229,7 @@ public class ItemsMod {
             new ItemGenerateClass("chronite", "boots", false, CHRONITE_ARMOR, "3", "3"),
 
             /*CHROMITIUM*/
-            new ItemGenerateClass("chromitium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("chromitium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("chromitium", "sword", false, CHROMITIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("chromitium", "pickaxe", false, CHROMITIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("chromitium", "axe", false, CHROMITIUM_TOOL, "3", "IUM"),
@@ -1253,7 +1253,7 @@ public class ItemsMod {
             new ItemGenerateClass("coranite", "boots", false, CORANITE_ARMOR, "3", "3"),
 
             /*CORANIUM*/
-            new ItemGenerateClass("coranium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("coranium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("coranium", "sword", false, CORANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("coranium", "pickaxe", false, CORANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("coranium", "axe", false, CORANIUM_TOOL, "3", "IUM"),
@@ -1277,7 +1277,7 @@ public class ItemsMod {
             new ItemGenerateClass("macronite", "boots", false, MACRONITE_ARMOR, "3", "3"),
 
             /*MACRONIUM*/
-            new ItemGenerateClass("macronium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("macronium", "ingot", false, "3", "IUM"),
             new ItemGenerateClass("macronium", "sword", false, MACRONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("macronium", "pickaxe", false, MACRONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("macronium", "axe", false, MACRONIUM_TOOL, "3", "IUM"),
@@ -1289,7 +1289,8 @@ public class ItemsMod {
             new ItemGenerateClass("macronium", "boots", false, MACRONIUM_ARMOR, "3", "IUM"),
 
             /*GALACTITE*/
-            new ItemGenerateClass("galactite", "classic", false, "3", "3"),
+            new ItemGenerateClass("galactite", "ingot", false, "3", "3"),
+            new ItemGenerateClass("galactite", "nugget", false, "3", "3"),
             new ItemGenerateClass("galactite", "sword", false, GALACTITE_TOOL, "3", "3"),
             new ItemGenerateClass("galactite", "pickaxe", false, GALACTITE_TOOL, "3", "3"),
             new ItemGenerateClass("galactite", "axe", false, GALACTITE_TOOL, "3", "3"),
@@ -1338,15 +1339,41 @@ public class ItemsMod {
 
             /*SILICIUM*/
             new ItemGenerateClass("silicium", "classic", false, "3", "IUM"),
-            new ItemGenerateClass("silicium", "sword", false, URANITE_TOOL, "3", "IUM"),
-            new ItemGenerateClass("silicium", "pickaxe", false, URANITE_TOOL, "3", "IUM"),
-            new ItemGenerateClass("silicium", "axe", false, URANITE_TOOL, "3", "IUM"),
-            new ItemGenerateClass("silicium", "shovel", false, URANITE_TOOL, "3", "IUM"),
-            new ItemGenerateClass("silicium", "hoe", false, URANITE_TOOL, "3", "IUM"),
+            new ItemGenerateClass("silicium", "sword", false, SILICIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("silicium", "pickaxe", false, SILICIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("silicium", "axe", false, SILICIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("silicium", "shovel", false, SILICIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("silicium", "hoe", false, SILICIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("silicium", "helmet", false, SILICIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("silicium", "chestplate", false, SILICIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("silicium", "leggings", false, SILICIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("silicium", "boots", false, SILICIUM_ARMOR, "3", "IUM"),
+
+            /*IUM*/
+            new ItemGenerateClass("ium", "ingot", false, "3", "IUM"),
+            new ItemGenerateClass("ium", "powder", false, "3", "IUM"),
+            new ItemGenerateClass("ium", "sword", false, IUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ium", "pickaxe", false, IUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ium", "axe", false, IUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ium", "shovel", false, IUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ium", "hoe", false, IUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ium", "helmet", false, IUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ium", "chestplate", false, IUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ium", "leggings", false, IUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ium", "boots", false, IUM_ARMOR, "3", "IUM"),
+
+            /*ULTIUM*/
+            new ItemGenerateClass("ultium", "classic", false, "3", "IUM"),
+            new ItemGenerateClass("ultium", "powder", false, "3", "IUM"),
+            new ItemGenerateClass("ultium", "sword", false, ULTIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ultium", "pickaxe", false, ULTIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ultium", "axe", false, ULTIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ultium", "shovel", false, ULTIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ultium", "hoe", false, ULTIUM_TOOL, "3", "IUM"),
+            new ItemGenerateClass("ultium", "helmet", false, ULTIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ultium", "chestplate", false, ULTIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ultium", "leggings", false, ULTIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ultium", "boots", false, ULTIUM_ARMOR, "3", "IUM"),
 
     };
 

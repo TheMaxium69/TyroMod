@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tyromod:items/coranium"
+    "layer0": "tyromod:items/ultium_boots"
   }
 }
