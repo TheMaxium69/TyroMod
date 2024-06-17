@@ -118,13 +118,7 @@ public class DefaultItem extends Item implements IHasModel {
 
         if (!isOre) {
 
-
-            if (this.oreTier == "creatif") {
-                setCreativeTab(TyroMod.TyroModTabServ);
-            } else {
-                setCreativeTab(TyroMod.TyroModTabUtils);
-            }
-
+            setCreativeTab(TyroMod.TyroModTabUtils);
 
         } else {
 
