@@ -95,9 +95,6 @@ public class BlocksMod {
             new BlockGenerateClass("volcanium_cave", "classic", true, "1"),
             new BlockGenerateClass("fake_lava", "classic", false, "1"),
 
-            /*OTHER*/
-            new BlockGenerateClass("fusion_block", "classic", true, "3"),
-
             /*ADAMANTIUM*/
             new BlockGenerateClass("adamantium", "ore", false, "3", "IUM"),
             new BlockGenerateClass("adamantium", "block", false, "3", "IUM"),
@@ -298,6 +295,33 @@ public class BlocksMod {
 
             /*ULTIUM*/
             new BlockGenerateClass("ultium", "block", false, "3", "IUM"),
+
+            /* *******
+            * AUTRE
+            * *******/
+            new BlockGenerateClass("fusion_block", "classic", true, "3"),
+
+            new BlockGenerateClass("cobblestone_1", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_2", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_3", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_4", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_5", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_6", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_7", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_8", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_9", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_10", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_11", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_12", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_13", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_14", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_15", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_16", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_17", "compressed", false, "1"),
+            new BlockGenerateClass("cobblestone_18", "compressed", false, "1"),
+            new BlockGenerateClass("full", "compressed", false, "1"),
+            new BlockGenerateClass("ore", "compressed", false, "1"),
+
 
             /* *******
             * SERVER
