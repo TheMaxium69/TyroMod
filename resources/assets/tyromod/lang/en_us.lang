@@ -1,4 +1,8 @@
-﻿itemGroup.TyroModOreV1=TyroMod Ore V1
+# MANUEL
+itemGroup.TyroModOreV1=TyroMod Ore V1
 itemGroup.TyroModOreV3=TyroMod Ore V3
 itemGroup.TyroModUtils=TyroMod Utils
 itemGroup.TyroModServer=TyroMod Server
+item.radar.name=Radar
+
+# GENERATE

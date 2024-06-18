@@ -1,4 +1,8 @@
-﻿itemGroup.TyroModOreV1=TyroMod Minerai V1
+# MANUEL
+itemGroup.TyroModOreV1=TyroMod Minerai V1
 itemGroup.TyroModOreV3=TyroMod Minerai V3
 itemGroup.TyroModUtils=TyroMod Utilitaires
 itemGroup.TyroModServer=TyroMod Serveur
+item.radar.name=Radar
+
+# GENERATE
