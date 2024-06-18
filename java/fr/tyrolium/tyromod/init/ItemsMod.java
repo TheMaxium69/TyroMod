@@ -1367,17 +1367,20 @@ public class ItemsMod {
             new ItemGenerateClass("ultium", "boots", false, ULTIUM_ARMOR, "3", "IUM"),
 
             /*HAMMER*/
-            new ItemGenerateClass("tyrolium", "hammer", false, "1", "IUM"),
-            new ItemGenerateClass("rhodonite", "hammer", false, "1", "3"),
-            new ItemGenerateClass("yellorite", "hammer", false, "1", "2"),
-            new ItemGenerateClass("aventurine", "hammer", false, "1", "3"),
-            new ItemGenerateClass("mercure", "hammer", false, "1", "0"),
+            new ItemGenerateClass("tyrolium", "hammer", false, TYROLIUM_TOOL, "1", "IUM"),
+            new ItemGenerateClass("rhodonite", "hammer", false, RHODONITE_TOOL, "1", "3"),
+            new ItemGenerateClass("amethys", "hammer", false, AMETHYS_TOOL, "1", "2"),
+            new ItemGenerateClass("yellorite", "hammer", false, YELLORITE_TOOL, "1", "2"),
+            new ItemGenerateClass("aventurine", "hammer", false, AVENTURINE_TOOL, "1", "3"),
+            new ItemGenerateClass("mercure", "hammer", false, MERCURE_TOOL, "1", "0"),
 
             /*SWORDFIRE*/
-            new ItemGenerateClass("tyrolium", "sword_fire", false, "1", "IUM"),
-            /*APPLE*/
-            new ItemGenerateClass("tyrolium", "apple", false, "1", "IUM"),
-            new ItemGenerateClass("volcanium", "apple", false, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "sword_fire", false, TYROLIUM_TOOL, "1", "IUM"),
+
+            /*FOOD*/
+            new ItemGenerateClass("tyrolium", "apple", false, "1"),
+            new ItemGenerateClass("volcanium", "apple", false, "1"),
+            new ItemGenerateClass("purified", "flesh", false, "1"),
 
                 /* *******
                  * SERVER
@@ -1499,11 +1502,11 @@ public class ItemsMod {
 
                 } else if (ItemList[i].getType() == "sword_fire"){
 
-                    swordFires[i] = new DefaultSwordFire(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "ha" + i);
+                    swordFires[i] = new DefaultSwordFire(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "sf" + i);
 
-                } else if (ItemList[i].getType() == "apple"){
+                } else if (ItemList[i].getType() == "apple" || ItemList[i].getType() == "flesh"){
 
-                    foods[i] = new DefaultFood(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "ha" + i, 6, false);
+                    foods[i] = new DefaultFood(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "f" + i, 6, false);
 
                 } else if (ItemList[i].isArmor() == "true"){
 
