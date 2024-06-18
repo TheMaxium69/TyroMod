@@ -218,15 +218,6 @@ public class ItemsMod {
     public static final ToolMaterial ULTIUM_TOOL = EnumHelper.addToolMaterial("ultium_tool", 2, 400, 3.0f, 5.0f, 20);
 
     /* MANUEL */
-    public static Item tyrolium_hammer = new DefaultHammer("tyrolium_hammer", TYROLIUM_TOOL, "1", "IUM", "c99999");
-    public static Item rhodonite_hammer = new DefaultHammer("rhodonite_hammer", RHODONITE_TOOL, "1", "IUM", "c99999");
-    public static Item yellorite_hammer = new DefaultHammer("yellorite_hammer", YELLORITE_TOOL, "1", "IUM", "c99999");
-    public static Item aventurine_hammer = new DefaultHammer("aventurine_hammer", AVENTURINE_TOOL, "1", "IUM", "c99999");
-    public static Item amethys_hammer = new DefaultHammer("amethys_hammer", AMETHYS_TOOL, "1", "IUM", "c99999");
-    public static Item mercure_hammer = new DefaultHammer("mercure_hammer", MERCURE_TOOL, "1", "IUM", "c99999");
-    public static Item tyrolium_sword_fire = new DefaultSwordFire("tyrolium_sword_fire", TYROLIUM_TOOL, "1", "IUM", "c999999");
-    public static Item tyrolium_apple = new DefaultFood("tyrolium_apple", "1", "c999999", 6, false);
-    public static Item volcanium_apple = new DefaultFood("volcanium_apple", "1", "c9999990", 6, false);
     public static Item RADAR = new Radar("radar", "3", "c999");
 
     /* GENERATION */
@@ -1375,6 +1366,19 @@ public class ItemsMod {
             new ItemGenerateClass("ultium", "leggings", false, ULTIUM_ARMOR, "3", "IUM"),
             new ItemGenerateClass("ultium", "boots", false, ULTIUM_ARMOR, "3", "IUM"),
 
+            /*HAMMER*/
+            new ItemGenerateClass("tyrolium", "hammer", false, "1", "IUM"),
+            new ItemGenerateClass("rhodonite", "hammer", false, "1", "3"),
+            new ItemGenerateClass("yellorite", "hammer", false, "1", "2"),
+            new ItemGenerateClass("aventurine", "hammer", false, "1", "3"),
+            new ItemGenerateClass("mercure", "hammer", false, "1", "0"),
+
+            /*SWORDFIRE*/
+            new ItemGenerateClass("tyrolium", "sword_fire", false, "1", "IUM"),
+            /*APPLE*/
+            new ItemGenerateClass("tyrolium", "apple", false, "1", "IUM"),
+            new ItemGenerateClass("volcanium", "apple", false, "1", "IUM"),
+
                 /* *******
                  * SERVER
                  * *******/
@@ -1435,6 +1439,8 @@ public class ItemsMod {
     public static DefaultShovel[] shovels;
     public static DefaultHoe[] hoes;
     public static DefaultHammer[] hammers;
+    public static DefaultSwordFire[] swordFires;
+    public static DefaultFood[] foods;
     public static DefaultArmor[] armors;
     private static final Map<String, Item> itemCustomClass = new HashMap<>();
 
@@ -1448,6 +1454,8 @@ public class ItemsMod {
         shovels = new DefaultShovel[ItemList.length];
         hoes = new DefaultHoe[ItemList.length];
         hammers = new DefaultHammer[ItemList.length];
+        swordFires = new DefaultSwordFire[ItemList.length];
+        foods = new DefaultFood[ItemList.length];
         armors = new DefaultArmor[ItemList.length];
 
         for (int i = 0; i < ItemList.length; i++) {
@@ -1488,6 +1496,14 @@ public class ItemsMod {
                 } else if (ItemList[i].getType() == "hammer"){
 
                     hammers[i] = new DefaultHammer(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "ha" + i);
+
+                } else if (ItemList[i].getType() == "sword_fire"){
+
+                    swordFires[i] = new DefaultSwordFire(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "ha" + i);
+
+                } else if (ItemList[i].getType() == "apple"){
+
+                    foods[i] = new DefaultFood(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "ha" + i, 6, false);
 
                 } else if (ItemList[i].isArmor() == "true"){
 
