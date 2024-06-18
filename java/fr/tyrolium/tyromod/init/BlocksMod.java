@@ -22,7 +22,6 @@ public class BlocksMod {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
     /* MANUEL */
-    public static Block ELEVATOR_BLOCK = new ElevatorBlock("elevator_block", Material.ANVIL, "3", "cb999999");
 
     /* GENERATION */
     public static BlockGenerateClass[] BlockList = {
@@ -300,6 +299,7 @@ public class BlocksMod {
             * AUTRE
             * *******/
             new BlockGenerateClass("fusion_block", "classic", true, "3"),
+            new BlockGenerateClass("elevator_block", "classic", true, "3"),
 
             new BlockGenerateClass("cobblestone_1", "compressed", false, "1"),
             new BlockGenerateClass("cobblestone_2", "compressed", false, "1"),
@@ -356,6 +356,7 @@ public class BlocksMod {
             new BlockGenerateClass("yellorite_2", "flag", true, "1"),
             new BlockGenerateClass("yellorite_3", "flag", true, "1"),
             new BlockGenerateClass("yellorite_4", "flag", true, "1"),
+
     };
 
 
@@ -401,6 +402,9 @@ public class BlocksMod {
                 }
                 if (BlockList[i].getName() == "fusion_block" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new FusionBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                }
+                if (BlockList[i].getName() == "elevator_block" && BlockList[i].getType() == "classic") {
+                    blockCustomClass.put("bc"+i, new ElevatorBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
                 }
                 if (BlockList[i].getName() == "volcanium_cave" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new VolcaniumCave(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));

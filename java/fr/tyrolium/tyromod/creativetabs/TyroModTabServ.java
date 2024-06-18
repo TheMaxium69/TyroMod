@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 public class TyroModTabServ extends CreativeTabs {
     public TyroModTabServ()
     {
-        super("TyroMod Server");
+        super("TyroModServer");
         this.setBackgroundImageName("tyromod2.png");
     }
 

@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 public class TyroModTabV3 extends CreativeTabs {
     public TyroModTabV3()
     {
-        super("TyroMod Ore V3");
+        super("TyroModOreV3");
         this.setBackgroundImageName("tyromod3.png");
     }
 

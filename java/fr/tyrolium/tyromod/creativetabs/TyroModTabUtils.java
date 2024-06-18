@@ -8,12 +8,12 @@ import net.minecraft.item.ItemStack;
 public class TyroModTabUtils extends CreativeTabs {
     public TyroModTabUtils()
     {
-        super("TyroMod Utils");
+        super("TyroModUtils");
         this.setBackgroundImageName("tyromod2.png");
     }
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(BlocksMod.getBlockCustomClass("bc32"));
+        return new ItemStack(BlocksMod.getBlockCustomClass("bc103"));
     }
 }
