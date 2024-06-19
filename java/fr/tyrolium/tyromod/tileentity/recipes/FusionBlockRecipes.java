@@ -33,24 +33,23 @@ public class FusionBlockRecipes
 		this.smeltingList.put(input1, input2, result);
 		this.experienceList.put(result, Float.valueOf(experience));
 	}
-	
-	public ItemStack getSinteringResult(ItemStack input1, ItemStack input2) 
-	{
-		for(Entry<ItemStack, Map<ItemStack, ItemStack>> entry : this.smeltingList.columnMap().entrySet()) 
-		{
-			if(this.compareItemStacks(input1, (ItemStack)entry.getKey())) 
-			{
-				for(Entry<ItemStack, ItemStack> ent : entry.getValue().entrySet()) 
-				{
-					if(this.compareItemStacks(input2, (ItemStack)ent.getKey())) 
-					{
-						return (ItemStack)ent.getValue();
-					}
-				}
-			}
-		}
-		return ItemStack.EMPTY;
-	}
+
+    public ItemStack getSinteringResult(ItemStack input1, ItemStack input2) {
+		System.out.println("getSinteringResult : "+ input1.getItem().getUnlocalizedName()+ " - "+input2.getItem().getUnlocalizedName());
+
+		System.out.println("truc bizarre :"+this.smeltingList);
+        for (Entry<ItemStack, Map<ItemStack, ItemStack>> entry : this.smeltingList.columnMap().entrySet()) {
+            if (this.compareItemStacks(input1, (ItemStack) entry.getKey())) {
+                for (Entry<ItemStack, ItemStack> ent : entry.getValue().entrySet()) {
+                    if (this.compareItemStacks(input2, (ItemStack) ent.getKey())) {
+                        return (ItemStack) ent.getValue();
+                    }
+                }
+            }
+        }
+
+        return ItemStack.EMPTY;
+    }
 	
 	private boolean compareItemStacks(ItemStack stack1, ItemStack stack2)
 	{
