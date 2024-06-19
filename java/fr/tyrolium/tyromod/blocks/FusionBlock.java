@@ -125,9 +125,10 @@ public class FusionBlock extends DefaultBlock {
     public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
     {
         TileEntityFusionBlock tileentity = (TileEntityFusionBlock)worldIn.getTileEntity(pos);
-//        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
-//        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(1)));
-//        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(2)));
+        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
+        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(1)));
+        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(2)));
+        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(BlocksMod.getBlockCustomClass("bc103"))));
         super.breakBlock(worldIn, pos, state);
     }
 
@@ -168,4 +169,5 @@ public class FusionBlock extends DefaultBlock {
     {
         return ((EnumFacing)state.getValue(FACING)).getIndex();
     }
+
 }

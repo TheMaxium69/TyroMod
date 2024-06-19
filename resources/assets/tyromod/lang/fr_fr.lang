@@ -4,6 +4,7 @@ itemGroup.TyroModOreV3=TyroMod Minerai V3
 itemGroup.TyroModUtils=TyroMod Utilitaires
 itemGroup.TyroModServer=TyroMod Serveur
 item.radar.name=Radar
+container.fusion_block=Bloc de Fusion
 
 # GENERATE
 tile.tyrolium_ore.name=Minerai de Tyrolium
