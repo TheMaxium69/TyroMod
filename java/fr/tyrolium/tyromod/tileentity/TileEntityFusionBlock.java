@@ -166,10 +166,12 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
             if(cookTime == totalCookTime)
             {
                 System.out.println("*********3.1 CONDITIONS");
+                System.out.println("nbSlod3 : " + handler.getStackInSlot(3).getCount());
                 if(handler.getStackInSlot(3).getCount() > 0)
                 {
                     System.out.println("*********3.2 CONDITIONS");
-                    handler.getStackInSlot(3).grow(1);
+//                    handler.getStackInSlot(3).grow(1);
+                    handler.insertItem(3, smelting, false);
                 }
                 else
                 {
