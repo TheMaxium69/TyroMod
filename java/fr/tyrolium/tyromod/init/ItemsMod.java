@@ -16,6 +16,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -1472,52 +1476,66 @@ public class ItemsMod {
 
                     if (ItemList[i].isOre() == "true") {
                         items[i] = new DefaultItem(ItemList[i].getName(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "i" + i);
+                        _STOCKDB(ItemList[i].getName(), i, ItemList[i].getOreTier(), 0, ItemList[i].getModVersion(), "item");
                     } else {
                         items[i] = new DefaultItem(ItemList[i].getName(), ItemList[i].getModVersion(), "i" + i);
+                        _STOCKDB(ItemList[i].getName(), i, "6", 0, ItemList[i].getModVersion(), "item");
                     }
+
 
                 } else if (ItemList[i].getType() == "sword"){
 
                     swords[i] = new DefaultSword(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "s" + i);
+                    _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 0, ItemList[i].getModVersion(), "sword");
 
                 } else if (ItemList[i].getType() == "pickaxe"){
 
                     pickaxes[i] = new DefaultPickaxe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "p" + i);
+                    _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 0, ItemList[i].getModVersion(), "pickaxe");
 
                 } else if (ItemList[i].getType() == "axe"){
 
                     axes[i] = new DefaultAxe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "ax" + i);
+                    _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 0, ItemList[i].getModVersion(), "axe");
 
                 } else if (ItemList[i].getType() == "shovel"){
 
                     shovels[i] = new DefaultShovel(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "sh" + i);
+                    _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 0, ItemList[i].getModVersion(), "shovel");
 
                 } else if (ItemList[i].getType() == "hoe"){
 
                     hoes[i] = new DefaultHoe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "h" + i);
+                    _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 0, ItemList[i].getModVersion(), "hoe");
 
                 } else if (ItemList[i].getType() == "hammer"){
 
                     hammers[i] = new DefaultHammer(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "ha" + i);
+                    _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 0, ItemList[i].getModVersion(), "hammer");
 
                 } else if (ItemList[i].getType() == "sword_fire"){
 
                     swordFires[i] = new DefaultSwordFire(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "sf" + i);
+                    _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 0, ItemList[i].getModVersion(), "sword_fire");
 
                 } else if (ItemList[i].getType() == "apple" || ItemList[i].getType() == "flesh"){
 
                     foods[i] = new DefaultFood(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "f" + i, 6, false);
+                    _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, "6", 0, ItemList[i].getModVersion(), "food");
 
                 } else if (ItemList[i].isArmor() == "true"){
 
                     armors[i] = new DefaultArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "a" + i);
+                    _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, "6", 0, ItemList[i].getModVersion(), "armor");
 
                 } else {
 
                     if (ItemList[i].isOre() == "true") {
                         items[i] = new DefaultItem(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "i" + i);
+                        _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 0, ItemList[i].getModVersion(), "item");
                     } else {
                         items[i] = new DefaultItem(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "i" + i);
+                        _STOCKDB(ItemList[i].getName()+ ItemList[i].getTypeName(), i, "6", 0, ItemList[i].getModVersion(), "item");
                     }
 
 
@@ -1531,24 +1549,32 @@ public class ItemsMod {
 
                     if (ItemList[i].getType() == "classic") {
                         itemCustomClass.put("c"+i, new Tyrolium(ItemList[i].getName(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "item");
                     } else if (ItemList[i].getType() == "sword"){
                         itemCustomClass.put("c"+i, new TyroliumSword(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "sword");
                     } else if (ItemList[i].getType() == "pickaxe"){
                         itemCustomClass.put("c"+i, new TyroliumPickaxe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "pickaxe");
                     } else if (ItemList[i].getType() == "axe"){
                         itemCustomClass.put("c"+i, new TyroliumAxe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "axe");
                     } else if (ItemList[i].getType() == "shovel"){
                         itemCustomClass.put("c"+i, new TyroliumShovel(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "shovel");
                     } else if (ItemList[i].getType() == "hoe"){
                         itemCustomClass.put("c"+i, new TyroliumHoe(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getToolMaterial(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "hoe");
                     } else if (ItemList[i].isArmor() == "true"){
                         itemCustomClass.put("c"+i, new TyroliumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
                     }
 
                 }
 
                 if (ItemList[i].getType() == "keycard" || ItemList[i].getType() == "symbol" || ItemList[i].getType() == "wrench" || ItemList[i].getType() == "gear" || ItemList[i].getType() == "coin" || ItemList[i].getType() == "ring" || ItemList[i].getType() == "plate") {
                     itemCustomClass.put("c"+i, new ServerItem(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "c" + i));
+                    _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, "6", 1, ItemList[i].getModVersion(), "item");
                 }
 
             }
@@ -1563,14 +1589,56 @@ public class ItemsMod {
         return itemCustomClass.get(nameItem);
     }
 
-    public static String findItemByName(String name) {
-        for (DefaultItem item : items) {
-            if (item.getUnlocalizedName().equals(name)) {
-                return item.getTyroId();
+    public static void _STOCKDB(String name, int tyroid, String tier, int customClass, String version, String className){
+
+        if (Global.DB_LAUNCH == 1) {
+
+            String customClassDB;
+            if (customClass == 0) {
+                customClassDB = "zero";
+            } else {
+                customClassDB = String.valueOf(customClass);
             }
+            String tierDB;
+            if (tier.equals("0")) {
+                tierDB = "6";
+            } else {
+                tierDB = String.valueOf(tier);
+            }
+            String tyroidDB;
+            if (tyroid == 0) {
+                tyroidDB = "zero";
+            } else {
+                tyroidDB = String.valueOf(tyroid);
+            }
+
+
+            String apiUrl = "http://localhost/Api-TyroModFusion/insert.php?name="+ name +"&tyroid="+ tyroidDB + "&tier=" + tierDB + "&customClass=" + customClassDB+ "&version=" + version + "&className=" + className;
+            System.out.println("url : " + apiUrl);
+            try {
+                URL url = new URL(apiUrl);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.setDoOutput(true);
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                String inputLine;
+                StringBuilder content = new StringBuilder();
+                while ((inputLine = in.readLine()) != null) {
+                    content.append(inputLine);
+                }
+
+                in.close();
+                conn.disconnect();
+
+                String result = content.toString();
+                System.out.println("Reponse du serveur : " + result);
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
 
-        return null;
     }
-
 }

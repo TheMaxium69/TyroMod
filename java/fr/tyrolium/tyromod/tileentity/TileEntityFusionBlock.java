@@ -109,12 +109,10 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
 
     public void update()
     {
-        System.out.println("-----------------------------------------------------");
 
         if(this.isBurning())
         {
-
-            System.out.println("***************1 CONDITIONS");
+            System.out.println("----- CONDITIONS 1");
             --this.burnTime;
             FusionBlock.setState(true, world, pos);
         }
@@ -123,133 +121,95 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
         ItemStack fuel = this.handler.getStackInSlot(2);
         ItemStack result = this.handler.getStackInSlot(3);
 
-        System.out.println("isBurning : " + this.isBurning());
-        System.out.println("canSmelt : " + this.canSmelt());
-        System.out.println("fuel : " + fuel.isEmpty());
-        System.out.println("resultItem : " + result.isEmpty());
-
-        if(this.isBurning() || !fuel.isEmpty() && !this.handler.getStackInSlot(0).isEmpty() || this.handler.getStackInSlot(1).isEmpty())
+        if(this.isBurning() || !fuel.isEmpty() && !this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0)
         {
-            System.out.println("***************2 CONDITIONS");
-            if(!this.isBurning() && this.canSmelt())
+            System.out.println("----- CONDITIONS 2");
+            ItemStack output = FusionBlockRecipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
+            if(!this.isBurning() && this.canSmelt(output))
             {
-                System.out.println("*********2.1 CONDITIONS");
                 this.burnTime = getItemBurnTime(fuel);
                 this.currentBurnTime = burnTime;
 
                 if(this.isBurning() && !fuel.isEmpty())
                 {
-                    System.out.println("*********2.2 CONDITIONS");
                     Item item = fuel.getItem();
                     fuel.shrink(1);
 
                     if(fuel.isEmpty())
                     {
-                        System.out.println("*********2.3 CONDITIONS");
                         ItemStack item1 = item.getContainerItem(fuel);
                         this.handler.setStackInSlot(2, item1);
                     }
                 }
             }
-            else
-            {
-                System.out.println("%%%%%%%%%%%%%%%%%" + this.burnTime);
-            }
         }
 
-//        System.out.println("smelting : " + smelting);
-
-        if(this.isBurning() && this.canSmelt() && cookTime > 0)
+        if(this.isBurning() && cookTime > 0)
         {
-            System.out.println("***************3 CONDITIONS");
-            cookTime++;
-            if(cookTime == totalCookTime)
+            System.out.println("----- CONDITIONS 3");
+            if(cookTime == totalCookTime || cookTime > totalCookTime)
             {
-                System.out.println("*********3.1 CONDITIONS");
-                System.out.println("nbSlod3 : " + handler.getStackInSlot(3).getCount());
                 if(handler.getStackInSlot(3).getCount() > 0)
                 {
-                    System.out.println("*********3.2 CONDITIONS");
-//                    handler.getStackInSlot(3).grow(1);
                     handler.insertItem(3, smelting, false);
                 }
                 else
                 {
-                    System.out.println("*********3.3 CONDITIONS");
                     handler.insertItem(3, smelting, false);
                 }
 
                 smelting = ItemStack.EMPTY;
                 cookTime = 0;
                 return;
+            } else {
+                cookTime++;
             }
         }
         else
         {
-            System.out.println("***************4 CONDITIONS");
-            if(this.canSmelt() && this.isBurning())
-            {
-                System.out.println("*********4.1 CONDITIONS");
-                System.out.println("input0 : "+ inputs[0]);
-                System.out.println("input1 : "+ inputs[1]);
-                System.out.println("*********4.1 CONDITIONS");
-
-
-
+            System.out.println("----- CONDITIONS 4");
+            if (!this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0) {
                 ItemStack output = FusionBlockRecipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
-                System.out.println("output : " + output);
-                cookTime++;
-                if(!output.isEmpty())
+                if(this.canSmelt(output) && this.isBurning())
                 {
-                    System.out.println("*********4.2 CONDITIONS");
-                    smelting = output;
-//                    cookTime++;
-                    inputs[0].shrink(1);
-                    inputs[1].shrink(1);
-                    handler.setStackInSlot(0, inputs[0]);
-                    handler.setStackInSlot(1, inputs[1]);
+                    if(!output.isEmpty())
+                    {
+                        System.out.println("What ?");
+                        smelting = output;
+                        cookTime++;
+                        inputs[0].shrink(1);
+                        inputs[1].shrink(1);
+                        handler.setStackInSlot(0, inputs[0]);
+                        handler.setStackInSlot(1, inputs[1]);
+                    }
+
                 }
             }
         }
-        System.out.println("cookTime : " + cookTime);
-        System.out.println("totalCookTime : " + totalCookTime);
     }
 
-    private boolean canSmelt()
+    private boolean canSmelt(ItemStack result)
     {
-//        return true;
-//        System.out.println("canSmelt()********");
-//        System.out.println(this.handler.getStackInSlot(0));
-//        System.out.println(this.handler.getStackInSlot(1));
         if(((ItemStack)this.handler.getStackInSlot(0)).isEmpty() || ((ItemStack)this.handler.getStackInSlot(1)).isEmpty()) {
-
-            System.out.println("canSmeltCondition : 1");
 
             return false;
         }
         else
         {
-            ItemStack result = FusionBlockRecipes.getInstance().getSinteringResult((ItemStack)this.handler.getStackInSlot(0), (ItemStack)this.handler.getStackInSlot(1));
             if(result.isEmpty()) {
-                System.out.println("canSmeltCondition : 2");
-                return true;
+                return false;
             }
             else
             {
                 ItemStack output = (ItemStack)this.handler.getStackInSlot(3);
                 if(output.isEmpty()) {
-                    System.out.println("canSmeltCondition : 3");
                     return true;
                 }
                 if(!output.isItemEqual(result)) {
-                    System.out.println("canSmeltCondition : 4");
                     return false;
                 }
-                System.out.println("canSmeltCondition : 5");
                 int res = output.getCount() + result.getCount();
-//                System.out.println(res <= 64 && res <= output.getMaxStackSize());
                 return res <= 64 && res <= output.getMaxStackSize();
-//                return true;
             }
         }
     }

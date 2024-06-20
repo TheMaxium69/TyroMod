@@ -16,6 +16,7 @@ import fr.tyrolium.tyromod.global.DefaultItem;
 import fr.tyrolium.tyromod.init.ItemsMod;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -35,22 +36,15 @@ public class FusionBlockRecipes {
 
     }
     public ItemStack getSinteringResult(ItemStack input1, ItemStack input2) {
-        System.out.println(input1);
-        System.out.println(input2);
 
-        if  (!compareItemStacks(input1, input2)) {
+        if  (!compareItemStacks(input1, input2) && !input1.equals(ItemStack.EMPTY) && !input2.equals(ItemStack.EMPTY) && !input1.equals(new ItemStack(Blocks.AIR)) && !input2.equals(new ItemStack(Blocks.AIR))) {
 
-            String itemName = requestFusion(input1, input2);
+            String itemId = requestFusion(input1, input2);
 
-            if (!itemName.equals("empty")) {
+            if (itemId != null && !itemId.equals("empty")) {
 
-                System.out.println(itemName);
+                return new ItemStack(ItemsMod.items[Integer.parseInt(itemId)]);
 
-                String itemResult = ItemsMod.findItemByName(itemName);
-
-                if (itemResult != null && !itemResult.equals("empty")) {
-                    return new ItemStack(ItemsMod.items[Integer.parseInt(itemResult)]);
-                }
             }
         }
 
@@ -79,10 +73,11 @@ public class FusionBlockRecipes {
             in.close();
             conn.disconnect();
 
-            String result = content.toString().substring(1, content.length() - 1);
-            System.out.println("Reponse du serveur : " + result);
+            String result = content.toString();
+//            System.out.println("Reponse du serveur : " + result);
+            System.out.println("REQUEST ENVOYER");
 
-            if (!result.equals("err")) {
+            if (!result.equals("\"err\"")) {
                 return result;
             }
 
