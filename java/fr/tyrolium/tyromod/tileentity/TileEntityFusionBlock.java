@@ -121,6 +121,8 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
         ItemStack fuel = this.handler.getStackInSlot(2);
         ItemStack result = this.handler.getStackInSlot(3);
 
+        System.out.println("cookTime : "+ cookTime);
+
         if(this.isBurning() || !fuel.isEmpty() && !this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0)
         {
             System.out.println("----- CONDITIONS 2");
