@@ -147,8 +147,11 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
                     smelting = ItemStack.EMPTY;
                     cookTime = 0;
                     return;
-                } else {
+                } else if (result == ItemStack.EMPTY || result.equals(smelting)){
                     cookTime++;
+                } else {
+                    System.out.println("Result : " + result);
+                    System.out.println("Smelting : " + smelting);
                 }
             } else {
                 if (!this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0) {
