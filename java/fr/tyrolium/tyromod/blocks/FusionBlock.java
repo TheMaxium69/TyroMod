@@ -40,17 +40,17 @@ public class FusionBlock extends DefaultBlock {
 
     }
 
-    @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune)
-    {
-        return Item.getItemFromBlock(BlocksMod.getBlockCustomClass("bc33"));
-    }
-
-    @Override
-    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
-    {
-        return new ItemStack(BlocksMod.getBlockCustomClass("bc33"));
-    }
+//    @Override
+//    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+//    {
+//        return Item.getItemFromBlock(BlocksMod.getBlockCustomClass("bc103"));
+//    }
+//
+//    @Override
+//    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
+//    {
+//        return new ItemStack(BlocksMod.getBlockCustomClass("bc103"));
+//    }
 
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
@@ -128,6 +128,7 @@ public class FusionBlock extends DefaultBlock {
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(1)));
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(2)));
+        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(3)));
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(BlocksMod.getBlockCustomClass("bc103"))));
         super.breakBlock(worldIn, pos, state);
     }

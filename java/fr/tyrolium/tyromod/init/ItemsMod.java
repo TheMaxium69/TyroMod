@@ -1563,6 +1563,14 @@ public class ItemsMod {
         return itemCustomClass.get(nameItem);
     }
 
+    public static String findItemByName(String name) {
+        for (DefaultItem item : items) {
+            if (item.getUnlocalizedName().equals(name)) {
+                return item.getTyroId();
+            }
+        }
 
+        return null;
+    }
 
 }

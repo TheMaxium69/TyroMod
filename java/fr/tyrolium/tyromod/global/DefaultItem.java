@@ -2,7 +2,6 @@ package fr.tyrolium.tyromod.global;
 
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.init.ItemsMod;
-import fr.tyrolium.tyromod.proxy.Client;
 import fr.tyrolium.tyromod.util.handlers.IHasModel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;
@@ -10,7 +9,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import scala.Int;
 
 import java.util.List;
 
@@ -132,6 +130,10 @@ public class DefaultItem extends Item implements IHasModel {
 
         }
 
+    }
+
+    public String getTyroId(){
+        return this.tyroId;
     }
 
 }

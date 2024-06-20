@@ -1,73 +1,101 @@
 package fr.tyrolium.tyromod.tileentity.recipes;
 
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import fr.tyrolium.tyromod.TyroMod;
+import fr.tyrolium.tyromod.global.DefaultItem;
 import fr.tyrolium.tyromod.init.ItemsMod;
 import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.text.TextComponentString;
 import org.lwjgl.Sys;
 
 public class FusionBlockRecipes {
     private static final FusionBlockRecipes INSTANCE = new FusionBlockRecipes();
-    private List<FusionRecipe> fusionRecipes = new ArrayList<>();
 
-    private static class FusionRecipe {
-        ItemStack input1, input2, result;
-
-        FusionRecipe(ItemStack input1, ItemStack input2, ItemStack result) {
-            this.input1 = input1;
-            this.input2 = input2;
-            this.result = result;
-        }
-    }
 
     public static FusionBlockRecipes getInstance() {
         return INSTANCE;
     }
 
     private FusionBlockRecipes() {
-        addFusionRecipe(new ItemStack(ItemsMod.items[22]), new ItemStack(ItemsMod.items[33]), new ItemStack(ItemsMod.items[11]), 5.0F);
-        addFusionRecipe(new ItemStack(ItemsMod.items[11]), new ItemStack(ItemsMod.items[23]), new ItemStack(ItemsMod.items[12]), 5.0F);
-        addFusionRecipe(new ItemStack(Items.APPLE), new ItemStack(Items.GOLD_INGOT), new ItemStack(Items.GOLDEN_APPLE), 5.0F);
-    }
 
-    public void addFusionRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience) {
-        if (!getSinteringResult(input1, input2).isEmpty()) return;
-        fusionRecipes.add(new FusionRecipe(input1, input2, result));
     }
-
     public ItemStack getSinteringResult(ItemStack input1, ItemStack input2) {
-        // Removed log statements.
         System.out.println(input1);
         System.out.println(input2);
 
-//        fusionRecipes.clear();
-//        new FusionBlockRecipes();
+        if  (!compareItemStacks(input1, input2)) {
 
+            String itemName = requestFusion(input1, input2);
 
-        for (FusionRecipe recipe : fusionRecipes) {
-            System.out.println(recipe);
-            if (recipe.input1.isItemEqual(input1) && recipe.input2.isItemEqual(input2))
-                System.out.println(recipe.result);
-                return recipe.result;
+            if (!itemName.equals("empty")) {
+
+                System.out.println(itemName);
+
+                String itemResult = ItemsMod.findItemByName(itemName);
+
+                if (itemResult != null && !itemResult.equals("empty")) {
+                    return new ItemStack(ItemsMod.items[Integer.parseInt(itemResult)]);
+                }
+            }
         }
+
         return ItemStack.EMPTY;
     }
 
     private boolean compareItemStacks(ItemStack stack1, ItemStack stack2) {
-        return stack2.getItem() == stack1.getItem() && (stack2.getMetadata() == 32767 || stack2.getMetadata() == stack1.getMetadata());
+        return stack2.getItem() == stack1.getItem();
     }
 
-//    public Map<ItemStack, Map<ItemStack, ItemStack>> getDualSmeltingList() {
-//        return smeltingList;
-//    }
-//
+    private static String requestFusion(ItemStack input1, ItemStack input2){
+        String apiUrl = "http://localhost/Api-TyroModFusion/?item1="+ input1.getUnlocalizedName() +"&item2="+ input2.getUnlocalizedName(); // change this to be your actual API url
+        try {
+            URL url = new URL(apiUrl);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("GET");
+            conn.setDoOutput(true);
+
+            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String inputLine;
+            StringBuilder content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+
+            in.close();
+            conn.disconnect();
+
+            String result = content.toString().substring(1, content.length() - 1);
+            System.out.println("Reponse du serveur : " + result);
+
+            if (!result.equals("err")) {
+                return result;
+            }
+
+
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return "empty";
+    }
+
 //    public float getSinteringExperience(ItemStack stack) {
 //        for (Entry<ItemStack, Float> entry : experienceList.entrySet()) {
 //            if (compareItemStacks(stack, entry.getKey())) {
