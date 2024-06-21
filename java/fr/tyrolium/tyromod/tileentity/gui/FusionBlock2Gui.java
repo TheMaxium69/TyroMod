@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class FusionBlock2Gui extends GuiContainer {
 
-    private static final ResourceLocation TEXTURES = new ResourceLocation(Global.MODID + ":textures/gui/fusion_block.png");
+    private static final ResourceLocation TEXTURES = new ResourceLocation(Global.MODID + ":textures/gui/fusion_block2.png");
     private final InventoryPlayer player;
     private final TileEntityFusionBlock2 tileentity;
 
