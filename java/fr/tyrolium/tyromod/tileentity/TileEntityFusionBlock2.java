@@ -67,7 +67,7 @@ public class TileEntityFusionBlock2 extends TileEntity implements IInventory, IT
     @Override
     public ITextComponent getDisplayName()
     {
-        return this.hasCustomName() ? new TextComponentString(this.customName) : new TextComponentTranslation("container.fusion_block");
+        return this.hasCustomName() ? new TextComponentString(this.customName) : new TextComponentTranslation("container.fusion_block2");
     }
 
     @Override
@@ -80,7 +80,7 @@ public class TileEntityFusionBlock2 extends TileEntity implements IInventory, IT
         this.totalCookTime = compound.getInteger("CookTimeTotal");
         this.currentBurnTime = getItemBurnTime((ItemStack)this.handler.getStackInSlot(2));
 
-        if(compound.hasKey("CustomName", 8)) this.setCustomName(compound.getString("CustomName"));
+        if(compound.hasKey("FusionBlock2", 8)) this.setCustomName(compound.getString("FusionBlock2"));
     }
 
     @Override
@@ -92,7 +92,7 @@ public class TileEntityFusionBlock2 extends TileEntity implements IInventory, IT
         compound.setInteger("CookTimeTotal", (short)this.totalCookTime);
         compound.setTag("Inventory", this.handler.serializeNBT());
 
-        if(this.hasCustomName()) compound.setString("CustomName", this.customName);
+        if(this.hasCustomName()) compound.setString("FusionBlock2", this.customName);
         return compound;
     }
 

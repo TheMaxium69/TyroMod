@@ -80,7 +80,7 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
         this.totalCookTime = compound.getInteger("CookTimeTotal");
         this.currentBurnTime = getItemBurnTime((ItemStack)this.handler.getStackInSlot(2));
 
-        if(compound.hasKey("CustomName", 8)) this.setCustomName(compound.getString("CustomName"));
+        if(compound.hasKey("FusionBlock", 8)) this.setCustomName(compound.getString("FusionBlock"));
     }
 
     @Override
@@ -92,7 +92,7 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
         compound.setInteger("CookTimeTotal", (short)this.totalCookTime);
         compound.setTag("Inventory", this.handler.serializeNBT());
 
-        if(this.hasCustomName()) compound.setString("CustomName", this.customName);
+        if(this.hasCustomName()) compound.setString("FusionBlock", this.customName);
         return compound;
     }
 

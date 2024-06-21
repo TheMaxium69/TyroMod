@@ -4,7 +4,9 @@ itemGroup.TyroModOreV3=TyroMod Ore V3
 itemGroup.TyroModUtils=TyroMod Utils
 itemGroup.TyroModServer=TyroMod Server
 item.radar.name=Radar
-container.fusion_block=Fusion Block
+container.fusion_block=Fusion Block Tier 2
+container.fusion_block2=Fusion Block Tier 3
+container.fusion_block3=Fusion Block Tier IUM
 
 # GENERATE
 tile.tyrolium_ore.name=Tyrolium Ore
