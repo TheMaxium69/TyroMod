@@ -1,0 +1,29 @@
+################
+#    Chests    #
+################
+
+tile.ironchest.chest.iron.name=Baú de Ferro
+tile.ironchest.chest.gold.name=Baú de Ouro
+tile.ironchest.chest.diamond.name=Baú de Diamante
+tile.ironchest.chest.copper.name=Baú de Cobre
+tile.ironchest.chest.silver.name=Baú de Prata
+tile.ironchest.chest.crystal.name=Baú de Cristal
+tile.ironchest.chest.obsidian.name=Baú de Obsidiana
+tile.ironchest.chest.dirtchest9000.name=BaúdeTerra 9000!
+
+item.ironchest.chest.iron_gold.name=Melhoria de Baú de Ferro para Ouro
+item.ironchest.chest.gold_diamond.name=Melhoria de Baú de Ouro para Diamante
+item.ironchest.chest.copper_silver.name=Melhoria de Baú de Cobre para Prata
+item.ironchest.chest.silver_gold.name=Melhoria de Baú de Prata para Ouro
+item.ironchest.chest.copper_iron.name=Melhoria de Baú de Cobre para Ferro
+item.ironchest.chest.diamond_crystal.name=Melhoria de Baú de Diamante para Cristal
+item.ironchest.chest.wood_iron.name=Melhoria de Baú de Madeira para Ferro
+item.ironchest.chest.wood_copper.name=Melhoria de Baú de Madeira para Cobre
+item.ironchest.chest.diamond_obsidian.name=Melhoria de Baú de Diamante para Obsidiana
+
+book.ironchest.dirtchest9000.title=Como usar o BaúdeTerra 9000!
+book.ironchest.dirtchest9000.page1=Bem-vindo ao seu novo BaúdeTerra 9000! Esperamos que desfrute de muitos anos de armazenamento da sua pilha de terra no nosso serviço de armazenamento.
+book.ironchest.dirtchest9000.page2=Utilização: Insira, simplesmente, uma pilha de terra à sua escolha no espaço mais recetivo e desfrute da grande conveniência de ter essa terra disponivel para si, sempre que passar pelo baú!
+book.ironchest.dirtchest9000.page3=Esperamos que tenha gostado de rever este manual de instruções, e esperamos que considere usar os nossos produtos no futuro! Atensiosamente, manual do BaúdeTerra 9000, escritores inclusive.
+book.ironchest.dirtchest9000.page4=Garantia: Este produto não tem qualquer tipo de garantia. A sua terra pode mesmo nem ser armazenada, pode ser, vagarosamente, lançada no meio ambiente, ou em alternativa, pode nem fazer nada, de todo.
+book.ironchest.dirtchest9000.page5=BaúdeTerra 9000 é amigo do meio ambiente. Por favor, disponha, responsávelmente, deste guia, e não faça o que costuma fazer e não o atire para a lava. Ficaríamos muito tristes.

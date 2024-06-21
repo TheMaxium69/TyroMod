@@ -1,0 +1,177 @@
+################
+#    Chests    #
+################
+
+tile.ironchest.chest.iron.name=Coffre en fer
+tile.ironchest.chest.gold.name=Coffre en or
+tile.ironchest.chest.diamond.name=Coffre en diamant
+tile.ironchest.chest.copper.name=Coffre en cuivre
+tile.ironchest.chest.silver.name=Coffre en argent
+tile.ironchest.chest.crystal.name=Coffre en cristal
+tile.ironchest.chest.obsidian.name=Coffre en obsidienne
+tile.ironchest.chest.dirtchest9000.name=Coffre en terre 9000 !
+
+item.ironchest.chest.iron_gold.name=Amélioration de coffre en fer à or
+item.ironchest.chest.gold_diamond.name=Amélioration de coffre en or à diamant
+item.ironchest.chest.copper_silver.name=Amélioration de coffre en cuivre à argent
+item.ironchest.chest.silver_gold.name=Amélioration de coffre en argent à or
+item.ironchest.chest.copper_iron.name=Amélioration de coffre en cuivre à fer
+item.ironchest.chest.diamond_crystal.name=Amélioration de coffre en diamant à cristal
+item.ironchest.chest.wood_iron.name=Amélioration de coffre en bois à fer
+item.ironchest.chest.wood_copper.name=Amélioration de coffre en bois à cuivre
+item.ironchest.chest.diamond_obsidian.name=Amélioration de coffre en diamant à obsidienne
+
+book.ironchest.dirtchest9000.title=Comment utiliser votre coffre en terre 9000 !
+book.ironchest.dirtchest9000.page1="Bienvenue dans votre nouveau coffre en terre 9000 ! Nous espérons que vous profiterez de nombreuses années heureuses de stockage de terre dans notre utilitaire de stockage."
+book.ironchest.dirtchest9000.page2="Utilisation : insérez simplement un stack de terre de votre choix dans notre emplacement ultra-réceptif et profitez de la commodité d'avoir de la terre disponible pour vous, dès lors que vous passez à côté de ce coffre !"
+book.ironchest.dirtchest9000.page3="Nous espérons que vous avez apprécié lire ce manuel d'instruction, et espérons vous revoir pour acheter nos produits ! Sincères amitiés, les rédacteurs du manuel du coffre en terre 9000."
+book.ironchest.dirtchest9000.page4="Attention : ce produit n'est pas garanti. Votre terre est bien stockée, mais il est possible que quelques blocs se désintègrent dans l'environnement, mais il est possible que rien ne se passe."
+book.ironchest.dirtchest9000.page5="Le coffre en terre 9000 est respectueux de l'environnement. Merci de jeter ce livre responsablement, et surtout, ne le jetez pas dans de la lave. Cela serait très triste."
+
+#######################
+#    Shulker Boxes    #
+#######################
+
+tile.ironchest.shulker_box.iron.white.name=Boîte de Shulker blanche en fer
+tile.ironchest.shulker_box.iron.orange.name=Boîte de Shulker orange en fer
+tile.ironchest.shulker_box.iron.magenta.name=Boîte de Shulker magenta en fer
+tile.ironchest.shulker_box.iron.light_blue.name=Boîte de Shulker bleu clair en fer
+tile.ironchest.shulker_box.iron.yellow.name=Boîte de Shulker jaune en fer
+tile.ironchest.shulker_box.iron.lime.name=Boîte de Shulker vert clair en fer
+tile.ironchest.shulker_box.iron.pink.name=Boîte de Shulker rose en fer
+tile.ironchest.shulker_box.iron.gray.name=Boîte de Shulker grise en fer
+tile.ironchest.shulker_box.iron.silver.name=Boîte de Shulker gris clair en fer
+tile.ironchest.shulker_box.iron.cyan.name=Boîte de Shulker cyan en fer
+tile.ironchest.shulker_box.iron.purple.name=Boîte de Shulker violette en fer
+tile.ironchest.shulker_box.iron.blue.name=Boîte de Shulker bleue en fer
+tile.ironchest.shulker_box.iron.brown.name=Boîte de Shulker marron en fer
+tile.ironchest.shulker_box.iron.green.name=Boîte de Shulker verte en fer
+tile.ironchest.shulker_box.iron.red.name=Boîte de Shulker rouge en fer
+tile.ironchest.shulker_box.iron.black.name=Boîte de Shulker noire en fer
+
+tile.ironchest.shulker_box.gold.white.name=Boîte de Shulker blanche en or
+tile.ironchest.shulker_box.gold.orange.name=Boîte de Shulker orange en or
+tile.ironchest.shulker_box.gold.magenta.name=Boîte de Shulker magenta en or
+tile.ironchest.shulker_box.gold.light_blue.name=Boîte de Shulker bleu clair en or
+tile.ironchest.shulker_box.gold.yellow.name=Boîte de Shulker jaune en or
+tile.ironchest.shulker_box.gold.lime.name=Boîte de Shulker vert clair en or
+tile.ironchest.shulker_box.gold.pink.name=Boîte de Shulker rose en or
+tile.ironchest.shulker_box.gold.gray.name=Boîte de Shulker grise en or
+tile.ironchest.shulker_box.gold.silver.name=Boîte de Shulker gris clair en or
+tile.ironchest.shulker_box.gold.cyan.name=Boîte de Shulker cyan en or
+tile.ironchest.shulker_box.gold.purple.name=Boîte de Shulker violette en or
+tile.ironchest.shulker_box.gold.blue.name=Boîte de Shulker bleue en or
+tile.ironchest.shulker_box.gold.brown.name=Boîte de Shulker marron en or
+tile.ironchest.shulker_box.gold.green.name=Boîte de Shulker verte en or
+tile.ironchest.shulker_box.gold.red.name=Boîte de Shulker rouge en or
+tile.ironchest.shulker_box.gold.black.name=Boîte de Shulker noire en or 
+
+tile.ironchest.shulker_box.diamond.white.name=Boîte de Shulker blanche en diamant
+tile.ironchest.shulker_box.diamond.orange.name=Boîte de Shulker orange en diamant
+tile.ironchest.shulker_box.diamond.magenta.name=Boîte de Shulker magenta en diamant
+tile.ironchest.shulker_box.diamond.light_blue.name=Boîte de Shulker bleu clair en diamant
+tile.ironchest.shulker_box.diamond.yellow.name=Boîte de Shulker jaune en diamant
+tile.ironchest.shulker_box.diamond.lime.name=Boîte de Shulker vert clair en diamant
+tile.ironchest.shulker_box.diamond.pink.name=Boîte de Shulker rose en diamant
+tile.ironchest.shulker_box.diamond.gray.name=Boîte de Shulker grise en diamant
+tile.ironchest.shulker_box.diamond.silver.name=Boîte de Shulker gris clair en diamant
+tile.ironchest.shulker_box.diamond.cyan.name=Boîte de Shulker cyan en diamant
+tile.ironchest.shulker_box.diamond.purple.name=Boîte de Shulker violette en diamant
+tile.ironchest.shulker_box.diamond.blue.name=Boîte de Shulker bleue en diamant
+tile.ironchest.shulker_box.diamond.brown.name=Boîte de Shulker marron en diamant
+tile.ironchest.shulker_box.diamond.green.name=Boîte de Shulker verte en diamant
+tile.ironchest.shulker_box.diamond.red.name=Boîte de Shulker rouge en diamant
+tile.ironchest.shulker_box.diamond.black.name=Boîte de Shulker noire en diamant
+
+tile.ironchest.shulker_box.copper.white.name=Boîte de Shulker blanche en cuivre
+tile.ironchest.shulker_box.copper.orange.name=Boîte de Shulker orange en cuivre
+tile.ironchest.shulker_box.copper.magenta.name=Boîte de Shulker magenta en cuivre
+tile.ironchest.shulker_box.copper.light_blue.name=Boîte de Shulker bleu clair en cuivre
+tile.ironchest.shulker_box.copper.yellow.name=Boîte de Shulker jaune en cuivre
+tile.ironchest.shulker_box.copper.lime.name=Boîte de Shulker vert clair en cuivre
+tile.ironchest.shulker_box.copper.pink.name=Boîte de Shulker rose en cuivre
+tile.ironchest.shulker_box.copper.gray.name=Boîte de Shulker grise en cuivre
+tile.ironchest.shulker_box.copper.silver.name=Boîte de Shulker gris clair en cuivre
+tile.ironchest.shulker_box.copper.cyan.name=Boîte de Shulker cyan en cuivre
+tile.ironchest.shulker_box.copper.purple.name=Boîte de Shulker violette en cuivre
+tile.ironchest.shulker_box.copper.blue.name=Boîte de Shulker bleue en cuivre
+tile.ironchest.shulker_box.copper.brown.name=Boîte de Shulker marron en cuivre
+tile.ironchest.shulker_box.copper.green.name=Boîte de Shulker verte en cuivre
+tile.ironchest.shulker_box.copper.red.name=Boîte de Shulker rouge en cuivre
+tile.ironchest.shulker_box.copper.black.name=Boîte de Shulker noire en cuivre
+
+tile.ironchest.shulker_box.silver.white.name=Boîte de Shulker blanche en argent
+tile.ironchest.shulker_box.silver.orange.name=Boîte de Shulker orange en argent
+tile.ironchest.shulker_box.silver.magenta.name=Boîte de Shulker magenta en argent
+tile.ironchest.shulker_box.silver.light_blue.name=Boîte de Shulker bleu clair en argent
+tile.ironchest.shulker_box.silver.yellow.name=Boîte de Shulker jaune en argent
+tile.ironchest.shulker_box.silver.lime.name=Boîte de Shulker vert clair en argent
+tile.ironchest.shulker_box.silver.pink.name=Boîte de Shulker rose en argent
+tile.ironchest.shulker_box.silver.gray.name=Boîte de Shulker grise en argent
+tile.ironchest.shulker_box.silver.silver.name=Boîte de Shulker gris clair en argent
+tile.ironchest.shulker_box.silver.cyan.name=Boîte de Shulker cyan en argent
+tile.ironchest.shulker_box.silver.purple.name=Boîte de Shulker violette en argent
+tile.ironchest.shulker_box.silver.blue.name=Boîte de Shulker bleue en argent
+tile.ironchest.shulker_box.silver.brown.name=Boîte de Shulker marron en argent
+tile.ironchest.shulker_box.silver.green.name=Boîte de Shulker verte en argent
+tile.ironchest.shulker_box.silver.red.name=Boîte de Shulker rouge en argent
+tile.ironchest.shulker_box.silver.black.name=Boîte de Shulker noire en argent
+
+tile.ironchest.shulker_box.crystal.white.name=Boîte de Shulker blanche en cristal
+tile.ironchest.shulker_box.crystal.orange.name=Boîte de Shulker orange en cristal
+tile.ironchest.shulker_box.crystal.magenta.name=Boîte de Shulker magenta en cristal
+tile.ironchest.shulker_box.crystal.light_blue.name=Boîte de Shulker bleu clair en cristal
+tile.ironchest.shulker_box.crystal.yellow.name=Boîte de Shulker jaune en cristal
+tile.ironchest.shulker_box.crystal.lime.name=Boîte de Shulker vert clair en cristal
+tile.ironchest.shulker_box.crystal.pink.name=Boîte de Shulker rose en cristal
+tile.ironchest.shulker_box.crystal.gray.name=Boîte de Shulker grise en cristal
+tile.ironchest.shulker_box.crystal.silver.name=Boîte de Shulker gris clair en cristal
+tile.ironchest.shulker_box.crystal.cyan.name=Boîte de Shulker cyan en cristal
+tile.ironchest.shulker_box.crystal.purple.name=Boîte de Shulker violette en cristal
+tile.ironchest.shulker_box.crystal.blue.name=Boîte de Shulker bleue en cristal
+tile.ironchest.shulker_box.crystal.brown.name=Boîte de Shulker marron en cristal
+tile.ironchest.shulker_box.crystal.green.name=Boîte de Shulker verte en cristal
+tile.ironchest.shulker_box.crystal.red.name=Boîte de Shulker rouge en cristal
+tile.ironchest.shulker_box.crystal.black.name=Boîte de Shulker noire en cristal
+
+tile.ironchest.shulker_box.obsidian.white.name=Boîte de Shulker blanche en obsidienne
+tile.ironchest.shulker_box.obsidian.orange.name=Boîte de Shulker orange en obsidienne
+tile.ironchest.shulker_box.obsidian.magenta.name=Boîte de Shulker magenta en obsidienne
+tile.ironchest.shulker_box.obsidian.light_blue.name=Boîte de Shulker bleu clair en obsidienne
+tile.ironchest.shulker_box.obsidian.yellow.name=Boîte de Shulker jaune en obsidienne
+tile.ironchest.shulker_box.obsidian.lime.name=Boîte de Shulker vert clair en obsidienne
+tile.ironchest.shulker_box.obsidian.pink.name=Boîte de Shulker rose en obsidienne
+tile.ironchest.shulker_box.obsidian.gray.name=Boîte de Shulker grise en obsidienne
+tile.ironchest.shulker_box.obsidian.silver.name=Boîte de Shulker gris clair en obsidienne
+tile.ironchest.shulker_box.obsidian.cyan.name=Boîte de Shulker cyan en obsidienne
+tile.ironchest.shulker_box.obsidian.purple.name=Boîte de Shulker violette en obsidienne
+tile.ironchest.shulker_box.obsidian.blue.name=Boîte de Shulker bleue en obsidienne
+tile.ironchest.shulker_box.obsidian.brown.name=Boîte de Shulker marron en obsidienne
+tile.ironchest.shulker_box.obsidian.green.name=Boîte de Shulker verte en obsidienne
+tile.ironchest.shulker_box.obsidian.red.name=Boîte de Shulker rouge en obsidienne
+tile.ironchest.shulker_box.obsidian.black.name=Boîte de Shulker noire en obsidienne
+
+item.ironchest.shulker_box.iron_gold.name=Amélioration de Shulker en fer à or
+item.ironchest.shulker_box.iron_gold.tooltip=Permet d'améliorer une boîte de Shulker en fer en une boîte de Shulker en or\nLa couleur du Shulker restera la même.
+item.ironchest.shulker_box.gold_diamond.name=Amélioration de Shulker en or à diamant
+item.ironchest.shulker_box.gold_diamond.tooltip=Permet d'améliorer une boîte de Shulker en or en une boîte de Shulker en diamant\nLa couleur du Shulker restera la même.
+item.ironchest.shulker_box.copper_silver.name=Amélioration de Shulker en cuivre à argent
+item.ironchest.shulker_box.copper_silver.tooltip=Permet d'améliorer une boîte de Shulker en cuivre en une boîte de Shulker en argent\nLa couleur du Shulker restera la même.
+item.ironchest.shulker_box.silver_gold.name=Amélioration de Shulker en argent à or
+item.ironchest.shulker_box.silver_gold.tooltip=Permet d'améliorer une boîte de Shulker en argent en une boîte de Shulker en or\nLa couleur du Shulker restera la même.
+item.ironchest.shulker_box.copper_iron.name=Amélioration de Shulker en cuivre à fer
+item.ironchest.shulker_box.copper_iron.tooltip=Permet d'améliorer une boîte de Shulker en cuivre en une boîte de Shulker en fer\nLa couleur du Shulker restera la même.
+item.ironchest.shulker_box.diamond_crystal.name=Amélioration de Shulker en diamant à cristal
+item.ironchest.shulker_box.diamond_crystal.tooltip=Permet d'améliorer une boîte de Shulker en diamant en une boîte de Shulker en cristal\nLa couleur du Shulker restera la même.
+item.ironchest.shulker_box.vanilla_iron.name=Amélioration de Shulker en fer
+item.ironchest.shulker_box.vanilla_iron.tooltip=Permet d'améliorer une boîte de Shulker en une boîte de Shulker en fer\nLa couleur du Shulker restera la même.
+item.ironchest.shulker_box.vanilla_copper.name=Amélioration de Shulker en cuivre
+item.ironchest.shulker_box.vanilla_copper.tooltip=Permet d'améliorer une boîte de Shulker en une boîte de Shulker en cuivre\nLa couleur du Shulker restera la même.
+item.ironchest.shulker_box.diamond_obsidian.name=Amélioration de Shulker en diamant à obsidienne
+item.ironchest.shulker_box.diamond_obsidian.tooltip=Permet d'améliorer une boîte de Shulker en diamant en une boîte de Shulker en obsidienne\nLa couleur du Shulker restera la même.
+
+##############
+#    GUIs    #
+##############
+
+itemGroup.ironchest=Iron Chests
