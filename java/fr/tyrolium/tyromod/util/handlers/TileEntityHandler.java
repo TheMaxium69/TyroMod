@@ -11,7 +11,7 @@ public class TileEntityHandler
     public static void registerTileEntities()
     {
         GameRegistry.registerTileEntity(TileEntityFusionBlock.class, new ResourceLocation(Global.MODID + ":fusion_block"));
-        GameRegistry.registerTileEntity(TileEntityFusionBlock2.class, new ResourceLocation(Global.MODID + ":fusion_block"));
+        GameRegistry.registerTileEntity(TileEntityFusionBlock2.class, new ResourceLocation(Global.MODID + ":fusion_block2"));
     }
 }
 
