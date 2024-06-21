@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#*#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:tyrolium",
+			"data": 0
+        },
+        "*": {
+            "item": "ironchest:iron_chest",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "ironchest:iron_chest",
+		"data": 2
+    }
+}
