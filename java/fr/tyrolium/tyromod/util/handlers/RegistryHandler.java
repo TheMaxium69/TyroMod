@@ -64,13 +64,13 @@ public class RegistryHandler {
     public static void onPlayerTick(TickEvent.PlayerTickEvent e)
     {
         EntityPlayer player = e.player;
-        if(e.player.world.getBlockState(new BlockPos(player.posX, player.posY - 1, player.posZ)).getBlock() == BlocksMod.getBlockCustomClass("bc104"))
+        if(e.player.world.getBlockState(new BlockPos(player.posX, player.posY - 1, player.posZ)).getBlock() == BlocksMod.getBlockCustomClass("bc105"))
         {
             if(player.isSneaking())
             {
                 for(int i = (int)(player.posY - 2); i > 0; i--)
                 {
-                    if(e.player.world.getBlockState(new BlockPos(player.posX, i, player.posZ)).getBlock() == BlocksMod.getBlockCustomClass("bc104"))
+                    if(e.player.world.getBlockState(new BlockPos(player.posX, i, player.posZ)).getBlock() == BlocksMod.getBlockCustomClass("bc105"))
                     {
                         BlockPos pos = new BlockPos(player.posX, i, player.posZ);
 
@@ -91,7 +91,7 @@ public class RegistryHandler {
 
             BlockPos pos = new BlockPos(player.posX, i, player.posZ);
 
-            if(player.world.getBlockState(pos).getBlock() == BlocksMod.getBlockCustomClass("bc104"))
+            if(player.world.getBlockState(pos).getBlock() == BlocksMod.getBlockCustomClass("bc105"))
             {
                 u = i;
                 return i;
@@ -107,7 +107,7 @@ public class RegistryHandler {
         {
             EntityPlayer player = (EntityPlayer)e.getEntityLiving();
 
-            if(player.world.getBlockState(new BlockPos(player.posX, player.posY - 1, player.posZ)).getBlock() == BlocksMod.getBlockCustomClass("bc104"))
+            if(player.world.getBlockState(new BlockPos(player.posX, player.posY - 1, player.posZ)).getBlock() == BlocksMod.getBlockCustomClass("bc105"))
             {
                 player.setPosition(player.posX, getElevatorJump(player) + 1, player.posZ);
             }

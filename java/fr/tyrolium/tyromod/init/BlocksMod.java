@@ -299,6 +299,7 @@ public class BlocksMod {
             * AUTRE
             * *******/
             new BlockGenerateClass("fusion_block", "classic", true, "3"),
+            new BlockGenerateClass("fusion_block2", "classic", true, "3"),
             new BlockGenerateClass("elevator_block", "classic", true, "3"),
 
             new BlockGenerateClass("cobblestone_1", "compressed", false, "1"),
@@ -402,6 +403,9 @@ public class BlocksMod {
                 }
                 if (BlockList[i].getName() == "fusion_block" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new FusionBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                }
+                if (BlockList[i].getName() == "fusion_block2" && BlockList[i].getType() == "classic") {
+                    blockCustomClass.put("bc"+i, new FusionBlock2(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
                 }
                 if (BlockList[i].getName() == "elevator_block" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new ElevatorBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));

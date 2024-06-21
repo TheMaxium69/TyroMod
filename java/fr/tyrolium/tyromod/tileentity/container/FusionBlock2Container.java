@@ -1,7 +1,7 @@
 package fr.tyrolium.tyromod.tileentity.container;
 
-import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlock;
-import fr.tyrolium.tyromod.tileentity.recipes.FusionBlockRecipes;
+import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlock2;
+import fr.tyrolium.tyromod.tileentity.recipes.FusionBlock2Recipes;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -14,12 +14,12 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class FusionBlockContainer extends Container
+public class FusionBlock2Container extends Container
 {
-    private final TileEntityFusionBlock tileentity;
+    private final TileEntityFusionBlock2 tileentity;
     private int cookTime, totalCookTime, burnTime, currentBurnTime;
 
-    public FusionBlockContainer(InventoryPlayer player, TileEntityFusionBlock tileentity)
+    public FusionBlock2Container(InventoryPlayer player, TileEntityFusionBlock2 tileentity)
     {
         this.tileentity = tileentity;
         IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
@@ -97,21 +97,21 @@ public class FusionBlockContainer extends Container
             {
                 Slot slot1 = (Slot)this.inventorySlots.get(index + 1);
 
-                if(!FusionBlockRecipes.getInstance().getSinteringResult(stack1, slot1.getStack()).isEmpty())
+                if(!FusionBlock2Recipes.getInstance().getSinteringResult(stack1, slot1.getStack()).isEmpty())
                 {
                     if(!this.mergeItemStack(stack1, 0, 2, false))
                     {
                         return ItemStack.EMPTY;
                     }
-                    else if(TileEntityFusionBlock.isItemFuel(stack1))
+                    else if(TileEntityFusionBlock2.isItemFuel(stack1))
                     {
                         if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
                     }
-                    else if(TileEntityFusionBlock.isItemFuel(stack1))
+                    else if(TileEntityFusionBlock2.isItemFuel(stack1))
                     {
                         if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
                     }
-                    else if(TileEntityFusionBlock.isItemFuel(stack1))
+                    else if(TileEntityFusionBlock2.isItemFuel(stack1))
                     {
                         if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
                     }

@@ -13,6 +13,7 @@ public class Global {
     public static final String SERVER_PROXY = "fr.tyrolium.tyromod.proxy.CommonProxy";
 
     public static final int GUI_FUSION_BLOCK = 0;
+    public static final int GUI_FUSION_BLOCK2 = 1;
 
 
 }

@@ -44,7 +44,6 @@ public class TyroMod
 
     /* CREATIVE TAB*/
     public static final CreativeTabs TyroModTabV1 = new TyroModTabV1();
-    public static final CreativeTabs TyroModTab = TyroModTabV1; /* OLD NAME */
     public static final CreativeTabs TyroModTabV3 = new TyroModTabV3();
     public static final CreativeTabs TyroModTabUtils = new TyroModTabUtils();
     public static final CreativeTabs TyroModTabServ = new TyroModTabServ();
@@ -74,10 +73,6 @@ public class TyroMod
     public void init(FMLInitializationEvent event){
         logger.info("INIT");
         logger.info("TyroMod a bien charger");
-//        logger.info("BLOCK >> {}", BlocksMod.blocks[25].getRegistryName());
-//        logger.info("ITEM >> {}", ItemsMod.items[25].getRegistryName());
-
-//        LauncherToken.Token();
 
         RegistryHandler.initRegistries(event);
 
