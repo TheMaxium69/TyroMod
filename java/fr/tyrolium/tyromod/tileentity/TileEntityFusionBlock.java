@@ -147,11 +147,8 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
                     smelting = ItemStack.EMPTY;
                     cookTime = 0;
                     return;
-                } else if (result == ItemStack.EMPTY || result.equals(smelting)){
+                } else if (result == ItemStack.EMPTY || result.getItem().equals(smelting.getItem())){
                     cookTime++;
-                } else {
-                    System.out.println("Result : " + result);
-                    System.out.println("Smelting : " + smelting);
                 }
             } else {
                 if (!this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0) {
@@ -210,21 +207,10 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
             {
                 Block block = Block.getBlockFromItem(item);
 
-                if (block == Blocks.WOODEN_SLAB) return 150;
-                if (block.getDefaultState().getMaterial() == Material.WOOD) return 300;
-                if (block == Blocks.COAL_BLOCK) return 16000;
+//                if (block == Blocks.WOODEN_SLAB) return 150;
             }
 
-            if (item instanceof ItemTool && "WOOD".equals(((ItemTool)item).getToolMaterialName())) return 200;
-            if (item instanceof ItemSword && "WOOD".equals(((ItemSword)item).getToolMaterialName())) return 200;
-            if (item instanceof ItemHoe && "WOOD".equals(((ItemHoe)item).getMaterialName())) return 200;
-            if (item == Items.STICK) return 100;
-            if (item == Items.COAL) return 1600;
-            if (item == Items.LAVA_BUCKET) return 20000;
-            if (item == Item.getItemFromBlock(Blocks.SAPLING)) return 100;
-            if (item == Items.BLAZE_ROD) return 2400;
-
-            if (item == ItemsMod.items[128]) return 1600;
+            if (item == ItemsMod.items[128]) return 201;
 
             return GameRegistry.getFuelValue(fuel);
         }

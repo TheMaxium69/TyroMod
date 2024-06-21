@@ -24,8 +24,8 @@ public class FusionBlock2Container extends Container
         this.tileentity = tileentity;
         IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 
-        this.addSlotToContainer(new SlotItemHandler(handler, 0, 26, 11));
-        this.addSlotToContainer(new SlotItemHandler(handler, 1, 26, 59));
+        this.addSlotToContainer(new SlotItemHandler(handler, 0, 18, 15));
+        this.addSlotToContainer(new SlotItemHandler(handler, 1, 18, 56));
         this.addSlotToContainer(new SlotItemHandler(handler, 2, 131, 25));
         this.addSlotToContainer(new SlotItemHandler(handler, 3, 81, 36));
 
