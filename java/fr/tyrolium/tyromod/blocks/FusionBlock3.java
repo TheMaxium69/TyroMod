@@ -4,7 +4,7 @@ import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.global.DefaultBlock;
 import fr.tyrolium.tyromod.init.BlocksMod;
-import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlock2;
+import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlock3;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -100,7 +100,7 @@ public class FusionBlock3 extends DefaultBlock {
     @Override
     public TileEntity createTileEntity(World world, IBlockState state)
     {
-        return new TileEntityFusionBlock2();
+        return new TileEntityFusionBlock3();
     }
 
     @Override
@@ -118,7 +118,7 @@ public class FusionBlock3 extends DefaultBlock {
     @Override
     public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
     {
-        TileEntityFusionBlock2 tileentity = (TileEntityFusionBlock2)worldIn.getTileEntity(pos);
+        TileEntityFusionBlock3 tileentity = (TileEntityFusionBlock3)worldIn.getTileEntity(pos);
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(1)));
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(2)));

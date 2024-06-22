@@ -20,6 +20,7 @@ public class GuiHandler implements IGuiHandler
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
     {
+
         if(ID == Global.GUI_FUSION_BLOCK) return new FusionBlockContainer(player.inventory, (TileEntityFusionBlock)world.getTileEntity(new BlockPos(x,y,z)));
         if(ID == Global.GUI_FUSION_BLOCK2) return new FusionBlock2Container(player.inventory, (TileEntityFusionBlock2)world.getTileEntity(new BlockPos(x,y,z)));
         if(ID == Global.GUI_FUSION_BLOCK3) return new FusionBlock3Container(player.inventory, (TileEntityFusionBlock3)world.getTileEntity(new BlockPos(x,y,z)));
@@ -29,6 +30,7 @@ public class GuiHandler implements IGuiHandler
     @Override
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
     {
+
         if(ID == Global.GUI_FUSION_BLOCK) return new FusionBlockGui(player.inventory, (TileEntityFusionBlock)world.getTileEntity(new BlockPos(x,y,z)));
         if(ID == Global.GUI_FUSION_BLOCK2) return new FusionBlock2Gui(player.inventory, (TileEntityFusionBlock2)world.getTileEntity(new BlockPos(x,y,z)));
         if(ID == Global.GUI_FUSION_BLOCK3) return new FusionBlock3Gui(player.inventory, (TileEntityFusionBlock3)world.getTileEntity(new BlockPos(x,y,z)));
