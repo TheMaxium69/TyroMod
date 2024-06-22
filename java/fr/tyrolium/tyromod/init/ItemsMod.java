@@ -1613,7 +1613,7 @@ public class ItemsMod {
             }
 
 
-            String apiUrl = "http://localhost/Api-TyroModFusion/insert.php?name="+ name +"&tyroid="+ tyroidDB + "&tier=" + tierDB + "&customClass=" + customClassDB+ "&version=" + version + "&className=" + className;
+            String apiUrl = Global.API_FUSION + "insert.php?name="+ name +"&tyroid="+ tyroidDB + "&tier=" + tierDB + "&customClass=" + customClassDB+ "&version=" + version + "&className=" + className;
             System.out.println("url : " + apiUrl);
             try {
                 URL url = new URL(apiUrl);

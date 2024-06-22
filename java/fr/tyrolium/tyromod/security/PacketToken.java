@@ -1,5 +1,6 @@
 package fr.tyrolium.tyromod.security;
 
+import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayer;
@@ -28,7 +29,7 @@ public class PacketToken {
 
         String pseudo = playerEntity.getName();
 
-        String apiUrl = "http://useritium.fr/api-externe/index.php?controller=TyroServ&task=servVerif"; // change this to be your actual API url
+        String apiUrl = Global.API_USERITIUM; // change this to be your actual API url
         try {
             URL url = new URL(apiUrl);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
