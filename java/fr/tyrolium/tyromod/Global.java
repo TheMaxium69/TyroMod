@@ -12,6 +12,9 @@ public class Global {
     public static final String CLIENT_PROXY = "fr.tyrolium.tyromod.proxy.Client";
     public static final String SERVER_PROXY = "fr.tyrolium.tyromod.proxy.CommonProxy";
 
+    public static final String API_FUSION = "http://localhost/Api-TyroModFusion/";
+    public static final String API_USERITIUM = "";
+
     public static final int GUI_FUSION_BLOCK = 0;
     public static final int GUI_FUSION_BLOCK2 = 1;
     public static final int GUI_FUSION_BLOCK3 = 2;

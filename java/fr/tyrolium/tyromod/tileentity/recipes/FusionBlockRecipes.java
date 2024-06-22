@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.global.DefaultItem;
 import fr.tyrolium.tyromod.init.ItemsMod;
@@ -56,7 +57,7 @@ public class FusionBlockRecipes {
     }
 
     private static String requestFusion(ItemStack input1, ItemStack input2){
-        String apiUrl = "http://localhost/Api-TyroModFusion/?tier=1&item1="+ input1.getUnlocalizedName() +"&item2="+ input2.getUnlocalizedName(); // change this to be your actual API url
+        String apiUrl = Global.API_FUSION + "?tier=1&item1="+ input1.getUnlocalizedName() +"&item2="+ input2.getUnlocalizedName(); // change this to be your actual API url
         try {
             URL url = new URL(apiUrl);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();

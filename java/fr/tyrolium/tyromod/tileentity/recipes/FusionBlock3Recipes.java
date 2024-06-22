@@ -1,5 +1,6 @@
 package fr.tyrolium.tyromod.tileentity.recipes;
 
+import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.init.ItemsMod;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -41,7 +42,7 @@ public class FusionBlock3Recipes {
     }
 
     private static String requestFusion(ItemStack input1, ItemStack input2){
-        String apiUrl = "http://localhost/Api-TyroModFusion/?tier=3&item1="+ input1.getUnlocalizedName() +"&item2="+ input2.getUnlocalizedName(); // change this to be your actual API url
+        String apiUrl = Global.API_FUSION + "?tier=3&item1="+ input1.getUnlocalizedName() +"&item2="+ input2.getUnlocalizedName(); // change this to be your actual API url
         try {
             URL url = new URL(apiUrl);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -59,7 +60,6 @@ public class FusionBlock3Recipes {
             conn.disconnect();
 
             String result = content.toString();
-//            System.out.println("Reponse du serveur : " + result);
             System.out.println("REQUEST ENVOYER");
 
             if (!result.equals("\"err\"")) {
