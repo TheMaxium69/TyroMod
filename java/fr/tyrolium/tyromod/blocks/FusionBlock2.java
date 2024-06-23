@@ -16,11 +16,14 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class FusionBlock2 extends DefaultBlock {
 
@@ -34,17 +37,18 @@ public class FusionBlock2 extends DefaultBlock {
 
     }
 
-//    @Override
-//    public Item getItemDropped(IBlockState state, Random rand, int fortune)
-//    {
-//        return Item.getItemFromBlock(BlocksMod.getBlockCustomClass("bc103"));
-//    }
-//
-//    @Override
-//    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
-//    {
-//        return new ItemStack(BlocksMod.getBlockCustomClass("bc103"));
-//    }
+    @Override
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    {
+        return Item.getItemFromBlock(BlocksMod.getBlockCustomClass("bc104"));
+    }
+
+    @Override
+    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
+    {
+        return new ItemStack(BlocksMod.getBlockCustomClass("bc104"));
+    }
+
 
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
@@ -123,7 +127,7 @@ public class FusionBlock2 extends DefaultBlock {
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(1)));
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(2)));
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(3)));
-        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(BlocksMod.getBlockCustomClass("bc104"))));
+//        worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(BlocksMod.getBlockCustomClass("bc104"))));
         super.breakBlock(worldIn, pos, state);
     }
 
