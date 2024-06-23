@@ -44,7 +44,39 @@ public class FusionBlockRecipes {
 
             if (itemId != null && !itemId.equals("empty")) {
 
-                return new ItemStack(ItemsMod.items[Integer.parseInt(itemId)]);
+                try {
+                    int id = Integer.parseInt(itemId);
+                    return new ItemStack(ItemsMod.items[id]);
+                } catch (NumberFormatException e) {
+
+                    itemId = itemId.substring(1, itemId.length() - 1);
+
+                    if (itemId.charAt(0) == 'c') {
+                        return new ItemStack(ItemsMod.getItemCustomClass(itemId));
+                    }
+
+                    if (itemId.charAt(0) == 'v') {
+
+                        /*GOLD_INGOT*/
+                        if (itemId.equals("v999999999")) {
+                            return new ItemStack(Items.GOLD_INGOT);
+                        }
+                        /*EMERALD*/
+                        if (itemId.equals("v999999998")) {
+                            return new ItemStack(Items.EMERALD);
+                        }
+                        /*IRON_INGOT*/
+                        if (itemId.equals("v999999997")) {
+                            return new ItemStack(Items.IRON_INGOT);
+                        }
+                        /*DIAMOND*/
+                        if (itemId.equals("v999999996")) {
+                            return new ItemStack(Items.DIAMOND);
+                        }
+
+                    }
+
+                }
 
             }
         }
@@ -76,7 +108,7 @@ public class FusionBlockRecipes {
 
             String result = content.toString();
 //            System.out.println("Reponse du serveur : " + result);
-            System.out.println("REQUEST ENVOYER");
+//            System.out.println("REQUEST ENVOYER");
 
             if (!result.equals("\"err\"")) {
                 return result;
