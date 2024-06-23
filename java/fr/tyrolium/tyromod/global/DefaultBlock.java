@@ -163,9 +163,14 @@ public class DefaultBlock extends Block implements IHasModel {
 
     public int quantityDropped(Random rand)
     {
-        int max = 4;
-        int min = 1;
-        return rand.nextInt(max) + min;
+        if (isOre) {
+            int max = 4;
+            int min = 1;
+            return rand.nextInt(max) + min;
+
+        } else {
+            return 1;
+        }
     }
 
 
