@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"3": "tyromod:3d/fusion_block_tier1",
-		"4": "tyromod:3d/fusion_block_totem_top",
 		"5": "tyromod:3d/fusion_block_totem_bottom",
 		"6": "tyromod:3d/fusion_block_totem_face_tier1",
+		"7": "tyromod:3d/fusion_block_totem_top_fire",
 		"particle": "tyromod:3d/fusion_block_totem_bottom"
 	},
 	"elements": [
@@ -30,8 +30,8 @@
 				"east": {"uv": [3, 0, 13, 14], "texture": "#6"},
 				"south": {"uv": [3, 0, 13, 14], "texture": "#6"},
 				"west": {"uv": [3, 0, 13, 14], "texture": "#6"},
-				"up": {"uv": [3, 3, 13, 13], "texture": "#4"},
-				"down": {"uv": [3, 3, 13, 13], "texture": "#4"}
+				"up": {"uv": [3, 3, 13, 13], "texture": "#7"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#missing"}
 			}
 		},
 		{
