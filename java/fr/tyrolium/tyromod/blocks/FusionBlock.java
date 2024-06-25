@@ -22,6 +22,8 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
@@ -35,6 +37,12 @@ public class FusionBlock extends DefaultBlock {
         setSoundType(SoundType.ANVIL);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(BURNING, false));
 
+    }
+
+    @SideOnly(Side.CLIENT)
+    public BlockRenderLayer func_180664_k()
+    {
+        return BlockRenderLayer.TRANSLUCENT;
     }
 
     @Override
