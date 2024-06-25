@@ -39,11 +39,11 @@ public class FusionBlock extends DefaultBlock {
 
     }
 
-    @SideOnly(Side.CLIENT)
-    public BlockRenderLayer func_180664_k()
+    public boolean isOpaqueCube(IBlockState state)
     {
-        return BlockRenderLayer.TRANSLUCENT;
+        return false;
     }
+
 
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
