@@ -37,6 +37,12 @@ public class FusionBlock3 extends DefaultBlock {
 
     }
 
+    public boolean isOpaqueCube(IBlockState state)
+    {
+        return false;
+    }
+
+
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {

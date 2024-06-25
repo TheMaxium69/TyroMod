@@ -4,9 +4,9 @@ itemGroup.TyroModOreV3=TyroMod Minerai V3
 itemGroup.TyroModUtils=TyroMod Utilitaires
 itemGroup.TyroModServer=TyroMod Serveur
 item.radar.name=Radar
-container.fusion_block=Bloc à Fusion de Tier 1
-container.fusion_block2=Bloc de Fusion de Tier 2
-container.fusion_block3=Bloc de Fusion de Tier 3
+container.fusion_block=Totem à Fusion de §dTier 1
+container.fusion_block2=Totem de Fusion de §2Tier 2
+container.fusion_block3=Totem de Fusion de §4Tier 3
 
 # GENERATE
 tile.tyrolium_ore.name=Minerai de Tyrolium
