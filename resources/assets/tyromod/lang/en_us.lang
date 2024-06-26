@@ -4,9 +4,9 @@ itemGroup.TyroModOreV3=TyroMod Ore V3
 itemGroup.TyroModUtils=TyroMod Utils
 itemGroup.TyroModServer=TyroMod Server
 item.radar.name=Radar
-container.fusion_block=Fusion Totem §dTier 1
-container.fusion_block2=Fusion Totem §2Tier 2
-container.fusion_block3=Fusion Totem §4Tier 3
+container.fusion_block=Fusion Totem Tier 1
+container.fusion_block2=Fusion Totem Tier 2
+container.fusion_block3=Fusion Totem Tier 3
 
 # GENERATE
 tile.tyrolium_ore.name=Tyrolium Ore
@@ -112,9 +112,9 @@ tile.silicium_block.name=Silicium Block
 tile.ium_ore.name=Ium Ore
 tile.ium_block.name=Ium Block
 tile.ultium_block.name=Ultium Block
-tile.fusion_block.name=Fusion Block (Tier 1)
-tile.fusion_block2.name=Fusion Block (Tier 2)
-tile.fusion_block3.name=Fusion Block (Tier 3)
+tile.fusion_block.name=Fusion Totem (Tier 1)
+tile.fusion_block2.name=Fusion Totem (Tier 2)
+tile.fusion_block3.name=Fusion Totem (Tier 3)
 tile.elevator_block.name=Elevator block
 tile.cobblestone_1_compressed.name=Cobblestone 1 Compressed
 tile.cobblestone_2_compressed.name=Cobblestone 2 Compressed
