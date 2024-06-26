@@ -1591,7 +1591,7 @@ public class ItemsMod {
 
     public static void _STOCKDB(String name, int tyroid, String tier, int customClass, String version, String className){
 
-        if (Global.DB_LAUNCH == 1) {
+        if (Global.DB_LAUNCH_ITEM == 1) {
 
             String customClassDB;
             if (customClass == 0) {

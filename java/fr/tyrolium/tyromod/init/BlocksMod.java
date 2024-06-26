@@ -11,6 +11,10 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -380,15 +384,19 @@ public class BlocksMod {
                 if (BlockList[i].getType() == "classic") {
                     if (BlockList[i].isOre() == "true") {
                         blocks[i] = new DefaultBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "b" + i);
+                        _STOCKDB(BlockList[i].getName(), i, BlockList[i].getOreTier(), 0, BlockList[i].getModVersion(), "block");
                     } else {
                         blocks[i] = new DefaultBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "b" + i);
+                        _STOCKDB(BlockList[i].getName(), i, "6", 0, BlockList[i].getModVersion(), "block");
                     }
                 } else {
 
                     if (BlockList[i].isOre() == "true") {
                         blocks[i] = new DefaultBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "b" + i);
+                        _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, BlockList[i].getOreTier(), 0, BlockList[i].getModVersion(), "block");
                     } else {
                         blocks[i] = new DefaultBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "b" + i);
+                        _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 0, BlockList[i].getModVersion(), "block");
                     }
 
                 }
@@ -398,31 +406,40 @@ public class BlocksMod {
 
                 if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "block") {
                     blockCustomClass.put("bc"+i, new TyroliumBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "4", 1, BlockList[i].getModVersion(), "block");
                 }
                 if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "ore") {
                     blockCustomClass.put("bc"+i, new TyroliumOre(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "4", 1, BlockList[i].getModVersion(), "block");
                 }
                 if (BlockList[i].getName() == "fusion_block" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new FusionBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
                 }
                 if (BlockList[i].getName() == "fusion_block2" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new FusionBlock2(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
                 }
                 if (BlockList[i].getName() == "fusion_block3" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new FusionBlock3(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
                 }
                 if (BlockList[i].getName() == "elevator_block" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new ElevatorBlock(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
                 }
                 if (BlockList[i].getName() == "volcanium_cave" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new VolcaniumCave(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
                 }
                 if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "command_block") {
                     blockCustomClass.put("bc"+i, new TyroliumCommandBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
                 }
 
                 if (BlockList[i].getType() == "flag") {
                     blockCustomClass.put("bc"+i, new ServerBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
                 }
 
             }
@@ -432,6 +449,59 @@ public class BlocksMod {
 
     public static Block getBlockCustomClass(String nameBlock) {
         return blockCustomClass.get(nameBlock);
+    }
+
+    public static void _STOCKDB(String name, int tyroid, String tier, int customClass, String version, String className){
+
+        if (Global.DB_LAUNCH_BLOCK == 1) {
+
+            String customClassDB;
+            if (customClass == 0) {
+                customClassDB = "zero";
+            } else {
+                customClassDB = String.valueOf(customClass);
+            }
+            String tierDB;
+            if (tier.equals("0")) {
+                tierDB = "6";
+            } else {
+                tierDB = String.valueOf(tier);
+            }
+            String tyroidDB;
+            if (tyroid == 0) {
+                tyroidDB = "zero";
+            } else {
+                tyroidDB = String.valueOf(tyroid);
+            }
+
+
+            String apiUrl = Global.API_FUSION + "insert.php?name="+ name +"&tyroid="+ tyroidDB + "&tier=" + tierDB + "&customClass=" + customClassDB+ "&version=" + version + "&className=" + className;
+            System.out.println("url : " + apiUrl);
+            try {
+                URL url = new URL(apiUrl);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.setDoOutput(true);
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                String inputLine;
+                StringBuilder content = new StringBuilder();
+                while ((inputLine = in.readLine()) != null) {
+                    content.append(inputLine);
+                }
+
+                in.close();
+                conn.disconnect();
+
+                String result = content.toString();
+                System.out.println("Reponse du serveur : " + result);
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+
     }
 
 }
