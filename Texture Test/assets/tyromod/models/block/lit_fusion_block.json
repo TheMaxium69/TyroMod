@@ -5,6 +5,7 @@
 		"4": "tyromod:3d/fusion_block_totem_top",
 		"5": "tyromod:3d/fusion_block_totem_bottom",
 		"6": "tyromod:3d/fusion_block_totem_face_tier1",
+		"7": "tyromod:3d/fusion_block_totem_top_fire",
 		"particle": "tyromod:3d/fusion_block_totem_bottom"
 	},
 	"elements": [
@@ -28,7 +29,7 @@
 			"faces": {
 				"north": {"uv": [3, 0, 5, 14], "texture": "#6"},
 				"east": {"uv": [3, 0, 13, 14], "texture": "#6"},
-				"south": {"uv": [11, 0, 13, 14], "texture": "#6"},
+				"south": {"uv": [10, 0, 13, 14], "texture": "#6"},
 				"west": {"uv": [3, 0, 13, 14], "texture": "#6"},
 				"up": {"uv": [11, 3, 13, 13], "texture": "#4"},
 				"down": {"uv": [3, 3, 13, 13], "texture": "#4"}
@@ -43,7 +44,7 @@
 				"east": {"uv": [3, 0, 13, 14], "texture": "#6"},
 				"south": {"uv": [3, 0, 5, 14], "texture": "#6"},
 				"west": {"uv": [3, 0, 13, 14], "texture": "#6"},
-				"up": {"uv": [3, 3, 5, 13], "texture": "#4"},
+				"up": {"uv": [3, 3, 6, 13], "texture": "#4"},
 				"down": {"uv": [3, 3, 13, 13], "texture": "#4"}
 			}
 		},
@@ -87,15 +88,15 @@
 			}
 		},
 		{
-			"from": [5, 3, 5],
-			"to": [11, 4, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5, 3, 6]},
+			"from": [5, 4, 5],
+			"to": [11, 14, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 4, 6]},
 			"faces": {
 				"north": {"uv": [0, 0, 6, 1], "texture": "#missing"},
 				"east": {"uv": [0, 0, 6, 1], "texture": "#missing"},
 				"south": {"uv": [0, 0, 6, 1], "texture": "#missing"},
 				"west": {"uv": [0, 0, 6, 1], "texture": "#missing"},
-				"up": {"uv": [5, 5, 11, 11], "texture": "#4"},
+				"up": {"uv": [5, 5, 11, 11], "texture": "#7"},
 				"down": {"uv": [0, 0, 6, 6], "texture": "#missing"}
 			}
 		}
