@@ -159,7 +159,7 @@ public class BlocksMod {
             new BlockGenerateClass("sunstone", "block", false, "3", "0"),
 
             /*NETHERITE*/
-            new BlockGenerateClass("netherite", "ore", false, "V", "3"),
+            new BlockGenerateClass("netherite", "ore", true, "V", "3"),
             new BlockGenerateClass("netherite", "block", false, "V", "3"),
 
             /*VOLCANITE*/
@@ -435,6 +435,10 @@ public class BlocksMod {
                 if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "command_block") {
                     blockCustomClass.put("bc"+i, new TyroliumCommandBlock(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
                     _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
+                }
+                if (BlockList[i].getName() == "netherite" && BlockList[i].getType() == "block") {
+                    blockCustomClass.put("bc"+i, new NetheriteOre(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "3", 1, BlockList[i].getModVersion(), "block");
                 }
 
                 if (BlockList[i].getType() == "flag") {
