@@ -54,10 +54,14 @@ public class BlockGenerateClass {
             return Material.IRON;
         } else if (this.type == "block"){
             return Material.IRON;
-        } else if (this.type == "ore"){
+        } else if (this.type == "ore") {
             return Material.ROCK;
+        } else if (this.type == "compressed") {
+            return Material.ROCK;
+        } else if (this.type == "flag") {
+            return Material.IRON;
         } else {
-            return Material.AIR;
+            return Material.IRON;
         }
 
     }
