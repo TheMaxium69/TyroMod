@@ -47,13 +47,13 @@ public class DefaultPickaxe extends ItemPickaxe implements IHasModel {
             if (this.oreTier != "0") {
 
                 if (this.oreTier == "IUM"){
-                    tooltip.add("\u00a77Fusion: \u00a79\u00a7lTier " + this.oreTier);
+                    tooltip.add("\u00a77Fusion: \u00a71\u00a7lTier " + this.oreTier);
                 } else if (this.oreTier == "3"){
                     tooltip.add("\u00a77Fusion: \u00a74\u00a7lTier " + this.oreTier);
                 } else if (this.oreTier == "2"){
-                    tooltip.add("\u00a77Fusion: \u00a73\u00a7lTier " + this.oreTier);
+                    tooltip.add("\u00a77Fusion: \u00a72\u00a7lTier " + this.oreTier);
                 } else if (this.oreTier == "1"){
-                    tooltip.add("\u00a77Fusion: \u00a75\u00a7lTier " + this.oreTier);
+                    tooltip.add("\u00a77Fusion: \u00a7d\u00a7lTier " + this.oreTier);
                 }
 
             }
