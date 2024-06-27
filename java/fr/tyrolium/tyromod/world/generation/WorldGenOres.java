@@ -37,7 +37,7 @@ public class WorldGenOres implements IWorldGenerator
         yellorite_ore = new WorldGenMinable(BlocksMod.blocks[7].getDefaultState(), 6, BlockMatcher.forBlock(Blocks.STONE));
         volcanite_ore = new WorldGenMinable(BlocksMod.blocks[56].getDefaultState(), 6, BlockMatcher.forBlock(Blocks.STONE));
         ium_ore = new WorldGenMinable(BlocksMod.blocks[100].getDefaultState(), 6, BlockMatcher.forBlock(Blocks.STONE));
-        netherite_ore = new WorldGenMinable(BlocksMod.blocks[54].getDefaultState(), 6, BlockMatcher.forBlock(Blocks.NETHERRACK));
+        netherite_ore = new WorldGenMinable(BlocksMod.getBlockCustomClass("bc54").getDefaultState(), 6, BlockMatcher.forBlock(Blocks.NETHERRACK));
     }
 
     @Override
