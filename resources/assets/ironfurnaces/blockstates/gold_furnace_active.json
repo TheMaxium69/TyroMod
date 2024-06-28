@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ironfurnaces:gold_furnace_active" },
+    "facing=south": { "model": "ironfurnaces:gold_furnace_active", "y": 180 },
+    "facing=west":  { "model": "ironfurnaces:gold_furnace_active", "y": 270 },
+    "facing=east":  { "model": "ironfurnaces:gold_furnace_active", "y": 90 }
+  }
+}

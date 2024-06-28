@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iFi",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:obsidian"
+    },
+    "F": {
+      "item": "ironfurnaces:diamond_furnace_idle"
+    }
+  },
+  "result": {
+    "item": "ironfurnaces:obsidian_furnace_idle"
+  }
+}

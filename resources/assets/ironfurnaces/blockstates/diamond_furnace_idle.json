@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ironfurnaces:diamond_furnace_idle" },
+    "facing=south": { "model": "ironfurnaces:diamond_furnace_idle", "y": 180 },
+    "facing=west":  { "model": "ironfurnaces:diamond_furnace_idle", "y": 270 },
+    "facing=east":  { "model": "ironfurnaces:diamond_furnace_idle", "y": 90 }
+  }
+}

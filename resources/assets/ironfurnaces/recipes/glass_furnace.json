@@ -1,0 +1,20 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "ggg",
+    "gFg",
+    "ggg"
+  ],
+  "key": {
+    "F": {
+      "item": "ironfurnaces:diamond_furnace_idle"
+    },
+    "g": {
+      "type": "forge:ore_dict",
+      "ore": "blockGlass"
+    }
+  },
+  "result": {
+    "item": "ironfurnaces:glass_furnace_idle"
+  }
+}
