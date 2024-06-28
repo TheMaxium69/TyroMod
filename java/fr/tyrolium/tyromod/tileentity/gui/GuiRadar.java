@@ -40,7 +40,7 @@ public class GuiRadar extends Gui {
     public void onRenderPre(RenderGameOverlayEvent.Pre event)
     {
 
-        if(event.getType() == RenderGameOverlayEvent.ElementType.HELMET && mc.player.getHeldItem(EnumHand.MAIN_HAND).getItem() == ItemsMod.RADAR /*&& ItemRadar.isUsed == 1*/)
+        if(event.getType() == RenderGameOverlayEvent.ElementType.HELMET && mc.player.getHeldItem(EnumHand.MAIN_HAND).getItem() == ItemsMod.getItemCustomClass("c969") /*&& ItemRadar.isUsed == 1*/)
         {
 
             amountTiles = mc.world.getChunkFromChunkCoords(mc.player.chunkCoordX + 0,

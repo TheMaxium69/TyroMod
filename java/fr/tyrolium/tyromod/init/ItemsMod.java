@@ -29,7 +29,7 @@ public class ItemsMod {
 
 
     /* MANUEL */
-    public static Item RADAR = new Radar("radar", "3", "c999");
+//    public static Item RADAR = new Radar("radar", "3", "c999");
 
     /* GENERATION */
     public static ItemGenerateClass[] ItemList = {
@@ -1193,6 +1193,9 @@ public class ItemsMod {
             new ItemGenerateClass("volcanium", "apple", false, "1"),
             new ItemGenerateClass("purified", "flesh", false, "1"),
 
+            /*UTILS*/
+            new ItemGenerateClass("radar", "classic", true, "3"),
+
                 /* *******
                  * SERVER
                  * *******/
@@ -1382,6 +1385,11 @@ public class ItemsMod {
                 if (ItemList[i].getType() == "keycard" || ItemList[i].getType() == "symbol" || ItemList[i].getType() == "wrench" || ItemList[i].getType() == "gear" || ItemList[i].getType() == "coin" || ItemList[i].getType() == "ring" || ItemList[i].getType() == "plate") {
                     itemCustomClass.put("c"+i, new ServerItem(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "c" + i));
                     _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, "6", 1, ItemList[i].getModVersion(), "item");
+                }
+                if (ItemList[i].getName() == "radar") {
+                    itemCustomClass.put("c"+i, new Radar(ItemList[i].getName(), ItemList[i].getModVersion(), "c" + i));
+                    _STOCKDB(ItemList[i].getName(), i, "6", 1, ItemList[i].getModVersion(), "item");
+
                 }
 
             }

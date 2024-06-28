@@ -437,7 +437,7 @@ public class BlocksMod {
                     _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
                 }
                 if (BlockList[i].getName() == "netherite" && BlockList[i].getType() == "ore") {
-                    blockCustomClass.put("bc"+i, new NetheriteOre(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    blockCustomClass.put("bc"+i, new NetheriteOre(BlockList[i].getName() + BlockList[i].getTypeName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "bc" + i));
                     _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "3", 1, BlockList[i].getModVersion(), "block");
                 }
 

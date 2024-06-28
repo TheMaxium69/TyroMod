@@ -24,7 +24,7 @@ public class DefaultBlock extends Block implements IHasModel {
     private String modVersion;
     private String oreTier;
     private String tyroId;
-    private Item ItemLoot = ItemsMod.RADAR;
+    private Item ItemLoot = ItemsMod.getItemCustomClass("c0");
 
     public DefaultBlock(String name, Material materialIn, String version, String id) {
         super(materialIn);
