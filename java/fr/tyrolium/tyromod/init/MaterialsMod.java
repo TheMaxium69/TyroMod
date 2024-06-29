@@ -13,28 +13,28 @@ public class MaterialsMod {
          *******************/
 
     /*AUTRE*/
-    public static final ItemArmor.ArmorMaterial GRAVEL_ARMOR = EnumHelper.addArmorMaterial("gravel_armor", Global.MODID + ":gravel", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial MERCURE_ARMOR = EnumHelper.addArmorMaterial("mercure_armor", Global.MODID + ":mercure", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial REDSTONE_ARMOR = EnumHelper.addArmorMaterial("redstone_armor", Global.MODID + ":redstone", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial IUM_ARMOR = EnumHelper.addArmorMaterial("ium_armor", Global.MODID + ":ium", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial LAPIS_LAZULI_ARMOR = EnumHelper.addArmorMaterial("lapis_lazuli_armor", Global.MODID + ":lapis_lazuli", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial COAL_ARMOR = EnumHelper.addArmorMaterial("coal_armor", Global.MODID + ":coal", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial OAK_ARMOR = EnumHelper.addArmorMaterial("oak_armor", Global.MODID + ":oak", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial SPRUCE_ARMOR = EnumHelper.addArmorMaterial("spruce_armor", Global.MODID + ":spruce", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial BIRCH_ARMOR = EnumHelper.addArmorMaterial("birch_armor", Global.MODID + ":birch", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial JUNGLE_ARMOR = EnumHelper.addArmorMaterial("jungle_armor", Global.MODID + ":jungle", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial ACACIA_ARMOR = EnumHelper.addArmorMaterial("acacia_armor", Global.MODID + ":acacia", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial DARKOAK_ARMOR = EnumHelper.addArmorMaterial("darkoak_armor", Global.MODID + ":darkoak", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial STONE_ARMOR = EnumHelper.addArmorMaterial("stone_armor", Global.MODID + ":stone", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial SUNSTONE_ARMOR = EnumHelper.addArmorMaterial("sunstone_armor", Global.MODID + ":sunstone", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial CLAY_ARMOR = EnumHelper.addArmorMaterial("clay_armor", Global.MODID + ":clay", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ItemArmor.ArmorMaterial GRAVEL_ARMOR = EnumHelper.addArmorMaterial("gravel_armor", Global.MODID + ":gravel", 15, new int[] {1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f); /*FINI*/
+    public static final ItemArmor.ArmorMaterial MERCURE_ARMOR = EnumHelper.addArmorMaterial("mercure_armor", Global.MODID + ":mercure", 33, new int[] {3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f); /*FINI*/
+    public static final ItemArmor.ArmorMaterial REDSTONE_ARMOR = EnumHelper.addArmorMaterial("redstone_armor", Global.MODID + ":redstone", 10, new int[] {2, 5, 6, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f); /*FINI*/
+    public static final ItemArmor.ArmorMaterial IUM_ARMOR = EnumHelper.addArmorMaterial("ium_armor", Global.MODID + ":ium", 0, new int[] {0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial LAPIS_LAZULI_ARMOR = EnumHelper.addArmorMaterial("lapis_lazuli_armor", Global.MODID + ":lapis_lazuli", 10, new int[] {2, 5, 6, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial COAL_ARMOR = EnumHelper.addArmorMaterial("coal_armor", Global.MODID + ":coal", 10, new int[] {1, 2, 3, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial OAK_ARMOR = EnumHelper.addArmorMaterial("oak_armor", Global.MODID + ":oak", 10, new int[] {1, 2, 3, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial SPRUCE_ARMOR = EnumHelper.addArmorMaterial("spruce_armor", Global.MODID + ":spruce", 10, new int[] {1, 2, 3, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial BIRCH_ARMOR = EnumHelper.addArmorMaterial("birch_armor", Global.MODID + ":birch", 10, new int[] {1, 2, 3, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial JUNGLE_ARMOR = EnumHelper.addArmorMaterial("jungle_armor", Global.MODID + ":jungle", 10, new int[] {1, 2, 3, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial ACACIA_ARMOR = EnumHelper.addArmorMaterial("acacia_armor", Global.MODID + ":acacia", 10, new int[] {1, 2, 3, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial DARKOAK_ARMOR = EnumHelper.addArmorMaterial("darkoak_armor", Global.MODID + ":darkoak", 10, new int[] {1, 2, 3, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial STONE_ARMOR = EnumHelper.addArmorMaterial("stone_armor", Global.MODID + ":stone", 15, new int[] {1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial SUNSTONE_ARMOR = EnumHelper.addArmorMaterial("sunstone_armor", Global.MODID + ":sunstone", 0, new int[] {0, 0, 0, 0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial CLAY_ARMOR = EnumHelper.addArmorMaterial("clay_armor", Global.MODID + ":clay", 15, new int[] {3, 5, 6, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
 
     /*TIER 1*/
-    public static final ItemArmor.ArmorMaterial COPPER_ARMOR = EnumHelper.addArmorMaterial("copper_armor", Global.MODID + ":copper", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ItemArmor.ArmorMaterial COPPER_ARMOR = EnumHelper.addArmorMaterial("copper_armor", Global.MODID + ":copper", 15, new int[] {1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
     public static final ItemArmor.ArmorMaterial ENDERINE_ARMOR = EnumHelper.addArmorMaterial("enderine_armor", Global.MODID + ":enderine", 33, new int[] {3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial FLINT_ARMOR = EnumHelper.addArmorMaterial("flint_armor", Global.MODID + ":flint", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial TIN_ARMOR = EnumHelper.addArmorMaterial("tin_armor", Global.MODID + ":tin", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
-    public static final ItemArmor.ArmorMaterial PURIFIED_IRON_ARMOR = EnumHelper.addArmorMaterial("purified_iron_armor", Global.MODID + ":purified_iron", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
+    public static final ItemArmor.ArmorMaterial FLINT_ARMOR = EnumHelper.addArmorMaterial("flint_armor", Global.MODID + ":flint", 15, new int[] {3, 5, 6, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial TIN_ARMOR = EnumHelper.addArmorMaterial("tin_armor", Global.MODID + ":tin", 10, new int[] {1, 2, 3, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0f);
+    public static final ItemArmor.ArmorMaterial PURIFIED_IRON_ARMOR = EnumHelper.addArmorMaterial("purified_iron_armor", Global.MODID + ":purified_iron", 30, new int[] {3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     /*TIER 2*/
     public static final ItemArmor.ArmorMaterial TITANE_ARMOR = EnumHelper.addArmorMaterial("titane_armor", Global.MODID + ":titane", 20, new int[] {7, 8, 8, 9}, 0, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
