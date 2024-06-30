@@ -123,7 +123,9 @@ public class DefaultArmor extends ItemArmor implements IHasModel {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-        player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof DefaultArmor) {
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+        }
     }
 
 }
