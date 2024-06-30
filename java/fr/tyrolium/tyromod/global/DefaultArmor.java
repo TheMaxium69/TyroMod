@@ -2,15 +2,19 @@ package fr.tyrolium.tyromod.global;
 
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.init.ItemsMod;
+import fr.tyrolium.tyromod.items.armor.TyroliumArmor;
 import fr.tyrolium.tyromod.util.handlers.IHasModel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.MobEffects;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -115,6 +119,11 @@ public class DefaultArmor extends ItemArmor implements IHasModel {
 
         }
 
+    }
+
+    @Override
+    public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
+        player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
     }
 
 }
