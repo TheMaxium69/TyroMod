@@ -155,6 +155,8 @@ public class DefaultBlock extends Block implements IHasModel {
         if(isOre)
         {
 
+            System.out.println(name);
+
             if(name.equals("volcanite_ore")) {
                 return ItemsMod.items[224];
             } else if (name.equals("yellorite_ore")) {
@@ -177,9 +179,14 @@ public class DefaultBlock extends Block implements IHasModel {
     public int quantityDropped(Random rand)
     {
         if (isOre) {
-            int max = 4;
-            int min = 1;
-            return rand.nextInt(max) + min;
+
+            if(name.equals("volcanite_ore") || name.equals("yellorite_ore") || name.equals("sapphire_ore") || name.equals("ruby_ore")) {
+                int max = 4;
+                int min = 1;
+                return rand.nextInt(max) + min;
+            } else {
+                return 1;
+            }
 
         } else {
             return 1;
