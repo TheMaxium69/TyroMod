@@ -2,16 +2,17 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "###",
+        "# #",
         "# #"
     ],
     "key": {
         "#": {
-            "item": "tyromod:birch",
-			"data": 0
+            "item": "minecraft:planks",
+			"data": 2
         }
     },
     "result": {
-        "item": "tyromod:birch_helmet",
+        "item": "tyromod:birch_leggings",
 		"data": 0
     }
 }

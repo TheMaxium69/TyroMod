@@ -1,17 +1,18 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
+        "###",
         "# #",
         "# #"
     ],
     "key": {
         "#": {
-            "item": "tyromod:birch_gem",
-			"data": 0
+            "item": "minecraft:log",
+			"data": 2
         }
     },
     "result": {
-        "item": "tyromod:birch_boots",
+        "item": "tyromod:birch_leggings",
 		"data": 0
     }
 }
