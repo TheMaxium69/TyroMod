@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:planks",
+			"data": 4
+        }
+    },
+    "result": {
+        "item": "tyromod:acacia_boots",
+		"data": 0
+    }
+}
