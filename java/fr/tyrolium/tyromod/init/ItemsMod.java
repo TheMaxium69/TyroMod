@@ -7,7 +7,7 @@ import fr.tyrolium.tyromod.global.*;
 import fr.tyrolium.tyromod.items.ServerItem;
 import fr.tyrolium.tyromod.items.Radar;
 import fr.tyrolium.tyromod.items.Tyrolium;
-import fr.tyrolium.tyromod.items.armor.TyroliumArmor;
+import fr.tyrolium.tyromod.items.armor.*;
 import fr.tyrolium.tyromod.items.tool.*;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
@@ -307,10 +307,10 @@ public class ItemsMod {
             new ItemGenerateClass("volcanium", "axe", false, VOLCANIUM_TOOL, "1", "IUM"),
             new ItemGenerateClass("volcanium", "shovel", false, VOLCANIUM_TOOL, "1", "IUM"),
             new ItemGenerateClass("volcanium", "hoe", false, VOLCANIUM_TOOL, "1", "IUM"),
-            new ItemGenerateClass("volcanium", "helmet", false, VOLCANIUM_ARMOR, "1", "IUM"),
-            new ItemGenerateClass("volcanium", "chestplate", false, VOLCANIUM_ARMOR, "1", "IUM"),
-            new ItemGenerateClass("volcanium", "leggings", false, VOLCANIUM_ARMOR, "1", "IUM"),
-            new ItemGenerateClass("volcanium", "boots", false, VOLCANIUM_ARMOR, "1", "IUM"),
+            new ItemGenerateClass("volcanium", "helmet", true, VOLCANIUM_ARMOR, "1", "IUM"),
+            new ItemGenerateClass("volcanium", "chestplate", true, VOLCANIUM_ARMOR, "1", "IUM"),
+            new ItemGenerateClass("volcanium", "leggings", true, VOLCANIUM_ARMOR, "1", "IUM"),
+            new ItemGenerateClass("volcanium", "boots", true, VOLCANIUM_ARMOR, "1", "IUM"),
 
             /*ADAMANTIUM*/
             new ItemGenerateClass("adamantium", "ingot", false, "3", "IUM"),
@@ -319,10 +319,10 @@ public class ItemsMod {
             new ItemGenerateClass("adamantium", "axe", false, ADAMANTIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("adamantium", "shovel", false, ADAMANTIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("adamantium", "hoe", false, ADAMANTIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("adamantium", "helmet", false, ADAMANTIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("adamantium", "chestplate", false, ADAMANTIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("adamantium", "leggings", false, ADAMANTIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("adamantium", "boots", false, ADAMANTIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("adamantium", "helmet", true, ADAMANTIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("adamantium", "chestplate", true, ADAMANTIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("adamantium", "leggings", true, ADAMANTIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("adamantium", "boots", true, ADAMANTIUM_ARMOR, "3", "IUM"),
 
             /*ARGONITE*/
             new ItemGenerateClass("argonite", "ingot", false, "3", "3"),
@@ -392,10 +392,10 @@ public class ItemsMod {
             new ItemGenerateClass("draconium", "axe", false, DRACONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("draconium", "shovel", false, DRACONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("draconium", "hoe", false, DRACONIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("draconium", "helmet", false, DRACONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("draconium", "chestplate", false, DRACONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("draconium", "leggings", false, DRACONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("draconium", "boots", false, DRACONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("draconium", "helmet", true, DRACONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("draconium", "chestplate", true, DRACONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("draconium", "leggings", true, DRACONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("draconium", "boots", true, DRACONIUM_ARMOR, "3", "IUM"),
 
             /*DRAGONSTONE*/
             new ItemGenerateClass("dragonstone", "gem", false, "3", "3"),
@@ -513,10 +513,10 @@ public class ItemsMod {
             new ItemGenerateClass("steelium", "axe", false, STEELIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("steelium", "shovel", false, STEELIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("steelium", "hoe", false, STEELIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("steelium", "helmet", false, STEELIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("steelium", "chestplate", false, STEELIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("steelium", "leggings", false, STEELIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("steelium", "boots", false, STEELIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("steelium", "helmet", true, STEELIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("steelium", "chestplate", true, STEELIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("steelium", "leggings", true, STEELIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("steelium", "boots", true, STEELIUM_ARMOR, "3", "IUM"),
 
             /*THYRIUM*/
             new ItemGenerateClass("thyrium", "classic", false, "3", "IUM"),
@@ -525,10 +525,10 @@ public class ItemsMod {
             new ItemGenerateClass("thyrium", "axe", false, THYRIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("thyrium", "shovel", false, THYRIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("thyrium", "hoe", false, THYRIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("thyrium", "helmet", false, THYRIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("thyrium", "chestplate", false, THYRIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("thyrium", "leggings", false, THYRIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("thyrium", "boots", false, THYRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("thyrium", "helmet", true, THYRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("thyrium", "chestplate", true, THYRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("thyrium", "leggings", true, THYRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("thyrium", "boots", true, THYRIUM_ARMOR, "3", "IUM"),
 
             /*SUNSTONE*/
             new ItemGenerateClass("sunstone", "ingot", false, "3", "0"),
@@ -657,10 +657,10 @@ public class ItemsMod {
             new ItemGenerateClass("rhodonium", "axe", false, RHODONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("rhodonium", "shovel", false, RHODONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("rhodonium", "hoe", false, RHODONIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("rhodonium", "helmet", false, RHODONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("rhodonium", "chestplate", false, RHODONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("rhodonium", "leggings", false, RHODONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("rhodonium", "boots", false, RHODONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "helmet", true, RHODONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "chestplate", true, RHODONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "leggings", true, RHODONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "boots", true, RHODONIUM_ARMOR, "3", "IUM"),
 
             /*YELLORIUM*/
             new ItemGenerateClass("yellorium", "classic", false, "3", "IUM"),
@@ -669,10 +669,10 @@ public class ItemsMod {
             new ItemGenerateClass("yellorium", "axe", false, YELLORIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("yellorium", "shovel", false, YELLORIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("yellorium", "hoe", false, YELLORIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("yellorium", "helmet", false, YELLORIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("yellorium", "chestplate", false, YELLORIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("yellorium", "leggings", false, YELLORIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("yellorium", "boots", false, YELLORIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("yellorium", "helmet", true, YELLORIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("yellorium", "chestplate", true, YELLORIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("yellorium", "leggings", true, YELLORIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("yellorium", "boots", true, YELLORIUM_ARMOR, "3", "IUM"),
 
             /*OBSIDIUM*/
             new ItemGenerateClass("obsidium", "ingot", false, "3", "IUM"),
@@ -682,10 +682,10 @@ public class ItemsMod {
             new ItemGenerateClass("obsidium", "axe", false, OBSIDIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("obsidium", "shovel", false, OBSIDIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("obsidium", "hoe", false, OBSIDIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("obsidium", "helmet", false, OBSIDIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("obsidium", "chestplate", false, OBSIDIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("obsidium", "leggings", false, OBSIDIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("obsidium", "boots", false, OBSIDIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("obsidium", "helmet", true, OBSIDIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("obsidium", "chestplate", true, OBSIDIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("obsidium", "leggings", true, OBSIDIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("obsidium", "boots", true, OBSIDIUM_ARMOR, "3", "IUM"),
 
             /*ENDERIUM*/
             new ItemGenerateClass("enderium", "classic", false, "3", "IUM"),
@@ -694,10 +694,10 @@ public class ItemsMod {
             new ItemGenerateClass("enderium", "axe", false, ENDERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("enderium", "shovel", false, ENDERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("enderium", "hoe", false, ENDERIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("enderium", "helmet", false, ENDERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("enderium", "chestplate", false, ENDERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("enderium", "leggings", false, ENDERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("enderium", "boots", false, ENDERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("enderium", "helmet", true, ENDERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("enderium", "chestplate", true, ENDERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("enderium", "leggings", true, ENDERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("enderium", "boots", true, ENDERIUM_ARMOR, "3", "IUM"),
 
             /*ENDERITE*/
             new ItemGenerateClass("enderite", "ingot", false, "3", "2"),
@@ -718,10 +718,10 @@ public class ItemsMod {
             new ItemGenerateClass("copperium", "axe", false, COPPERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("copperium", "shovel", false, COPPERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("copperium", "hoe", false, COPPERIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("copperium", "helmet", false, COPPERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("copperium", "chestplate", false, COPPERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("copperium", "leggings", false, COPPERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("copperium", "boots", false, COPPERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("copperium", "helmet", true, COPPERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("copperium", "chestplate", true, COPPERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("copperium", "leggings", true, COPPERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("copperium", "boots", true, COPPERIUM_ARMOR, "3", "IUM"),
 
             /*AVENTURIUM*/
             new ItemGenerateClass("aventurium", "ingot", false, "3", "IUM"),
@@ -730,10 +730,10 @@ public class ItemsMod {
             new ItemGenerateClass("aventurium", "axe", false, AVENTURIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("aventurium", "shovel", false, AVENTURIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("aventurium", "hoe", false, AVENTURIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("aventurium", "helmet", false, AVENTURIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("aventurium", "chestplate", false, AVENTURIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("aventurium", "leggings", false, AVENTURIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("aventurium", "boots", false, AVENTURIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("aventurium", "helmet", true, AVENTURIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("aventurium", "chestplate", true, AVENTURIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("aventurium", "leggings", true, AVENTURIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("aventurium", "boots", true, AVENTURIUM_ARMOR, "3", "IUM"),
 
             /*PURIFIED IRON*/
             new ItemGenerateClass("purified_iron", "gem", false, "3", "1"),
@@ -767,10 +767,10 @@ public class ItemsMod {
             new ItemGenerateClass("titanium", "axe", false, TITANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("titanium", "shovel", false, TITANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("titanium", "hoe", false, TITANIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("titanium", "helmet", false, TITANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("titanium", "chestplate", false, TITANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("titanium", "leggings", false, TITANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("titanium", "boots", false, TITANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("titanium", "helmet", true, TITANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("titanium", "chestplate", true, TITANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("titanium", "leggings", true, TITANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("titanium", "boots", true, TITANIUM_ARMOR, "3", "IUM"),
 
             /*SAPPHIRIUM*/
             new ItemGenerateClass("sapphirium", "classic", false, "3", "IUM"),
@@ -779,10 +779,10 @@ public class ItemsMod {
             new ItemGenerateClass("sapphirium", "axe", false, SAPPHIRIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("sapphirium", "shovel", false, SAPPHIRIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("sapphirium", "hoe", false, SAPPHIRIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("sapphirium", "helmet", false, SAPPHIRIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("sapphirium", "chestplate", false, SAPPHIRIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("sapphirium", "leggings", false, SAPPHIRIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("sapphirium", "boots", false, SAPPHIRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "helmet", true, SAPPHIRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "chestplate", true, SAPPHIRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "leggings", true, SAPPHIRIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("sapphirium", "boots", true, SAPPHIRIUM_ARMOR, "3", "IUM"),
 
             /*MERCURIUM*/
             new ItemGenerateClass("mercurium", "classic", false, "3", "IUM"),
@@ -792,10 +792,10 @@ public class ItemsMod {
             new ItemGenerateClass("mercurium", "axe", false, MERCURIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("mercurium", "shovel", false, MERCURIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("mercurium", "hoe", false, MERCURIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("mercurium", "helmet", false, MERCURIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("mercurium", "chestplate", false, MERCURIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("mercurium", "leggings", false, MERCURIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("mercurium", "boots", false, MERCURIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("mercurium", "helmet", true, MERCURIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("mercurium", "chestplate", true, MERCURIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("mercurium", "leggings", true, MERCURIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("mercurium", "boots", true, MERCURIUM_ARMOR, "3", "IUM"),
 
             /*PLATINE*/
             new ItemGenerateClass("platine", "ingot", false, "3", "3"),
@@ -816,10 +816,10 @@ public class ItemsMod {
             new ItemGenerateClass("platinium", "axe", false, PLATINIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("platinium", "shovel", false, PLATINIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("platinium", "hoe", false, PLATINIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("platinium", "helmet", false, PLATINIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("platinium", "chestplate", false, PLATINIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("platinium", "leggings", false, PLATINIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("platinium", "boots", false, PLATINIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("platinium", "helmet", true, PLATINIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("platinium", "chestplate", true, PLATINIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("platinium", "leggings", true, PLATINIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("platinium", "boots", true, PLATINIUM_ARMOR, "3", "IUM"),
 
             /*VAPONITE*/
             new ItemGenerateClass("vaponite", "classic", false, "3", "3"),
@@ -841,10 +841,10 @@ public class ItemsMod {
             new ItemGenerateClass("vaporium", "axe", false, VAPORIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("vaporium", "shovel", false, VAPORIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("vaporium", "hoe", false, VAPORIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("vaporium", "helmet", false, VAPORIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("vaporium", "chestplate", false, VAPORIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("vaporium", "leggings", false, VAPORIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("vaporium", "boots", false, VAPORIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("vaporium", "helmet", true, VAPORIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("vaporium", "chestplate", true, VAPORIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("vaporium", "leggings", true, VAPORIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("vaporium", "boots", true, VAPORIUM_ARMOR, "3", "IUM"),
 
             /*PROTON*/
             new ItemGenerateClass("proton", "ingot", false, "3", "3"),
@@ -879,10 +879,10 @@ public class ItemsMod {
             new ItemGenerateClass("ritonium", "axe", false, RITONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("ritonium", "shovel", false, RITONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("ritonium", "hoe", false, RITONIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ritonium", "helmet", false, RITONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("ritonium", "chestplate", false, RITONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("ritonium", "leggings", false, RITONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("ritonium", "boots", false, RITONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ritonium", "helmet", true, RITONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ritonium", "chestplate", true, RITONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ritonium", "leggings", true, RITONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ritonium", "boots", true, RITONIUM_ARMOR, "3", "IUM"),
 
             /*GOLDONITE*/
             new ItemGenerateClass("goldonite", "classic", false, "3", "3"),
@@ -903,10 +903,10 @@ public class ItemsMod {
             new ItemGenerateClass("goldonium", "axe", false, GOLDONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("goldonium", "shovel", false, GOLDONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("goldonium", "hoe", false, GOLDONIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("goldonium", "helmet", false, GOLDONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("goldonium", "chestplate", false, GOLDONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("goldonium", "leggings", false, GOLDONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("goldonium", "boots", false, GOLDONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("goldonium", "helmet", true, GOLDONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("goldonium", "chestplate", true, GOLDONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("goldonium", "leggings", true, GOLDONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("goldonium", "boots", true, GOLDONIUM_ARMOR, "3", "IUM"),
 
             /*OMEGA*/
             new ItemGenerateClass("omega", "classic", false, "3", "3"),
@@ -928,10 +928,10 @@ public class ItemsMod {
             new ItemGenerateClass("omeganium", "axe", false, OMEGANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("omeganium", "shovel", false, OMEGANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("omeganium", "hoe", false, OMEGANIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("omeganium", "helmet", false, OMEGANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("omeganium", "chestplate", false, OMEGANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("omeganium", "leggings", false, OMEGANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("omeganium", "boots", false, OMEGANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("omeganium", "helmet", true, OMEGANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("omeganium", "chestplate", true, OMEGANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("omeganium", "leggings", true, OMEGANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("omeganium", "boots", true, OMEGANIUM_ARMOR, "3", "IUM"),
 
             /*NETHERIUM*/
             new ItemGenerateClass("netherium", "ingot", false, "3", "IUM"),
@@ -940,10 +940,10 @@ public class ItemsMod {
             new ItemGenerateClass("netherium", "axe", false, NETHERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("netherium", "shovel", false, NETHERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("netherium", "hoe", false, NETHERIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("netherium", "helmet", false, NETHERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("netherium", "chestplate", false, NETHERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("netherium", "leggings", false, NETHERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("netherium", "boots", false, NETHERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("netherium", "helmet", true, NETHERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("netherium", "chestplate", true, NETHERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("netherium", "leggings", true, NETHERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("netherium", "boots", true, NETHERIUM_ARMOR, "3", "IUM"),
 
             /*URANITE*/
             new ItemGenerateClass("uranite", "gem", false, "3", "3"),
@@ -965,10 +965,10 @@ public class ItemsMod {
             new ItemGenerateClass("uranium", "axe", false, URANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("uranium", "shovel", false, URANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("uranium", "hoe", false, URANIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("uranium", "helmet", false, URANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("uranium", "chestplate", false, URANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("uranium", "leggings", false, URANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("uranium", "boots", false, URANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("uranium", "helmet", true, URANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("uranium", "chestplate", true, URANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("uranium", "leggings", true, URANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("uranium", "boots", true, URANIUM_ARMOR, "3", "IUM"),
 
             /*PLUTONITE*/
             new ItemGenerateClass("plutonite", "ingot", false, "3", "3"),
@@ -989,10 +989,10 @@ public class ItemsMod {
             new ItemGenerateClass("plutonium", "axe", false, PLUTONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("plutonium", "shovel", false, PLUTONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("plutonium", "hoe", false, PLUTONIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("plutonium", "helmet", false, PLUTONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("plutonium", "chestplate", false, PLUTONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("plutonium", "leggings", false, PLUTONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("plutonium", "boots", false, PLUTONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("plutonium", "helmet", true, PLUTONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("plutonium", "chestplate", true, PLUTONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("plutonium", "leggings", true, PLUTONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("plutonium", "boots", true, PLUTONIUM_ARMOR, "3", "IUM"),
 
             /*POLONITE*/
             new ItemGenerateClass("polonite", "classic", false, "3", "3"),
@@ -1013,10 +1013,10 @@ public class ItemsMod {
             new ItemGenerateClass("polonium", "axe", false, POLONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("polonium", "shovel", false, POLONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("polonium", "hoe", false, POLONIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("polonium", "helmet", false, POLONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("polonium", "chestplate", false, POLONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("polonium", "leggings", false, POLONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("polonium", "boots", false, POLONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("polonium", "helmet", true, POLONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("polonium", "chestplate", true, POLONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("polonium", "leggings", true, POLONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("polonium", "boots", true, POLONIUM_ARMOR, "3", "IUM"),
 
             /*CHRONITE*/
             new ItemGenerateClass("chronite", "classic", false, "3", "3"),
@@ -1037,10 +1037,10 @@ public class ItemsMod {
             new ItemGenerateClass("chromitium", "axe", false, CHROMITIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("chromitium", "shovel", false, CHROMITIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("chromitium", "hoe", false, CHROMITIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("chromitium", "helmet", false, CHROMITIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("chromitium", "chestplate", false, CHROMITIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("chromitium", "leggings", false, CHROMITIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("chromitium", "boots", false, CHROMITIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("chromitium", "helmet", true, CHROMITIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("chromitium", "chestplate", true, CHROMITIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("chromitium", "leggings", true, CHROMITIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("chromitium", "boots", true, CHROMITIUM_ARMOR, "3", "IUM"),
 
             /*CORANITE*/
             new ItemGenerateClass("coranite", "classic", false, "3", "3"),
@@ -1061,10 +1061,10 @@ public class ItemsMod {
             new ItemGenerateClass("coranium", "axe", false, CORANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("coranium", "shovel", false, CORANIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("coranium", "hoe", false, CORANIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("coranium", "helmet", false, CORANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("coranium", "chestplate", false, CORANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("coranium", "leggings", false, CORANIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("coranium", "boots", false, CORANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("coranium", "helmet", true, CORANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("coranium", "chestplate", true, CORANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("coranium", "leggings", true, CORANIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("coranium", "boots", true, CORANIUM_ARMOR, "3", "IUM"),
 
             /*MACRONITE*/
             new ItemGenerateClass("macronite", "classic", false, "3", "3"),
@@ -1085,10 +1085,10 @@ public class ItemsMod {
             new ItemGenerateClass("macronium", "axe", false, MACRONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("macronium", "shovel", false, MACRONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("macronium", "hoe", false, MACRONIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("macronium", "helmet", false, MACRONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("macronium", "chestplate", false, MACRONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("macronium", "leggings", false, MACRONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("macronium", "boots", false, MACRONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("macronium", "helmet", true, MACRONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("macronium", "chestplate", true, MACRONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("macronium", "leggings", true, MACRONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("macronium", "boots", true, MACRONIUM_ARMOR, "3", "IUM"),
 
             /*GALACTITE*/
             new ItemGenerateClass("galactite", "ingot", false, "3", "3"),
@@ -1122,10 +1122,10 @@ public class ItemsMod {
             new ItemGenerateClass("protonium", "axe", false, PROTONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("protonium", "shovel", false, PROTONIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("protonium", "hoe", false, PROTONIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("protonium", "helmet", false, PROTONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("protonium", "chestplate", false, PROTONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("protonium", "leggings", false, PROTONIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("protonium", "boots", false, PROTONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("protonium", "helmet", true, PROTONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("protonium", "chestplate", true, PROTONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("protonium", "leggings", true, PROTONIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("protonium", "boots", true, PROTONIUM_ARMOR, "3", "IUM"),
 
             /*SILVERIUM*/
             new ItemGenerateClass("silverium", "ingot", false, "3", "IUM"),
@@ -1134,10 +1134,10 @@ public class ItemsMod {
             new ItemGenerateClass("silverium", "axe", false, SILVERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("silverium", "shovel", false, SILVERIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("silverium", "hoe", false, SILVERIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("silverium", "helmet", false, SILVERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("silverium", "chestplate", false, SILVERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("silverium", "leggings", false, SILVERIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("silverium", "boots", false, SILVERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("silverium", "helmet", true, SILVERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("silverium", "chestplate", true, SILVERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("silverium", "leggings", true, SILVERIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("silverium", "boots", true, SILVERIUM_ARMOR, "3", "IUM"),
 
             /*SILICIUM*/
             new ItemGenerateClass("silicium", "classic", false, "3", "IUM"),
@@ -1146,10 +1146,10 @@ public class ItemsMod {
             new ItemGenerateClass("silicium", "axe", false, SILICIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("silicium", "shovel", false, SILICIUM_TOOL, "3", "IUM"),
             new ItemGenerateClass("silicium", "hoe", false, SILICIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("silicium", "helmet", false, SILICIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("silicium", "chestplate", false, SILICIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("silicium", "leggings", false, SILICIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("silicium", "boots", false, SILICIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("silicium", "helmet", true, SILICIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("silicium", "chestplate", true, SILICIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("silicium", "leggings", true, SILICIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("silicium", "boots", true, SILICIUM_ARMOR, "3", "IUM"),
 
             /*IUM*/
             new ItemGenerateClass("ium", "ingot", false, "3", "IUM"),
@@ -1382,10 +1382,136 @@ public class ItemsMod {
 
                 }
 
+                /*ARMOR*/
+                if (ItemList[i].isArmor() == "true" && ItemList[i].getName() != "tyrolium") {
+
+                    if (ItemList[i].getName() == "adamantium") {
+                        itemCustomClass.put("c"+1, new AdamantiumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "aventurium") {
+                        itemCustomClass.put("c"+1, new AventuriumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "chromitium") {
+                        itemCustomClass.put("c"+1, new ChromitiumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "copperium") {
+                        itemCustomClass.put("c"+1, new CopperiumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "coranium") {
+                        itemCustomClass.put("c"+1, new CoraniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "draconium") {
+                        itemCustomClass.put("c"+1, new DraconiumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "enderium") {
+                        itemCustomClass.put("c"+1, new EnderiumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "goldonium") {
+                        itemCustomClass.put("c"+1, new GoldoniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "macronium") {
+                        itemCustomClass.put("c"+1, new MacroniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "mercurium") {
+                        itemCustomClass.put("c"+1, new MercuriumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "netherium") {
+                        itemCustomClass.put("c"+1, new NetheriumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "obsidium") {
+                        itemCustomClass.put("c"+1, new ObsidiumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "omeganium") {
+                        itemCustomClass.put("c"+1, new OmeganiumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "platinium") {
+                        itemCustomClass.put("c"+1, new PlatiniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "plutonium") {
+                        itemCustomClass.put("c"+1, new PlutoniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "polonium") {
+                        itemCustomClass.put("c"+1, new PoloniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "protonium") {
+                        itemCustomClass.put("c"+1, new ProtoniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "rhodonium") {
+                        itemCustomClass.put("c"+1, new RhodoniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "ritonium") {
+                        itemCustomClass.put("c"+1, new RitoniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "sapphirium") {
+                        itemCustomClass.put("c"+1, new SapphiriumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "silicium") {
+                        itemCustomClass.put("c"+1, new SiliciumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "silverium") {
+                        itemCustomClass.put("c"+1, new SilveriumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "steelium") {
+                        itemCustomClass.put("c"+1, new SteeliumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "thyrium") {
+                        itemCustomClass.put("c"+1, new ThyriumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "titanium") {
+                        itemCustomClass.put("c"+1, new TitaniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "uranium") {
+                        itemCustomClass.put("c"+1, new UraniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "vaporium") {
+                        itemCustomClass.put("c"+1, new VaporiumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "volcanium") {
+                        itemCustomClass.put("c"+1, new VolcaniumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+                    if (ItemList[i].getName() == "yellorium") {
+                        itemCustomClass.put("c"+1, new YelloriumArmor(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getArmorMaterial(), ItemList[i].getEntityEquipmentSlot(), ItemList[i].getModVersion(), ItemList[i].getOreTier(), "c" + i));
+                        _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, ItemList[i].getOreTier(), 1, ItemList[i].getModVersion(), "armor");
+                    }
+
+                }
+
+
+                /*SERVER*/
                 if (ItemList[i].getType() == "keycard" || ItemList[i].getType() == "symbol" || ItemList[i].getType() == "wrench" || ItemList[i].getType() == "gear" || ItemList[i].getType() == "coin" || ItemList[i].getType() == "ring" || ItemList[i].getType() == "plate") {
                     itemCustomClass.put("c"+i, new ServerItem(ItemList[i].getName() + ItemList[i].getTypeName(), ItemList[i].getModVersion(), "c" + i));
                     _STOCKDB(ItemList[i].getName() + ItemList[i].getTypeName(), i, "6", 1, ItemList[i].getModVersion(), "item");
                 }
+
+                /*RADAR*/
                 if (ItemList[i].getName() == "radar") {
                     itemCustomClass.put("c"+i, new Radar(ItemList[i].getName(), ItemList[i].getModVersion(), "c" + i));
                     _STOCKDB(ItemList[i].getName(), i, "6", 1, ItemList[i].getModVersion(), "item");
