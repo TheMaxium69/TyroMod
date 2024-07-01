@@ -24,7 +24,7 @@ public class DefaultBlock extends Block implements IHasModel {
     private String modVersion;
     private String oreTier;
     private String tyroId;
-    private Item ItemLoot = ItemsMod.getItemCustomClass("c0");
+    private String name;
 
     public DefaultBlock(String name, Material materialIn, String version, String id) {
         super(materialIn);
@@ -32,6 +32,7 @@ public class DefaultBlock extends Block implements IHasModel {
         this.tyroId = id;
         this.modVersion = version;
         this.isOre = false;
+        this.name = name;
 
         setUnlocalizedName(name);
         setRegistryName(name);
@@ -153,7 +154,19 @@ public class DefaultBlock extends Block implements IHasModel {
     {
         if(isOre)
         {
-            return ItemLoot;
+
+            if(name.equals("volcanite_ore")) {
+                return ItemsMod.items[224];
+            } else if (name.equals("yellorite_ore")) {
+                return ItemsMod.items[33];
+            } else if (name.equals("sapphire_ore")) {
+                return ItemsMod.items[192];
+            } else if (name.equals("ruby_ore")) {
+                return ItemsMod.items[182];
+            } else {
+                return Item.getItemFromBlock(this);
+            }
+
         }
         else
         {
