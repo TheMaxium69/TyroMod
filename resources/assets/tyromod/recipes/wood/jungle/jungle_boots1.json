@@ -1,18 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "###",
         "# #",
         "# #"
     ],
     "key": {
         "#": {
-            "item": "tyromod:oak",
-			"data": 0
+            "item": "minecraft:planks",
+			"data": 3
         }
     },
     "result": {
-        "item": "tyromod:oak_leggings",
+        "item": "tyromod:jungle_boots",
 		"data": 0
     }
 }

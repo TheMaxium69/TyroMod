@@ -2,17 +2,16 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "# #",
-        "###",
-        "###"
+        "# #"
     ],
     "key": {
         "#": {
-            "item": "tyromod:darkoak_ingot",
-			"data": 0
+            "item": "minecraft:log2",
+			"data": 1
         }
     },
     "result": {
-        "item": "tyromod:darkoak_chestplate",
+        "item": "tyromod:darkoak_boots",
 		"data": 0
     }
 }

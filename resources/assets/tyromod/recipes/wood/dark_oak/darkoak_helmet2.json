@@ -1,18 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "# #",
         "###",
-        "###"
+        "# #"
     ],
     "key": {
         "#": {
-            "item": "tyromod:jungle",
-			"data": 0
+            "item": "minecraft:log2",
+			"data": 1
         }
     },
     "result": {
-        "item": "tyromod:jungle_chestplate",
+        "item": "tyromod:darkoak_helmet",
 		"data": 0
     }
 }

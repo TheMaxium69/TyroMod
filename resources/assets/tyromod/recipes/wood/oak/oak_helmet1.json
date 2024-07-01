@@ -6,12 +6,12 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:darkoak_gem",
+            "item": "minecraft:planks",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:darkoak_helmet",
+        "item": "tyromod:oak_helmet",
 		"data": 0
     }
 }

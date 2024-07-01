@@ -7,12 +7,12 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:jungle",
-			"data": 0
+            "item": "minecraft:log2",
+			"data": 1
         }
     },
     "result": {
-        "item": "tyromod:jungle_leggings",
+        "item": "tyromod:darkoak_leggings",
 		"data": 0
     }
 }

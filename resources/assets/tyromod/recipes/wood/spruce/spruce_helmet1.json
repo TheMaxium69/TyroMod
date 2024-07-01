@@ -2,17 +2,16 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "###",
-        "# #",
         "# #"
     ],
     "key": {
         "#": {
-            "item": "tyromod:darkoak_gem",
-			"data": 0
+            "item": "minecraft:planks",
+			"data": 1
         }
     },
     "result": {
-        "item": "tyromod:darkoak_leggings",
+        "item": "tyromod:spruce_helmet",
 		"data": 0
     }
 }

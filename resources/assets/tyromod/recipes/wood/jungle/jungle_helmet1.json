@@ -6,12 +6,12 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:darkoak_ingot",
-			"data": 0
+            "item": "minecraft:planks",
+			"data": 3
         }
     },
     "result": {
-        "item": "tyromod:darkoak_helmet",
+        "item": "tyromod:jungle_helmet",
 		"data": 0
     }
 }
