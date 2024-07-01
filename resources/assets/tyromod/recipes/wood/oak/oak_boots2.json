@@ -2,17 +2,16 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "# #",
-        "###",
-        "###"
+        "# #"
     ],
     "key": {
         "#": {
-            "item": "tyromod:oak_ingot",
+            "item": "minecraft:log",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:oak_chestplate",
+        "item": "tyromod:oak_boots",
 		"data": 0
     }
 }

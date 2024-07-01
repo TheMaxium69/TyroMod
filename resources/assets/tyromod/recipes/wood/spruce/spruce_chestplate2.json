@@ -7,8 +7,8 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:spruce_ingot",
-			"data": 0
+            "item": "minecraft:log",
+			"data": 1
         }
     },
     "result": {

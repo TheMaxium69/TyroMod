@@ -7,12 +7,12 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:spruce_ingot",
+            "item": "minecraft:log",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:spruce_leggings",
+        "item": "tyromod:oak_leggings",
 		"data": 0
     }
 }

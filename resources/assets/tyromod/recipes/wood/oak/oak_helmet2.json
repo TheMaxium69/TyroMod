@@ -2,17 +2,16 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "###",
-        "# #",
         "# #"
     ],
     "key": {
         "#": {
-            "item": "tyromod:jungle_ingot",
+            "item": "minecraft:log",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:jungle_leggings",
+        "item": "tyromod:oak_helmet",
 		"data": 0
     }
 }
