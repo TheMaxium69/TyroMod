@@ -54,6 +54,7 @@ public class DefaultBlock extends Block implements IHasModel {
         this.modVersion = version;
         this.oreTier = tier;
         this.isOre = true;
+        this.name = name;
 
         setUnlocalizedName(name);
         setRegistryName(name);
@@ -155,10 +156,8 @@ public class DefaultBlock extends Block implements IHasModel {
         if(isOre)
         {
 
-            System.out.println(name);
-
             if(name.equals("volcanite_ore")) {
-                return ItemsMod.items[224];
+                return ItemsMod.items[497];
             } else if (name.equals("yellorite_ore")) {
                 return ItemsMod.items[33];
             } else if (name.equals("sapphire_ore")) {
@@ -178,19 +177,7 @@ public class DefaultBlock extends Block implements IHasModel {
 
     public int quantityDropped(Random rand)
     {
-        if (isOre) {
-
-            if(name.equals("volcanite_ore") || name.equals("yellorite_ore") || name.equals("sapphire_ore") || name.equals("ruby_ore")) {
-                int max = 4;
-                int min = 1;
-                return rand.nextInt(max) + min;
-            } else {
-                return 1;
-            }
-
-        } else {
-            return 1;
-        }
+        return 1;
     }
 
 
