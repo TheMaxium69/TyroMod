@@ -6,12 +6,12 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:flint",
-			"data": 0
+            "item": "minecraft:coal",
+            "data": 1
         }
     },
     "result": {
-        "item": "tyromod:flint_gem",
-		"data": 0
+        "item": "tyromod:coal_ingot",
+        "data": 0
     }
 }

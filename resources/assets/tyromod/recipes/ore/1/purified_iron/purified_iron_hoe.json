@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        " /",
+        " /"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:purified_iron_gem",
+			"data": 0
+        },
+        "/": {
+            "item": "tyromod:mercure_stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:purified_iron_hoe",
+		"data": 0
+    }
+}

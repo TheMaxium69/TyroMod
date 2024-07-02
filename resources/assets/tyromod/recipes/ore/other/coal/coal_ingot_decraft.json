@@ -1,17 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "##",
-        "##"
+        "#"
     ],
     "key": {
         "#": {
-            "item": "minecraft:flint",
+            "item": "tyromod:coal_ingot",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:flint_gem",
+        "item": "minecraft:coal",
+        "count": 4,
 		"data": 0
     }
 }
