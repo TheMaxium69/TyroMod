@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#*#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:mercure_nugget",
+			"data": 0
+        },
+        "*": {
+            "item": "tyromod:mercure_block",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:fake_bedrock",
+		"data": 0
+    }
+}

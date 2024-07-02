@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dye",
+			"data": 4
+        }
+    },
+    "result": {
+        "item": "tyromod:lapis_lazuli_ingot",
+		"data": 0
+    }
+}
