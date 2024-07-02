@@ -2,17 +2,17 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "###",
-        "# #",
-        "# #"
+        "###",
+        "###"
     ],
     "key": {
         "#": {
-            "item": "tyromod:amethys_gem",
+            "item": "tyromod:yellorite_nugget",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:amethys_leggings",
+        "item": "tyromod:yellorite",
 		"data": 0
     }
 }

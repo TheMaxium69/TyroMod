@@ -2,21 +2,25 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "##",
-        "#/",
+        "#*",
         " /"
     ],
     "key": {
         "#": {
-            "item": "tyromod:amethys_ingot",
+            "item": "tyromod:yellorite",
+			"data": 0
+        },
+        "*": {
+            "item": "tyromod:mercure_axe",
 			"data": 0
         },
         "/": {
-            "item": "minecraft:stick",
+            "item": "tyromod:mercure_stick",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:amethys_axe",
+        "item": "tyromod:yellorite_axe",
 		"data": 0
     }
 }
