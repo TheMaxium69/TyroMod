@@ -5,13 +5,13 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:flint_block",
-			"data": 0
+            "item": "tyromod:flint_gem",
+            "data": 0
         }
     },
     "result": {
-        "item": "tyromod:flint_ingot",
-        "count": 9,
-		"data": 0
+        "item": "minecraft:flint",
+        "count": 4,
+        "data": 0
     }
 }
