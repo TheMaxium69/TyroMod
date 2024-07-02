@@ -1,18 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "###",
-        "# #",
-        "# #"
+        "#"
     ],
     "key": {
         "#": {
-            "item": "tyromod:ultium_gem",
+            "item": "tyromod:ultium",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:ultium_leggings",
-		"data": 0
+        "item": "tyromod:ultium_powder",
+		"data": 0,
+        "count": 9
     }
 }

@@ -1,22 +1,22 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "##",
-        " /",
-        " /"
+        "###",
+        " / ",
+        " / "
     ],
     "key": {
         "#": {
-            "item": "tyromod:ultium_gem",
+            "item": "tyromod:redstone_ingot",
 			"data": 0
         },
         "/": {
-            "item": "minecraft:stick",
+            "item": "tyromod:redstone_stick",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:ultium_hoe",
+        "item": "tyromod:redstone_pickaxe",
 		"data": 0
     }
 }

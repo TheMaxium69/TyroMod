@@ -1,18 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "# #",
         "###",
-        "###"
+        "# #"
     ],
     "key": {
         "#": {
-            "item": "tyromod:sunstone",
+            "item": "minecraft:iron_bars",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:sunstone_chestplate",
+        "item": "minecraft:chainmail_helmet",
 		"data": 0
     }
 }

@@ -6,12 +6,12 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:ultium_gem",
+            "item": "minecraft:iron_bars",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:ultium_boots",
+        "item": "minecraft:chainmail_boots",
 		"data": 0
     }
 }

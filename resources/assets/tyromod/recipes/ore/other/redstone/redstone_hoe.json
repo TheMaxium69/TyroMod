@@ -1,22 +1,22 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#",
-        "/",
-        "/"
+        "##",
+        " /",
+        " /"
     ],
     "key": {
         "#": {
-            "item": "tyromod:sunstone_gem",
+            "item": "tyromod:redstone_ingot",
 			"data": 0
         },
         "/": {
-            "item": "minecraft:stick",
+            "item": "tyromod:redstone_stick",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:sunstone_shovel",
+        "item": "tyromod:redstone_hoe",
 		"data": 0
     }
 }

@@ -5,13 +5,13 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:sunstone_block",
+            "item": "tyromod:redstone_ingot",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:sunstone",
-        "count": 9,
-		"data": 0
+        "item": "minecraft:redstone",
+		"data": 0,
+        "count": 4
     }
 }
