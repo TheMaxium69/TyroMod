@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#//",
+        "// "
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:netherite_scrap",
+			"data": 0
+        },
+        "/": {
+            "item": "minecraft:gold_ingot",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:netherite_ingot",
+		"data": 0
+    }
+}
