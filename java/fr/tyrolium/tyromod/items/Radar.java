@@ -41,29 +41,29 @@ public class Radar extends DefaultItem  implements IHasModel {
     }
 
 
-    @Override
-    public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
-    {
-        this.player = (EntityPlayer)entityIn;
-
-        if(this.player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof Radar)
-        {
-            if(this.dura >= 0)
-            {
-                this.dura--;
-                stack.damageItem(1, player);
-                if(GuiRadar.amountTiles <= 25)
-                {
-                    this.percents = GuiRadar.amountTiles;
-                }
-                else if(GuiRadar.amountTiles >= 26)
-                {
-                    this.percents = 26;
-                }
-            }
-        }
-
-        super.onUpdate(stack, worldIn, entityIn, itemSlot, isSelected);
-    }
+//    @Override
+//    public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
+//    {
+//        this.player = (EntityPlayer)entityIn;
+//
+//        if(this.player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof Radar)
+//        {
+//            if(this.dura >= 0)
+//            {
+//                this.dura--;
+//                stack.damageItem(1, player);
+//                if(GuiRadar.amountTiles <= 25)
+//                {
+//                    this.percents = GuiRadar.amountTiles;
+//                }
+//                else if(GuiRadar.amountTiles >= 26)
+//                {
+//                    this.percents = 26;
+//                }
+//            }
+//        }
+//
+//        super.onUpdate(stack, worldIn, entityIn, itemSlot, isSelected);
+//    }
 
 }
