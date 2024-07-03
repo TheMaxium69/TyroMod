@@ -83,7 +83,7 @@ public class GuiRadar extends Gui {
                 drawModalRectWithCustomSizedTexture(5,5,0,0,32,32,32,32);
             }
             drawCenteredString(this.mc.fontRenderer, this.amountTiles + "%", 23, 39, -1);
-            drawCenteredString(this.mc.fontRenderer, this.formatDuration(), 23, 48, -1);
+//            drawCenteredString(this.mc.fontRenderer, this.formatDuration(), 23, 48, -1);
 
 
             event.setCanceled(true);
