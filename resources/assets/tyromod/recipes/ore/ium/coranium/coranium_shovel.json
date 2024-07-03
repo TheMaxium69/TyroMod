@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "/",
+        "/"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:coranium_ingot",
+			"data": 0
+        },
+        "/": {
+            "item": "tyromod:sinisite_stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:coranium_shovel",
+		"data": 0
+    }
+}

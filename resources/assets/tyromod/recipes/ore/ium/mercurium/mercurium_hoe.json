@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        " /",
+        " /"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:mercurium",
+			"data": 0
+        },
+        "/": {
+            "item": "tyromod:mercure_stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:mercurium_hoe",
+		"data": 0
+    }
+}
