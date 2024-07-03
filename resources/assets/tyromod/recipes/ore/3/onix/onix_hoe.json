@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        " /",
+        " /"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:onix_gem",
+			"data": 0
+        },
+        "/": {
+            "item": "tyromod:mercure_stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:onix_hoe",
+		"data": 0
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "#/",
+        " /"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:proton_ingot",
+			"data": 0
+        },
+        "/": {
+            "item": "tyromod:mercure_stick",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:proton_axe",
+		"data": 0
+    }
+}
