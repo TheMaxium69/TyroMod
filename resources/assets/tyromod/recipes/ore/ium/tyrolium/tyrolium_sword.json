@@ -7,16 +7,16 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:volcanium_ingot",
+            "item": "tyromod:tyrolium",
 			"data": 0
         },
         "/": {
-            "item": "tyromod:mercure_stick",
+            "item": "tyromod:mercure_sword",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:volcanium_sword",
+        "item": "tyromod:tyrolium_sword",
 		"data": 0
     }
 }

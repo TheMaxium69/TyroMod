@@ -1,14 +1,18 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#",
-        "#",
-        "/"
+        "###",
+        " * ",
+        " / "
     ],
     "key": {
         "#": {
-            "item": "tyromod:volcanium_ingot",
+            "item": "tyromod:thyrium",
 			"data": 0
+        },
+        "*": {
+            "item": "tyromod:mercure_pickaxe",
+            "data": 0
         },
         "/": {
             "item": "tyromod:mercure_stick",
@@ -16,7 +20,7 @@
         }
     },
     "result": {
-        "item": "tyromod:volcanium_sword",
+        "item": "tyromod:thyrium_pickaxe",
 		"data": 0
     }
 }
