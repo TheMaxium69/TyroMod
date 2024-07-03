@@ -2,16 +2,20 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "###",
-        " / ",
+        " * ",
         " / "
     ],
     "key": {
         "#": {
-            "item": "tyromod:aventurine_ingot",
+            "item": "tyromod:aventurine",
 			"data": 0
         },
+        "*": {
+            "item": "tyromod:mercure_pickaxe",
+            "data": 0
+        },
         "/": {
-            "item": "minecraft:stick",
+            "item": "tyromod:mercure_stick",
 			"data": 0
         }
     },

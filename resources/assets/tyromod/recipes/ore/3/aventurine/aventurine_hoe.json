@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "##",
-        "#/",
+        " *",
         " /"
     ],
     "key": {
@@ -10,13 +10,17 @@
             "item": "tyromod:aventurine",
 			"data": 0
         },
+        "*": {
+            "item": "tyromod:mercure_hoe",
+            "data": 0
+        },
         "/": {
-            "item": "minecraft:stick",
+            "item": "tyromod:mercure_stick",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:aventurine_axe",
+        "item": "tyromod:aventurine_hoe",
 		"data": 0
     }
 }
