@@ -2,21 +2,21 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "###",
-        " / ",
-        " / "
+        "#*#",
+        "###"
     ],
     "key": {
         "#": {
-            "item": "tyromod:yellorium_gem",
+            "item": "tyromod:volcanium_ingot",
 			"data": 0
         },
-        "/": {
-            "item": "minecraft:stick",
+        "*": {
+            "item": "minecraft:apple",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:yellorium_pickaxe",
+        "item": "tyromod:volcanium_apple",
 		"data": 0
     }
 }
