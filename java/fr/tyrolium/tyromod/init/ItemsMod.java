@@ -859,7 +859,7 @@ public class ItemsMod {
             new ItemGenerateClass("proton", "boots", false, PROTON_ARMOR, "3", "3"),
 
             /*RITONITE*/
-            new ItemGenerateClass("ritonite", "classic", false, "3", "3"),
+            new ItemGenerateClass("ritonite", "ingot", false, "3", "3"),
             new ItemGenerateClass("ritonite", "nugget", false, "3", "3"),
             new ItemGenerateClass("ritonite", "sword", false, RITONITE_TOOL, "3", "3"),
             new ItemGenerateClass("ritonite", "pickaxe", false, RITONITE_TOOL, "3", "3"),

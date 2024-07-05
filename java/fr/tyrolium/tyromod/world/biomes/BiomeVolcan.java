@@ -18,6 +18,6 @@ public class BiomeVolcan extends Biome
 		this.spawnableMonsterList.clear();
 		this.spawnableWaterCreatureList.clear();
 		
-//		this.spawnableCreatureList.add(new SpawnListEntry(EntityMagmaCube.class, 5, 1, 5));
+		this.spawnableCreatureList.add(new SpawnListEntry(EntityMagmaCube.class, 5, 1, 5));
 	}
 }

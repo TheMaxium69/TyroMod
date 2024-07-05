@@ -25,6 +25,8 @@ public class WorldGenOres implements IWorldGenerator
     private WorldGenerator volcanite_ore;
     private WorldGenerator ium_ore;
     private WorldGenerator netherite_ore;
+    private WorldGenerator obsidian_renforced;
+    private WorldGenerator guardian;
 
     public WorldGenOres()
     {
@@ -38,6 +40,8 @@ public class WorldGenOres implements IWorldGenerator
         volcanite_ore = new WorldGenMinable(BlocksMod.blocks[56].getDefaultState(), 3, BlockMatcher.forBlock(Blocks.STONE));
         ium_ore = new WorldGenMinable(BlocksMod.blocks[100].getDefaultState(), 3, BlockMatcher.forBlock(Blocks.STONE));
         netherite_ore = new WorldGenMinable(BlocksMod.getBlockCustomClass("bc54").getDefaultState(), 3, BlockMatcher.forBlock(Blocks.NETHERRACK));
+        obsidian_renforced = new WorldGenMinable(BlocksMod.blocks[20].getDefaultState(), 4, BlockMatcher.forBlock(Blocks.OBSIDIAN));
+        guardian = new WorldGenMinable(BlocksMod.blocks[16].getDefaultState(), 4, BlockMatcher.forBlock(Blocks.OBSIDIAN));
     }
 
     @Override
@@ -58,6 +62,8 @@ public class WorldGenOres implements IWorldGenerator
                 runGenerator(yellorite_ore, world, random, chunkX, chunkZ, 1, 5, 11);
                 runGenerator(volcanite_ore, world, random, chunkX, chunkZ, 1, 5, 12);
                 runGenerator(ium_ore, world, random, chunkX, chunkZ, 1, 5, 15);
+                runGenerator(obsidian_renforced, world, random, chunkX, chunkZ, 15, 30, 255);
+                runGenerator(guardian, world, random, chunkX, chunkZ, 15, 30, 255);
                 break;
             case 1:
                 break;

@@ -5,13 +5,13 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:obsidian_renforced",
-			"data": 0
+            "item": "tyromod:obsidian_red_ingot",
+            "data": 0
         }
     },
     "result": {
-        "item": "tyromod:obsidian_red_ingot",
-        "count": 9,
-		"data": 0
+        "item": "tyromod:obsidian_renforced",
+        "count": 4,
+        "data": 0
     }
 }

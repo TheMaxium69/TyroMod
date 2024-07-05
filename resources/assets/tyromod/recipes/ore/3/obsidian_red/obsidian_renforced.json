@@ -1,18 +1,18 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "###",
-        "###",
-        "###"
+        "##",
+        "##"
     ],
     "key": {
         "#": {
-            "item": "tyromod:obsidian_red_ingot",
-			"data": 0
+            "item": "tyromod:obsidian_renforced",
+            "data": 0
         }
     },
     "result": {
-        "item": "tyromod:obsidian_renforced",
-		"data": 0
+        "item": "tyromod:obsidian_red_ingot",
+        "count": 1,
+        "data": 0
     }
 }
