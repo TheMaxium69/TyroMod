@@ -2,6 +2,7 @@ package fr.tyrolium.tyromod.util.handlers;
 
 import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
+import fr.tyrolium.tyromod.init.BiomesMod;
 import fr.tyrolium.tyromod.init.BlocksMod;
 import fr.tyrolium.tyromod.init.ItemsMod;
 import fr.tyrolium.tyromod.init.RecipesMod;
@@ -118,6 +119,7 @@ public class RegistryHandler {
     {
 
         GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
+        BiomesMod.registerBiomes();
 
     }
 
