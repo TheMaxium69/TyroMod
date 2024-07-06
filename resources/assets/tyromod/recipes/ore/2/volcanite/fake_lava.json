@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#*#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:volcanite",
+			"data": 0
+        },
+        "*": {
+            "item": "minecraft:lava_bucket",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:fake_lava",
+        "count": 8,
+		"data": 0
+    }
+}
