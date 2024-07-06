@@ -137,7 +137,7 @@ public class MaterialsMod {
 
     /*TIER 1*/
     public static final Item.ToolMaterial COPPER_TOOL = EnumHelper.addToolMaterial("copper_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial ENDERINE_TOOL = EnumHelper.addToolMaterial("enderine_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial ENDERINE_TOOL = EnumHelper.addToolMaterial("enderine_tool", 3, 1561, 8.0F, 3.0F, 10);
     public static final Item.ToolMaterial FLINT_TOOL = EnumHelper.addToolMaterial("flint_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final Item.ToolMaterial TIN_TOOL = EnumHelper.addToolMaterial("tin_tool", 2, 400, 3.0f, 5.0f, 20);
     public static final Item.ToolMaterial PURIFIED_IRON_TOOL = EnumHelper.addToolMaterial("purified_iron_tool", 2, 400, 3.0f, 5.0f, 20);
