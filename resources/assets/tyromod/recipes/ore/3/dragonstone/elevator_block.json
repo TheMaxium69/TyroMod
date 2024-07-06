@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#*#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:stone_nugget",
+			"data": 0
+        },
+        "*": {
+            "item": "tyromod:dragonstone_gem",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:elevator_block",
+		"data": 0
+    }
+}

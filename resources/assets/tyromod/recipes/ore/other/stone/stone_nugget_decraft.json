@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:stone_nugget",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "minecraft:cobblestone",
+		"data": 0
+    }
+}
