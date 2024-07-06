@@ -45,6 +45,7 @@ public class Radar extends DefaultItem  implements IHasModel {
     public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
     {
         this.player = (EntityPlayer)entityIn;
+        boolean isClient = this.player.getEntityWorld().isRemote;
 
         if(this.player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof Radar)
         {
@@ -52,18 +53,31 @@ public class Radar extends DefaultItem  implements IHasModel {
             {
                 this.dura--;
 //                stack.damageItem(1, player);
-                if(GuiRadar.amountTiles <= 25)
-                {
-                    this.percents = GuiRadar.amountTiles;
+
+                if (isClient) {
+                    itemUpdate();
                 }
-                else if(GuiRadar.amountTiles >= 26)
-                {
-                    this.percents = 26;
-                }
+
             }
         }
 
         super.onUpdate(stack, worldIn, entityIn, itemSlot, isSelected);
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void itemUpdate(){
+
+        System.out.println("je suis dans la function");
+
+        if(GuiRadar.amountTiles <= 25)
+        {
+            this.percents = GuiRadar.amountTiles;
+        }
+        else if(GuiRadar.amountTiles >= 26)
+        {
+            this.percents = 26;
+        }
+
     }
 
 }
