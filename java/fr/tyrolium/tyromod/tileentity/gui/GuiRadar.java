@@ -24,6 +24,7 @@ public class GuiRadar extends Gui {
 
     FontRenderer fontRender;
 
+    final ResourceLocation te0 = new ResourceLocation(Global.MODID + ":textures/gui/radar_empty.png");
     final ResourceLocation te0_5 = new ResourceLocation(Global.MODID + ":textures/gui/radar_0-5.png");
     final ResourceLocation te6_10 = new ResourceLocation(Global.MODID + ":textures/gui/radar_6-10.png");
     final ResourceLocation te11_25 = new ResourceLocation(Global.MODID + ":textures/gui/radar_11-25.png");
@@ -58,7 +59,14 @@ public class GuiRadar extends Gui {
             amountTiles = amountTiles + mc.world.getChunkFromChunkCoords(mc.player.chunkCoordX - 1,
                     mc.player.chunkCoordZ).getTileEntityMap().values().size();
 
-            if(amountTiles <= 5)
+            if (amountTiles <= 0) {
+
+                mc.getTextureManager().bindTexture(this.te0);
+
+                drawModalRectWithCustomSizedTexture(5,5,0,0,32,32,32,32);
+
+            }
+            else if(amountTiles <= 5 && amountTiles > 0)
             {
                 mc.getTextureManager().bindTexture(this.te0_5);
 
