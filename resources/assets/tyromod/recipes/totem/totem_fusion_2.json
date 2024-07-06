@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#*#",
+        "/*ù"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:mercure_ingot",
+			"data": 0
+        },
+        "*": {
+            "item": "tyromod:volcanite",
+            "data": 0
+        },
+        "/": {
+            "item": "tyromod:amethys",
+            "data": 0
+        },
+        "ù": {
+            "item": "tyromod:mythril_ingot",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:fusion_block2",
+		"data": 0
+    }
+}
