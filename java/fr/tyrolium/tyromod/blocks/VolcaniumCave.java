@@ -9,6 +9,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class VolcaniumCave extends DefaultBlock {
     public VolcaniumCave(String name, Material materialIn, String version, String id) {
         super(name, materialIn, version, id);
+        setLightLevel(0.5F);
     }
 
     @SideOnly(Side.CLIENT)

@@ -67,8 +67,6 @@ public class Radar extends DefaultItem  implements IHasModel {
     @SideOnly(Side.CLIENT)
     public void itemUpdate(){
 
-        System.out.println("je suis dans la function");
-
         if(GuiRadar.amountTiles <= 25)
         {
             this.percents = GuiRadar.amountTiles;

@@ -96,7 +96,7 @@ public class BlocksMod {
             /*VOLCANIUM*/
             new BlockGenerateClass("volcanium", "block", false, "1", "IUM"),
             new BlockGenerateClass("volcanium_cave", "classic", true, "1"),
-            new BlockGenerateClass("fake_lava", "classic", false, "1"),
+            new BlockGenerateClass("fake_lava", "classic", true, "1"),
 
             /*ADAMANTIUM*/
             new BlockGenerateClass("adamantium", "ore", false, "3", "IUM"),
@@ -430,6 +430,10 @@ public class BlocksMod {
                 }
                 if (BlockList[i].getName() == "volcanium_cave" && BlockList[i].getType() == "classic") {
                     blockCustomClass.put("bc"+i, new VolcaniumCave(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), "bc" + i));
+                    _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
+                }
+                if (BlockList[i].getName() == "fake_lava" && BlockList[i].getType() == "classic") {
+                    blockCustomClass.put("bc"+i, new FakeLava(BlockList[i].getName(), BlockList[i].getMaterial(), BlockList[i].getModVersion(), BlockList[i].getOreTier(), "bc" + i));
                     _STOCKDB(BlockList[i].getName() + BlockList[i].getTypeName(), i, "6", 1, BlockList[i].getModVersion(), "block");
                 }
                 if (BlockList[i].getName() == "tyrolium" && BlockList[i].getType() == "command_block") {
