@@ -7,13 +7,13 @@
   ],
   "key": {
     "i": {
-      "item": "minecraft:obsidian"
+      "item": "tyromod:draconite_ingot"
     },
     "F": {
-      "item": "ironfurnaces:diamond_furnace_idle"
+      "item": "ironfurnaces:iron_furnace_idle"
     }
   },
   "result": {
-    "item": "ironfurnaces:obsidian_furnace_idle"
+    "item": "ironfurnaces:gold_furnace_idle"
   }
 }

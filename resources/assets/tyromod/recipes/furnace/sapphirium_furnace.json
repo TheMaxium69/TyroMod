@@ -10,8 +10,7 @@
       "item": "ironfurnaces:diamond_furnace_idle"
     },
     "g": {
-      "type": "forge:ore_dict",
-      "ore": "blockGlass"
+      "item": "tyromod:sapphirium"
     }
   },
   "result": {
