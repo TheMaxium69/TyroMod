@@ -1,0 +1,18 @@
+tile.iron_furnace_idle.name=Four en Cuivre
+tile.iron_furnace_active.name=Four en Cuivre
+tile.gold_furnace_idle.name=Four en Draconite
+tile.gold_furnace_active.name=Four en Draconite
+tile.diamond_furnace_idle.name=Four en Aventurium
+tile.diamond_furnace_active.name=Four en Aventurium
+tile.glass_furnace_idle.name=Four en Sapphirium
+tile.glass_furnace_active.name=Four en Sapphirium
+tile.obsidian_furnace_idle.name=Four en Obsidium
+tile.obsidian_furnace_active.name=Four en Obsidium
+
+itemGroup.ironfurnaces=Iron Furnaces (TyroMod Editions)
+
+container.furnace_0=Four en Cuivre
+container.furnace_1=Four en Draconite
+container.furnace_2=Four en Aventurium
+container.furnace_3=Four en Sapphirium
+container.furnace_4=Four en Obsidium
