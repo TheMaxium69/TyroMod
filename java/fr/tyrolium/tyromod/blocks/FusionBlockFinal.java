@@ -4,7 +4,7 @@ import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.global.DefaultBlock;
 import fr.tyrolium.tyromod.init.BlocksMod;
-import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlock3;
+import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlockFinal;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -27,12 +27,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class FusionBlock3 extends DefaultBlock {
+public class FusionBlockFinal extends DefaultBlock {
 
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
     public static final PropertyBool BURNING = PropertyBool.create("burning");
 
-    public FusionBlock3(String name, Material materialIn, String version, String id) {
+    public FusionBlockFinal(String name, Material materialIn, String version, String id) {
         super(name, materialIn, version, id);
         setSoundType(SoundType.ANVIL);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(BURNING, false));
@@ -64,8 +64,7 @@ public class FusionBlock3 extends DefaultBlock {
                 d5 = (double)(rand.nextFloat() * 2.0F * (float)j);
             }
 
-            worldIn.spawnParticle(EnumParticleTypes.REDSTONE, d0, d1, d2, 1.0D, 0.0D, 8.0D);
-
+            worldIn.spawnParticle(EnumParticleTypes.REDSTONE, d0, d1, d2, 0.0D, 0.0D, 2.0D);
         }
 
     }
@@ -143,7 +142,7 @@ public class FusionBlock3 extends DefaultBlock {
     @Override
     public TileEntity createTileEntity(World world, IBlockState state)
     {
-        return new TileEntityFusionBlock3();
+        return new TileEntityFusionBlockFinal();
     }
 
     @Override
@@ -161,7 +160,7 @@ public class FusionBlock3 extends DefaultBlock {
     @Override
     public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
     {
-        TileEntityFusionBlock3 tileentity = (TileEntityFusionBlock3)worldIn.getTileEntity(pos);
+        TileEntityFusionBlockFinal tileentity = (TileEntityFusionBlockFinal)worldIn.getTileEntity(pos);
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(1)));
         worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(2)));

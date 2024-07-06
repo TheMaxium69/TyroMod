@@ -19,6 +19,7 @@ public class Global {
     public static final int GUI_FUSION_BLOCK = 0;
     public static final int GUI_FUSION_BLOCK2 = 1;
     public static final int GUI_FUSION_BLOCK3 = 2;
+    public static final int GUI_FUSION_BLOCK_FINAL = 3;
 
 
 }
