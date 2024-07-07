@@ -1,0 +1,13 @@
+{
+  "variants":
+  {
+    "burning=false,facing=north": { "model": "tyromod:fusion_block_final" },
+    "burning=false,facing=east": { "model": "tyromod:fusion_block_final", "y": 90 },
+    "burning=false,facing=south": { "model": "tyromod:fusion_block_final", "y": 180 },
+    "burning=false,facing=west": { "model": "tyromod:fusion_block_final", "y": 270 },
+    "burning=true,facing=north": { "model": "tyromod:lit_fusion_block_final" },
+    "burning=true,facing=east": { "model": "tyromod:lit_fusion_block_final", "y": 90 },
+    "burning=true,facing=south": { "model": "tyromod:lit_fusion_block_final", "y": 180 },
+    "burning=true,facing=west": { "model": "tyromod:lit_fusion_block_final", "y":270  }
+  }
+}

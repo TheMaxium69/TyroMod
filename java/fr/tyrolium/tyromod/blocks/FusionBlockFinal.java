@@ -93,7 +93,7 @@ public class FusionBlockFinal extends DefaultBlock {
     {
         if(!worldIn.isRemote)
         {
-            playerIn.openGui(TyroMod.instance, Global.GUI_FUSION_BLOCK3, worldIn, pos.getX(), pos.getY(), pos.getZ());
+            playerIn.openGui(TyroMod.instance, Global.GUI_FUSION_BLOCK_FINAL, worldIn, pos.getX(), pos.getY(), pos.getZ());
         }
 
         return true;
