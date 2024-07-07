@@ -305,8 +305,8 @@ public class BlocksMod {
             new BlockGenerateClass("fusion_block", "classic", true, "3"),
             new BlockGenerateClass("fusion_block2", "classic", true, "3"),
             new BlockGenerateClass("fusion_block3", "classic", true, "3"),
-            new BlockGenerateClass("fusion_block_final", "classic", true, "3"),
             new BlockGenerateClass("elevator_block", "classic", true, "3"),
+            new BlockGenerateClass("fusion_block_final", "classic", true, "3"),
 
             new BlockGenerateClass("cobblestone_1", "compressed", false, "1"),
             new BlockGenerateClass("cobblestone_2", "compressed", false, "1"),

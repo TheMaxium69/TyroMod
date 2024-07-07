@@ -64,7 +64,7 @@ public class FusionBlockFinal extends DefaultBlock {
                 d5 = (double)(rand.nextFloat() * 2.0F * (float)j);
             }
 
-            worldIn.spawnParticle(EnumParticleTypes.REDSTONE, d0, d1, d2, 0.0D, 0.0D, 2.0D);
+            worldIn.spawnParticle(EnumParticleTypes.PORTAL, d0, d1, d2, d3, d4, d5);
         }
 
     }
@@ -78,13 +78,13 @@ public class FusionBlockFinal extends DefaultBlock {
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return Item.getItemFromBlock(BlocksMod.getBlockCustomClass("bc105"));
+        return Item.getItemFromBlock(BlocksMod.getBlockCustomClass("bc107"));
     }
 
     @Override
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
-        return new ItemStack(BlocksMod.getBlockCustomClass("bc105"));
+        return new ItemStack(BlocksMod.getBlockCustomClass("bc107"));
     }
 
 
@@ -123,8 +123,8 @@ public class FusionBlockFinal extends DefaultBlock {
         IBlockState state = worldIn.getBlockState(pos);
         TileEntity tileentity = worldIn.getTileEntity(pos);
 
-        if(active) worldIn.setBlockState(pos, BlocksMod.getBlockCustomClass("bc105").getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true), 3);
-        else worldIn.setBlockState(pos, BlocksMod.getBlockCustomClass("bc105").getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false), 3);
+        if(active) worldIn.setBlockState(pos, BlocksMod.getBlockCustomClass("bc107").getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true), 3);
+        else worldIn.setBlockState(pos, BlocksMod.getBlockCustomClass("bc107").getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false), 3);
 
         if(tileentity != null)
         {

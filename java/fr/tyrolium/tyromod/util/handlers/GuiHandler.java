@@ -1,6 +1,7 @@
 package fr.tyrolium.tyromod.util.handlers;
 
 import fr.tyrolium.tyromod.Global;
+import fr.tyrolium.tyromod.blocks.FusionBlockFinal;
 import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlock;
 import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlock2;
 import fr.tyrolium.tyromod.tileentity.TileEntityFusionBlock3;
@@ -9,6 +10,7 @@ import fr.tyrolium.tyromod.tileentity.container.FusionBlock3Container;
 import fr.tyrolium.tyromod.tileentity.container.FusionBlock2Container;
 import fr.tyrolium.tyromod.tileentity.container.FusionBlockContainer;
 import fr.tyrolium.tyromod.tileentity.container.FusionBlockFinalContainer;
+import fr.tyrolium.tyromod.tileentity.gui.FusionBlockFinalGui;
 import fr.tyrolium.tyromod.tileentity.gui.FusionBlockGui;
 import fr.tyrolium.tyromod.tileentity.gui.FusionBlock2Gui;
 import fr.tyrolium.tyromod.tileentity.gui.FusionBlock3Gui;
@@ -37,7 +39,7 @@ public class GuiHandler implements IGuiHandler
         if(ID == Global.GUI_FUSION_BLOCK) return new FusionBlockGui(player.inventory, (TileEntityFusionBlock)world.getTileEntity(new BlockPos(x,y,z)));
         if(ID == Global.GUI_FUSION_BLOCK2) return new FusionBlock2Gui(player.inventory, (TileEntityFusionBlock2)world.getTileEntity(new BlockPos(x,y,z)));
         if(ID == Global.GUI_FUSION_BLOCK3) return new FusionBlock3Gui(player.inventory, (TileEntityFusionBlock3)world.getTileEntity(new BlockPos(x,y,z)));
-        if(ID == Global.GUI_FUSION_BLOCK_FINAL) return new FusionBlockFinalContainer(player.inventory, (TileEntityFusionBlockFinal)world.getTileEntity(new BlockPos(x,y,z)));
+        if(ID == Global.GUI_FUSION_BLOCK_FINAL) return new FusionBlockFinalGui(player.inventory, (TileEntityFusionBlockFinal)world.getTileEntity(new BlockPos(x,y,z)));
        return null;
     }
 }

@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class FusionBlockFinalGui extends GuiContainer {
 
-    private static final ResourceLocation TEXTURES = new ResourceLocation(Global.MODID + ":textures/gui/fusion_block3.png");
+    private static final ResourceLocation TEXTURES = new ResourceLocation(Global.MODID + ":textures/gui/fusion_block_final.png");
     private final InventoryPlayer player;
     private final TileEntityFusionBlockFinal tileentity;
 
@@ -39,11 +39,11 @@ public class FusionBlockFinalGui extends GuiContainer {
         if(TileEntityFusionBlockFinal.isBurning(tileentity))
         {
             int k = this.getBurnLeftScaled(13);
-            this.drawTexturedModalRect(this.guiLeft + 133, this.guiTop + 44 + 12 - k, 176, 12 - k, 14, k + 1);
+            this.drawTexturedModalRect(this.guiLeft + 133, this.guiTop + 44 + 12 - k, 183, 12 - k, 14, k + 1);
         }
 
         int l = this.getCookProgressScaled(24);
-        this.drawTexturedModalRect(this.guiLeft + 44, this.guiTop + 36, 176, 14, l + 1, 16);
+        this.drawTexturedModalRect(this.guiLeft + 44, this.guiTop + 36, 183, 14, l + 1, 16);
     }
 
     private int getBurnLeftScaled(int pixels)
