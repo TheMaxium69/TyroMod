@@ -24,9 +24,9 @@ public class FusionBlockFinalGui extends GuiContainer {
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
-        String tileName = this.tileentity.getDisplayName().getUnformattedText();
-        this.fontRenderer.drawString(tileName, (this.xSize / 2 - this.fontRenderer.getStringWidth(tileName) / 2) + 3, 8, 4210752);
-        this.fontRenderer.drawString(this.player.getDisplayName().getUnformattedText(), 122, this.ySize - 96 + 2, 4210752);
+//        String tileName = this.tileentity.getDisplayName().getUnformattedText();
+//        this.fontRenderer.drawString(tileName, (this.xSize / 2 - this.fontRenderer.getStringWidth(tileName) / 2) + 3, 8, 4210752);
+//        this.fontRenderer.drawString(this.player.getDisplayName().getUnformattedText(), 122, this.ySize - 96 + 2, 4210752);
     }
 
     @Override
@@ -34,7 +34,7 @@ public class FusionBlockFinalGui extends GuiContainer {
     {
         GlStateManager.color(1.0f, 1.0f, 1.0f, 1.0f);
         this.mc.getTextureManager().bindTexture(TEXTURES);
-        this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, this.xSize, this.ySize);
+        this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 184, 184);
 
         if(TileEntityFusionBlockFinal.isBurning(tileentity))
         {
