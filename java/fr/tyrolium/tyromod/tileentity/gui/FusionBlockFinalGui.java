@@ -24,9 +24,9 @@ public class FusionBlockFinalGui extends GuiContainer {
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
-//        String tileName = this.tileentity.getDisplayName().getUnformattedText();
+        String tileName = this.tileentity.getDisplayName().getUnformattedText();
 //        this.fontRenderer.drawString(tileName, (this.xSize / 2 - this.fontRenderer.getStringWidth(tileName) / 2) + 3, 8, 4210752);
-//        this.fontRenderer.drawString(this.player.getDisplayName().getUnformattedText(), 122, this.ySize - 96 + 2, 4210752);
+        this.fontRenderer.drawString(this.player.getDisplayName().getUnformattedText(), 122, this.ySize - 96 + 2, 4210752);
     }
 
     @Override
@@ -34,16 +34,16 @@ public class FusionBlockFinalGui extends GuiContainer {
     {
         GlStateManager.color(1.0f, 1.0f, 1.0f, 1.0f);
         this.mc.getTextureManager().bindTexture(TEXTURES);
-        this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 184, 184);
+        this.drawTexturedModalRect(this.guiLeft - 4, this.guiTop - 18, 0, 0, 184, 184);
 
         if(TileEntityFusionBlockFinal.isBurning(tileentity))
         {
             int k = this.getBurnLeftScaled(13);
-            this.drawTexturedModalRect(this.guiLeft + 133, this.guiTop + 44 + 12 - k, 183, 12 - k, 14, k + 1);
+            this.drawTexturedModalRect(this.guiLeft + 133, this.guiTop + 44 + 12 - k, 184, 12 - k, 14, k + 1);
         }
 
         int l = this.getCookProgressScaled(24);
-        this.drawTexturedModalRect(this.guiLeft + 44, this.guiTop + 36, 183, 14, l + 1, 16);
+        this.drawTexturedModalRect(this.guiLeft + 44, this.guiTop + 36, 184, 14, l + 1, 16);
     }
 
     private int getBurnLeftScaled(int pixels)
