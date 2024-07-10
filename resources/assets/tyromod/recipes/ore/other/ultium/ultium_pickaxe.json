@@ -2,17 +2,21 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "###",
-        " / ",
+        " * ",
         " / "
     ],
     "key": {
         "#": {
             "item": "tyromod:ultium",
-			"data": 0
+            "data": 0
+        },
+        "*": {
+            "item": "tyromod:heart_portal",
+            "data": 0
         },
         "/": {
-            "item": "minecraft:stick",
-			"data": 0
+            "item": "tyromod:mercure_stick",
+            "data": 0
         }
     },
     "result": {

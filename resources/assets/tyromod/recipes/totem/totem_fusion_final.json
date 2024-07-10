@@ -1,26 +1,26 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "##",
-        "#*",
-        " /"
+        "###",
+        "#*#",
+        "///"
     ],
     "key": {
         "#": {
-            "item": "tyromod:ultium",
+            "item": "tyromod:obsidium_block",
 			"data": 0
         },
         "*": {
             "item": "tyromod:heart_portal",
-			"data": 0
+            "data": 0
         },
         "/": {
-            "item": "tyromod:mercure_stick",
-			"data": 0
+            "item": "tyromod:ium_block",
+            "data": 0
         }
     },
     "result": {
-        "item": "tyromod:ultium_axe",
+        "item": "tyromod:fusion_block_final",
 		"data": 0
     }
 }

@@ -8,6 +8,8 @@ container.fusion_block=Fusion Totem Tier 1
 container.fusion_block2=Fusion Totem Tier 2
 container.fusion_block3=Fusion Totem Tier 3
 
+item.heart_portal.name=Heart Of The Portal
+
 # GENERATE
 tile.tyrolium_ore.name=Tyrolium Ore
 tile.tyrolium_block.name=Tyrolium Block

@@ -64,7 +64,7 @@ public class FusionBlockFinal extends DefaultBlock {
                 d5 = (double)(rand.nextFloat() * 2.0F * (float)j);
             }
 
-            worldIn.spawnParticle(EnumParticleTypes.PORTAL, d0, d1, d2, d3, d4, d5);
+            worldIn.spawnParticle(EnumParticleTypes.REDSTONE, d0, d1, d2, d3, d4, d5);
         }
 
     }

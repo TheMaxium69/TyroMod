@@ -1,26 +1,26 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "##",
-        " *",
-        " /"
+        "/#/",
+        "#*#",
+        "/#/"
     ],
     "key": {
         "#": {
-            "item": "tyromod:ultium",
-            "data": 0
+            "item": "tyromod:enderium",
+			"data": 0
         },
         "*": {
-            "item": "tyromod:heart_portal",
+            "item": "tyromod:tyrolium",
             "data": 0
         },
         "/": {
-            "item": "tyromod:mercure_stick",
+            "item": "tyromod:netherium_ingot",
             "data": 0
         }
     },
     "result": {
-        "item": "tyromod:ultium_hoe",
+        "item": "tyromod:heart_portal",
 		"data": 0
     }
 }

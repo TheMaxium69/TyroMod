@@ -182,7 +182,9 @@ public class DefaultHammer extends ItemPickaxe implements IHasModel {
             /*FUSION TOOLTIP*/
             if (this.oreTier != "0") {
 
-                if (this.oreTier == "IUM"){
+                if (this.oreTier == "FINAL"){
+                    tooltip.add("\u00a77Fusion: \u00a75\u00a7lTier " + this.oreTier);
+                } else if (this.oreTier == "IUM"){
                     tooltip.add("\u00a77Fusion: \u00a71\u00a7lTier " + this.oreTier);
                 } else if (this.oreTier == "3"){
                     tooltip.add("\u00a77Fusion: \u00a74\u00a7lTier " + this.oreTier);

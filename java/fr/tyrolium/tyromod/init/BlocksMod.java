@@ -293,11 +293,11 @@ public class BlocksMod {
             new BlockGenerateClass("silicium", "block", false, "3", "IUM"),
 
             /*IUM*/
-            new BlockGenerateClass("ium", "ore", false, "3", "IUM"),
-            new BlockGenerateClass("ium", "block", false, "3", "IUM"),
+            new BlockGenerateClass("ium", "ore", false, "3", "0"),
+            new BlockGenerateClass("ium", "block", false, "3", "0"),
 
             /*ULTIUM*/
-            new BlockGenerateClass("ultium", "block", false, "3", "IUM"),
+            new BlockGenerateClass("ultium", "block", false, "3", "FINAL"),
 
             /* *******
             * AUTRE

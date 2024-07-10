@@ -1152,30 +1152,30 @@ public class ItemsMod {
             new ItemGenerateClass("silicium", "boots", true, SILICIUM_ARMOR, "3", "IUM"),
 
             /*IUM*/
-            new ItemGenerateClass("ium", "ingot", false, "3", "IUM"),
-            new ItemGenerateClass("ium", "powder", false, "3", "IUM"),
-            new ItemGenerateClass("ium", "sword", false, IUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ium", "pickaxe", false, IUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ium", "axe", false, IUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ium", "shovel", false, IUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ium", "hoe", false, IUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ium", "helmet", false, IUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("ium", "chestplate", false, IUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("ium", "leggings", false, IUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("ium", "boots", false, IUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ium", "ingot", false, "3", "0"),
+            new ItemGenerateClass("ium", "powder", false, "3", "0"),
+            new ItemGenerateClass("ium", "sword", false, IUM_TOOL, "3", "0"),
+            new ItemGenerateClass("ium", "pickaxe", false, IUM_TOOL, "3", "0"),
+            new ItemGenerateClass("ium", "axe", false, IUM_TOOL, "3", "0"),
+            new ItemGenerateClass("ium", "shovel", false, IUM_TOOL, "3", "0"),
+            new ItemGenerateClass("ium", "hoe", false, IUM_TOOL, "3", "0"),
+            new ItemGenerateClass("ium", "helmet", false, IUM_ARMOR, "3", "0"),
+            new ItemGenerateClass("ium", "chestplate", false, IUM_ARMOR, "3", "0"),
+            new ItemGenerateClass("ium", "leggings", false, IUM_ARMOR, "3", "0"),
+            new ItemGenerateClass("ium", "boots", false, IUM_ARMOR, "3", "0"),
 
             /*ULTIUM*/
-            new ItemGenerateClass("ultium", "classic", false, "3", "IUM"),
-            new ItemGenerateClass("ultium", "powder", false, "3", "IUM"),
-            new ItemGenerateClass("ultium", "sword", false, ULTIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ultium", "pickaxe", false, ULTIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ultium", "axe", false, ULTIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ultium", "shovel", false, ULTIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ultium", "hoe", false, ULTIUM_TOOL, "3", "IUM"),
-            new ItemGenerateClass("ultium", "helmet", false, ULTIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("ultium", "chestplate", false, ULTIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("ultium", "leggings", false, ULTIUM_ARMOR, "3", "IUM"),
-            new ItemGenerateClass("ultium", "boots", false, ULTIUM_ARMOR, "3", "IUM"),
+            new ItemGenerateClass("ultium", "classic", false, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "powder", false, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "sword", false, ULTIUM_TOOL, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "pickaxe", false, ULTIUM_TOOL, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "axe", false, ULTIUM_TOOL, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "shovel", false, ULTIUM_TOOL, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "hoe", false, ULTIUM_TOOL, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "helmet", false, ULTIUM_ARMOR, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "chestplate", false, ULTIUM_ARMOR, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "leggings", false, ULTIUM_ARMOR, "3", "FINAL"),
+            new ItemGenerateClass("ultium", "boots", false, ULTIUM_ARMOR, "3", "FINAL"),
 
             /*HAMMER*/
             new ItemGenerateClass("tyrolium", "hammer", false, TYROLIUM_TOOL, "1", "IUM"),
@@ -1195,6 +1195,7 @@ public class ItemsMod {
 
             /*UTILS*/
             new ItemGenerateClass("radar", "classic", true, "3"),
+            new ItemGenerateClass("heart_portal", "classic", false, "3"),
 
                 /* *******
                  * SERVER
