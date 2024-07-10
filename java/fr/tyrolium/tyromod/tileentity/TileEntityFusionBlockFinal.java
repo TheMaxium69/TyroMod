@@ -117,8 +117,8 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
             ItemStack[] inputs = new ItemStack[]{
                     handler.getStackInSlot(0),
                     handler.getStackInSlot(1),
-                    handler.getStackInSlot(2),
-//                    handler.getStackInSlot(3),
+//                    handler.getStackInSlot(2),
+//                    handler.getStackInSlot(3), RESULT
                     handler.getStackInSlot(4),
                     handler.getStackInSlot(5),
                     handler.getStackInSlot(6),
@@ -146,17 +146,22 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
                     handler.getStackInSlot(28),
                     handler.getStackInSlot(29),
                     handler.getStackInSlot(30),
-                    handler.getStackInSlot(31),
-                    handler.getStackInSlot(32),
+                    handler.getStackInSlot(31)
             };
             ItemStack fuel = this.handler.getStackInSlot(2);
             ItemStack result = this.handler.getStackInSlot(3);
 
-            System.out.println(inputs);
+//            System.out.println(inputs);
 
-
-            if (!fuel.isEmpty() && !this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0) {
-                ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
+            if (!fuel.isEmpty() && !this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() /*&& !this.handler.getStackInSlot(2).isEmpty() && !this.handler.getStackInSlot(3).isEmpty()*/ &&
+                    !this.handler.getStackInSlot(4).isEmpty() && !this.handler.getStackInSlot(5).isEmpty() && !this.handler.getStackInSlot(6).isEmpty() && !this.handler.getStackInSlot(7).isEmpty() &&
+                    !this.handler.getStackInSlot(8).isEmpty() && !this.handler.getStackInSlot(9).isEmpty() && !this.handler.getStackInSlot(10).isEmpty() && !this.handler.getStackInSlot(11).isEmpty() &&
+                    !this.handler.getStackInSlot(12).isEmpty() && !this.handler.getStackInSlot(13).isEmpty() && !this.handler.getStackInSlot(14).isEmpty() && !this.handler.getStackInSlot(15).isEmpty() &&
+                    !this.handler.getStackInSlot(16).isEmpty() && !this.handler.getStackInSlot(17).isEmpty() && !this.handler.getStackInSlot(18).isEmpty() && !this.handler.getStackInSlot(19).isEmpty() &&
+                    !this.handler.getStackInSlot(20).isEmpty() && !this.handler.getStackInSlot(21).isEmpty() && !this.handler.getStackInSlot(22).isEmpty() && !this.handler.getStackInSlot(23).isEmpty() &&
+                    !this.handler.getStackInSlot(24).isEmpty() && !this.handler.getStackInSlot(25).isEmpty() && !this.handler.getStackInSlot(26).isEmpty() && !this.handler.getStackInSlot(27).isEmpty() &&
+                    !this.handler.getStackInSlot(28).isEmpty() && !this.handler.getStackInSlot(29).isEmpty() && !this.handler.getStackInSlot(30).isEmpty() && !this.handler.getStackInSlot(31).isEmpty() && cookTime == 0) {
+                ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs);
                 if (!this.isBurning() && this.canSmelt(output)) {
                     this.burnTime = getItemBurnTime(fuel);
                     this.currentBurnTime = burnTime;
@@ -188,16 +193,81 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
                     cookTime++;
                 }
             } else {
-                if (!this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0) {
-                    ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
+                if (!this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() /*&& !this.handler.getStackInSlot(2).isEmpty() && !this.handler.getStackInSlot(3).isEmpty()*/ &&
+                        !this.handler.getStackInSlot(4).isEmpty() && !this.handler.getStackInSlot(5).isEmpty() && !this.handler.getStackInSlot(6).isEmpty() && !this.handler.getStackInSlot(7).isEmpty() &&
+                        !this.handler.getStackInSlot(8).isEmpty() && !this.handler.getStackInSlot(9).isEmpty() && !this.handler.getStackInSlot(10).isEmpty() && !this.handler.getStackInSlot(11).isEmpty() &&
+                        !this.handler.getStackInSlot(12).isEmpty() && !this.handler.getStackInSlot(13).isEmpty() && !this.handler.getStackInSlot(14).isEmpty() && !this.handler.getStackInSlot(15).isEmpty() &&
+                        !this.handler.getStackInSlot(16).isEmpty() && !this.handler.getStackInSlot(17).isEmpty() && !this.handler.getStackInSlot(18).isEmpty() && !this.handler.getStackInSlot(19).isEmpty() &&
+                        !this.handler.getStackInSlot(20).isEmpty() && !this.handler.getStackInSlot(21).isEmpty() && !this.handler.getStackInSlot(22).isEmpty() && !this.handler.getStackInSlot(23).isEmpty() &&
+                        !this.handler.getStackInSlot(24).isEmpty() && !this.handler.getStackInSlot(25).isEmpty() && !this.handler.getStackInSlot(26).isEmpty() && !this.handler.getStackInSlot(27).isEmpty() &&
+                        !this.handler.getStackInSlot(28).isEmpty() && !this.handler.getStackInSlot(29).isEmpty() && !this.handler.getStackInSlot(30).isEmpty() && !this.handler.getStackInSlot(31).isEmpty() && cookTime == 0) {
+                    ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs);
                     if (this.canSmelt(output) && this.isBurning()) {
                         if (!output.isEmpty()) {
                             smelting = output;
                             cookTime++;
                             inputs[0].shrink(1);
                             inputs[1].shrink(1);
+//                            inputs[2].shrink(1);
+                            inputs[3].shrink(1);
+                            inputs[4].shrink(1);
+                            inputs[5].shrink(1);
+                            inputs[6].shrink(1);
+                            inputs[7].shrink(1);
+                            inputs[8].shrink(1);
+                            inputs[9].shrink(1);
+                            inputs[10].shrink(1);
+                            inputs[11].shrink(1);
+                            inputs[12].shrink(1);
+                            inputs[13].shrink(1);
+                            inputs[14].shrink(1);
+                            inputs[15].shrink(1);
+                            inputs[16].shrink(1);
+                            inputs[17].shrink(1);
+                            inputs[18].shrink(1);
+                            inputs[19].shrink(1);
+                            inputs[20].shrink(1);
+                            inputs[21].shrink(1);
+                            inputs[22].shrink(1);
+                            inputs[23].shrink(1);
+                            inputs[24].shrink(1);
+                            inputs[25].shrink(1);
+                            inputs[26].shrink(1);
+                            inputs[27].shrink(1);
+                            inputs[28].shrink(1);
+                            inputs[29].shrink(1);
+                            inputs[30].shrink(1);
                             handler.setStackInSlot(0, inputs[0]);
                             handler.setStackInSlot(1, inputs[1]);
+//                            handler.setStackInSlot(2, inputs[2]);
+                            handler.setStackInSlot(4, inputs[2]);
+                            handler.setStackInSlot(5, inputs[3]);
+                            handler.setStackInSlot(6, inputs[4]);
+                            handler.setStackInSlot(7, inputs[5]);
+                            handler.setStackInSlot(8, inputs[6]);
+                            handler.setStackInSlot(9, inputs[7]);
+                            handler.setStackInSlot(10, inputs[8]);
+                            handler.setStackInSlot(11, inputs[9]);
+                            handler.setStackInSlot(12, inputs[10]);
+                            handler.setStackInSlot(13, inputs[11]);
+                            handler.setStackInSlot(14, inputs[12]);
+                            handler.setStackInSlot(15, inputs[13]);
+                            handler.setStackInSlot(16, inputs[14]);
+                            handler.setStackInSlot(17, inputs[15]);
+                            handler.setStackInSlot(18, inputs[16]);
+                            handler.setStackInSlot(19, inputs[17]);
+                            handler.setStackInSlot(20, inputs[18]);
+                            handler.setStackInSlot(21, inputs[19]);
+                            handler.setStackInSlot(22, inputs[20]);
+                            handler.setStackInSlot(23, inputs[21]);
+                            handler.setStackInSlot(24, inputs[22]);
+                            handler.setStackInSlot(25, inputs[23]);
+                            handler.setStackInSlot(26, inputs[24]);
+                            handler.setStackInSlot(27, inputs[25]);
+                            handler.setStackInSlot(28, inputs[26]);
+                            handler.setStackInSlot(29, inputs[27]);
+                            handler.setStackInSlot(30, inputs[28]);
+                            handler.setStackInSlot(31, inputs[29]);
                         }
 
                     }

@@ -27,7 +27,7 @@ public class FusionBlockFinalContainer extends Container
         this.addSlotToContainer(new SlotItemHandler(handler, 0, 12 - 4, 8 - 18));
         this.addSlotToContainer(new SlotItemHandler(handler, 1, 30 - 4, 8 - 18));
         this.addSlotToContainer(new SlotItemHandler(handler, 4, 48 - 4, 8 - 18));
-        this.addSlotToContainer(new SlotItemHandler(handler, 32, 66 - 4, 8 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 22, 66 - 4, 8 - 18));
         this.addSlotToContainer(new SlotItemHandler(handler, 5, 84 - 4, 8 - 18));
         this.addSlotToContainer(new SlotItemHandler(handler, 6, 102 - 4, 8 - 18));
         this.addSlotToContainer(new SlotItemHandler(handler, 7, 120 - 4, 8 - 18));
@@ -109,71 +109,71 @@ public class FusionBlockFinalContainer extends Container
     {
         return this.tileentity.isUsableByPlayer(playerIn);
     }
-
-    @Override
-    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index)
-    {
-        ItemStack stack = ItemStack.EMPTY;
-        Slot slot = (Slot)this.inventorySlots.get(index);
-
-        if(slot != null && slot.getHasStack())
-        {
-            ItemStack stack1 = slot.getStack();
-            stack = stack1.copy();
-
-            if(index == 3)
-            {
-                if(!this.mergeItemStack(stack1, 4, 40, true)) return ItemStack.EMPTY;
-                slot.onSlotChange(stack1, stack);
-            }
-            else if(index != 2 && index != 1 && index != 0)
-            {
-                Slot slot1 = (Slot)this.inventorySlots.get(index + 1);
-
-                if(!FusionBlockFinalRecipes.getInstance().getSinteringResult(stack1, slot1.getStack()).isEmpty())
-                {
-                    if(!this.mergeItemStack(stack1, 0, 2, false))
-                    {
-                        return ItemStack.EMPTY;
-                    }
-                    else if(TileEntityFusionBlockFinal.isItemFuel(stack1))
-                    {
-                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
-                    }
-                    else if(TileEntityFusionBlockFinal.isItemFuel(stack1))
-                    {
-                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
-                    }
-                    else if(TileEntityFusionBlockFinal.isItemFuel(stack1))
-                    {
-                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
-                    }
-                    else if(index >= 4 && index < 31)
-                    {
-                        if(!this.mergeItemStack(stack1, 31, 40, false)) return ItemStack.EMPTY;
-                    }
-                    else if(index >= 31 && index < 40 && !this.mergeItemStack(stack1, 4, 31, false))
-                    {
-                        return ItemStack.EMPTY;
-                    }
-                }
-            }
-            else if(!this.mergeItemStack(stack1, 4, 40, false))
-            {
-                return ItemStack.EMPTY;
-            }
-            if(stack1.isEmpty())
-            {
-                slot.putStack(ItemStack.EMPTY);
-            }
-            else
-            {
-                slot.onSlotChanged();
-
-            }
-            if(stack1.getCount() == stack.getCount()) return ItemStack.EMPTY;
-            slot.onTake(playerIn, stack1);
-        }
-        return stack;
-    }
+//
+//    @Override
+//    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index)
+//    {
+//        ItemStack stack = ItemStack.EMPTY;
+//        Slot slot = (Slot)this.inventorySlots.get(index);
+//
+//        if(slot != null && slot.getHasStack())
+//        {
+//            ItemStack stack1 = slot.getStack();
+//            stack = stack1.copy();
+//
+//            if(index == 3)
+//            {
+//                if(!this.mergeItemStack(stack1, 4, 40, true)) return ItemStack.EMPTY;
+//                slot.onSlotChange(stack1, stack);
+//            }
+//            else if(index != 2 && index != 1 && index != 0)
+//            {
+//                Slot slot1 = (Slot)this.inventorySlots.get(index + 1);
+//
+//                if(!FusionBlockFinalRecipes.getInstance().getSinteringResult(stack1, slot1.getStack()).isEmpty())
+//                {
+//                    if(!this.mergeItemStack(stack1, 0, 2, false))
+//                    {
+//                        return ItemStack.EMPTY;
+//                    }
+//                    else if(TileEntityFusionBlockFinal.isItemFuel(stack1))
+//                    {
+//                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
+//                    }
+//                    else if(TileEntityFusionBlockFinal.isItemFuel(stack1))
+//                    {
+//                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
+//                    }
+//                    else if(TileEntityFusionBlockFinal.isItemFuel(stack1))
+//                    {
+//                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
+//                    }
+//                    else if(index >= 4 && index < 31)
+//                    {
+//                        if(!this.mergeItemStack(stack1, 31, 40, false)) return ItemStack.EMPTY;
+//                    }
+//                    else if(index >= 31 && index < 40 && !this.mergeItemStack(stack1, 4, 31, false))
+//                    {
+//                        return ItemStack.EMPTY;
+//                    }
+//                }
+//            }
+//            else if(!this.mergeItemStack(stack1, 4, 40, false))
+//            {
+//                return ItemStack.EMPTY;
+//            }
+//            if(stack1.isEmpty())
+//            {
+//                slot.putStack(ItemStack.EMPTY);
+//            }
+//            else
+//            {
+//                slot.onSlotChanged();
+//
+//            }
+//            if(stack1.getCount() == stack.getCount()) return ItemStack.EMPTY;
+//            slot.onTake(playerIn, stack1);
+//        }
+//        return stack;
+//    }
 }

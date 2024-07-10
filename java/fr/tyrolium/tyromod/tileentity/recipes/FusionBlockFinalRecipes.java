@@ -22,11 +22,15 @@ public class FusionBlockFinalRecipes {
     private FusionBlockFinalRecipes() {
 
     }
-    public ItemStack getSinteringResult(ItemStack input1, ItemStack input2) {
+    public ItemStack getSinteringResult(ItemStack[] input) {
 
-        if  (!compareItemStacks(input1, input2) && !input1.equals(ItemStack.EMPTY) && !input2.equals(ItemStack.EMPTY) && !input1.equals(new ItemStack(Blocks.AIR)) && !input2.equals(new ItemStack(Blocks.AIR))) {
+        if  (!compareItemStacks(input) && !input[0].equals(ItemStack.EMPTY) && !input[1].equals(ItemStack.EMPTY) && !input[2].equals(ItemStack.EMPTY) && !input[3].equals(ItemStack.EMPTY) && !input[4].equals(ItemStack.EMPTY) && !input[5].equals(ItemStack.EMPTY) && !input[6].equals(ItemStack.EMPTY) && !input[7].equals(ItemStack.EMPTY) && !input[8].equals(ItemStack.EMPTY) &&
+                !input[9].equals(ItemStack.EMPTY) && !input[10].equals(ItemStack.EMPTY) && !input[11].equals(ItemStack.EMPTY) && !input[12].equals(ItemStack.EMPTY) && !input[13].equals(ItemStack.EMPTY) && !input[14].equals(ItemStack.EMPTY) && !input[15].equals(ItemStack.EMPTY) && !input[16].equals(ItemStack.EMPTY) && !input[17].equals(ItemStack.EMPTY) && !input[18].equals(ItemStack.EMPTY) &&
+                !input[19].equals(ItemStack.EMPTY) && !input[20].equals(ItemStack.EMPTY) && !input[21].equals(ItemStack.EMPTY) && !input[22].equals(ItemStack.EMPTY) && !input[23].equals(ItemStack.EMPTY) && !input[24].equals(ItemStack.EMPTY) && !input[25].equals(ItemStack.EMPTY) && !input[26].equals(ItemStack.EMPTY) && !input[27].equals(ItemStack.EMPTY) && !input[28].equals(ItemStack.EMPTY) &&
+                !input[29].equals(ItemStack.EMPTY) && !input[30].equals(ItemStack.EMPTY)) {
 
-            String itemId = requestFusion(input1, input2);
+            String itemId = requestFusion();
+            System.out.println(itemId);
 
             if (itemId != null && !itemId.equals("empty")) {
 
@@ -41,27 +45,6 @@ public class FusionBlockFinalRecipes {
                         return new ItemStack(ItemsMod.getItemCustomClass(itemId));
                     }
 
-                    if (itemId.charAt(0) == 'v') {
-
-                        /*GOLD_INGOT*/
-                        if (itemId.equals("v999999999")) {
-                            return new ItemStack(Items.GOLD_INGOT);
-                        }
-                        /*EMERALD*/
-                        if (itemId.equals("v999999998")) {
-                            return new ItemStack(Items.EMERALD);
-                        }
-                        /*IRON_INGOT*/
-                        if (itemId.equals("v999999997")) {
-                            return new ItemStack(Items.IRON_INGOT);
-                        }
-                        /*DIAMOND*/
-                        if (itemId.equals("v999999996")) {
-                            return new ItemStack(Items.DIAMOND);
-                        }
-
-                    }
-
                 }
 
             }
@@ -70,12 +53,19 @@ public class FusionBlockFinalRecipes {
         return ItemStack.EMPTY;
     }
 
-    private boolean compareItemStacks(ItemStack stack1, ItemStack stack2) {
-        return stack2.getItem() == stack1.getItem();
+    private boolean compareItemStacks(ItemStack[] input) {
+        for (int i = 0; i < input.length; i++) {
+            for (int j = i + 1; j < input.length; j++) {
+                if (ItemStack.areItemsEqual(input[i], input[j])) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
-    private static String requestFusion(ItemStack input1, ItemStack input2){
-        String apiUrl = Global.API_FUSION + "?tier=3&item1="+ input1.getUnlocalizedName() +"&item2="+ input2.getUnlocalizedName(); // change this to be your actual API url
+    private static String requestFusion(){
+        String apiUrl = Global.API_FUSION + "?tier=final&pseudo=";
         try {
             URL url = new URL(apiUrl);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -109,12 +99,4 @@ public class FusionBlockFinalRecipes {
         return "empty";
     }
 
-//    public float getSinteringExperience(ItemStack stack) {
-//        for (Entry<ItemStack, Float> entry : experienceList.entrySet()) {
-//            if (compareItemStacks(stack, entry.getKey())) {
-//                return entry.getValue().floatValue();
-//            }
-//        }
-//        return 0.0F;
-//    }
 }
