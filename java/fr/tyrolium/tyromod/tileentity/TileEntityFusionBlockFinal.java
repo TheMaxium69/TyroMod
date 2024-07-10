@@ -26,7 +26,7 @@ import net.minecraftforge.items.ItemStackHandler;
 
 public class TileEntityFusionBlockFinal extends TileEntity implements IInventory, ITickable
 {
-    public ItemStackHandler handler = new ItemStackHandler(4);
+    public ItemStackHandler handler = new ItemStackHandler(35);
     private String customName;
     private ItemStack smelting = ItemStack.EMPTY;
 
@@ -114,9 +114,46 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
                 FusionBlockFinal.setState(true, world, pos);
             }
 
-            ItemStack[] inputs = new ItemStack[]{handler.getStackInSlot(0), handler.getStackInSlot(1)};
+            ItemStack[] inputs = new ItemStack[]{
+                    handler.getStackInSlot(0),
+                    handler.getStackInSlot(1),
+                    handler.getStackInSlot(2),
+//                    handler.getStackInSlot(3),
+                    handler.getStackInSlot(4),
+                    handler.getStackInSlot(5),
+                    handler.getStackInSlot(6),
+                    handler.getStackInSlot(7),
+                    handler.getStackInSlot(8),
+                    handler.getStackInSlot(9),
+                    handler.getStackInSlot(10),
+                    handler.getStackInSlot(11),
+                    handler.getStackInSlot(12),
+                    handler.getStackInSlot(13),
+                    handler.getStackInSlot(14),
+                    handler.getStackInSlot(15),
+                    handler.getStackInSlot(16),
+                    handler.getStackInSlot(17),
+                    handler.getStackInSlot(18),
+                    handler.getStackInSlot(19),
+                    handler.getStackInSlot(20),
+                    handler.getStackInSlot(21),
+                    handler.getStackInSlot(22),
+                    handler.getStackInSlot(23),
+                    handler.getStackInSlot(24),
+                    handler.getStackInSlot(25),
+                    handler.getStackInSlot(26),
+                    handler.getStackInSlot(27),
+                    handler.getStackInSlot(28),
+                    handler.getStackInSlot(29),
+                    handler.getStackInSlot(30),
+                    handler.getStackInSlot(31),
+                    handler.getStackInSlot(32),
+            };
             ItemStack fuel = this.handler.getStackInSlot(2);
             ItemStack result = this.handler.getStackInSlot(3);
+
+            System.out.println(inputs);
+
 
             if (!fuel.isEmpty() && !this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0) {
                 ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs[0], inputs[1]);

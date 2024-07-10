@@ -24,10 +24,43 @@ public class FusionBlockFinalContainer extends Container
         this.tileentity = tileentity;
         IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 
-        this.addSlotToContainer(new SlotItemHandler(handler, 0, 18, 15));
-        this.addSlotToContainer(new SlotItemHandler(handler, 1, 18, 56));
-        this.addSlotToContainer(new SlotItemHandler(handler, 2, 131, 25));
-        this.addSlotToContainer(new SlotItemHandler(handler, 3, 81, 36));
+        this.addSlotToContainer(new SlotItemHandler(handler, 0, 12 - 4, 8 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 1, 30 - 4, 8 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 4, 48 - 4, 8 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 32, 66 - 4, 8 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 5, 84 - 4, 8 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 6, 102 - 4, 8 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 7, 120 - 4, 8 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 8, 138 - 4, 8 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 9, 156 - 4, 8 - 18));
+
+        this.addSlotToContainer(new SlotItemHandler(handler, 10, 12 - 4, 26 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 11, 30 - 4, 26 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 12, 48 - 4, 26 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 31, 66 - 4, 26 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 13, 84 - 4, 26 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 14, 102 - 4, 26 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 15, 120 - 4, 26 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 16, 138 - 4, 26 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 17, 156 - 4, 26 - 18));
+
+        this.addSlotToContainer(new SlotItemHandler(handler, 18, 12 - 4, 44 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 19, 30 - 4, 44 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 20, 48 - 4, 44 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 30, 66 - 4, 44 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 21, 84 - 4, 44 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 23, 102 - 4, 44 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 24, 120 - 4, 44 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 25, 138 - 4, 44 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 26, 156 - 4, 44 - 18));
+
+        this.addSlotToContainer(new SlotItemHandler(handler, 27, 12 - 4, 62 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 28, 30 - 4, 62 - 18));
+
+        /*RESULT*/ this.addSlotToContainer(new SlotItemHandler(handler, 3, 84 - 4, 72 - 18));
+
+        this.addSlotToContainer(new SlotItemHandler(handler, 29, 138 - 4, 62 - 18));
+        this.addSlotToContainer(new SlotItemHandler(handler, 2, 156 - 4, 62 - 18));
 
         for(int y = 0; y < 3; y++)
         {
