@@ -1,0 +1,67 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/default",
+	"textures": {
+		"particle": "tyromod:3d/ultium",
+		"ultium": "tyromod:3d/ultium"
+	},
+	"elements": [
+		{
+			"from": [5.5, 10, 7],
+			"to": [10.5, 12, 9],
+			"faces": {
+				"north": {"uv": [10, 1, 12.5, 2], "texture": "#ultium"},
+				"east": {"uv": [9, 1, 10, 2], "texture": "#ultium"},
+				"south": {"uv": [13.5, 1, 16, 2], "texture": "#ultium"},
+				"west": {"uv": [12.5, 1, 13.5, 2], "texture": "#ultium"},
+				"up": {"uv": [12.5, 1, 10, 0], "texture": "#ultium"},
+				"down": {"uv": [15, 0, 12.5, 1], "texture": "#ultium"}
+			}
+		},
+		{
+			"from": [5.5, 4, 6],
+			"to": [10.5, 10, 10],
+			"faces": {
+				"north": {"uv": [9, 4, 11.5, 7], "texture": "#ultium"},
+				"east": {"uv": [7, 4, 9, 7], "texture": "#ultium"},
+				"south": {"uv": [13.5, 4, 16, 7], "texture": "#ultium"},
+				"west": {"uv": [11.5, 4, 13.5, 7], "texture": "#ultium"},
+				"up": {"uv": [11.5, 4, 9, 2], "texture": "#ultium"},
+				"down": {"uv": [14, 2, 11.5, 4], "texture": "#ultium"}
+			}
+		},
+		{
+			"from": [4.5, 5, 7],
+			"to": [11.5, 10, 9],
+			"faces": {
+				"north": {"uv": [1, 1, 4.5, 3.5], "texture": "#ultium"},
+				"east": {"uv": [0, 1, 1, 3.5], "texture": "#ultium"},
+				"south": {"uv": [5.5, 1, 9, 3.5], "texture": "#ultium"},
+				"west": {"uv": [4.5, 1, 5.5, 3.5], "texture": "#ultium"},
+				"up": {"uv": [4.5, 1, 1, 0], "texture": "#ultium"},
+				"down": {"uv": [8, 0, 4.5, 1], "texture": "#ultium"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 2, 0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 2, 0]
+		},
+		"firstperson_righthand": {
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"firstperson_lefthand": {
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"fixed": {
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}
