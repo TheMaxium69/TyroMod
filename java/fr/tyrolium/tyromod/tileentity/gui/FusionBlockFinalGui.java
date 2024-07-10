@@ -39,11 +39,11 @@ public class FusionBlockFinalGui extends GuiContainer {
         if(TileEntityFusionBlockFinal.isBurning(tileentity))
         {
             int k = this.getBurnLeftScaled(13);
-            this.drawTexturedModalRect(this.guiLeft + 133, this.guiTop + 44 + 12 - k, 184, 12 - k, 14, k + 1);
+            this.drawTexturedModalRect(this.guiLeft + 133 - 23, this.guiTop + 44 + 12 - k + 11, 184, 12 - k, 14, k + 1);
         }
 
         int l = this.getCookProgressScaled(24);
-        this.drawTexturedModalRect(this.guiLeft + 44, this.guiTop + 36, 184, 14, l + 1, 16);
+        this.drawTexturedModalRect(this.guiLeft + 44 + 2, this.guiTop + 36 + 19, 184, 14, l + 1, 16);
     }
 
     private int getBurnLeftScaled(int pixels)
