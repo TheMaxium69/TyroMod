@@ -143,21 +143,21 @@ public class MaterialsMod {
     public static final Item.ToolMaterial PURIFIED_IRON_TOOL = EnumHelper.addToolMaterial("purified_iron_tool", 3, 1400, 7.0F, 3.0F, 10);
 
     /*TIER 2*/
-    public static final Item.ToolMaterial TITANE_TOOL = EnumHelper.addToolMaterial("titane_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial PURIFIED_DIAMOND_TOOL = EnumHelper.addToolMaterial("purified_diamond_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial ENDERITE_TOOL = EnumHelper.addToolMaterial("enderite_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial VOLCANITE_TOOL = EnumHelper.addToolMaterial("volcanite_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial RUBY_TOOL = EnumHelper.addToolMaterial("ruby_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial SAPPHIRE_TOOL = EnumHelper.addToolMaterial("sapphire_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial PURIFIED_GOLD_TOOL = EnumHelper.addToolMaterial("purified_gold_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial OBSIDIAN_TOOL = EnumHelper.addToolMaterial("obsidian_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial EMERALD_TOOL = EnumHelper.addToolMaterial("emerald_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial YELLORITE_TOOL = EnumHelper.addToolMaterial("yellorite_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial AMETHYS_TOOL = EnumHelper.addToolMaterial("amethys_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial STEEL_TOOL = EnumHelper.addToolMaterial("steel_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial MYTHRIL_TOOL = EnumHelper.addToolMaterial("mythril_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial AURORE_TOOL = EnumHelper.addToolMaterial("aurore_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial BRONZE_TOOL = EnumHelper.addToolMaterial("bronze_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial TITANE_TOOL = EnumHelper.addToolMaterial("titane_tool", 3, 1800, 13.0F, 4.0F, 18);
+    public static final Item.ToolMaterial PURIFIED_DIAMOND_TOOL = EnumHelper.addToolMaterial("purified_diamond_tool", 3, 1700, 9.0F, 4.0F, 12);
+    public static final Item.ToolMaterial ENDERITE_TOOL = EnumHelper.addToolMaterial("enderite_tool", 3, 1800, 14.0F, 5.0F, 14);
+    public static final Item.ToolMaterial VOLCANITE_TOOL = EnumHelper.addToolMaterial("volcanite_tool", 3, 1800, 14.0F, 4.0F, 14);
+    public static final Item.ToolMaterial RUBY_TOOL = EnumHelper.addToolMaterial("ruby_tool", 3, 1700, 14.0F, 5.0F, 20);
+    public static final Item.ToolMaterial SAPPHIRE_TOOL = EnumHelper.addToolMaterial("sapphire_tool", 3, 1700, 14.0F, 5.0F, 20);
+    public static final Item.ToolMaterial PURIFIED_GOLD_TOOL = EnumHelper.addToolMaterial("purified_gold_tool", 3, 250, 19.0F, 2.0F, 29);
+    public static final Item.ToolMaterial OBSIDIAN_TOOL = EnumHelper.addToolMaterial("obsidian_tool", 3, 3000, 14.0F, 5.0F, 18);
+    public static final Item.ToolMaterial EMERALD_TOOL = EnumHelper.addToolMaterial("emerald_tool", 3, 1700, 14.0F, 5.0F, 20);
+    public static final Item.ToolMaterial YELLORITE_TOOL = EnumHelper.addToolMaterial("yellorite_tool", 3, 1900, 14.0F, 5.0F, 18);
+    public static final Item.ToolMaterial AMETHYS_TOOL = EnumHelper.addToolMaterial("amethys_tool", 3, 2000, 15.0F, 6.0F, 19);
+    public static final Item.ToolMaterial STEEL_TOOL = EnumHelper.addToolMaterial("steel_tool", 3, 1800, 13.0F, 4.0F, 14);
+    public static final Item.ToolMaterial MYTHRIL_TOOL = EnumHelper.addToolMaterial("mythril_tool", 3, 1800, 13.0F, 5.0F, 16);
+    public static final Item.ToolMaterial AURORE_TOOL = EnumHelper.addToolMaterial("aurore_tool", 3, 1900, 14.0F, 5.0F, 18);
+    public static final Item.ToolMaterial BRONZE_TOOL = EnumHelper.addToolMaterial("bronze_tool", 3, 1800, 13.0F, 4.0F, 14);
 
     /*TIER 3*/
     public static final Item.ToolMaterial ARGONITE_TOOL = EnumHelper.addToolMaterial("argonite_tool", 2, 400, 3.0f, 5.0f, 20);
