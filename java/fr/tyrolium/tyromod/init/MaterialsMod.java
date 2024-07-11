@@ -136,11 +136,11 @@ public class MaterialsMod {
     public static final Item.ToolMaterial CLAY_TOOL = EnumHelper.addToolMaterial("clay_tool", 2, 400, 3.0f, 5.0f, 20);
 
     /*TIER 1*/
-    public static final Item.ToolMaterial COPPER_TOOL = EnumHelper.addToolMaterial("copper_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial COPPER_TOOL = EnumHelper.addToolMaterial("copper_tool", 2, 250, 5.0F, 2.0F, 10);
     public static final Item.ToolMaterial ENDERINE_TOOL = EnumHelper.addToolMaterial("enderine_tool", 3, 1561, 8.0F, 3.0F, 10);
-    public static final Item.ToolMaterial FLINT_TOOL = EnumHelper.addToolMaterial("flint_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial TIN_TOOL = EnumHelper.addToolMaterial("tin_tool", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial PURIFIED_IRON_TOOL = EnumHelper.addToolMaterial("purified_iron_tool", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial FLINT_TOOL = EnumHelper.addToolMaterial("flint_tool", 2, 200, 4.0F, 2.0F, 5);
+    public static final Item.ToolMaterial TIN_TOOL = EnumHelper.addToolMaterial("tin_tool", 1, 145, 4.0F, 1.0F, 5);
+    public static final Item.ToolMaterial PURIFIED_IRON_TOOL = EnumHelper.addToolMaterial("purified_iron_tool", 3, 1400, 7.0F, 3.0F, 10);
 
     /*TIER 2*/
     public static final Item.ToolMaterial TITANE_TOOL = EnumHelper.addToolMaterial("titane_tool", 2, 400, 3.0f, 5.0f, 20);
