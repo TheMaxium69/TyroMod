@@ -280,12 +280,12 @@
 			"scale": [0.85, 0.85, 0.85]
 		},
 		"firstperson_righthand": {
-			"rotation": [-180, 11, -180],
+			"rotation": [-180, 74, -180],
 			"translation": [2.75, 1.75, 0],
 			"scale": [0.7, 0.7, 0.7]
 		},
 		"firstperson_lefthand": {
-			"rotation": [-180, 23.75, 180],
+			"rotation": [-180, 74, 180],
 			"translation": [0, 2.5, 0],
 			"scale": [0.7, 0.7, 0.7]
 		},
