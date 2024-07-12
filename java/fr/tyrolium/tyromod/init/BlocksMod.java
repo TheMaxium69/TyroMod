@@ -25,8 +25,6 @@ public class BlocksMod {
 
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
-    /* MANUEL */
-
     /* GENERATION */
     public static BlockGenerateClass[] BlockList = {
 

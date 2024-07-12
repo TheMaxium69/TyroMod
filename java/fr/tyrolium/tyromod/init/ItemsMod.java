@@ -27,10 +27,6 @@ public class ItemsMod {
 
     public static final List<Item> ITEMS = new ArrayList<Item>();
 
-
-    /* MANUEL */
-//    public static Item RADAR = new Radar("radar", "3", "c999");
-
     /* GENERATION */
     public static ItemGenerateClass[] ItemList = {
 
