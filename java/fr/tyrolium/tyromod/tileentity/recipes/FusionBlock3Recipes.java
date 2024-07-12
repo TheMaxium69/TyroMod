@@ -93,7 +93,6 @@ public class FusionBlock3Recipes {
             conn.disconnect();
 
             String result = content.toString();
-//            System.out.println("REQUEST ENVOYER");
 
             if (!result.equals("\"err\"")) {
                 return result;
