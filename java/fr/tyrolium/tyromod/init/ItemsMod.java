@@ -1174,15 +1174,19 @@ public class ItemsMod {
             new ItemGenerateClass("ultium", "boots", false, ULTIUM_ARMOR, "3", "FINAL"),
 
             /*HAMMER*/
-            new ItemGenerateClass("tyrolium", "hammer", false, TYROLIUM_TOOL, "1", "IUM"),
-            new ItemGenerateClass("rhodonite", "hammer", false, RHODONITE_TOOL, "1", "3"),
-            new ItemGenerateClass("amethys", "hammer", false, AMETHYS_TOOL, "1", "2"),
-            new ItemGenerateClass("yellorite", "hammer", false, YELLORITE_TOOL, "1", "2"),
-            new ItemGenerateClass("aventurine", "hammer", false, AVENTURINE_TOOL, "1", "3"),
-            new ItemGenerateClass("mercure", "hammer", false, MERCURE_TOOL, "1", "0"),
+            new ItemGenerateClass("tyrolium", "hammer", false, TYROLIUM_HAMMER, "1", "IUM"),
+            new ItemGenerateClass("rhodonium", "hammer", false, RHODONIUM_HAMMER, "1", "IUM"),
+            new ItemGenerateClass("omeganium", "hammer", false, OMEGANIUM_HAMMER, "1", "IUM"),
+            new ItemGenerateClass("yellorium", "hammer", false, YELLORIUM_HAMMER, "1", "IUM"),
+            new ItemGenerateClass("aventurium", "hammer", false, AVENTURIUM_HAMMER, "1", "IUM"),
+            new ItemGenerateClass("mercure", "hammer", false, MERCURE_HAMMER, "1", "0"),
 
             /*SWORDFIRE*/
-            new ItemGenerateClass("tyrolium", "sword_fire", false, TYROLIUM_TOOL, "1", "IUM"),
+            new ItemGenerateClass("tyrolium", "sword_fire", false, TYROLIUM_SWORD_FIRE, "3", "IUM"),
+            new ItemGenerateClass("rhodonium", "sword_fire", false, RHODONIUM_SWORD_FIRE, "3", "IUM"),
+            new ItemGenerateClass("yellorium", "sword_fire", false, YELLORIUM_SWORD_FIRE, "3", "IUM"),
+            new ItemGenerateClass("aventurium", "sword_fire", false, AVENTURIUM_SWORD_FIRE, "3", "IUM"),
+            new ItemGenerateClass("omeganium", "sword_fire", false, OMEGANIUM_SWORD_FIRE, "3", "IUM"),
 
             /*FOOD*/
             new ItemGenerateClass("tyrolium", "apple", false, "1"),

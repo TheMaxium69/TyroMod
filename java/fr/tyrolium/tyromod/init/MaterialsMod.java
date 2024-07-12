@@ -227,6 +227,24 @@ public class MaterialsMod {
     /*TIER ULTIME*/
     public static final Item.ToolMaterial ULTIUM_TOOL = EnumHelper.addToolMaterial("ultium_tool", 2, 400, 3.0f, 5.0f, 20);
 
+    /********************
+     * Autre Materials
+     *******************/
+
+    /*HAMMER*/
+    public static final Item.ToolMaterial MERCURE_HAMMER = EnumHelper.addToolMaterial("mercure_hammer", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial RHODONIUM_HAMMER = EnumHelper.addToolMaterial("rhodonium_hammer", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial AVENTURIUM_HAMMER = EnumHelper.addToolMaterial("aventurium_hammer", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial YELLORIUM_HAMMER = EnumHelper.addToolMaterial("yellorium_hammer", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial TYROLIUM_HAMMER = EnumHelper.addToolMaterial("tyrolium_hammer", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial OMEGANIUM_HAMMER = EnumHelper.addToolMaterial("omeganium_hammer", 2, 400, 3.0f, 5.0f, 20);
+
+    /*SWORDFIRE*/
+    public static final Item.ToolMaterial RHODONIUM_SWORD_FIRE = EnumHelper.addToolMaterial("rhodonium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial AVENTURIUM_SWORD_FIRE = EnumHelper.addToolMaterial("aventurium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial YELLORIUM_SWORD_FIRE = EnumHelper.addToolMaterial("yellorium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial TYROLIUM_SWORD_FIRE = EnumHelper.addToolMaterial("tyrolium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial OMEGANIUM_SWORD_FIRE = EnumHelper.addToolMaterial("omeganium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
 
 
 
