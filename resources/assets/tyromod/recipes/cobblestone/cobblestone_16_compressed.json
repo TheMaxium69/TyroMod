@@ -7,12 +7,12 @@
     ],
     "key": {
         "#": {
-            "item": "tyromod:compressed_cobblestone_13",
+            "item": "tyromod:cobblestone_15_compressed",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:compressed_cobblestone_14",
+        "item": "tyromod:cobblestone_16_compressed",
 		"data": 0
     }
 }

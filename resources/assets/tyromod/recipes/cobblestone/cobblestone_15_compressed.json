@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "tyromod:cobblestone_14_compressed",
+			"data": 0
+        }
+    },
+    "result": {
+        "item": "tyromod:cobblestone_15_compressed",
+		"data": 0
+    }
+}

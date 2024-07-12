@@ -30,6 +30,7 @@ public class RecipesMod {
         GameRegistry.addSmelting(new ItemStack(BlocksMod.blocks[56]), new ItemStack(ItemsMod.items[497]), 1.5F); /*VOLCANITE*/
         GameRegistry.addSmelting(new ItemStack(BlocksMod.blocks[54]), new ItemStack(ItemsMod.items[438]), 1.5F); /*NETHERITE*/
         GameRegistry.addSmelting(new ItemStack(BlocksMod.blocks[100]), new ItemStack(ItemsMod.items[937]), 1.5F); /*IUM*/
+        GameRegistry.addSmelting(new ItemStack(BlocksMod.blocks[127]), new ItemStack(ItemsMod.items[11]), 1.5F); /*ORE_COMPRESSED*/
 
         /*PURIFIED*/
         GameRegistry.addSmelting(new ItemStack(Items.DIAMOND), new ItemStack(ItemsMod.items[599]), 1.5F); /*PURIFIED DIAMOND*/
