@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "tyromod:items/yellorium_hammer"
+    "layer0": "tyromod:items/thyrium_hammer"
   }
 }

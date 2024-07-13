@@ -1176,16 +1176,16 @@ public class ItemsMod {
             /*HAMMER*/
             new ItemGenerateClass("tyrolium", "hammer", false, TYROLIUM_HAMMER, "1", "IUM"),
             new ItemGenerateClass("rhodonium", "hammer", false, RHODONIUM_HAMMER, "1", "IUM"),
-            new ItemGenerateClass("omeganium", "hammer", false, OMEGANIUM_HAMMER, "1", "IUM"),
+            new ItemGenerateClass("titanium", "hammer", false, TITANIUM_HAMMER, "1", "IUM"),
             new ItemGenerateClass("yellorium", "hammer", false, YELLORIUM_HAMMER, "1", "IUM"),
-            new ItemGenerateClass("aventurium", "hammer", false, AVENTURIUM_HAMMER, "1", "IUM"),
+            new ItemGenerateClass("thyrium", "hammer", false, THYRIUM_HAMMER, "1", "IUM"),
             new ItemGenerateClass("mercure", "hammer", false, MERCURE_HAMMER, "1", "0"),
 
             /*SWORDFIRE*/
             new ItemGenerateClass("tyrolium", "sword_fire", false, TYROLIUM_SWORD_FIRE, "3", "IUM"),
             new ItemGenerateClass("rhodonium", "sword_fire", false, RHODONIUM_SWORD_FIRE, "3", "IUM"),
             new ItemGenerateClass("yellorium", "sword_fire", false, YELLORIUM_SWORD_FIRE, "3", "IUM"),
-            new ItemGenerateClass("aventurium", "sword_fire", false, AVENTURIUM_SWORD_FIRE, "3", "IUM"),
+            new ItemGenerateClass("thyrium", "sword_fire", false, THYRIUM_SWORD_FIRE, "3", "IUM"),
             new ItemGenerateClass("omeganium", "sword_fire", false, OMEGANIUM_SWORD_FIRE, "3", "IUM"),
 
             /*FOOD*/

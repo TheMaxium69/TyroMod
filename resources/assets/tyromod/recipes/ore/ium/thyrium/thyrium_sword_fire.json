@@ -1,26 +1,26 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "###",
+        "#*#",
         "#*#",
         " / "
     ],
     "key": {
         "#": {
-            "item": "tyromod:mercurium",
+            "item": "tyromod:volcanium_ingot",
 			"data": 0
         },
         "*": {
-            "item": "tyromod:aventurium_ingot",
+            "item": "tyromod:thyrium",
             "data": 0
         },
         "/": {
-            "item": "tyromod:mercure_hammer",
+            "item": "tyromod:mercure_sword",
 			"data": 0
         }
     },
     "result": {
-        "item": "tyromod:aventurium_hammer",
+        "item": "tyromod:thyrium_sword_fire",
 		"data": 0
     }
 }
