@@ -244,7 +244,7 @@ public class MaterialsMod {
     public static final Item.ToolMaterial THYRIUM_SWORD_FIRE = EnumHelper.addToolMaterial("thyrium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
     public static final Item.ToolMaterial YELLORIUM_SWORD_FIRE = EnumHelper.addToolMaterial("yellorium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
     public static final Item.ToolMaterial TYROLIUM_SWORD_FIRE = EnumHelper.addToolMaterial("tyrolium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
-    public static final Item.ToolMaterial OMEGANIUM_SWORD_FIRE = EnumHelper.addToolMaterial("omeganium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
+    public static final Item.ToolMaterial COPPERIUM_SWORD_FIRE = EnumHelper.addToolMaterial("copperium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
 
 
 
