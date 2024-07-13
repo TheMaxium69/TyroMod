@@ -114,6 +114,7 @@ public class EventSecurity {
     //                    if (iterationEvent != 1) {
     //                        System.out.println("ENVOIE DU PAQUET");
                             TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
+
     //                        iterationEvent = 1;
     //                    }
 
