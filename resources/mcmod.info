@@ -1,16 +1,15 @@
 [
-{
-  "modid": "tyromod",
-  "name": "TyroMod",
-  "description": "Mod de la saison 3 de TyroServ.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "https://tyrolium.fr",
-  "updateUrl": "",
-  "authorList": ["Maxime Tournier"],
-  "credits": "Thanks for Tyrolium",
-  "logoFile": "logo.png",
-  "screenshots": [],
-  "dependencies": []
-}
+  {
+    "modid": "tyromod",
+    "name": "TyroMod",
+    "description": "Mod de la saison 3 de TyroServ.",
+    "url": "https://tyroserv.fr",
+    "version": "0.2.0",
+    "updateUrl": "",
+    "authorList": ["Maxime Tournier"],
+    "credits": "Thanks for Tyrolium",
+    "logoFile": "/logo.png",
+    "screenshots": [],
+    "dependencies": []
+  }
 ]
