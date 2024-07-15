@@ -87,39 +87,39 @@ public class MaterialsMod {
     public static final ItemArmor.ArmorMaterial TOPAZ_ARMOR = EnumHelper.addArmorMaterial("topaz_armor", Global.MODID + ":topaz", 35, new int[] {6, 9, 12, 6}, 29, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 3.0F);
 
     /*TIER IUM*/
-    public static final ItemArmor.ArmorMaterial ADAMANTIUM_ARMOR = EnumHelper.addArmorMaterial("adamantium_armor", Global.MODID + ":adamantium", 75, new int[] {8, 10, 11, 7}, 38, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial VOLCANIUM_ARMOR = EnumHelper.addArmorMaterial("volcanium_armor", Global.MODID + ":volcanium", 80, new int[] {8, 10, 11, 8}, 35, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial COPPERIUM_ARMOR = EnumHelper.addArmorMaterial("copperium_armor", Global.MODID + ":copperium", 80, new int[] {8, 10, 11, 8}, 35, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial PLATINIUM_ARMOR = EnumHelper.addArmorMaterial("platinium_armor", Global.MODID + ":platinium", 75, new int[] {8, 10, 11, 8}, 38, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial NETHERIUM_ARMOR = EnumHelper.addArmorMaterial("netherium_armor", Global.MODID + ":netherium", 95, new int[] {8, 10, 11, 8}, 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial CORANIUM_ARMOR = EnumHelper.addArmorMaterial("coranium_armor", Global.MODID + ":coranium", 69, new int[] {8, 9, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial DRACONIUM_ARMOR = EnumHelper.addArmorMaterial("draconium_armor", Global.MODID + ":draconium", 78, new int[] {9, 10, 12, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial RHODONIUM_ARMOR = EnumHelper.addArmorMaterial("rhodonium_armor", Global.MODID + ":rhodonium", 95, new int[] {8, 10, 12, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial AVENTURIUM_ARMOR = EnumHelper.addArmorMaterial("aventurium_armor", Global.MODID + ":aventurium", 69, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial VAPORIUM_ARMOR = EnumHelper.addArmorMaterial("vaporium_armor", Global.MODID + ":vaporium", 79, new int[] {7, 10, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial URANIUM_ARMOR = EnumHelper.addArmorMaterial("uranium_armor", Global.MODID + ":uranium", 76, new int[] {8, 10, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial MACRONIUM_ARMOR = EnumHelper.addArmorMaterial("macronium_armor", Global.MODID + ":macronium", 72, new int[] {8, 9, 10, 8}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial STEELIUM_ARMOR = EnumHelper.addArmorMaterial("steelium_armor", Global.MODID + ":steelium", 95, new int[] {8, 9, 11, 7}, 35, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial YELLORIUM_ARMOR = EnumHelper.addArmorMaterial("yellorium_armor", Global.MODID + ":yellorium", 69, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial TITANIUM_ARMOR = EnumHelper.addArmorMaterial("titanium_armor", Global.MODID + ":titanium", 87, new int[] {7, 10, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial RITONIUM_ARMOR = EnumHelper.addArmorMaterial("ritonium_armor", Global.MODID + ":ritonium", 87, new int[] {8, 9, 10, 8}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial PLUTONIUM_ARMOR = EnumHelper.addArmorMaterial("plutonium_armor", Global.MODID + ":plutonium", 89, new int[] {8, 9, 10, 8}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial PROTONIUM_ARMOR = EnumHelper.addArmorMaterial("protonium_armor", Global.MODID + ":protonium", 89, new int[] {8, 9, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial THYRIUM_ARMOR = EnumHelper.addArmorMaterial("thyrium_armor", Global.MODID + ":thyrium", 67, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial OBSIDIUM_ARMOR = EnumHelper.addArmorMaterial("obsidium_armor", Global.MODID + ":obsidium", 400, new int[] {8, 10, 12, 8}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial SAPPHIRIUM_ARMOR = EnumHelper.addArmorMaterial("sapphirium_armor", Global.MODID + ":sapphirium", 55, new int[] {8, 10, 11, 7}, 40, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial GOLDONIUM_ARMOR = EnumHelper.addArmorMaterial("goldonium_armor", Global.MODID + ":goldonium", 59, new int[] {8, 10, 11, 8}, 45, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial POLONIUM_ARMOR = EnumHelper.addArmorMaterial("polonium_armor", Global.MODID + ":polonium", 79, new int[] {8, 10, 11, 7}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial SILVERIUM_ARMOR = EnumHelper.addArmorMaterial("silverium_armor", Global.MODID + ":silverium", 90, new int[] {8, 9, 10, 8}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial TYROLIUM_ARMOR = EnumHelper.addArmorMaterial("tyrolium_armor", Global.MODID + ":tyrolium", 100, new int[] {9, 10, 12, 9}, 40, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial ENDERIUM_ARMOR = EnumHelper.addArmorMaterial("enderium_armor", Global.MODID + ":enderium", 88, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial MERCURIUM_ARMOR = EnumHelper.addArmorMaterial("mercurium_armor", Global.MODID + ":mercurium", 95, new int[] {8, 10, 11, 8}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial OMEGANIUM_ARMOR = EnumHelper.addArmorMaterial("omeganium_armor", Global.MODID + ":omeganium", 86, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial CHROMITIUM_ARMOR = EnumHelper.addArmorMaterial("chromitium_armor", Global.MODID + ":chromitium", 80, new int[] {8, 9, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
-    public static final ItemArmor.ArmorMaterial SILICIUM_ARMOR = EnumHelper.addArmorMaterial("silicium_armor", Global.MODID + ":silicium", 67, new int[] {8, 9, 10, 8}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
+    public static final ItemArmor.ArmorMaterial ADAMANTIUM_ARMOR = EnumHelper.addArmorMaterial("adamantium_armor", Global.MODID + ":adamantium", 75, new int[] {8, 10, 11, 7}, 38, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial VOLCANIUM_ARMOR = EnumHelper.addArmorMaterial("volcanium_armor", Global.MODID + ":volcanium", 80, new int[] {8, 10, 11, 8}, 35, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial COPPERIUM_ARMOR = EnumHelper.addArmorMaterial("copperium_armor", Global.MODID + ":copperium", 80, new int[] {8, 10, 11, 8}, 35, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial PLATINIUM_ARMOR = EnumHelper.addArmorMaterial("platinium_armor", Global.MODID + ":platinium", 75, new int[] {8, 10, 11, 8}, 38, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial NETHERIUM_ARMOR = EnumHelper.addArmorMaterial("netherium_armor", Global.MODID + ":netherium", 95, new int[] {8, 10, 11, 8}, 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial CORANIUM_ARMOR = EnumHelper.addArmorMaterial("coranium_armor", Global.MODID + ":coranium", 69, new int[] {8, 9, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial DRACONIUM_ARMOR = EnumHelper.addArmorMaterial("draconium_armor", Global.MODID + ":draconium", 78, new int[] {9, 10, 12, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial RHODONIUM_ARMOR = EnumHelper.addArmorMaterial("rhodonium_armor", Global.MODID + ":rhodonium", 95, new int[] {8, 10, 12, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial AVENTURIUM_ARMOR = EnumHelper.addArmorMaterial("aventurium_armor", Global.MODID + ":aventurium", 69, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial VAPORIUM_ARMOR = EnumHelper.addArmorMaterial("vaporium_armor", Global.MODID + ":vaporium", 79, new int[] {7, 10, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial URANIUM_ARMOR = EnumHelper.addArmorMaterial("uranium_armor", Global.MODID + ":uranium", 76, new int[] {8, 10, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial MACRONIUM_ARMOR = EnumHelper.addArmorMaterial("macronium_armor", Global.MODID + ":macronium", 72, new int[] {8, 9, 10, 8}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial STEELIUM_ARMOR = EnumHelper.addArmorMaterial("steelium_armor", Global.MODID + ":steelium", 95, new int[] {8, 9, 11, 7}, 35, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial YELLORIUM_ARMOR = EnumHelper.addArmorMaterial("yellorium_armor", Global.MODID + ":yellorium", 69, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial TITANIUM_ARMOR = EnumHelper.addArmorMaterial("titanium_armor", Global.MODID + ":titanium", 87, new int[] {7, 10, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial RITONIUM_ARMOR = EnumHelper.addArmorMaterial("ritonium_armor", Global.MODID + ":ritonium", 87, new int[] {8, 9, 10, 8}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial PLUTONIUM_ARMOR = EnumHelper.addArmorMaterial("plutonium_armor", Global.MODID + ":plutonium", 89, new int[] {8, 9, 10, 8}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial PROTONIUM_ARMOR = EnumHelper.addArmorMaterial("protonium_armor", Global.MODID + ":protonium", 89, new int[] {8, 9, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial THYRIUM_ARMOR = EnumHelper.addArmorMaterial("thyrium_armor", Global.MODID + ":thyrium", 67, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial OBSIDIUM_ARMOR = EnumHelper.addArmorMaterial("obsidium_armor", Global.MODID + ":obsidium", 400, new int[] {8, 10, 12, 8}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial SAPPHIRIUM_ARMOR = EnumHelper.addArmorMaterial("sapphirium_armor", Global.MODID + ":sapphirium", 55, new int[] {8, 10, 11, 7}, 40, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial GOLDONIUM_ARMOR = EnumHelper.addArmorMaterial("goldonium_armor", Global.MODID + ":goldonium", 59, new int[] {8, 10, 11, 8}, 45, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial POLONIUM_ARMOR = EnumHelper.addArmorMaterial("polonium_armor", Global.MODID + ":polonium", 79, new int[] {8, 10, 11, 7}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial SILVERIUM_ARMOR = EnumHelper.addArmorMaterial("silverium_armor", Global.MODID + ":silverium", 90, new int[] {8, 9, 10, 8}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial TYROLIUM_ARMOR = EnumHelper.addArmorMaterial("tyrolium_armor", Global.MODID + ":tyrolium", 100, new int[] {9, 10, 12, 9}, 40, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial ENDERIUM_ARMOR = EnumHelper.addArmorMaterial("enderium_armor", Global.MODID + ":enderium", 88, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial MERCURIUM_ARMOR = EnumHelper.addArmorMaterial("mercurium_armor", Global.MODID + ":mercurium", 95, new int[] {8, 10, 11, 8}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial OMEGANIUM_ARMOR = EnumHelper.addArmorMaterial("omeganium_armor", Global.MODID + ":omeganium", 86, new int[] {8, 10, 11, 8}, 39, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial CHROMITIUM_ARMOR = EnumHelper.addArmorMaterial("chromitium_armor", Global.MODID + ":chromitium", 80, new int[] {8, 9, 11, 7}, 36, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
+    public static final ItemArmor.ArmorMaterial SILICIUM_ARMOR = EnumHelper.addArmorMaterial("silicium_armor", Global.MODID + ":silicium", 67, new int[] {8, 9, 10, 8}, 37, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 5.0F);
 
     /*TIER ULTIME*/
-    public static final ItemArmor.ArmorMaterial ULTIUM_ARMOR = EnumHelper.addArmorMaterial("ultium_armor", Global.MODID + ":ultium", 350, new int[] {12, 14, 16, 12}, 40, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0F);
+    public static final ItemArmor.ArmorMaterial ULTIUM_ARMOR = EnumHelper.addArmorMaterial("ultium_armor", Global.MODID + ":ultium", 350, new int[] {12, 14, 16, 12}, 40, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 7.0F);
 
         /********************
          * Tool Materials
@@ -193,39 +193,39 @@ public class MaterialsMod {
     public static final Item.ToolMaterial TOPAZ_TOOL = EnumHelper.addToolMaterial("topaz_tool", 4, 2500, 20.0F, 8.0F, 30);
 
     /*TIER IUM*/
-    public static final Item.ToolMaterial ADAMANTIUM_TOOL = EnumHelper.addToolMaterial("adamantium_tool", 4, 2500, 23.0F, 17.0F, 30);
-    public static final Item.ToolMaterial VOLCANIUM_TOOL = EnumHelper.addToolMaterial("volcanium_tool", 4, 2500, 24.0F, 18.0F, 30);
-    public static final Item.ToolMaterial COPPERIUM_TOOL = EnumHelper.addToolMaterial("copperium_tool", 4, 2500, 23.0F, 18.0F, 30);
-    public static final Item.ToolMaterial PLATINIUM_TOOL = EnumHelper.addToolMaterial("platinium_tool", 4, 2500, 23.0F, 15.0F, 30);
-    public static final Item.ToolMaterial NETHERIUM_TOOL = EnumHelper.addToolMaterial("netherium_tool", 4, 2500, 23.0F, 17.0F, 30);
+    public static final Item.ToolMaterial ADAMANTIUM_TOOL = EnumHelper.addToolMaterial("adamantium_tool", 4, 2500, 23.0F, 14.0F, 30);
+    public static final Item.ToolMaterial VOLCANIUM_TOOL = EnumHelper.addToolMaterial("volcanium_tool", 4, 2500, 24.0F, 15.0F, 30);
+    public static final Item.ToolMaterial COPPERIUM_TOOL = EnumHelper.addToolMaterial("copperium_tool", 4, 2500, 23.0F, 14.0F, 30);
+    public static final Item.ToolMaterial PLATINIUM_TOOL = EnumHelper.addToolMaterial("platinium_tool", 4, 2500, 23.0F, 14.0F, 30);
+    public static final Item.ToolMaterial NETHERIUM_TOOL = EnumHelper.addToolMaterial("netherium_tool", 4, 2500, 23.0F, 15.0F, 30);
     public static final Item.ToolMaterial CORANIUM_TOOL = EnumHelper.addToolMaterial("coranium_tool", 4, 2500, 23.0F, 13.0F, 30);
-    public static final Item.ToolMaterial DRACONIUM_TOOL = EnumHelper.addToolMaterial("draconium_tool", 4, 2500, 24.0F, 18.0F, 30);
-    public static final Item.ToolMaterial RHODONIUM_TOOL = EnumHelper.addToolMaterial("rhodonium_tool", 4, 2500, 24.0F, 18.0F, 30);
-    public static final Item.ToolMaterial AVENTURIUM_TOOL = EnumHelper.addToolMaterial("aventurium_tool", 4, 2500, 23.0F, 18.0F, 30);
-    public static final Item.ToolMaterial VAPORIUM_TOOL = EnumHelper.addToolMaterial("vaporium_tool", 4, 2500, 23.0F, 15.0F, 30);
-    public static final Item.ToolMaterial URANIUM_TOOL = EnumHelper.addToolMaterial("uranium_tool", 4, 2500, 23.0F, 14.0F, 30);
-    public static final Item.ToolMaterial MACRONIUM_TOOL = EnumHelper.addToolMaterial("macronium_tool", 4, 2500, 23.0F, 14.0F, 30);
+    public static final Item.ToolMaterial DRACONIUM_TOOL = EnumHelper.addToolMaterial("draconium_tool", 4, 2500, 24.0F, 15.0F, 30);
+    public static final Item.ToolMaterial RHODONIUM_TOOL = EnumHelper.addToolMaterial("rhodonium_tool", 4, 2500, 24.0F, 15.0F, 30);
+    public static final Item.ToolMaterial AVENTURIUM_TOOL = EnumHelper.addToolMaterial("aventurium_tool", 4, 2500, 23.0F, 15.0F, 30);
+    public static final Item.ToolMaterial VAPORIUM_TOOL = EnumHelper.addToolMaterial("vaporium_tool", 4, 2500, 23.0F, 14.0F, 30);
+    public static final Item.ToolMaterial URANIUM_TOOL = EnumHelper.addToolMaterial("uranium_tool", 4, 2500, 23.0F, 13.0F, 30);
+    public static final Item.ToolMaterial MACRONIUM_TOOL = EnumHelper.addToolMaterial("macronium_tool", 4, 2500, 23.0F, 13.0F, 30);
     public static final Item.ToolMaterial STEELIUM_TOOL = EnumHelper.addToolMaterial("steelium_tool", 4, 2500, 23.0F, 13.0F, 30);
     public static final Item.ToolMaterial YELLORIUM_TOOL = EnumHelper.addToolMaterial("yellorium_tool", 4, 2500, 23.0F, 15.0F, 30);
-    public static final Item.ToolMaterial TITANIUM_TOOL = EnumHelper.addToolMaterial("titanium_tool", 4, 2500, 23.0F, 15.0F, 30);
-    public static final Item.ToolMaterial RITONIUM_TOOL = EnumHelper.addToolMaterial("ritonium_tool", 4, 2500, 23.0F, 14.0F, 30);
-    public static final Item.ToolMaterial PLUTONIUM_TOOL = EnumHelper.addToolMaterial("plutonium_tool", 4, 2500, 23.0F, 14.0F, 30);
-    public static final Item.ToolMaterial PROTONIUM_TOOL = EnumHelper.addToolMaterial("protonium_tool", 4, 2500, 23.0F, 14.0F, 30);
-    public static final Item.ToolMaterial THYRIUM_TOOL = EnumHelper.addToolMaterial("thyrium_tool", 4, 2500, 23.0F, 18.0F, 30);
-    public static final Item.ToolMaterial OBSIDIUM_TOOL = EnumHelper.addToolMaterial("obsidium_tool", 4, 5000, 24.0F, 16.0F, 30);
-    public static final Item.ToolMaterial SAPPHIRIUM_TOOL = EnumHelper.addToolMaterial("sapphirium_tool", 4, 2500, 23.0F, 14.0F, 30);
+    public static final Item.ToolMaterial TITANIUM_TOOL = EnumHelper.addToolMaterial("titanium_tool", 4, 2500, 23.0F, 14.0F, 30);
+    public static final Item.ToolMaterial RITONIUM_TOOL = EnumHelper.addToolMaterial("ritonium_tool", 4, 2500, 23.0F, 13.0F, 30);
+    public static final Item.ToolMaterial PLUTONIUM_TOOL = EnumHelper.addToolMaterial("plutonium_tool", 4, 2500, 23.0F, 13.0F, 30);
+    public static final Item.ToolMaterial PROTONIUM_TOOL = EnumHelper.addToolMaterial("protonium_tool", 4, 2500, 23.0F, 13.0F, 30);
+    public static final Item.ToolMaterial THYRIUM_TOOL = EnumHelper.addToolMaterial("thyrium_tool", 4, 2500, 23.0F, 15.0F, 30);
+    public static final Item.ToolMaterial OBSIDIUM_TOOL = EnumHelper.addToolMaterial("obsidium_tool", 4, 5000, 24.0F, 15.0F, 30);
+    public static final Item.ToolMaterial SAPPHIRIUM_TOOL = EnumHelper.addToolMaterial("sapphirium_tool", 4, 2500, 23.0F, 13.0F, 30);
     public static final Item.ToolMaterial GOLDONIUM_TOOL = EnumHelper.addToolMaterial("goldonium_tool", 4, 2500, 25.0F, 12.0F, 30);
     public static final Item.ToolMaterial POLONIUM_TOOL = EnumHelper.addToolMaterial("polonium_tool", 4, 2500, 23.0F, 14.0F, 30);
     public static final Item.ToolMaterial SILVERIUM_TOOL = EnumHelper.addToolMaterial("silverium_tool", 4, 2500, 23.0F, 13.0F, 30);
-    public static final Item.ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 4, 2500, 25.0F, 19.0F, 30);
-    public static final Item.ToolMaterial ENDERIUM_TOOL = EnumHelper.addToolMaterial("enderium_tool", 4, 2500, 23.0F, 17.0F, 30);
-    public static final Item.ToolMaterial MERCURIUM_TOOL = EnumHelper.addToolMaterial("mercurium_tool", 4, 2500, 24.0F, 16.0F, 30);
-    public static final Item.ToolMaterial OMEGANIUM_TOOL = EnumHelper.addToolMaterial("omeganium_tool", 4, 2500, 23.0F, 18.0F, 30);
+    public static final Item.ToolMaterial TYROLIUM_TOOL = EnumHelper.addToolMaterial("tyrolium_tool", 4, 2500, 25.0F, 16.0F, 30);
+    public static final Item.ToolMaterial ENDERIUM_TOOL = EnumHelper.addToolMaterial("enderium_tool", 4, 2500, 23.0F, 14.0F, 30);
+    public static final Item.ToolMaterial MERCURIUM_TOOL = EnumHelper.addToolMaterial("mercurium_tool", 4, 2500, 24.0F, 14.0F, 30);
+    public static final Item.ToolMaterial OMEGANIUM_TOOL = EnumHelper.addToolMaterial("omeganium_tool", 4, 2500, 23.0F, 15.0F, 30);
     public static final Item.ToolMaterial CHROMITIUM_TOOL = EnumHelper.addToolMaterial("chromitium_tool", 4, 2500, 23.0F, 13.0F, 30);
-    public static final Item.ToolMaterial SILICIUM_TOOL = EnumHelper.addToolMaterial("silicium_tool", 4, 2500, 23.0F, 15.0F, 30);
+    public static final Item.ToolMaterial SILICIUM_TOOL = EnumHelper.addToolMaterial("silicium_tool", 4, 2500, 23.0F, 13.0F, 30);
 
     /*TIER ULTIME*/
-    public static final Item.ToolMaterial ULTIUM_TOOL = EnumHelper.addToolMaterial("ultium_tool", 5, 3000, 26.0F, 20.0F, 25);
+    public static final Item.ToolMaterial ULTIUM_TOOL = EnumHelper.addToolMaterial("ultium_tool", 5, 3000, 26.0F, 18.0F, 25);
 
     /********************
      * Autre Materials
