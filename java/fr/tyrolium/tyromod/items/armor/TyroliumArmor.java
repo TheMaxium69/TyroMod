@@ -20,6 +20,11 @@ public class TyroliumArmor extends DefaultArmor implements IHasModel {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
+
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof TyroliumArmor) {
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+        }
+
         if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof TyroliumArmor
             && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof TyroliumArmor
             && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof TyroliumArmor

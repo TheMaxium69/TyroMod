@@ -16,10 +16,15 @@ public class TitaniumArmor extends DefaultArmor implements IHasModel {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof AdamantiumArmor) {
+
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof TitaniumArmor) {
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+        }
+
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof TitaniumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof TitaniumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof TitaniumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof TitaniumArmor) {
 
             player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 10, 1, false, false));
 

@@ -16,10 +16,15 @@ public class MercuriumArmor extends DefaultArmor implements IHasModel {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof AdamantiumArmor) {
+
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof MercuriumArmor) {
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+        }
+
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof MercuriumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof MercuriumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof MercuriumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof MercuriumArmor) {
 
             player.addPotionEffect(new PotionEffect(MobEffects.SATURATION, 10, 1, false, false));
             player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 10, 1, false, false));

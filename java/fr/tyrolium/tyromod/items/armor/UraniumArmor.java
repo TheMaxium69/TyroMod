@@ -16,10 +16,15 @@ public class UraniumArmor extends DefaultArmor implements IHasModel {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof AdamantiumArmor) {
+
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof UraniumArmor) {
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+        }
+
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof UraniumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof UraniumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof UraniumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof UraniumArmor) {
 
             player.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 10, 1, false, false));
 

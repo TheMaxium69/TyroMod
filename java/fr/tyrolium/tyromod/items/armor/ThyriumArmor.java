@@ -16,10 +16,15 @@ public class ThyriumArmor extends DefaultArmor implements IHasModel {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof AdamantiumArmor
-                && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof AdamantiumArmor) {
+
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof ThyriumArmor) {
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+        }
+
+        if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof ThyriumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.CHEST).getItem() instanceof ThyriumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof ThyriumArmor
+                && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof ThyriumArmor) {
 
             player.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 10, 2, false, false));
 
