@@ -18,7 +18,7 @@ public class AdamantiumArmor extends DefaultArmor implements IHasModel {
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
 
         if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof AdamantiumArmor) {
-            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 0, false, false));
         }
 
         if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof AdamantiumArmor
@@ -26,7 +26,7 @@ public class AdamantiumArmor extends DefaultArmor implements IHasModel {
                 && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof AdamantiumArmor
                 && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof AdamantiumArmor) {
 
-            player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 10, 1, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 10, 0, false, false));
 
         }
     }

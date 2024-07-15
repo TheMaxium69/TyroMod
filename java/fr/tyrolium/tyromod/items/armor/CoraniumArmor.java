@@ -18,7 +18,7 @@ public class CoraniumArmor extends DefaultArmor implements IHasModel {
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
 
         if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof CoraniumArmor) {
-            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 0, false, false));
         }
 
         if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof CoraniumArmor
@@ -26,7 +26,7 @@ public class CoraniumArmor extends DefaultArmor implements IHasModel {
                 && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof CoraniumArmor
                 && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof CoraniumArmor) {
 
-            player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 10, 1, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 10, 0, false, false));
 
         }
     }

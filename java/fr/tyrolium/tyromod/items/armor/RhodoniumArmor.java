@@ -18,7 +18,7 @@ public class RhodoniumArmor extends DefaultArmor implements IHasModel {
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
 
         if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof RhodoniumArmor) {
-            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 0, false, false));
         }
 
         if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof RhodoniumArmor
@@ -26,8 +26,8 @@ public class RhodoniumArmor extends DefaultArmor implements IHasModel {
                 && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof RhodoniumArmor
                 && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof RhodoniumArmor) {
 
-            player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 10, 1, false, false));
-            player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 10, 1, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 10, 0, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 10, 0, false, false));
 
         }
     }

@@ -18,7 +18,7 @@ public class CopperiumArmor extends DefaultArmor implements IHasModel {
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
 
         if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof CopperiumArmor) {
-            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 1, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 10, 0, false, false));
         }
 
         if (player.getItemStackFromSlot(EntityEquipmentSlot.HEAD).getItem() instanceof CopperiumArmor
@@ -26,8 +26,8 @@ public class CopperiumArmor extends DefaultArmor implements IHasModel {
                 && player.getItemStackFromSlot(EntityEquipmentSlot.LEGS).getItem() instanceof CopperiumArmor
                 && player.getItemStackFromSlot(EntityEquipmentSlot.FEET).getItem() instanceof CopperiumArmor) {
 
-            player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 10, 1, false, false));
-            player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 10, 1, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 10, 0, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 10, 0, false, false));
 
         }
     }
