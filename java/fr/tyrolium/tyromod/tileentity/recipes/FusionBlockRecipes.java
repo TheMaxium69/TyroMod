@@ -76,6 +76,10 @@ public class FusionBlockRecipes {
 
                     }
 
+//                    if (itemId != "err") {
+//                        return new ItemStack(ItemsMod.items[Integer.parseInt(itemId)]);
+//                    }
+
                 }
 
             }
@@ -107,7 +111,7 @@ public class FusionBlockRecipes {
             conn.disconnect();
 
             String result = content.toString();
-//            System.out.println("Reponse du serveur : " + result);
+            System.out.println("Reponse du serveur : " + result);
 //            System.out.println("REQUEST ENVOYER");
 
             if (!result.equals("\"err\"")) {
