@@ -27,7 +27,6 @@ public class WorldGenOres implements IWorldGenerator
     private WorldGenerator netherite_ore;
     private WorldGenerator obsidian_renforced;
     private WorldGenerator guardian;
-    private WorldGenerator volcanite_ore_nether;
 
     public WorldGenOres()
     {
