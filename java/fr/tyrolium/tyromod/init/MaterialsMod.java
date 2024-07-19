@@ -232,12 +232,12 @@ public class MaterialsMod {
      *******************/
 
     /*HAMMER*/
-    public static final Item.ToolMaterial MERCURE_HAMMER = EnumHelper.addToolMaterial("mercure_hammer", 3, 32, 1.0F, 3.0F, 5);
-    public static final Item.ToolMaterial RHODONIUM_HAMMER = EnumHelper.addToolMaterial("rhodonium_hammer", 4, 1000, 5.0F, 15.0F, 8);
-    public static final Item.ToolMaterial THYRIUM_HAMMER = EnumHelper.addToolMaterial("thyrium_hammer", 4, 1000, 5.0F, 15.0F, 8);
-    public static final Item.ToolMaterial YELLORIUM_HAMMER = EnumHelper.addToolMaterial("yellorium_hammer", 4, 1000, 5.0F, 15.0F, 8);
-    public static final Item.ToolMaterial TYROLIUM_HAMMER = EnumHelper.addToolMaterial("tyrolium_hammer", 4, 1500, 6.0F, 16.0F, 8);
-    public static final Item.ToolMaterial TITANIUM_HAMMER = EnumHelper.addToolMaterial("titanium_hammer", 4, 1000, 5.0F, 15.0F, 8);
+    public static final Item.ToolMaterial MERCURE_HAMMER = EnumHelper.addToolMaterial("mercure_hammer", 3, 32, 0.7F, 3.0F, 5);
+    public static final Item.ToolMaterial RHODONIUM_HAMMER = EnumHelper.addToolMaterial("rhodonium_hammer", 4, 1000, 1.0F, 15.0F, 8);
+    public static final Item.ToolMaterial THYRIUM_HAMMER = EnumHelper.addToolMaterial("thyrium_hammer", 4, 1000, 1.0F, 15.0F, 8);
+    public static final Item.ToolMaterial YELLORIUM_HAMMER = EnumHelper.addToolMaterial("yellorium_hammer", 4, 1000, 1.0F, 15.0F, 8);
+    public static final Item.ToolMaterial TYROLIUM_HAMMER = EnumHelper.addToolMaterial("tyrolium_hammer", 4, 1500, 1.3F, 16.0F, 8);
+    public static final Item.ToolMaterial TITANIUM_HAMMER = EnumHelper.addToolMaterial("titanium_hammer", 4, 1000, 1.0F, 15.0F, 8);
 
     /*SWORDFIRE*/
     public static final Item.ToolMaterial RHODONIUM_SWORD_FIRE = EnumHelper.addToolMaterial("rhodonium_sword_fire", 2, 400, 3.0f, 5.0f, 20);
