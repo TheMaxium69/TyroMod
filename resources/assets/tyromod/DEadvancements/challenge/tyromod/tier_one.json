@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:grass"
+        },
+        "title": {
+            "translate": "advancements.tyromod.tier_one.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.tier_one.description"
+        }
+    },
+    "parent": "challenge:tyromod/root",
+    "criteria": {
+        "copper": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:copper_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "tin": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:tin_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

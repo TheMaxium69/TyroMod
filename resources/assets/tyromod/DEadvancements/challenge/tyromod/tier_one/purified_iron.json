@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:purified_iron_gem"
+        },
+        "title": {
+            "translate": "advancements.tyromod.purified_iron.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.purified_iron.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_one/iron",
+    "criteria": {
+        "purified_iron": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:purified_iron_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

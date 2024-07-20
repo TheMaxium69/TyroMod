@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:enderine_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.enderine.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.enderine.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_one/diamond",
+    "criteria": {
+        "enderine": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:enderine_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

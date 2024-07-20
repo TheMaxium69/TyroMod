@@ -2,6 +2,26 @@
 #    TYROMOD   #
 ################
 
+# ADVANCEMENT
+advancements.tyromod.root.title=TyroServ
+advancements.tyromod.root.description=Bienvenue sur TyroServ
+
+advancements.tyromod.tier_one.title=Tier 1
+advancements.tyromod.tier_one.description=Obtenir tout les Tier 1
+advancements.tyromod.tier_two.title=Tier 2
+advancements.tyromod.tier_two.description=Obtenir tout les Tier 2
+advancements.tyromod.tier_three.title=Tier 3
+advancements.tyromod.tier_three.description=Obtenir tout les Tier 3
+advancements.tyromod.tier_ium.title=Tier IUM
+advancements.tyromod.tier_ium.description=Obtenir tout les Tier IUM
+advancements.tyromod.tier_final.title=Tier Final
+advancements.tyromod.tier_final.description=Obtenir tout les Tier Final
+
+advancements.tyromod.ultium.title=Ultium
+advancements.tyromod.ultium.description=Obtenir un Ultium
+advancements.tyromod.rhodonite.title=Rhodonite
+advancements.tyromod.rhodonite.description=Obtenir une Rhodonite
+
 # GUI
 itemGroup.TyroModOreV1=TyroMod Minerai V1
 itemGroup.TyroModOreV3=TyroMod Minerai V3

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:rhodonite"
+        },
+        "title": {
+            "translate": "advancements.tyromod.rhodonite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.rhodonite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/coranite",
+    "criteria": {
+        "automatic": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:rhodonite",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

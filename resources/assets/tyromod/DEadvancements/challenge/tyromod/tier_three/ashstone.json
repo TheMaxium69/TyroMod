@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:ashstone_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.ashstone.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.ashstone.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/argonite",
+    "criteria": {
+        "automatic": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ashstone_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

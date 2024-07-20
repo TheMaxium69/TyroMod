@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:tin_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.tin.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.tin.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_one/purified_iron",
+    "criteria": {
+        "tin": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:tin_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

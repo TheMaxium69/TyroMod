@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond"
+        },
+        "title": {
+            "translate": "advancements.tyromod.diamond.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.diamond.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_one/copper",
+    "criteria": {
+        "diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

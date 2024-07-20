@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:copper_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.copper.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.copper.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_one",
+    "criteria": {
+        "copper": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:copper_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

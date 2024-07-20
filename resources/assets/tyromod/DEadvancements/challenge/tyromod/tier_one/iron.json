@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.iron.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.iron.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_one/gold",
+    "criteria": {
+        "iron": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

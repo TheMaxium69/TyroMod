@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:flint_gem"
+        },
+        "title": {
+            "translate": "advancements.tyromod.flint.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.flint.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_one/enderine",
+    "criteria": {
+        "flint": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:flint_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

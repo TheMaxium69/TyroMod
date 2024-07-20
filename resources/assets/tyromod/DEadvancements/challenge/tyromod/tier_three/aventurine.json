@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:aventurine"
+        },
+        "title": {
+            "translate": "advancements.tyromod.aventurine.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.aventurine.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/ashstone",
+    "criteria": {
+        "automatic": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:aventurine",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

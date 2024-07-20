@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.gold.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.gold.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_one/flint",
+    "criteria": {
+        "gold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:gold_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}
