@@ -231,8 +231,6 @@ public class MaterialsMod {
      * Autre Materials
      *******************/
 
-
-
     /*HAMMER*/
     public static final Item.ToolMaterial MERCURE_HAMMER = EnumHelper.addToolMaterial("mercure_hammer", 3, 32, 0.7F, 3.0F, 5);
     public static final Item.ToolMaterial RHODONIUM_HAMMER = EnumHelper.addToolMaterial("rhodonium_hammer", 4, 1000, 1.0F, 15.0F, 8);

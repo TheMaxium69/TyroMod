@@ -1,8 +1,5 @@
 {
   "variants": {
-    "axis=y":  { "model": "tyromod:netherite_ore" },
-    "axis=z":   { "model": "tyromod:netherite_ore", "x": 90 },
-    "axis=x":   { "model": "tyromod:netherite_ore", "x": 90, "y": 90 },
-    "axis=none": { "model": "tyromod:netherite_ore" }
+    "normal": { "model": "tyromod:netherite_ore" }
   }
 }

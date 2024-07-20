@@ -1,6 +1,67 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "tyromod:items/ultium_powder"
-  }
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "tyromod:3d/ultium_powder",
+		"dust": "tyromod:3d/ultium_powder"
+	},
+	"elements": [
+		{
+			"from": [4.5, 5, 4.5],
+			"to": [11.5, 8, 11.5],
+			"faces": {
+				"north": {"uv": [3.5, 3.5, 7, 5], "texture": "#dust"},
+				"east": {"uv": [0, 3.5, 3.5, 5], "texture": "#dust"},
+				"south": {"uv": [10.5, 3.5, 14, 5], "texture": "#dust"},
+				"west": {"uv": [7, 3.5, 10.5, 5], "texture": "#dust"},
+				"up": {"uv": [7, 3.5, 3.5, 0], "texture": "#dust"},
+				"down": {"uv": [10.5, 0, 7, 3.5], "texture": "#dust"}
+			}
+		},
+		{
+			"from": [5.5, 8, 5.5],
+			"to": [10.5, 10, 10.5],
+			"faces": {
+				"north": {"uv": [2.5, 7.5, 5, 8.5], "texture": "#dust"},
+				"east": {"uv": [0, 7.5, 2.5, 8.5], "texture": "#dust"},
+				"south": {"uv": [7.5, 7.5, 10, 8.5], "texture": "#dust"},
+				"west": {"uv": [5, 7.5, 7.5, 8.5], "texture": "#dust"},
+				"up": {"uv": [5, 7.5, 2.5, 5], "texture": "#dust"},
+				"down": {"uv": [7.5, 5, 5, 7.5], "texture": "#dust"}
+			}
+		},
+		{
+			"from": [6.5, 10, 6.5],
+			"to": [9.5, 12, 9.5],
+			"faces": {
+				"north": {"uv": [11.5, 6.5, 13, 7.5], "texture": "#dust"},
+				"east": {"uv": [10, 6.5, 11.5, 7.5], "texture": "#dust"},
+				"south": {"uv": [14.5, 6.5, 16, 7.5], "texture": "#dust"},
+				"west": {"uv": [13, 6.5, 14.5, 7.5], "texture": "#dust"},
+				"up": {"uv": [13, 6.5, 11.5, 5], "texture": "#dust"},
+				"down": {"uv": [14.5, 5, 13, 6.5], "texture": "#dust"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 1.75, 0],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 1.75, 0],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"head": {
+			"translation": [0, 9.25, 0]
+		},
+		"fixed": {
+			"rotation": [-26, 43, 0],
+			"translation": [0, 0, -0.5],
+			"scale": [1.125, 1.125, 1.125]
+		}
+	}
 }
