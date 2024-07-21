@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:dragonstone_gem"
+        },
+        "title": {
+            "translate": "advancements.tyromod.dragonstone.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.dragonstone.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/draconite",
+    "criteria": {
+        "dragonstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:dragonstone_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

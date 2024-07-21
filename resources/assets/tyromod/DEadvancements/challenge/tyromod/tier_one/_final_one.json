@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:grass"
+        },
+        "title": {
+            "translate": "advancements.tyromod.goal_one.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.goal_one.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_one/tin",
+    "criteria": {
+        "automatic": {
+            "trigger": "minecraft:location"
+        }
+    }
+}
