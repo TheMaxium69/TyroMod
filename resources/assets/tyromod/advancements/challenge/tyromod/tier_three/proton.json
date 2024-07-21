@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:proton_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.proton.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.proton.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/polonite",
+    "criteria": {
+        "proton": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:proton_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

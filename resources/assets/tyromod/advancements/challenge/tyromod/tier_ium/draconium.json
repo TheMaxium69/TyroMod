@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:draconium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.draconium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.draconium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/coranium",
+    "criteria": {
+        "draconium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:draconium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

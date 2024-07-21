@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:copperium_gem"
+        },
+        "title": {
+            "translate": "advancements.tyromod.copperium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.copperium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/chromitium",
+    "criteria": {
+        "copperium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:copperium_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

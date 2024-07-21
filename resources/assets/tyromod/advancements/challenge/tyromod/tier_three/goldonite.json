@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:goldonite"
+        },
+        "title": {
+            "translate": "advancements.tyromod.goldonite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.goldonite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/galactite",
+    "criteria": {
+        "goldonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:goldonite",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

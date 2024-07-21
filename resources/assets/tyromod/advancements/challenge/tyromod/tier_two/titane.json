@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:titane_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.titane.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.titane.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/steel",
+    "criteria": {
+        "titane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:titane_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

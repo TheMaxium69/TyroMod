@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:ritonite_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.ritonite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.ritonite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/rhodonite",
+    "criteria": {
+        "ritonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ritonite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

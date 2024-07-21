@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:tyrolium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.tyrolium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.tyrolium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/titanium",
+    "criteria": {
+        "tyrolium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:tyrolium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

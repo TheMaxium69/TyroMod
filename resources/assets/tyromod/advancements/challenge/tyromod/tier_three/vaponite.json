@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:vaponite"
+        },
+        "title": {
+            "translate": "advancements.tyromod.vaponite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.vaponite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/uranite",
+    "criteria": {
+        "vaponite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:vaponite",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

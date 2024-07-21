@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:yellorium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.yellorium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.yellorium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/volcanium",
+    "criteria": {
+        "yellorium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:yellorium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:enderium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.enderium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.enderium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/draconium",
+    "criteria": {
+        "enderium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:enderium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

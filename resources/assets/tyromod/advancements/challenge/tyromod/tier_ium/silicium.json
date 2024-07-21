@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:silicium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.silicium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.silicium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/sapphirium",
+    "criteria": {
+        "silicium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:silicium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

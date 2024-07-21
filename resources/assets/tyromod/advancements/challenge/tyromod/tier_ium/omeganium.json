@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:omeganium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.omeganium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.omeganium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/obsidium",
+    "criteria": {
+        "omeganium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:omeganium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

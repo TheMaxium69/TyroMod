@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:fusion_block2"
+        },
+        "title": {
+            "translate": "advancements.tyromod.goal_three.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.goal_three.description"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "goal"
+    },
+    "parent": "challenge:tyromod/tier_three/vaponite",
+    "criteria": {
+        "automatic": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

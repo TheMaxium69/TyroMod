@@ -1,0 +1,182 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:fusion_block"
+        },
+        "title": {
+            "translate": "advancements.tyromod.tier_two.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.tier_two.description"
+        },
+        "frame": "goal"
+    },
+    "parent": "challenge:tyromod/root",
+    "criteria": {
+        "amethys": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:amethys",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "aurore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:aurore_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "bronze": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:bronze_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "emerald": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:emerald",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "enderite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:enderite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "mythril": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:mythril_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "obsidian": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:obsidian_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "purified_diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:purified_diamond_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "purified_gold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:purified_gold_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "ruby": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ruby",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "sapphire": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:sapphire",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "steel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:steel_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "titane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:titane_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "volcanite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:volcanite",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "yellorite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:yellorite",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

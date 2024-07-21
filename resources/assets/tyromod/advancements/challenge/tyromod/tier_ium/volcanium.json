@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:volcanium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.volcanium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.volcanium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/vaporium",
+    "criteria": {
+        "volcanium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:volcanium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

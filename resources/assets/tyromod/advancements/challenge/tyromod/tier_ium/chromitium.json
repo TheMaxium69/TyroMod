@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:chromitium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.chromitium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.chromitium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/aventurium",
+    "criteria": {
+        "chromitium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:chromitium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:malachite_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.malachite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.malachite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/macronite",
+    "criteria": {
+        "malachite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:malachite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:fusion_block3"
+        },
+        "title": {
+            "translate": "advancements.tyromod.goal_ium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.goal_ium.description"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "goal"
+    },
+    "parent": "challenge:tyromod/tier_ium/yellorium",
+    "criteria": {
+        "automatic": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

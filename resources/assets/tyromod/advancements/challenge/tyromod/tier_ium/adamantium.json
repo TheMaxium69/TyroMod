@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:adamantium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.adamantium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.adamantium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium",
+    "criteria": {
+        "adamantium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:adamantium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

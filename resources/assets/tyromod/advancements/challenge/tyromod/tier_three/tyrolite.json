@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:tyrolite_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.tyrolite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.tyrolite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/topaz",
+    "criteria": {
+        "tyrolite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:tyrolite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:protonium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.protonium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.protonium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/polonium",
+    "criteria": {
+        "protonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:protonium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

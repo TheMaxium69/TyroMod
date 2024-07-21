@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:plutonium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.plutonium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.plutonium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/platinium",
+    "criteria": {
+        "plutonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:plutonium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

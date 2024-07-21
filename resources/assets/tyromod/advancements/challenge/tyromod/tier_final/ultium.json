@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:ultium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.ultium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.ultium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_final/ultium_powder",
+    "criteria": {
+        "ultium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

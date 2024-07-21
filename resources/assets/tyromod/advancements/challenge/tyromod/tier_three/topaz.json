@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:topaz"
+        },
+        "title": {
+            "translate": "advancements.tyromod.topaz.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.topaz.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/sinisite",
+    "criteria": {
+        "topaz": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:topaz",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

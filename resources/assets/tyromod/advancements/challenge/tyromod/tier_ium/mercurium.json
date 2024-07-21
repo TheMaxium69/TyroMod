@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:mercurium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.mercurium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.mercurium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/macronium",
+    "criteria": {
+        "mercurium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:mercurium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

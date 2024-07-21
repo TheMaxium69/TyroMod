@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:steelium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.steelium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.steelium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/silverium",
+    "criteria": {
+        "steelium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:steelium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

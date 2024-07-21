@@ -1,0 +1,60 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:ultium_chestplate"
+        },
+        "title": {
+            "translate": "advancements.tyromod.ultium_armor.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.ultium_armor.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_final/ultium",
+    "criteria": {
+        "helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium_helmet",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium_chestplate",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium_leggings",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium_boots",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

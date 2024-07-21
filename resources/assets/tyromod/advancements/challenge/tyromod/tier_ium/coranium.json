@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:coranium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.coranium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.coranium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/copperium",
+    "criteria": {
+        "coranium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:coranium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

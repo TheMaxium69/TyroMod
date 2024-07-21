@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:fyrite_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.fyrite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.fyrite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/ender",
+    "criteria": {
+        "fyrite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:fyrite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

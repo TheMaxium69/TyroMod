@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:illumenite_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.illumenite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.illumenite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/guardian",
+    "criteria": {
+        "illumenite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:illumenite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

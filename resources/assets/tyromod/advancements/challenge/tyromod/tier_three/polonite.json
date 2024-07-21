@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:polonite"
+        },
+        "title": {
+            "translate": "advancements.tyromod.polonite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.polonite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/plutonite",
+    "criteria": {
+        "polonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:polonite",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

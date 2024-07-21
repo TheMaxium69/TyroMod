@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:titanium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.titanium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.titanium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/thyrium",
+    "criteria": {
+        "titanium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:titanium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

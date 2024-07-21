@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:bronze_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.bronze.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.bronze.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/aurore",
+    "criteria": {
+        "bronze": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:bronze_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

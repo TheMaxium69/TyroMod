@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:platinium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.platinium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.platinium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/omeganium",
+    "criteria": {
+        "platinium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:platinium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

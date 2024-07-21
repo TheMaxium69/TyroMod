@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:aurore_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.aurore.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.aurore.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/amethys",
+    "criteria": {
+        "aurore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:aurore_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:omega"
+        },
+        "title": {
+            "translate": "advancements.tyromod.omega.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.omega.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/obsidian_red",
+    "criteria": {
+        "omega": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:omega",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:sapphirium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.sapphirium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.sapphirium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/ritonium",
+    "criteria": {
+        "sapphirium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:sapphirium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

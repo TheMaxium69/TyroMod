@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "title": {
+            "translate": "advancements.tyromod.emerald.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.emerald.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/bronze",
+    "criteria": {
+        "emerald": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:emerald",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:netherite_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.netherite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.netherite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/malachite",
+    "criteria": {
+        "netherite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:netherite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

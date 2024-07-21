@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:vaporium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.vaporium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.vaporium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/uranium",
+    "criteria": {
+        "vaporium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:vaporium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

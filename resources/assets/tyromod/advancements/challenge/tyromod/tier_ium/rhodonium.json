@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:rhodonium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.rhodonium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.rhodonium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/protonium",
+    "criteria": {
+        "rhodonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:rhodonium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

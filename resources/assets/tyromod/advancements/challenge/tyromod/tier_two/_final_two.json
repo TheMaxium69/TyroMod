@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:fusion_block"
+        },
+        "title": {
+            "translate": "advancements.tyromod.goal_two.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.goal_two.description"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "goal"
+    },
+    "parent": "challenge:tyromod/tier_two/yellorite",
+    "criteria": {
+        "automatic": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

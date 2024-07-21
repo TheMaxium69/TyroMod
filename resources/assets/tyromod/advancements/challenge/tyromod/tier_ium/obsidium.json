@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:obsidium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.obdsidium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.obdsidium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/netherium",
+    "criteria": {
+        "obsidium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:obsidium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

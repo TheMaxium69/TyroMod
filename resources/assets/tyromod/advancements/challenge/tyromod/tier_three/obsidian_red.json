@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:obsidian_red_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.obsidian_red.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.obsidian_red.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/netherite",
+    "criteria": {
+        "obsidian_red": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:obsidian_red_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

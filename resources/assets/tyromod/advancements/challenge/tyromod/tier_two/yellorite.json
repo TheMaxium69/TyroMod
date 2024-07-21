@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:yellorite"
+        },
+        "title": {
+            "translate": "advancements.tyromod.yellorite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.yellorite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/volcanite",
+    "criteria": {
+        "yellorite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:yellorite",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

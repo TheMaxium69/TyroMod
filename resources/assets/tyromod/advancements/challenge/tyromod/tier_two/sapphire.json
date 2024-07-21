@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:sapphire"
+        },
+        "title": {
+            "translate": "advancements.tyromod.sapphire.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.sapphire.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/ruby",
+    "criteria": {
+        "sapphire": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:sapphire",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

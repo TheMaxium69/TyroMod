@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:netherium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.netherium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.netherium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/mercurium",
+    "criteria": {
+        "netherium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:netherium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:purified_gold_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.purified_gold.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.purified_gold.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/purified_diamond",
+    "criteria": {
+        "purified_gold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:purified_gold_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

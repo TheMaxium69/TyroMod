@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:onix_gem"
+        },
+        "title": {
+            "translate": "advancements.tyromod.onix.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.onix.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/omega",
+    "criteria": {
+        "onix": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:onix_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

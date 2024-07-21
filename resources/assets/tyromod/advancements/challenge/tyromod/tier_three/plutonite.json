@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:plutonite_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.plutonite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.plutonite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/platine",
+    "criteria": {
+        "plutonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:plutonite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

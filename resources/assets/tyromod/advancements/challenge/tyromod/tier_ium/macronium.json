@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:macronium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.macronium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.macronium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/goldonium",
+    "criteria": {
+        "macronium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:macronium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

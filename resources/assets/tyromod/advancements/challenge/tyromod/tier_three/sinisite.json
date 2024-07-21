@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:sinisite_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.sinisite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.sinisite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/ritonite",
+    "criteria": {
+        "sinisite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:sinisite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

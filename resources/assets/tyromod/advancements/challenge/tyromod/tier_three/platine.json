@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:platine_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.platine.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.platine.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/onix",
+    "criteria": {
+        "platine": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:platine_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

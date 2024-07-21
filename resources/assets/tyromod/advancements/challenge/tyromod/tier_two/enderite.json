@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:enderite_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.enderite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.enderite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/emerald",
+    "criteria": {
+        "enderite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:enderite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

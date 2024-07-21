@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:uranite_gem"
+        },
+        "title": {
+            "translate": "advancements.tyromod.uranite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.uranite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/tyrolite",
+    "criteria": {
+        "uranite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:uranite_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

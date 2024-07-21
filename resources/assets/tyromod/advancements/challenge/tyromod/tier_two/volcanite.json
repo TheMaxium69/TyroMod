@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:volcanite"
+        },
+        "title": {
+            "translate": "advancements.tyromod.volcanite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.volcanite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/titane",
+    "criteria": {
+        "volcanite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:volcanite",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

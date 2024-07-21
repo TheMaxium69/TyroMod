@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:mythril_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.mythril.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.mythril.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/enderite",
+    "criteria": {
+        "mythril": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:mythril_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

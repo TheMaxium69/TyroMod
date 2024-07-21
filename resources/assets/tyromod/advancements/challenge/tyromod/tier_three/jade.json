@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:jade"
+        },
+        "title": {
+            "translate": "advancements.tyromod.jade.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.jade.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/illumenite",
+    "criteria": {
+        "jade": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:jade",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

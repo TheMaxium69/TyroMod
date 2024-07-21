@@ -1,0 +1,83 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:fusion_block_final"
+        },
+        "title": {
+            "translate": "advancements.tyromod.tier_final.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.tier_final.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "challenge:tyromod/root",
+    "criteria": {
+        "ultium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "ultium_powder": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium_powder",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium_helmet",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium_chestplate",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium_leggings",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ultium_boots",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

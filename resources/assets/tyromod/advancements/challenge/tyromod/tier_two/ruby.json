@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:ruby"
+        },
+        "title": {
+            "translate": "advancements.tyromod.ruby.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.ruby.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/purified_gold",
+    "criteria": {
+        "ruby": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ruby",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

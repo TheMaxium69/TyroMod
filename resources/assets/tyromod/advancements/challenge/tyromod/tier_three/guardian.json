@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:guardian_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.guardian.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.guardian.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/goldonite",
+    "criteria": {
+        "guardian": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:guardian_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

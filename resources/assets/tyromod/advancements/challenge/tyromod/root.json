@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:tyrolium_sword"
+        },
+        "title": {
+            "translate": "advancements.tyromod.root.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.root.description"
+        },
+        "background": "tyromod:textures/blocks/argonite_block.png"
+    },
+    "criteria": {
+        "automatic": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

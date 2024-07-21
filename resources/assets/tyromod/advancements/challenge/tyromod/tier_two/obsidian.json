@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:obsidian_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.obsidian.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.obsidian.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/mythril",
+    "criteria": {
+        "obsidian": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:obsidian_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

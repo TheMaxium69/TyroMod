@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:ender_gem"
+        },
+        "title": {
+            "translate": "advancements.tyromod.ender.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.ender.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/dragonstone",
+    "criteria": {
+        "ender": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ender_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

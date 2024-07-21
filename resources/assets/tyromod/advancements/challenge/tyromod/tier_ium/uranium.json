@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:uranium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.uranium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.uranium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/tyrolium",
+    "criteria": {
+        "uranium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:uranium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

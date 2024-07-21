@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:goldonium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.goldonium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.goldonium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/enderium",
+    "criteria": {
+        "goldonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:goldonium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:macronite"
+        },
+        "title": {
+            "translate": "advancements.tyromod.macronite.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.macronite.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_three/jade",
+    "criteria": {
+        "macronite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:macronite",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

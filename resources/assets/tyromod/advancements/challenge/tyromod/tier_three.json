@@ -1,0 +1,358 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:fusion_block2"
+        },
+        "title": {
+            "translate": "advancements.tyromod.tier_three.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.tier_three.description"
+        },
+        "frame": "goal"
+    },
+    "parent": "challenge:tyromod/root",
+    "criteria": {
+        "argonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:argonite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "ashstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ashstone_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "aventurine": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:aventurine",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "chronite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:chronite",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "coranite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:coranite",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "draconite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:draconite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "dragonstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:dragonstone_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "ender": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ender_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "fyrite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:fyrite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "galactite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:galactite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "goldonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:goldonite",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "guardian": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:guardian_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "illumenite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:illumenite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "jade": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:jade",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "macronite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:macronite",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "malachite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:malachite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "netherite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:netherite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "obsidian_red": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:obsidian_red_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "omega": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:omega",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "onix": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:onix_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "platine": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:platine_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "plutonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:plutonite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "polonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:polonite",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "proton": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:proton_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "rhodonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:rhodonite",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "ritonite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ritonite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "sinisite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:sinisite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "topaz": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:topaz",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "tyrolite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:tyrolite_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "uranite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:uranite_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "vaponite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:vaponite",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

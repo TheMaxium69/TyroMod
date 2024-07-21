@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:ritonium_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.ritonium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.ritonium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/rhodonium",
+    "criteria": {
+        "ritonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ritonium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

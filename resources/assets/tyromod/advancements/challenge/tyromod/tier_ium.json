@@ -1,0 +1,347 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:fusion_block3"
+        },
+        "title": {
+            "translate": "advancements.tyromod.tier_ium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.tier_ium.description"
+        },
+        "frame": "goal"
+    },
+    "parent": "challenge:tyromod/root",
+    "criteria": {
+        "adamantium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:adamantium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "aventurium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:aventurium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "chromitium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:chromitium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "copperium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:copperium_gem",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "coranium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:coranium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "draconium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:draconium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "enderium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:enderium",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "goldonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:goldonium",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "macronium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:macronium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "mercurium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:mercurium",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "netherium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:netherium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "obsidium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:obsidium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "omeganium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:omeganium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "platinium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:platinium",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "plutonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:plutonium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "polonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:polonium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "protonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:protonium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "rhodonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:rhodonium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "ritonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:ritonium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "sapphirium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:sapphirium",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "silicium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:silicium",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "silverium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:silverium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "steelium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:steelium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "thyrium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:thyrium",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "titanium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:titanium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "tyrolium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:tyrolium",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "uranium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:uranium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "vaporium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:vaporium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "volcanium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:volcanium_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "yellorium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:yellorium",
+                        "data": 0
+                    }
+                ]
+            }
+        } 
+    }
+}

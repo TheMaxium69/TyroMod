@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:purified_diamond_ingot"
+        },
+        "title": {
+            "translate": "advancements.tyromod.purified_diamond.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.purified_diamond.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_two/obsidian",
+    "criteria": {
+        "purified_diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:purified_diamond_ingot",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

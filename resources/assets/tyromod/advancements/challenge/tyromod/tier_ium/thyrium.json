@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "tyromod:thyrium"
+        },
+        "title": {
+            "translate": "advancements.tyromod.thyrium.title"
+        },
+        "description": {
+            "translate": "advancements.tyromod.thyrium.description"
+        }
+    },
+    "parent": "challenge:tyromod/tier_ium/steelium",
+    "criteria": {
+        "thyrium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tyromod:thyrium",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}
