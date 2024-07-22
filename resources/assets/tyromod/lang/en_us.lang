@@ -17,14 +17,10 @@ advancements.tyromod.tier_ium.description=Obtain all Tier IUM
 advancements.tyromod.tier_final.title=Tier Final
 advancements.tyromod.tier_final.description=Obtain all Tier Final
 
-advancements.tyromod.goal_one.title=
-advancements.tyromod.goal_one.description=
-advancements.tyromod.goal_two.title=
-advancements.tyromod.goal_two.description=
-advancements.tyromod.goal_three.title=
-advancements.tyromod.goal_three.description=
-advancements.tyromod.goal_ium.title=
-advancements.tyromod.goal_ium.description=
+advancements.tyromod.goal_one.title=Goal Tier 1
+advancements.tyromod.goal_two.title=Goal Tier 2
+advancements.tyromod.goal_three.title=Goal Tier 3
+advancements.tyromod.goal_ium.title=Goal Tier IUM
 
 advancements.tyromod.ultium.title=Ultium
 advancements.tyromod.ultium.description=Obtain a Ultium

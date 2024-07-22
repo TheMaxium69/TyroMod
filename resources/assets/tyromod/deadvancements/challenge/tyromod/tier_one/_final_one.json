@@ -1,19 +1,16 @@
 {
     "display": {
         "icon": {
-            "item": "tyromod:fusion_block2"
+            "item": "minecraft:grass"
         },
         "title": {
-            "translate": "advancements.tyromod.goal_three.title"
-        },
-        "description": {
-            "translate": "advancements.tyromod.goal_three.description"
+            "translate": "advancements.tyromod.goal_one.title"
         },
         "show_toast": false,
         "announce_to_chat": false,
         "frame": "goal"
     },
-    "parent": "challenge:tyromod/tier_three/vaponite",
+    "parent": "challenge:tyromod/tier_one/tin",
     "criteria": {
         "automatic": {
             "trigger": "minecraft:location"

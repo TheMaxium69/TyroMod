@@ -17,6 +17,11 @@ advancements.tyromod.tier_ium.description=Obtenir tout les Tier IUM
 advancements.tyromod.tier_final.title=Tier Final
 advancements.tyromod.tier_final.description=Obtenir tout les Tier Final
 
+advancements.tyromod.goal_one.title=Objectif Tier 1
+advancements.tyromod.goal_two.title=Objectif Tier 2
+advancements.tyromod.goal_three.title=Objectif Tier 3
+advancements.tyromod.goal_ium.title=Objectif Tier IUM
+
 advancements.tyromod.ultium.title=Ultium
 advancements.tyromod.ultium.description=Obtenir un Ultium
 advancements.tyromod.rhodonite.title=Rhodonite
