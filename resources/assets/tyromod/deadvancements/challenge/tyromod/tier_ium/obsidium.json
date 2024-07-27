@@ -4,10 +4,10 @@
             "item": "tyromod:obsidium_ingot"
         },
         "title": {
-            "translate": "advancements.tyromod.obdsidium.title"
+            "translate": "advancements.tyromod.obsidium.title"
         },
         "description": {
-            "translate": "advancements.tyromod.obdsidium.description"
+            "translate": "advancements.tyromod.obsidium.description"
         }
     },
     "parent": "challenge:tyromod/tier_ium/netherium",

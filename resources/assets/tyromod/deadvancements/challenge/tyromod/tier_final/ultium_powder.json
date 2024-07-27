@@ -4,10 +4,10 @@
             "item": "tyromod:ultium_powder"
         },
         "title": {
-            "translate": "advancements.tyromod.ultium_nugget.title"
+            "translate": "advancements.tyromod.ultium_powder.title"
         },
         "description": {
-            "translate": "advancements.tyromod.ultium_nugget.description"
+            "translate": "advancements.tyromod.ultium_powder.description"
         }
     },
     "parent": "challenge:tyromod/tier_final",
