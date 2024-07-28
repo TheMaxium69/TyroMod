@@ -22,6 +22,9 @@ advancements.tyromod.goal_two.title=Objectif Tier 2
 advancements.tyromod.goal_three.title=Objectif Tier 3
 advancements.tyromod.goal_ium.title=Objectif Tier IUM
 
+advancements.tyromod.copper.title=L'ingot de Cuivre
+advancements.tyromod.copper.description=Obtenir un l'ingot de Cuivre
+
 advancements.tyromod.rhodonite.title=Rhodonite
 advancements.tyromod.rhodonite.description=Obtenir une Rhodonite
 
@@ -30,8 +33,8 @@ advancements.tyromod.tyrolium.description=Obtenir un Tyrolium
 
 advancements.tyromod.ultium.title=Ultium
 advancements.tyromod.ultium.description=Obtenir un Ultium
-advancements.tyromod.ultium_nugget.title=Poudre d'Ultium
-advancements.tyromod.ultium_nugget.description=Obtenir de la poudre d'Ultium
+advancements.tyromod.ultium_powder.title=Poudre d'Ultium
+advancements.tyromod.ultium_powder.description=Obtenir de la poudre d'Ultium
 
 # GUI
 itemGroup.TyroModOreV1=TyroMod Minerai V1
