@@ -68,7 +68,7 @@ public class PacketToken {
 
                 MinecraftServer server = playerEntity.getServer();
                 if (server != null) {
-//                    server.getCommandManager().executeCommand(playerEntity.getCommandSenderEntity(), "say " + pseudo + " is connecetd : " + tokenOld + " " + token + "");
+//                    server.getCommandManager().executeCommand(playerEntity.getCommandSenderEntity(), "say " + pseudo + " is connected : " + tokenOld + " " + token + "");
                 }
 
                 /* AJOUT DU JOUEUR DANS LA LISTE DES JOUEURS VERIFIER */
