@@ -2,8 +2,10 @@ package fr.tyrolium.tyromod.security;
 
 import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
+import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -79,6 +81,13 @@ public class EventSecurity {
                                 if (pseudoExisting == 2) {
 
                                     playerEntity.sendMessage(new TextComponentString("\u00A7f[TyroPlugin] \u00A7aConnexion \u00E9tablie !"));
+
+                                    /* TP AU HUB */
+                                    MinecraftServer server = playerEntity.getServer();
+                                    if (server != null) {
+                                        server.getCommandManager().executeCommand((ICommandSender) playerEntity, "mc tp " + pseudo + " hub");
+                                    }
+
 
                                     /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
                                     for (EntityPlayer player : TyroMod.playersVerif) {
