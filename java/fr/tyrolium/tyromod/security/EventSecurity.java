@@ -82,13 +82,6 @@ public class EventSecurity {
 
                                     playerEntity.sendMessage(new TextComponentString("\u00A7f[TyroPlugin] \u00A7aConnexion \u00E9tablie !"));
 
-                                    /* TP AU HUB */
-                                    MinecraftServer server = playerEntity.getServer();
-                                    if (server != null) {
-                                        server.getCommandManager().executeCommand((ICommandSender) playerEntity, "mc tp " + pseudo + " hub");
-                                    }
-
-
                                     /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
                                     for (EntityPlayer player : TyroMod.playersVerif) {
                                         if (player.getName().equals(pseudo)) {
