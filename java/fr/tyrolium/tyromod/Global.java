@@ -17,11 +17,16 @@ public class Global {
     public static final String API_FUSION = "https://api-fusion.tyroserv.fr/";
 
     public static final String API_USERITIUM = "https://useritium.fr/api-externe/index.php?controller=TyroServ&task=servVerif";
+    public static final String API_MODLIST = "https://tyrolium.fr/Download/TyroServS3/launcher/mod/global.php";
 
     public static final int GUI_FUSION_BLOCK = 0;
     public static final int GUI_FUSION_BLOCK2 = 1;
     public static final int GUI_FUSION_BLOCK3 = 2;
     public static final int GUI_FUSION_BLOCK_FINAL = 3;
+
+
+    /* DEBUG */
+    public static final boolean DEBUG_TOKEN = true; /* DEFAULT : FALSE */
 
 
 }

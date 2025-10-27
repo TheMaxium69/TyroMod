@@ -13,22 +13,26 @@ public class PacketClass implements IMessage {
 
     private String token;
     private String tokenOld;
+    private String modList;
 
-    public PacketClass(String token, String tokenOld) {
+    public PacketClass(String token, String tokenOld, String modList) {
         this.token = token;
         this.tokenOld = tokenOld;
+        this.modList = modList;
     }
 
     @Override
     public void toBytes(ByteBuf buf) {
         ByteBufUtils.writeUTF8String(buf, token);
         ByteBufUtils.writeUTF8String(buf, tokenOld);
+        ByteBufUtils.writeUTF8String(buf, modList);
     }
 
     @Override
     public void fromBytes(ByteBuf buf) {
         token = ByteBufUtils.readUTF8String(buf);
         tokenOld = ByteBufUtils.readUTF8String(buf);
+        modList = ByteBufUtils.readUTF8String(buf);
     }
 
     public static class Handler implements IMessageHandler<PacketClass, IMessage> {
@@ -36,9 +40,13 @@ public class PacketClass implements IMessage {
         @Override
         public IMessage onMessage(PacketClass message, MessageContext ctx) {
             EntityPlayerMP playerEntity = ctx.getServerHandler().player;
+
+//            System.out.println("Received from client: " + message.modList);
 //            System.out.println("Received from client: " + message.token + " " + message.tokenOld);
 //            System.out.println("Message by " + playerEntity.getName());
+
             PacketToken.postDataToApi(message.token, message.tokenOld, (EntityPlayerMP) playerEntity);
+            PacketMod.verifModToApi(message.modList, (EntityPlayerMP) playerEntity);
             return null;
         }
     }

@@ -8,13 +8,16 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
+import net.minecraftforge.fml.common.network.FMLNetworkEvent;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 public class EventSecurity {
 
@@ -41,6 +44,18 @@ public class EventSecurity {
                         *  SERVEUR ACTION
                         *
                         * ****************/
+
+
+                        System.out.println("HERE SERVER");
+                        // Get player mods
+
+
+
+
+
+//                        EntityPlayerMP playerMP = (EntityPlayerMP) playerEntity;
+//                        String playerMods = String.join(", ", net.minecraftforge.fml.common.network.handshake.FMLHandshakeMessage.ModList.decode(playerMP.connection.netManager).modList());
+//                        System.out.println("Player " + pseudo + " has mods: " + playerMods);
 
 
 
@@ -115,7 +130,17 @@ public class EventSecurity {
 
     //                    if (iterationEvent != 1) {
     //                        System.out.println("ENVOIE DU PAQUET");
-                            TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld()));
+
+
+                            String modlist = Loader.instance().getActiveModList().stream()
+                                .map(mod -> mod.getModId() + "@" + mod.getVersion()).collect(Collectors.joining(", "));
+
+                            System.out.println("HERE CLIENT");
+                        
+                            TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld(), modlist));
+
+                            
+
 
     //                        iterationEvent = 1;
     //                    }

@@ -1,5 +1,7 @@
 package fr.tyrolium.tyromod.security;
 
+import fr.tyrolium.tyromod.Global;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -33,12 +35,13 @@ public class LauncherToken {
             }
             myReaderJsonA2F.close();
 
-            Path pathJson = Paths.get(TokenUserFile);
-            Files.delete(pathJson);
+            if (!Global.DEBUG_TOKEN) {
+                Path pathJson = Paths.get(TokenUserFile);
+                Files.delete(pathJson);
 
-            Path pathJsonA2F = Paths.get(TokenUserOldFile);
-            Files.delete(pathJsonA2F);
-
+                Path pathJsonA2F = Paths.get(TokenUserOldFile);
+                Files.delete(pathJsonA2F);
+            }
 
             System.out.println("----- TOKEN LAUNCHER -----");
 

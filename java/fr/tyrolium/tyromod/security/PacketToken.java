@@ -63,7 +63,7 @@ public class PacketToken {
             if (content.toString().equals(createReponse(pseudo))) {
 
                 //Connexion
-//                System.out.println("TOKEN VALIDE DE "+ pseudo);
+                System.out.println("TOKEN VALIDE DE "+ pseudo);
 //                playerEntity.sendMessage(new TextComponentString("Connexion Effectuez!"));
 
                 MinecraftServer server = playerEntity.getServer();
