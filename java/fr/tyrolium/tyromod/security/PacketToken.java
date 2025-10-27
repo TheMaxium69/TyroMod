@@ -29,90 +29,98 @@ public class PacketToken {
 
         String pseudo = playerEntity.getName();
 
-        String apiUrl = Global.API_USERITIUM; // change this to be your actual API url
-        try {
-            URL url = new URL(apiUrl);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("POST");
-            conn.setDoOutput(true);
+        int pseudoExisting = 1;
+        for (EntityPlayer player : TyroMod.playersVerif) {
 
-            String postData = "pseudo=" + pseudo + "&token=" + token + "&tokenTwo=" + tokenOld;
-
-            try (DataOutputStream dos = new DataOutputStream(conn.getOutputStream())) {
-                dos.writeBytes(postData);
+            if (player.getName().equals(pseudo)) {
+                pseudoExisting = 2;
             }
 
-            int responseCode = conn.getResponseCode();
+        }
+
+        if (pseudoExisting == 2) {
+
+            /* DEJA VERIFIER */
+
+//            System.out.println("DEJA VERIFIER POUR " + pseudo);
+
+        } else {
+
+            String apiUrl = Global.API_USERITIUM; // change this to be your actual API url
+            try {
+                URL url = new URL(apiUrl);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("POST");
+                conn.setDoOutput(true);
+
+                String postData = "pseudo=" + pseudo + "&token=" + token + "&tokenTwo=" + tokenOld;
+
+                try (DataOutputStream dos = new DataOutputStream(conn.getOutputStream())) {
+                    dos.writeBytes(postData);
+                }
+
+                int responseCode = conn.getResponseCode();
 //            System.out.println("POST Response Code :  " + responseCode);
 //            System.out.println("POST Response Message : " + conn.getResponseMessage());
 
 
-            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String inputLine;
-            StringBuilder content = new StringBuilder();
-            while ((inputLine = in.readLine()) != null) {
-                content.append(inputLine);
-            }
+                BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                String inputLine;
+                StringBuilder content = new StringBuilder();
+                while ((inputLine = in.readLine()) != null) {
+                    content.append(inputLine);
+                }
 
-            // Tout fermer
-            in.close();
-            conn.disconnect();
+                // Tout fermer
+                in.close();
+                conn.disconnect();
 //            System.out.println("Reponse du serveur : " + content.toString());
 
 
-            if (content.toString().equals(createReponse(pseudo))) {
+                if (content.toString().equals(createReponse(pseudo))) {
 
-                //Connexion
-                System.out.println("TOKEN VALIDE DE "+ pseudo);
+                    //Connexion
+//                    System.out.println("TOKEN VALIDE DE " + pseudo);
 //                playerEntity.sendMessage(new TextComponentString("Connexion Effectuez!"));
 
-                MinecraftServer server = playerEntity.getServer();
-                if (server != null) {
+                    MinecraftServer server = playerEntity.getServer();
+                    if (server != null) {
 //                    server.getCommandManager().executeCommand(playerEntity.getCommandSenderEntity(), "say " + pseudo + " is connected : " + tokenOld + " " + token + "");
-                }
-
-                /* AJOUT DU JOUEUR DANS LA LISTE DES JOUEURS VERIFIER */
-                int pseudoExisting = 1;
-                for (EntityPlayer player : TyroMod.playersVerif) {
-
-                    if (player.getName().equals(pseudo)) {
-                        pseudoExisting = 2;
                     }
-                }
 
-                if (pseudoExisting == 1) {
+                    /* AJOUT DU JOUEUR DANS LA LISTE DES JOUEURS VERIFIER */
                     TyroMod.playersVerif.add(playerEntity);
-                }
 
 
 
-            } else {
-
-                String codeErr = null;
-                if (content.toString().equals("")) {
-                    codeErr = "3300";
-                } else if (content.toString().equals("    {\"status\":\"err\",\"why\":{\"Token\":\"true\",\"AuthNb\":\"false\"}}")) {
-                    codeErr = "3033";
-                } else if (content.toString().equals("    {\"status\":\"err\",\"why\":{\"Token\":\"false\",\"AuthNb\":\"true\"}}")) {
-                    codeErr = "3013";
-                } else if (content.toString().equals("    {\"status\":\"err\",\"why\":{\"Token\":\"false\",\"AuthNb\":\"false\"}}")) {
-                    codeErr = "3031";
                 } else {
-                    codeErr = "3000";
+
+                    String codeErr = null;
+                    if (content.toString().equals("")) {
+                        codeErr = "3300";
+                    } else if (content.toString().equals("    {\"status\":\"err\",\"why\":{\"Token\":\"true\",\"AuthNb\":\"false\"}}")) {
+                        codeErr = "3033";
+                    } else if (content.toString().equals("    {\"status\":\"err\",\"why\":{\"Token\":\"false\",\"AuthNb\":\"true\"}}")) {
+                        codeErr = "3013";
+                    } else if (content.toString().equals("    {\"status\":\"err\",\"why\":{\"Token\":\"false\",\"AuthNb\":\"false\"}}")) {
+                        codeErr = "3031";
+                    } else {
+                        codeErr = "3000";
+                    }
+
+
+                    System.out.println("TOKEN INVALIDE DE " + pseudo + " Err:" + codeErr);
+                    playerEntity.sendMessage(new TextComponentString("Connexion Refuser! | CodeErr : " + codeErr));
+                    playerEntity.connection.disconnect(new TextComponentString("Your Token Useritium is invalide - Code : " + codeErr));
+
+
                 }
 
 
-                System.out.println("TOKEN INVALIDE DE "+ pseudo +" Err:" + codeErr);
-                playerEntity.sendMessage(new TextComponentString("Connexion Refuser! | CodeErr : " + codeErr));
-                playerEntity.connection.disconnect(new TextComponentString("Your Token Useritium is invalide - Code : " + codeErr));
-
-
+            } catch (Exception e) {
+                e.printStackTrace();
             }
 
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
