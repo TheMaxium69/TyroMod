@@ -8,7 +8,7 @@ public class Global {
 
     public static final String MODID = "tyromod";
     public static final String NAME = "TyroMod";
-    public static final String VERSION = "0.10";
+    public static final String VERSION = "0.12";
     public static final String MINECRAFT_VERSION = "1.12.2";
     public static final String CLIENT_PROXY = "fr.tyrolium.tyromod.proxy.Client";
     public static final String SERVER_PROXY = "fr.tyrolium.tyromod.proxy.CommonProxy";
@@ -17,7 +17,7 @@ public class Global {
     public static final String API_FUSION = "https://api-fusion.tyroserv.fr/";
 
     public static final String API_USERITIUM = "https://useritium.fr/api-externe/index.php?controller=TyroServ&task=servVerif";
-    public static final String API_MODLIST = "https://tyrolium.fr/Download/TyroServS3/launcher/mod/global.php";
+    public static final String API_MODLIST = "https://tyrolium.fr/Download/TyroServS3/launcher/index.php?t=server";
 
     public static final int GUI_FUSION_BLOCK = 0;
     public static final int GUI_FUSION_BLOCK2 = 1;
