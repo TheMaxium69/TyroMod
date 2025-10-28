@@ -49,7 +49,9 @@ public class TyroMod
     public static final CreativeTabs TyroModTabServ = new TyroModTabServ();
 
     /*PLAYER CONNECTED*/
-    public static final ArrayList<EntityPlayer> playersVerif = new ArrayList<>();
+    public static final ArrayList<EntityPlayer> playersVerifToken = new ArrayList<>();
+    public static final ArrayList<EntityPlayer> playersVerifMod = new ArrayList<>();
+    public static final ArrayList<EntityPlayer> playersCanConnect = new ArrayList<>();
     public static final ArrayList<EntityPlayer> playerEnAttente = new ArrayList<>();
 
     /* CHANNEL PAQUET */

@@ -1,6 +1,7 @@
 package fr.tyrolium.tyromod.security;
 
 import fr.tyrolium.tyromod.Global;
+import fr.tyrolium.tyromod.TyroMod;
 import net.minecraft.entity.player.EntityPlayerMP;
 
 public class PacketMod {
@@ -11,6 +12,12 @@ public class PacketMod {
         String pseudo = playerEntity.getName();
 
         String apiUrl = Global.API_MODLIST;
+
+
+        TyroMod.playersVerifMod.add(playerEntity);
+
+
+
 //
 //        System.out.println("is in server Mod Verif");
 //

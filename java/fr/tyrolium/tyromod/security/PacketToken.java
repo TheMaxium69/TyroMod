@@ -30,7 +30,7 @@ public class PacketToken {
         String pseudo = playerEntity.getName();
 
         int pseudoExisting = 1;
-        for (EntityPlayer player : TyroMod.playersVerif) {
+        for (EntityPlayer player : TyroMod.playersVerifToken) {
 
             if (player.getName().equals(pseudo)) {
                 pseudoExisting = 2;
@@ -38,11 +38,16 @@ public class PacketToken {
 
         }
 
+        for (EntityPlayer player : TyroMod.playersCanConnect) {
+            if (player.getName().equals(pseudo)) {
+                pseudoExisting = 2;
+            }
+        }
+
         if (pseudoExisting == 2) {
 
             /* DEJA VERIFIER */
-
-//            System.out.println("DEJA VERIFIER POUR " + pseudo);
+            System.out.println("DEJA VERIFIER POUR " + pseudo);
 
         } else {
 
@@ -89,7 +94,7 @@ public class PacketToken {
                     }
 
                     /* AJOUT DU JOUEUR DANS LA LISTE DES JOUEURS VERIFIER */
-                    TyroMod.playersVerif.add(playerEntity);
+                    TyroMod.playersVerifToken.add(playerEntity);
 
 
 
