@@ -47,7 +47,7 @@ public class PacketToken {
         if (pseudoExisting == 2) {
 
             /* DEJA VERIFIER */
-            System.out.println("DEJA VERIFIER POUR " + pseudo);
+            System.out.println("TOKEN : DEJA VERIFIER POUR " + pseudo);
 
         } else {
 
