@@ -33,6 +33,7 @@ public class EventClient {
 
 //                System.out.println("HERE CLIENT");
 
+
                 EntityPlayerSP playerEntity = (EntityPlayerSP) event.getEntity();
                 String pseudoConnect = playerEntity.getName();
 
@@ -40,13 +41,18 @@ public class EventClient {
 
                 if (myPlayer != null) {
                     String myPseudo = myPlayer.getName();
+
+
+                    TyroLogger.logClientConnection("--------------------------------------------------------------");
+                    TyroLogger.logClientConnection("ℹ️ Connexion avec le pseudo : " + myPseudo);
                     //                        System.out.println("Mon pseudo est : " + myPseudo);
 
                     if (pseudoConnect == myPseudo) {
 
                         String modlist = "[" + Loader.instance().getActiveModList().stream().map(mod -> "{\"modid\":\"" + mod.getModId() + "\",\"version\":\"" + mod.getVersion() + "\"}").collect(Collectors.joining(",")) + "]";
 
-                        System.out.println("[TYROMOD] ENVOIE DE PAQUET");
+//                        System.out.println("[TYROMOD] ENVOIE DE PAQUET");
+                        TyroLogger.logClientConnection("ℹ️ Envoie de paquet au serveur...");
                         TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld(), modlist));
 
                     }

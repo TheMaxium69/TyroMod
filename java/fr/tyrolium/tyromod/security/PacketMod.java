@@ -45,6 +45,10 @@ public class PacketMod {
             /* DEJA VERIFIER */
             System.out.println("MOD : DEJA VERIFIER POUR " + pseudo);
 
+        } else if (Global.NOTVERIF_MOD) {
+
+            TyroMod.playersVerifMod.add(playerEntity);
+
         } else {
 
             System.out.println( pseudo + " = ModList JSON : " + modList);
@@ -78,9 +82,9 @@ public class PacketMod {
                     JsonElement TableauModServ = new JsonParser().parse(content.toString());
 
                     if (TableauModServ.isJsonArray()) {
+                        JsonArray ModsServerJSON = TableauModServ.getAsJsonArray();
 
-
-                        System.out.println("--------------- MOD CLIENT");
+                        /*System.out.println("--------------- MOD CLIENT");
 
                         for (JsonElement el : ModsClientJSON) {
 
@@ -99,7 +103,7 @@ public class PacketMod {
 
                         System.out.println("--------------- MOD SERVER");
 
-                        JsonArray ModsServerJSON = TableauModServ.getAsJsonArray();
+
 
                         for (JsonElement el : ModsServerJSON) {
 
@@ -114,26 +118,94 @@ public class PacketMod {
                             } else {
                                 System.out.println("SERVER MOD (OPT) : " + modid + "@" + version);
                             }
+                        }*/
+
+                        boolean erreur = false;
+
+                        // --- Vérifier les mods du serveur ---
+                        for (JsonElement elServer : ModsServerJSON) {
+                            JsonObject modServer = elServer.getAsJsonObject();
+
+                            String modidServer = modServer.get("modid").getAsString();
+                            String versionServer = modServer.get("version").getAsString();
+                            boolean isLock = modServer.get("isLock").getAsBoolean();
+
+                            // Chercher ce mod côté client
+                            JsonObject modClientFound = null;
+                            for (JsonElement elClient : ModsClientJSON) {
+                                JsonObject modClient = elClient.getAsJsonObject();
+                                String modidClient = modClient.get("modid").getAsString();
+                                if (modidClient.equals(modidServer)) {
+                                    modClientFound = modClient;
+                                    break;
+                                }
+                            }
+
+                            if (isLock) {
+                                // Mod obligatoire → doit exister et être à la bonne version
+                                if (modClientFound == null) {
+                                    System.err.println("❌ Mod obligatoire manquant : " + modidServer);
+                                    erreur = true;
+                                } else {
+                                    String versionClient = modClientFound.get("version").getAsString();
+                                    if (!versionClient.equals(versionServer)) {
+                                        System.err.println("❌ Mauvaise version pour le mod obligatoire : " + modidServer +
+                                                " (client: " + versionClient + ", serveur: " + versionServer + ")");
+                                        erreur = true;
+                                    } else {
+                                        System.out.println("✅ Mod obligatoire OK : " + modidServer + "@" + versionServer);
+                                    }
+                                }
+                            } else {
+                                // Mod optionnel → peut être absent, mais si présent doit être à la bonne version
+                                if (modClientFound != null) {
+                                    String versionClient = modClientFound.get("version").getAsString();
+                                    if (!versionClient.equals(versionServer)) {
+                                        System.err.println("❌ Mauvaise version pour le mod optionnel : " + modidServer +
+                                                " (client: " + versionClient + ", serveur: " + versionServer + ")");
+                                        erreur = true;
+                                    } else {
+                                        System.out.println("✅ Mod optionnel OK : " + modidServer + "@" + versionServer);
+                                    }
+                                } else {
+                                    System.out.println("ℹ️ Mod optionnel absent (OK) : " + modidServer);
+                                }
+                            }
                         }
 
+                        // --- Vérifier si le client a un mod non listé sur le serveur ---
+                        for (JsonElement elClient : ModsClientJSON) {
+                            JsonObject modClient = elClient.getAsJsonObject();
+                            String modidClient = modClient.get("modid").getAsString();
 
+                            boolean found = false;
+                            for (JsonElement elServer : ModsServerJSON) {
+                                JsonObject modServer = elServer.getAsJsonObject();
+                                String modidServer = modServer.get("modid").getAsString();
+                                if (modidServer.equals(modidClient)) {
+                                    found = true;
+                                    break;
+                                }
+                            }
 
-                        /* Player Verifier */
-                        TyroMod.playersVerifMod.add(playerEntity);
+                            if (!found) {
+                                System.err.println("❌ Le client possède un mod non autorisé : " + modidClient);
+                                erreur = true;
+                            }
+                        }
 
+                        if (erreur) {
+                            TyroLogger.logServerPlayer(pseudo, "🚫 Vérification des mods échouée !");
 
+                        } else {
+                            TyroLogger.logServerPlayer(pseudo, "✅ Tous les mods sont conformes !");
 
-
-
-
-
-
-
-
+                            /* Player Verifier */
+                            TyroMod.playersVerifMod.add(playerEntity);
+                        }
 
                     } else {
                         System.out.println("MOD : Erreur JSON SERVER INVALIDE");
-    //                    playerEntity.connection.disconnect(new TextComponentString("Server Erreur"));
                     }
 
                 } catch (Exception e) {

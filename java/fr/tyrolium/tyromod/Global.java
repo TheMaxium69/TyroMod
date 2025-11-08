@@ -24,9 +24,9 @@ public class Global {
     public static final int GUI_FUSION_BLOCK3 = 2;
     public static final int GUI_FUSION_BLOCK_FINAL = 3;
 
-
     /* DEBUG */
     public static final boolean DEBUG_TOKEN = true; /* DEFAULT : FALSE */
+    public static final boolean NOTVERIF_MOD = false; /* DEFAULT : FALSE */
 
 
 }

@@ -1,6 +1,7 @@
 package fr.tyrolium.tyromod.security;
 
 import fr.tyrolium.tyromod.Global;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,6 +17,8 @@ public class LauncherToken {
 
     private static String TokenUserFile = "usercachetyroserv.json";
     private static String TokenUserOldFile = "usercachetyroserva2f.json";
+
+    private static int countLog = 0;
 
     public static void Token() {
 
@@ -43,16 +46,30 @@ public class LauncherToken {
                 Files.delete(pathJsonA2F);
             }
 
-            System.out.println("----- TOKEN LAUNCHER -----");
+//            System.out.println("----- TOKEN LAUNCHER -----");
+//
+//            System.out.println("TokenUser : " + TokenUser);
+//            System.out.println("TokenUserOld : " + TokenUserOld);
 
-            System.out.println("TokenUser : " + TokenUser);
-            System.out.println("TokenUserOld : " + TokenUserOld);
-
+            if (countLog == 0) {
+                TyroLogger.logClientBase("✅ Récupération du Token Réussi");
+            }
+            countLog = countLog + 1;
 
         } catch (FileNotFoundException e) {
-            System.out.println("Token Error");
+            if (countLog == 0) {
+                TyroLogger.logClientBase("❌ Erreur de récupération du Token (FileNotFound)");
+            }
+            countLog = countLog + 1;
+
             e.printStackTrace();
         } catch (IOException e) {
+
+            if (countLog == 0) {
+                TyroLogger.logClientBase("❌ Erreur de récupération du Token (IOException)");
+            }
+            countLog = countLog + 1;
+
             e.printStackTrace();
         }
 
