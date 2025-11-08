@@ -50,9 +50,11 @@ public class EventClient {
                     if (pseudoConnect == myPseudo) {
 
                         String modlist = "[" + Loader.instance().getActiveModList().stream().map(mod -> "{\"modid\":\"" + mod.getModId() + "\",\"version\":\"" + mod.getVersion() + "\"}").collect(Collectors.joining(",")) + "]";
+                        String modlistLog = Loader.instance().getActiveModList().stream().map(mod -> mod.getModId() + "@" + mod.getVersion()).collect(Collectors.joining(", "));
 
 //                        System.out.println("[TYROMOD] ENVOIE DE PAQUET");
-                        TyroLogger.logClientConnection("ℹ️ Envoie de paquet au serveur...");
+                        TyroLogger.logClientConnection("ℹ️ Liste des Mods : " + modlistLog);
+                        TyroLogger.logClientConnection("ℹ️ Envoie du paquet au serveur...");
                         TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld(), modlist));
 
                     }

@@ -88,7 +88,14 @@ public class TyroLogger {
 
             // Format de date pour le fichier : Maxime-08-11-2025.log
             String dateForFile = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
-            Path logFile = LOG_DIR.resolve("base-" + dateForFile + ".log");
+
+            Path logFile = null;
+            if (System.getProperty("tyromod.server") == null || System.getProperty("tyromod.server").isEmpty()) {
+                logFile = LOG_DIR.resolve("base-" + dateForFile + ".log");
+            } else {
+                logFile = LOG_DIR.resolve("server-" + dateForFile + ".log");
+            }
+
 
             // Format de date/heure
             String time = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date());
