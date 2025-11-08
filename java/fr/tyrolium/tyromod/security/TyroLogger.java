@@ -132,6 +132,8 @@ public class TyroLogger {
         } catch (IOException e) {
             logger.info("❌ Impossible d'écrire dans le fichier log de connexion");
         }
+
+        logClientBase(message);
     }
 
 

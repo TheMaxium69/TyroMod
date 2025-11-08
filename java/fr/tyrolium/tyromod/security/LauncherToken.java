@@ -52,7 +52,7 @@ public class LauncherToken {
 //            System.out.println("TokenUserOld : " + TokenUserOld);
 
             if (countLog == 0) {
-                TyroLogger.logClientBase("✅ Récupération du Token Réussi");
+                TyroLogger.logClientBase("✅ Récupération du Token réussi");
             }
             countLog = countLog + 1;
 
