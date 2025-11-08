@@ -22,7 +22,6 @@ public class EventSecurity {
 
     public static final ScheduledExecutorService executorService = Executors.newScheduledThreadPool(1);
 
-
     @SubscribeEvent
     public static void onEvent(EntityJoinWorldEvent event) {
 
@@ -43,7 +42,11 @@ public class EventSecurity {
                 EntityPlayerMP playerEntity = (EntityPlayerMP) event.getEntity();
                 String pseudo = playerEntity.getName();
 
-                System.out.println("[TYROMOD] " + pseudo + " vient de rejoindre le monde !");
+//                System.out.println("[TYROMOD] " + pseudo + " vient de rejoindre le monde !");
+                TyroMod.logger.info("ℹ️ " + pseudo + " tente de se connecter...");
+                TyroLogger.logClientBase("ℹ️ " + pseudo + " tente de se connecter...");
+                TyroLogger.logServerConnection("ℹ️ " + pseudo + " tente de se connecter...");
+                TyroLogger.logServerPlayer(pseudo, "ℹ️ Tentative de connexion au serveur...");
 
 
                 int playerADejaUneBoucle = 0;

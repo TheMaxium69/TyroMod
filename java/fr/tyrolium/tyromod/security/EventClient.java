@@ -45,6 +45,7 @@ public class EventClient {
 
                     TyroLogger.logClientConnection("--------------------------------------------------------------");
                     TyroLogger.logClientConnection("ℹ️ Connexion avec le pseudo : " + myPseudo);
+                    TyroLogger.logClientBase("ℹ️ Connexion avec le pseudo : " + myPseudo);
                     //                        System.out.println("Mon pseudo est : " + myPseudo);
 
                     if (pseudoConnect == myPseudo) {
@@ -54,7 +55,9 @@ public class EventClient {
 
 //                        System.out.println("[TYROMOD] ENVOIE DE PAQUET");
                         TyroLogger.logClientConnection("ℹ️ Liste des Mods : " + modlistLog);
+                        TyroLogger.logClientBase("ℹ️ Liste des Mods : " + modlistLog);
                         TyroLogger.logClientConnection("ℹ️ Envoie du paquet au serveur...");
+                        TyroLogger.logClientBase("ℹ️ Envoie du paquet au serveur...");
                         TyroMod.networkWrapper.sendToServer(new PacketClass(LauncherToken.getTokenUser(), LauncherToken.getTokenUserOld(), modlist));
 
                     }

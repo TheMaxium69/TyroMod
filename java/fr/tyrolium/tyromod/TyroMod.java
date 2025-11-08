@@ -42,7 +42,7 @@ public class TyroMod
 
     @SidedProxy(clientSide = Global.CLIENT_PROXY, serverSide = Global.SERVER_PROXY)
     public static CommonProxy proxy;
-    private static Logger logger;
+    public static Logger logger;
 
     /* CREATIVE TAB*/
     public static final CreativeTabs TyroModTabV1 = new TyroModTabV1();
