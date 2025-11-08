@@ -10,6 +10,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraftforge.fml.common.Mod;
 import org.lwjgl.Sys;
 
 import java.io.BufferedReader;
@@ -43,15 +44,18 @@ public class PacketMod {
         if (pseudoExisting == 2) {
 
             /* DEJA VERIFIER */
-            System.out.println("MOD : DEJA VERIFIER POUR " + pseudo);
+//            System.out.println("MOD : DEJA VERIFIER POUR " + pseudo);
 
         } else if (Global.NOTVERIF_MOD) {
+
+            TyroMod.logger.info("⚠️ " + playerEntity.getName() + " a passé outre la vérification des mods.");
+            TyroLogger.logServerPlayer(playerEntity.getName(), "⚠️ " + playerEntity.getName() + " a passé outre la vérification des mods.");
 
             TyroMod.playersVerifMod.add(playerEntity);
 
         } else {
 
-            System.out.println( pseudo + " = ModList JSON : " + modList);
+//            System.out.println( pseudo + " = ModList JSON : " + modList);
 
             /* PARSE JSON SERVER*/
             JsonElement TableauModClient = new JsonParser().parse(modList);
@@ -84,8 +88,9 @@ public class PacketMod {
                     if (TableauModServ.isJsonArray()) {
                         JsonArray ModsServerJSON = TableauModServ.getAsJsonArray();
 
-                        /*System.out.println("--------------- MOD CLIENT");
+                        System.out.println("--------------- MOD CLIENT");
 
+                        String modClientView = "";
                         for (JsonElement el : ModsClientJSON) {
 
                             JsonObject oneModClient = el.getAsJsonObject();
@@ -93,17 +98,17 @@ public class PacketMod {
                             String modid = oneModClient.get("modid").getAsString();
                             String version = oneModClient.get("version").getAsString();
 
-                            System.out.println("CLIENT MOD : " + modid + "@" + version);
+                            modClientView = modClientView + modid + "@" + version + ", ";
+
                         }
 
 
+                        TyroMod.logger.info("ℹ️ "+ pseudo +" Liste des mods : " + modClientView);
+                        TyroLogger.logServerPlayer(pseudo, "ℹ️ Liste des mods : " + modClientView);
 
 
-
-
+                        /*
                         System.out.println("--------------- MOD SERVER");
-
-
 
                         for (JsonElement el : ModsServerJSON) {
 
@@ -194,11 +199,7 @@ public class PacketMod {
                             }
                         }
 
-                        if (erreur) {
-                            TyroLogger.logServerPlayer(pseudo, "🚫 Vérification des mods échouée !");
-
-                        } else {
-                            TyroLogger.logServerPlayer(pseudo, "✅ Tous les mods sont conformes !");
+                        if (!erreur) {
 
                             /* Player Verifier */
                             TyroMod.playersVerifMod.add(playerEntity);

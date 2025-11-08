@@ -103,18 +103,25 @@ public class PacketToken {
                     String codeErr = null;
                     if (content.toString().equals("")) {
                         codeErr = "3300";
+                        TyroLogger.logServerPlayer(pseudo, "❌ Erreur de Token (aucune réponse du serveur)");
+
                     } else if (content.toString().equals("    {\"status\":\"err\",\"why\":{\"Token\":\"true\",\"AuthNb\":\"false\"}}")) {
                         codeErr = "3033";
+                        TyroLogger.logServerPlayer(pseudo, "❌ Erreur de Token (token de double authentification invalide)");
+
                     } else if (content.toString().equals("    {\"status\":\"err\",\"why\":{\"Token\":\"false\",\"AuthNb\":\"true\"}}")) {
                         codeErr = "3013";
+                        TyroLogger.logServerPlayer(pseudo, "❌ Erreur de Token (token principal invalide)");
+
                     } else if (content.toString().equals("    {\"status\":\"err\",\"why\":{\"Token\":\"false\",\"AuthNb\":\"false\"}}")) {
                         codeErr = "3031";
+                        TyroLogger.logServerPlayer(pseudo, "❌ Erreur de Token (aucun token valide)");
+
                     } else {
                         codeErr = "3000";
+                        TyroLogger.logServerPlayer(pseudo, "❌ Erreur de Token (raison inconue)");
                     }
 
-
-                    System.out.println("TOKEN INVALIDE DE " + pseudo + " Err:" + codeErr);
                     playerEntity.sendMessage(new TextComponentString("Connexion Refuser! | CodeErr : " + codeErr));
                     playerEntity.connection.disconnect(new TextComponentString("Your Token Useritium is invalide - Code : " + codeErr));
 

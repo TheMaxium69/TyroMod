@@ -109,6 +109,8 @@ public class TyroMod
 
         logger.info("ℹ️ TyroMod initialisé côté serveur dédié");
         TyroLogger.logClientBase("ℹ️ TyroMod initialisé côté serveur dédié");
+        logger.info("✅ TyroServ est lancé");
+        TyroLogger.logClientBase("✅ TyroServ est lancé");
 
         // Initialisation du système de logs (uniquement côté serveur)
         TyroLogger.init_SERVER();

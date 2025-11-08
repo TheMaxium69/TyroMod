@@ -46,6 +46,7 @@ public class EventSecurity {
                 TyroMod.logger.info("ℹ️ " + pseudo + " tente de se connecter...");
                 TyroLogger.logClientBase("ℹ️ " + pseudo + " tente de se connecter...");
                 TyroLogger.logServerConnection("ℹ️ " + pseudo + " tente de se connecter...");
+                TyroLogger.logServerPlayer(pseudo, "-----------------------------------------------------------------------------");
                 TyroLogger.logServerPlayer(pseudo, "ℹ️ Tentative de connexion au serveur...");
 
 
@@ -159,7 +160,9 @@ public class EventSecurity {
     public static void onEvent(PlayerEvent.PlayerLoggedOutEvent event) {
         EntityPlayer player = event.player;
 
-        System.out.println("[TYROMOD] " + player.getName() + " vient de se deconnecter .");
+        TyroMod.logger.info("ℹ️ " + player.getName() + " vient de se déconnecter");
+        TyroLogger.logClientBase("ℹ️ " + player.getName() + " vient de se déconnecter");
+        TyroLogger.logServerPlayer(player.getName(), "ℹ️ " + player.getName() + " vient de se déconnecter");
 
         /* SERVEUR */
         TyroMod.playerEnAttente.remove(player);
