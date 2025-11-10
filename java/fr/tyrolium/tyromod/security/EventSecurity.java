@@ -48,6 +48,7 @@ public class EventSecurity {
                 TyroLogger.logServerConnection("ℹ️ " + pseudo + " tente de se connecter...");
                 TyroLogger.logServerPlayer(pseudo, "-----------------------------------------------------------------------------");
                 TyroLogger.logServerPlayer(pseudo, "ℹ️ Tentative de connexion au serveur...");
+                TyroLogger.logServerPlayer(pseudo, "ℹ️ Connexion avec l'ip : " + ((EntityPlayerMP) playerEntity).getPlayerIP());
 
 
                 int playerADejaUneBoucle = 0;
@@ -81,11 +82,15 @@ public class EventSecurity {
 
                         }
 
-                        if (pseudoVerifToken != 2) {
+                        if (pseudoVerifToken == 2) {
 
-                            System.out.println("TOKEN TIME OUT DE "+ pseudo);
-                            playerEntity.sendMessage(new TextComponentString("Connexion Time Out !"));
-                            ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
+                            TyroLogger.logServerPlayer(pseudo, "✅ Token validé avec succès");
+
+                        } else {
+
+//                            System.out.println("TOKEN TIME OUT DE "+ pseudo);
+                            TyroLogger.logServerPlayer(pseudo, "❌ Aucun Token n'a pu être validé");
+//                            ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Token Useritium is time out"));
 
                         }
 
@@ -101,11 +106,16 @@ public class EventSecurity {
 
                         }
 
-                        if (pseudoVerifMod != 2) {
+                        if (pseudoVerifMod == 2) {
+                            TyroLogger.logServerPlayer(pseudo, "✅ Mods validés avec succès");
 
-                            System.out.println("MOD INVALIDE DE "+ pseudo);
-                            playerEntity.sendMessage(new TextComponentString("Connexion Mod Invalide !"));
-                            ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Mod is invalide"));
+                        } else {
+
+//                            System.out.println("MOD INVALIDE DE "+ pseudo);
+
+                            TyroLogger.logServerPlayer(pseudo, "❌ Les Mods n'ont pu être validés");
+
+//                            ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your Mod is invalide"));
 
                         }
 
@@ -119,7 +129,11 @@ public class EventSecurity {
                             /* AJOUTER DANS LE TABLEAU DES VERIFIER */
                             TyroMod.playersCanConnect.add(playerEntity);
 
-                            System.out.println("[TYROMOD] " + playerEntity.getName() + " vient d'etre verifier !!");
+                            TyroLogger.logServerPlayer(pseudo, "✅ Vérifications réussies et le client est connecté");
+                            TyroLogger.logServerConnection("✅ "+ pseudo +" a passé les vérifications et est connecté");
+                            TyroMod.logger.info("✅ "+ pseudo +" a passé les vérifications et est connecté");
+                            TyroLogger.logClientBase("✅ "+ pseudo +" a passé les vérifications et est connecté");
+
                             playerEntity.sendMessage(new TextComponentString("\u00A7f[TyroPlugin] \u00A7aConnexion \u00E9tablie !"));
 
                             /* VIDER LA VERIF POUR REVERIF A CHAQUE FOIS */
@@ -136,9 +150,27 @@ public class EventSecurity {
 
                         } else {
 
-                            System.out.println("CLIENT INVALIDE DE "+ pseudo);
-                            playerEntity.sendMessage(new TextComponentString("Connexion CLIENT Invalide !"));
-                            ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("Your CLIENT is invalide"));
+//                            System.out.println("CLIENT INVALIDE DE "+ pseudo);
+                            TyroLogger.logServerPlayer(pseudo, "❌ Vérifications échouées");
+
+                            TyroMod.logger.info("❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
+                            TyroLogger.logClientBase("❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
+                            TyroLogger.logServerConnection("❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
+
+
+                            String whyKick = "(⚠ Raison : Inconnue, contactez le staff)";
+                            if (pseudoVerifToken != 2 && pseudoVerifMod != 2) {
+                                whyKick = "(⚠ Raison : Compte Useritium et Mods invalide)";
+                            } else if (pseudoVerifToken != 2 && pseudoVerifMod == 2 ) {
+                                whyKick = "(⚠ Raison : Compte Useritium invalide)";
+                            } else if (pseudoVerifToken == 2 && pseudoVerifMod != 2) {
+                                whyKick = "(⚠ Raison : Mods invalide)";
+                            }
+
+
+                            ((EntityPlayerMP) playerEntity).connection.disconnect(new TextComponentString("L'algorithme de vérification vous a refusé l'accès " + "\n"
+                                    + whyKick + "\n" + "\n"
+                                    + "Veuillez redémarrer votre jeu et votre launcher"));
 
 
                         }

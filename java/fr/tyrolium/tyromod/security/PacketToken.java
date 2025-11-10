@@ -47,7 +47,7 @@ public class PacketToken {
         if (pseudoExisting == 2) {
 
             /* DEJA VERIFIER */
-            System.out.println("TOKEN : DEJA VERIFIER POUR " + pseudo);
+//            System.out.println("TOKEN : DEJA VERIFIER POUR " + pseudo);
 
         } else {
 
@@ -122,8 +122,8 @@ public class PacketToken {
                         TyroLogger.logServerPlayer(pseudo, "❌ Erreur de Token (raison inconue)");
                     }
 
-                    playerEntity.sendMessage(new TextComponentString("Connexion Refuser! | CodeErr : " + codeErr));
-                    playerEntity.connection.disconnect(new TextComponentString("Your Token Useritium is invalide - Code : " + codeErr));
+//                    playerEntity.sendMessage(new TextComponentString("Connexion Refuser! | CodeErr : " + codeErr));
+//                    playerEntity.connection.disconnect(new TextComponentString("Your Token Useritium is invalide - Code : " + codeErr));
 
 
                 }

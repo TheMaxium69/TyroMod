@@ -88,7 +88,7 @@ public class PacketMod {
                     if (TableauModServ.isJsonArray()) {
                         JsonArray ModsServerJSON = TableauModServ.getAsJsonArray();
 
-                        System.out.println("--------------- MOD CLIENT");
+//                        System.out.println("--------------- MOD CLIENT");
 
                         String modClientView = "";
                         for (JsonElement el : ModsClientJSON) {
@@ -105,6 +105,8 @@ public class PacketMod {
 
                         TyroMod.logger.info("ℹ️ "+ pseudo +" Liste des mods : " + modClientView);
                         TyroLogger.logServerPlayer(pseudo, "ℹ️ Liste des mods : " + modClientView);
+
+                        TyroLogger.logServerPlayer(pseudo, "---- Traitement des mods ----");
 
 
                         /*
@@ -149,16 +151,17 @@ public class PacketMod {
                             if (isLock) {
                                 // Mod obligatoire → doit exister et être à la bonne version
                                 if (modClientFound == null) {
-                                    System.err.println("❌ Mod obligatoire manquant : " + modidServer);
+                                    TyroLogger.logServerPlayer(pseudo, "❌ Mod obligatoire manquant : " + modidServer);
                                     erreur = true;
                                 } else {
                                     String versionClient = modClientFound.get("version").getAsString();
                                     if (!versionClient.equals(versionServer)) {
-                                        System.err.println("❌ Mauvaise version pour le mod obligatoire : " + modidServer +
+                                        TyroLogger.logServerPlayer(pseudo, "❌ Mauvaise version pour le mod obligatoire : " + modidServer +
                                                 " (client: " + versionClient + ", serveur: " + versionServer + ")");
                                         erreur = true;
                                     } else {
-                                        System.out.println("✅ Mod obligatoire OK : " + modidServer + "@" + versionServer);
+                                        TyroLogger.logServerPlayer(pseudo,"✅ Mod obligatoire OK : " + modidServer + "@" + versionServer);
+
                                     }
                                 }
                             } else {
@@ -166,14 +169,14 @@ public class PacketMod {
                                 if (modClientFound != null) {
                                     String versionClient = modClientFound.get("version").getAsString();
                                     if (!versionClient.equals(versionServer)) {
-                                        System.err.println("❌ Mauvaise version pour le mod optionnel : " + modidServer +
+                                        TyroLogger.logServerPlayer(pseudo,"❌ Mauvaise version pour le mod optionnel : " + modidServer +
                                                 " (client: " + versionClient + ", serveur: " + versionServer + ")");
                                         erreur = true;
                                     } else {
-                                        System.out.println("✅ Mod optionnel OK : " + modidServer + "@" + versionServer);
+                                        TyroLogger.logServerPlayer(pseudo,"✅ Mod optionnel OK : " + modidServer + "@" + versionServer);
                                     }
                                 } else {
-                                    System.out.println("ℹ️ Mod optionnel absent (OK) : " + modidServer);
+                                    TyroLogger.logServerPlayer(pseudo,"ℹ️ Mod optionnel absent (OK) : " + modidServer);
                                 }
                             }
                         }
@@ -194,11 +197,12 @@ public class PacketMod {
                             }
 
                             if (!found) {
-                                System.err.println("❌ Le client possède un mod non autorisé : " + modidClient);
+                                TyroLogger.logServerPlayer(pseudo,"❌ Le client possède un mod non autorisé : " + modidClient);
                                 erreur = true;
                             }
                         }
 
+                        TyroLogger.logServerPlayer(pseudo, "---- Fin de traitement des mods ----");
                         if (!erreur) {
 
                             /* Player Verifier */
@@ -206,15 +210,15 @@ public class PacketMod {
                         }
 
                     } else {
-                        System.out.println("MOD : Erreur JSON SERVER INVALIDE");
+                        TyroLogger.logServerPlayer(pseudo,"❌ Erreur du paquet JSON côté Serveur");
                     }
 
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    TyroLogger.logServerPlayer(pseudo,"❌ Erreur dans l'exécution ou dans le traitement de la requête à l'API");
                 }
 
             } else {
-                System.out.println("MOD : Erreur JSON SERVER INVALIDE");
+                TyroLogger.logServerPlayer(pseudo,"❌ Erreur du paquet JSON côté Client");
             }
 
 
