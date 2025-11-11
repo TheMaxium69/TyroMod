@@ -53,14 +53,14 @@ public class LauncherToken {
 //            System.out.println("TokenUserOld : " + TokenUserOld);
 
             if (countLog == 0) {
-                TyroMod.logger.info("✅ Récupération du Token réussi");
+                TyroMod.logger.info(Global.PREFIX_LOGGER + "✅ Récupération du Token réussi");
                 TyroLogger.logClientBase("✅ Récupération du Token réussi");
             }
             countLog = countLog + 1;
 
         } catch (FileNotFoundException e) {
             if (countLog == 0) {
-                TyroMod.logger.info("❌ Erreur de récupération du Token (FileNotFound)");
+                TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Erreur de récupération du Token (FileNotFound)");
                 TyroLogger.logClientBase("❌ Erreur de récupération du Token (FileNotFound)");
             }
             countLog = countLog + 1;
@@ -69,7 +69,7 @@ public class LauncherToken {
         } catch (IOException e) {
 
             if (countLog == 0) {
-                TyroMod.logger.info("❌ Erreur de récupération du Token (IOException)");
+                TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Erreur de récupération du Token (IOException)");
                 TyroLogger.logClientBase("❌ Erreur de récupération du Token (IOException)");
             }
             countLog = countLog + 1;

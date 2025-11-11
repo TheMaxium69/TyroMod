@@ -43,7 +43,7 @@ public class EventSecurity {
                 String pseudo = playerEntity.getName();
 
 //                System.out.println("[TYROMOD] " + pseudo + " vient de rejoindre le monde !");
-                TyroMod.logger.info("ℹ️ " + pseudo + " tente de se connecter...");
+                TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ " + pseudo + " tente de se connecter...");
                 TyroLogger.logClientBase("ℹ️ " + pseudo + " tente de se connecter...");
                 TyroLogger.logServerConnection("ℹ️ " + pseudo + " tente de se connecter...");
                 TyroLogger.logServerPlayer(pseudo, "-----------------------------------------------------------------------------");
@@ -131,7 +131,7 @@ public class EventSecurity {
 
                             TyroLogger.logServerPlayer(pseudo, "✅ Vérifications réussies et le client est connecté");
                             TyroLogger.logServerConnection("✅ "+ pseudo +" a passé les vérifications et est connecté");
-                            TyroMod.logger.info("✅ "+ pseudo +" a passé les vérifications et est connecté");
+                            TyroMod.logger.info(Global.PREFIX_LOGGER + "✅ "+ pseudo +" a passé les vérifications et est connecté");
                             TyroLogger.logClientBase("✅ "+ pseudo +" a passé les vérifications et est connecté");
 
                             playerEntity.sendMessage(new TextComponentString("\u00A7f[TyroPlugin] \u00A7aConnexion \u00E9tablie !"));
@@ -153,7 +153,7 @@ public class EventSecurity {
 //                            System.out.println("CLIENT INVALIDE DE "+ pseudo);
                             TyroLogger.logServerPlayer(pseudo, "❌ Vérifications échouées");
 
-                            TyroMod.logger.info("❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
+                            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
                             TyroLogger.logClientBase("❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
                             TyroLogger.logServerConnection("❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
 
@@ -192,7 +192,7 @@ public class EventSecurity {
     public static void onEvent(PlayerEvent.PlayerLoggedOutEvent event) {
         EntityPlayer player = event.player;
 
-        TyroMod.logger.info("ℹ️ " + player.getName() + " vient de se déconnecter");
+        TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ " + player.getName() + " vient de se déconnecter");
         TyroLogger.logClientBase("ℹ️ " + player.getName() + " vient de se déconnecter");
         TyroLogger.logServerPlayer(player.getName(), "ℹ️ " + player.getName() + " vient de se déconnecter");
 

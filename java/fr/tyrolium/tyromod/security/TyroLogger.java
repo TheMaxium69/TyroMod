@@ -1,5 +1,6 @@
 package fr.tyrolium.tyromod.security;
 
+import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 
 import java.io.*;
@@ -23,10 +24,10 @@ public class TyroLogger {
         try {
             if (!Files.exists(PLAYER_DIR)) {
                 Files.createDirectories(PLAYER_DIR);
-                TyroMod.logger.info("ℹ️ Dossier de logs créé : " + PLAYER_DIR.toAbsolutePath());
+                TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ Dossier de logs créé : " + PLAYER_DIR.toAbsolutePath());
             }
         } catch (IOException e) {
-            TyroMod.logger.info("❌ Erreur lors de la création du dossier de logs serveur");
+            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Erreur lors de la création du dossier de logs serveur");
         }
     }
 
@@ -53,7 +54,7 @@ public class TyroLogger {
             );
 
         } catch (IOException e) {
-            TyroMod.logger.info("❌ Impossible d'écrire dans le log serveur pour " + playerName);
+            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le log serveur pour " + playerName);
         }
     }
 
@@ -79,7 +80,7 @@ public class TyroLogger {
             );
 
         } catch (IOException e) {
-            TyroMod.logger.info("❌ Impossible d'écrire dans le log serveur pour connexion");
+            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le log serveur pour connexion");
         }
     }
 
@@ -94,10 +95,10 @@ public class TyroLogger {
         try {
             if (!Files.exists(LOG_DIR)) {
                 Files.createDirectories(LOG_DIR);
-                TyroMod.logger.info("ℹ️ Dossier de logs créé : " + LOG_DIR.toAbsolutePath());
+                TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ Dossier de logs créé : " + LOG_DIR.toAbsolutePath());
             }
         } catch (IOException e) {
-            TyroMod.logger.info("❌ Erreur lors de la création du dossier de logs");
+            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Erreur lors de la création du dossier de logs");
         }
     }
 
@@ -131,7 +132,7 @@ public class TyroLogger {
             );
 
         } catch (IOException e) {
-            TyroMod.logger.info("❌ Impossible d'écrire dans le fichier log de base");
+            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le fichier log de base");
         }
     }
 
@@ -158,7 +159,7 @@ public class TyroLogger {
             );
 
         } catch (IOException e) {
-            TyroMod.logger.info("❌ Impossible d'écrire dans le fichier log de login");
+            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le fichier log de login");
         }
     }
 

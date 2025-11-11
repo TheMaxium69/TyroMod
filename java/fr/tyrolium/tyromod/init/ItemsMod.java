@@ -1556,7 +1556,7 @@ public class ItemsMod {
 
 
             String apiUrl = Global.API_FUSION + "insert.php?name="+ name +"&tyroid="+ tyroidDB + "&tier=" + tierDB + "&customClass=" + customClassDB+ "&version=" + version + "&className=" + className;
-            System.out.println("url : " + apiUrl);
+//            System.out.println("url : " + apiUrl);
             try {
                 URL url = new URL(apiUrl);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -1574,7 +1574,7 @@ public class ItemsMod {
                 conn.disconnect();
 
                 String result = content.toString();
-                System.out.println("Reponse du serveur : " + result);
+//                System.out.println("Reponse du serveur : " + result);
 
             } catch (Exception e) {
                 e.printStackTrace();

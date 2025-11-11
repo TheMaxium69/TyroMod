@@ -68,8 +68,8 @@ public class TyroMod
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
         logger = event.getModLog();
-        logger.info("ℹ️ PreINIT");
-        logger.info("ℹ️ Lancement du TyroMod");
+        logger.info(Global.PREFIX_LOGGER + "ℹ️ PreINIT");
+        logger.info(Global.PREFIX_LOGGER + "ℹ️ Lancement du TyroMod");
 
         TyroLogger.init_CLIENT();
         TyroLogger.logClientBase("-----------------------------------------------------------------------------");
@@ -81,8 +81,8 @@ public class TyroMod
 
     @EventHandler
     public void init(FMLInitializationEvent event){
-        logger.info("ℹ️ INIT");
-        logger.info("✅ TyroMod a bien charger");
+        logger.info(Global.PREFIX_LOGGER + "ℹ️ INIT");
+        logger.info(Global.PREFIX_LOGGER + "✅ TyroMod a bien charger");
 
         TyroLogger.logClientBase("ℹ️ TyroMod étape : INIT");
         TyroLogger.logClientBase("✅ TyroMod a bien charger");
@@ -93,7 +93,7 @@ public class TyroMod
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event){
-        logger.info("ℹ️ PostINIT");
+        logger.info(Global.PREFIX_LOGGER + "ℹ️ PostINIT");
         TyroLogger.logClientBase("ℹ️ TyroMod étape : PostINIT");
 
         RegistryHandler.postInitRegistries(event);
@@ -107,9 +107,9 @@ public class TyroMod
             return;
         }
 
-        logger.info("ℹ️ TyroMod initialisé côté serveur dédié");
+        logger.info(Global.PREFIX_LOGGER + "ℹ️ TyroMod initialisé côté serveur dédié");
         TyroLogger.logClientBase("ℹ️ TyroMod initialisé côté serveur dédié");
-        logger.info("✅ TyroServ est lancé");
+        logger.info(Global.PREFIX_LOGGER + "✅ TyroServ est lancé");
         TyroLogger.logClientBase("✅ TyroServ est lancé");
 
         // Initialisation du système de logs (uniquement côté serveur)

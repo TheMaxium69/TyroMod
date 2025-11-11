@@ -48,7 +48,7 @@ public class PacketMod {
 
         } else if (Global.NOTVERIF_MOD) {
 
-            TyroMod.logger.info("⚠️ " + playerEntity.getName() + " a passé outre la vérification des mods.");
+            TyroMod.logger.info(Global.PREFIX_LOGGER + "⚠️ " + playerEntity.getName() + " a passé outre la vérification des mods.");
             TyroLogger.logServerPlayer(playerEntity.getName(), "⚠️ " + playerEntity.getName() + " a passé outre la vérification des mods.");
 
             TyroMod.playersVerifMod.add(playerEntity);
@@ -103,7 +103,7 @@ public class PacketMod {
                         }
 
 
-                        TyroMod.logger.info("ℹ️ "+ pseudo +" Liste des mods : " + modClientView);
+                        TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ "+ pseudo +" Liste des mods : " + modClientView);
                         TyroLogger.logServerPlayer(pseudo, "ℹ️ Liste des mods : " + modClientView);
 
                         TyroLogger.logServerPlayer(pseudo, "---- Traitement des mods ----");

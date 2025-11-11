@@ -1,5 +1,6 @@
 package fr.tyrolium.tyromod.security;
 
+import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -45,7 +46,7 @@ public class PacketClass implements IMessage {
 //            System.out.println("Received from client: " + message.modList);
 //            System.out.println("Received from client: " + message.token + " " + message.tokenOld);
 //            System.out.println("Message by " + playerEntity.getName());
-            TyroMod.logger.info("✅ " + playerEntity.getName() + " a envoyé un paquet au serveur.");
+            TyroMod.logger.info(Global.PREFIX_LOGGER + "✅ " + playerEntity.getName() + " a envoyé un paquet au serveur.");
             TyroLogger.logServerPlayer(playerEntity.getName(), "✅ Réception d'un paquet.");
 
             PacketToken.postDataToApi(message.token, message.tokenOld, (EntityPlayerMP) playerEntity);
