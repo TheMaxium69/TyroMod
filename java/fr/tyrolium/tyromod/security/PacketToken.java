@@ -38,18 +38,7 @@ public class PacketToken {
 
         }
 
-        for (EntityPlayer player : TyroMod.playersCanConnect) {
-            if (player.getName().equals(pseudo)) {
-                pseudoExisting = 2;
-            }
-        }
-
-        if (pseudoExisting == 2) {
-
-            /* DEJA VERIFIER */
-//            System.out.println("TOKEN : DEJA VERIFIER POUR " + pseudo);
-
-        } else {
+        if (pseudoExisting != 2)  {
 
             String apiUrl = Global.API_USERITIUM; // change this to be your actual API url
             try {

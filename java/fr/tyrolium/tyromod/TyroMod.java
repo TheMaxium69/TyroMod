@@ -54,7 +54,8 @@ public class TyroMod
     public static final ArrayList<EntityPlayer> playersVerifToken = new ArrayList<>();
     public static final ArrayList<EntityPlayer> playersVerifMod = new ArrayList<>();
     public static final ArrayList<EntityPlayer> playersCanConnect = new ArrayList<>();
-    public static final ArrayList<EntityPlayer> playerEnAttente = new ArrayList<>();
+    public static final ArrayList<EntityPlayer> playersWaiting = new ArrayList<>();
+    public static final ArrayList<EntityPlayer> playersWaitingWithPaquet = new ArrayList<>();
 
     /* CHANNEL PAQUET */
     public static SimpleNetworkWrapper networkWrapper;

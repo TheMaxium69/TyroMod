@@ -35,6 +35,8 @@ public class EventSecurity {
 
             /* CONNEXION D'UN UTILISATEUR */
             boolean isClient = event.getWorld().isRemote;
+
+
             if (event.getEntity() instanceof EntityPlayerMP && !isClient) {
 
 //                System.out.println("HERE SERVER");
@@ -42,28 +44,46 @@ public class EventSecurity {
                 EntityPlayerMP playerEntity = (EntityPlayerMP) event.getEntity();
                 String pseudo = playerEntity.getName();
 
-//                System.out.println("[TYROMOD] " + pseudo + " vient de rejoindre le monde !");
-                TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ " + pseudo + " tente de se connecter...");
-                TyroLogger.logClientBase("ℹ️ " + pseudo + " tente de se connecter...");
-                TyroLogger.logServerConnection("ℹ️ " + pseudo + " tente de se connecter...");
-                TyroLogger.logServerPlayer(pseudo, "-----------------------------------------------------------------------------");
-                TyroLogger.logServerPlayer(pseudo, "ℹ️ Tentative de connexion au serveur...");
-                TyroLogger.logServerPlayer(pseudo, "ℹ️ Connexion avec l'ip : " + ((EntityPlayerMP) playerEntity).getPlayerIP());
 
-
-                int playerADejaUneBoucle = 0;
-                for (EntityPlayer player : TyroMod.playerEnAttente) {
+                int playerDontFirstConnect = 0;
+                for (EntityPlayer player : TyroMod.playersWaiting) {
 
                     if (player.getName().equals(pseudo)) {
-                        playerADejaUneBoucle = 1;
+                        playerDontFirstConnect = 1;
                     }
 
                 }
 
-                if (playerADejaUneBoucle == 0) {
+                for (EntityPlayer player : TyroMod.playersCanConnect) {
+
+                    if (player.getName().equals(pseudo)) {
+                        playerDontFirstConnect = 1;
+                    }
+
+                }
+
+                if (playerDontFirstConnect == 1){
+
+                    String worldName = event.getWorld().getWorldInfo().getWorldName();
+
+                    if (worldName.equals("world")) {
+                        worldName = "world_void";
+                    }
+
+                    TyroLogger.logServerPlayer(pseudo, "ℹ️ Téléportation vers : " + worldName);
+
+                } else {
+
+                    TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ " + pseudo + " tente de se connecter...");
+                    TyroLogger.logClientBase("ℹ️ " + pseudo + " tente de se connecter...");
+                    TyroLogger.logServerConnection("ℹ️ " + pseudo + " tente de se connecter...");
+                    TyroLogger.logServerPlayer(pseudo, "-----------------------------------------------------------------------------");
+                    TyroLogger.logServerPlayer(pseudo, "ℹ️ Tentative de connexion au serveur...");
+                    TyroLogger.logServerPlayer(pseudo, "ℹ️ Connexion avec l'ip : " + ((EntityPlayerMP) playerEntity).getPlayerIP());
+
 
                     /*Ajouter le player dans la liste d'attente*/
-                    TyroMod.playerEnAttente.add(playerEntity);
+                    TyroMod.playersWaiting.add(playerEntity);
 
                     /* LANCE LE DELAI */
 //                        System.out.println("Planification de la verification dans 2 secondes pour " + pseudo);
@@ -197,7 +217,8 @@ public class EventSecurity {
         TyroLogger.logServerPlayer(player.getName(), "ℹ️ " + player.getName() + " vient de se déconnecter");
 
         /* SERVEUR */
-        TyroMod.playerEnAttente.remove(player);
+        TyroMod.playersWaiting.remove(player);
+        TyroMod.playersWaitingWithPaquet.remove(player);
         TyroMod.playersVerifToken.remove(player);
         TyroMod.playersVerifMod.remove(player);
         TyroMod.playersCanConnect.remove(player);

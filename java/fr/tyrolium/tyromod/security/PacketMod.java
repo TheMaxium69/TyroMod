@@ -35,12 +35,6 @@ public class PacketMod {
 
         }
 
-        for (EntityPlayer player : TyroMod.playersCanConnect) {
-            if (player.getName().equals(pseudo)) {
-                pseudoExisting = 2;
-            }
-        }
-
         if (pseudoExisting == 2) {
 
             /* DEJA VERIFIER */
