@@ -187,7 +187,7 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
             if (this.isBurning() && cookTime > 0) {
 
                 if (cookTime == totalCookTime || cookTime > totalCookTime) {
-                    TyroLogger.logServerFusion("Final", "✅ Fusion final réalisé");
+                    TyroLogger.logServerFusion("Final", "✅ Fusion final effectuée dans le World : " + world.getWorldInfo().getWorldName() + " à x:" + pos.getX() + " y:" + pos.getY() + " z:" + pos.getZ());
 
                     if (handler.getStackInSlot(3).getCount() > 0) {
                         handler.insertItem(3, smelting, false);
@@ -216,7 +216,8 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
                     ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs);
                     if (this.canSmelt(output) && this.isBurning()) {
                         if (!output.isEmpty()) {
-                            TyroLogger.logServerFusion("Final", "ℹ️ Fusion final démarré");
+                            TyroLogger.logServerFusion("Final", "ℹ️ Fusion final démarré dans le World : " + world.getWorldInfo().getWorldName() + " à x:" + pos.getX() + " y:" + pos.getY() + " z:" + pos.getZ());
+
 
                             smelting = output;
                             cookTime++;

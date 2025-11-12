@@ -139,7 +139,7 @@ public class TileEntityFusionBlock2 extends TileEntity implements IInventory, IT
 
             if (this.isBurning() && cookTime > 0) {
                 if (cookTime == totalCookTime || cookTime > totalCookTime) {
-                    TyroLogger.logServerFusion("2", "✅ Fusion réalisé = " + smelting.getUnlocalizedName());
+                    TyroLogger.logServerFusion("2", "✅ Fusion effectuée avec succès : obtention de " + smelting.getUnlocalizedName()+ " dans le World : " + world.getWorldInfo().getWorldName() + " à x:" + pos.getX() + " y:" + pos.getY() + " z:" + pos.getZ());
                     if (handler.getStackInSlot(3).getCount() > 0) {
                         handler.insertItem(3, smelting, false);
                     } else {
@@ -157,7 +157,7 @@ public class TileEntityFusionBlock2 extends TileEntity implements IInventory, IT
                     ItemStack output = FusionBlock2Recipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
                     if (this.canSmelt(output) && this.isBurning()) {
                         if (!output.isEmpty()) {
-                            TyroLogger.logServerFusion("2", "ℹ️ Fusion démarré : " + inputs[0].getUnlocalizedName() + " + " + inputs[1].getUnlocalizedName() + " = " + output.getUnlocalizedName());
+                            TyroLogger.logServerFusion("2", "ℹ️ Fusion démarré (" + inputs[0].getUnlocalizedName() + " + " + inputs[1].getUnlocalizedName() + " = " + output.getUnlocalizedName() + ") dans le World : " + world.getWorldInfo().getWorldName() + " à x:" + pos.getX() + " y:" + pos.getY() + " z:" + pos.getZ());
 
                             smelting = output;
                             cookTime++;
