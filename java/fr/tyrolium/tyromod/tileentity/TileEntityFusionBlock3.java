@@ -2,6 +2,7 @@ package fr.tyrolium.tyromod.tileentity;
 
 import fr.tyrolium.tyromod.blocks.FusionBlock3;
 import fr.tyrolium.tyromod.init.ItemsMod;
+import fr.tyrolium.tyromod.security.TyroLogger;
 import fr.tyrolium.tyromod.tileentity.recipes.FusionBlock3Recipes;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -138,6 +139,7 @@ public class TileEntityFusionBlock3 extends TileEntity implements IInventory, IT
 
             if (this.isBurning() && cookTime > 0) {
                 if (cookTime == totalCookTime || cookTime > totalCookTime) {
+                    TyroLogger.logServerFusion("3", "✅ Fusion réalisé = " + smelting.getUnlocalizedName());
                     if (handler.getStackInSlot(3).getCount() > 0) {
                         handler.insertItem(3, smelting, false);
                     } else {
@@ -155,6 +157,8 @@ public class TileEntityFusionBlock3 extends TileEntity implements IInventory, IT
                     ItemStack output = FusionBlock3Recipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
                     if (this.canSmelt(output) && this.isBurning()) {
                         if (!output.isEmpty()) {
+                            TyroLogger.logServerFusion("3", "ℹ️ Fusion démarré : " + inputs[0].getUnlocalizedName() + " + " + inputs[1].getUnlocalizedName() + " = " + output.getUnlocalizedName());
+
                             smelting = output;
                             cookTime++;
                             inputs[0].shrink(1);

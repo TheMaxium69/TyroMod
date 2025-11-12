@@ -2,6 +2,7 @@ package fr.tyrolium.tyromod.tileentity;
 
 import fr.tyrolium.tyromod.blocks.FusionBlockFinal;
 import fr.tyrolium.tyromod.init.ItemsMod;
+import fr.tyrolium.tyromod.security.TyroLogger;
 import fr.tyrolium.tyromod.tileentity.recipes.FusionBlockFinalRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -186,6 +187,8 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
             if (this.isBurning() && cookTime > 0) {
 
                 if (cookTime == totalCookTime || cookTime > totalCookTime) {
+                    TyroLogger.logServerFusion("Final", "✅ Fusion final réalisé");
+
                     if (handler.getStackInSlot(3).getCount() > 0) {
                         handler.insertItem(3, smelting, false);
                     } else {
@@ -213,6 +216,8 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
                     ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs);
                     if (this.canSmelt(output) && this.isBurning()) {
                         if (!output.isEmpty()) {
+                            TyroLogger.logServerFusion("Final", "ℹ️ Fusion final démarré");
+
                             smelting = output;
                             cookTime++;
                             inputs[0].shrink(1);

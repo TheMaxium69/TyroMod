@@ -68,6 +68,7 @@ public class FusionBlockFinalRecipes {
 
     private static String requestFusion(ItemStack[] inputs){
         String apiUrl = Global.API_FUSION + "?tier=final&item0=" + inputs[0].getUnlocalizedName() + "&item1=" + inputs[1].getUnlocalizedName() + "&item2=" + inputs[2].getUnlocalizedName() + "&item3=" + inputs[3].getUnlocalizedName() + "&item4=" + inputs[4].getUnlocalizedName() + "&item5=" + inputs[5].getUnlocalizedName() + "&item6=" + inputs[6].getUnlocalizedName() + "&item7=" + inputs[7].getUnlocalizedName() + "&item8=" + inputs[8].getUnlocalizedName() + "&item9=" + inputs[9].getUnlocalizedName() + "&item10=" + inputs[10].getUnlocalizedName() + "&item11=" + inputs[11].getUnlocalizedName() + "&item12=" + inputs[12].getUnlocalizedName() + "&item13=" + inputs[13].getUnlocalizedName() + "&item14=" + inputs[14].getUnlocalizedName() + "&item15=" + inputs[15].getUnlocalizedName() + "&item16=" + inputs[16].getUnlocalizedName() + "&item17=" + inputs[17].getUnlocalizedName() + "&item18=" + inputs[18].getUnlocalizedName() + "&item19=" + inputs[19].getUnlocalizedName() + "&item20=" + inputs[20].getUnlocalizedName() + "&item21=" + inputs[21].getUnlocalizedName() + "&item22=" + inputs[22].getUnlocalizedName() + "&item23=" + inputs[23].getUnlocalizedName() + "&item24=" + inputs[24].getUnlocalizedName() + "&item25=" + inputs[25].getUnlocalizedName() + "&item26=" + inputs[26].getUnlocalizedName() + "&item27=" + inputs[27].getUnlocalizedName() + "&item28=" + inputs[28].getUnlocalizedName() + "&item29=" + inputs[29].getUnlocalizedName();
+//        System.out.println(apiUrl);
 
         try {
             URL url = new URL(apiUrl);
@@ -88,6 +89,7 @@ public class FusionBlockFinalRecipes {
             String result = content.toString();
 //            System.out.println("REQUEST ENVOYER");
 //            System.out.println(result);
+
 
             if (!result.equals("\"err\"")) {
                 return result;
