@@ -1,11 +1,13 @@
 package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
+import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.blocks.*;
 import fr.tyrolium.tyromod.generate.BlockGenerateClass;
 import fr.tyrolium.tyromod.generate.ItemGenerateClass;
 import fr.tyrolium.tyromod.global.DefaultBlock;
 import fr.tyrolium.tyromod.items.Tyrolium;
+import fr.tyrolium.tyromod.security.TyroLogger;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -464,7 +466,7 @@ public class BlocksMod {
 
     public static void _STOCKDB(String name, int tyroid, String tier, int customClass, String version, String className){
 
-        if (Global.DB_LAUNCH_BLOCK == 1) {
+        if (Global.DEBUG_INSERTBLOCK) {
 
             String customClassDB;
             if (customClass == 0) {
@@ -485,6 +487,10 @@ public class BlocksMod {
                 tyroidDB = String.valueOf(tyroid);
             }
 
+            if (Global.DEBUG_VIEW_REQUEST) {
+                TyroMod.logger.debug(Global.PREFIX_LOGGER + "§e[DEBUG] ⚠️ REQUEST API FUSION (InsertBlock)");
+            }
+            TyroLogger.logServerApiRequest("⬆️ REQUEST API FUSION (InsertBlock)");
 
             String apiUrl = Global.API_FUSION + "insert.php?name="+ name +"&tyroid="+ tyroidDB + "&tier=" + tierDB + "&customClass=" + customClassDB+ "&version=" + version + "&className=" + className;
 //            System.out.println("url : " + apiUrl);

@@ -167,18 +167,22 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
                     !this.handler.getStackInSlot(24).isEmpty() && !this.handler.getStackInSlot(25).isEmpty() && !this.handler.getStackInSlot(26).isEmpty() && !this.handler.getStackInSlot(27).isEmpty() &&
                     !this.handler.getStackInSlot(28).isEmpty() && !this.handler.getStackInSlot(29).isEmpty() && !this.handler.getStackInSlot(30).isEmpty() && !this.handler.getStackInSlot(31).isEmpty() && cookTime == 0) {
 
-                ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs);
-                if (!this.isBurning() && this.canSmelt(output)) {
-                    this.burnTime = getItemBurnTime(fuel);
-                    this.currentBurnTime = burnTime;
+                if (FusionRegistry.verifFusionFinal(inputs)) {
 
-                    if (this.isBurning() && !fuel.isEmpty()) {
-                        Item item = fuel.getItem();
-                        fuel.shrink(1);
+                    /* REQUETE POUR LA FUSION */
+                    ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs);
+                    if (!this.isBurning() && this.canSmelt(output)) {
+                        this.burnTime = getItemBurnTime(fuel);
+                        this.currentBurnTime = burnTime;
 
-                        if (fuel.isEmpty()) {
-                            ItemStack item1 = item.getContainerItem(fuel);
-                            this.handler.setStackInSlot(2, item1);
+                        if (this.isBurning() && !fuel.isEmpty()) {
+                            Item item = fuel.getItem();
+                            fuel.shrink(1);
+
+                            if (fuel.isEmpty()) {
+                                ItemStack item1 = item.getContainerItem(fuel);
+                                this.handler.setStackInSlot(2, item1);
+                            }
                         }
                     }
                 }
@@ -213,81 +217,85 @@ public class TileEntityFusionBlockFinal extends TileEntity implements IInventory
                         !this.handler.getStackInSlot(24).isEmpty() && !this.handler.getStackInSlot(25).isEmpty() && !this.handler.getStackInSlot(26).isEmpty() && !this.handler.getStackInSlot(27).isEmpty() &&
                         !this.handler.getStackInSlot(28).isEmpty() && !this.handler.getStackInSlot(29).isEmpty() && !this.handler.getStackInSlot(30).isEmpty() && !this.handler.getStackInSlot(31).isEmpty() && cookTime == 0) {
 
-                    ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs);
-                    if (this.canSmelt(output) && this.isBurning()) {
-                        if (!output.isEmpty()) {
-                            TyroLogger.logServerFusion("Final", "ℹ️ Fusion final démarré dans le World : " + world.getWorldInfo().getWorldName() + " à x:" + pos.getX() + " y:" + pos.getY() + " z:" + pos.getZ());
+                    if (FusionRegistry.verifFusionFinal(inputs) && this.isBurning()) {
+
+                        /* REQUETE POUR LA FUSION */
+                        ItemStack output = FusionBlockFinalRecipes.getInstance().getSinteringResult(inputs);
+                        if (this.canSmelt(output) && this.isBurning()) {
+                            if (!output.isEmpty()) {
+                                TyroLogger.logServerFusion("Final", "ℹ️ Fusion final démarré dans le World : " + world.getWorldInfo().getWorldName() + " à x:" + pos.getX() + " y:" + pos.getY() + " z:" + pos.getZ());
 
 
-                            smelting = output;
-                            cookTime++;
-                            inputs[0].shrink(1);
-                            inputs[1].shrink(1);
-                            inputs[2].shrink(1);
-                            inputs[3].shrink(1);
-                            inputs[4].shrink(1);
-                            inputs[5].shrink(1);
-                            inputs[6].shrink(1);
-                            inputs[7].shrink(1);
-                            inputs[8].shrink(1);
-                            inputs[9].shrink(1);
-                            inputs[10].shrink(1);
-                            inputs[11].shrink(1);
-                            inputs[12].shrink(1);
-                            inputs[13].shrink(1);
-                            inputs[14].shrink(1);
-                            inputs[15].shrink(1);
-                            inputs[16].shrink(1);
-                            inputs[17].shrink(1);
-                            inputs[18].shrink(1);
-                            inputs[19].shrink(1);
-                            inputs[20].shrink(1);
-                            inputs[21].shrink(1);
-                            inputs[22].shrink(1);
-                            inputs[23].shrink(1);
-                            inputs[24].shrink(1);
-                            inputs[25].shrink(1);
-                            inputs[26].shrink(1);
-                            inputs[27].shrink(1);
-                            inputs[28].shrink(1);
-                            inputs[29].shrink(1);
+                                smelting = output;
+                                cookTime++;
+                                inputs[0].shrink(1);
+                                inputs[1].shrink(1);
+                                inputs[2].shrink(1);
+                                inputs[3].shrink(1);
+                                inputs[4].shrink(1);
+                                inputs[5].shrink(1);
+                                inputs[6].shrink(1);
+                                inputs[7].shrink(1);
+                                inputs[8].shrink(1);
+                                inputs[9].shrink(1);
+                                inputs[10].shrink(1);
+                                inputs[11].shrink(1);
+                                inputs[12].shrink(1);
+                                inputs[13].shrink(1);
+                                inputs[14].shrink(1);
+                                inputs[15].shrink(1);
+                                inputs[16].shrink(1);
+                                inputs[17].shrink(1);
+                                inputs[18].shrink(1);
+                                inputs[19].shrink(1);
+                                inputs[20].shrink(1);
+                                inputs[21].shrink(1);
+                                inputs[22].shrink(1);
+                                inputs[23].shrink(1);
+                                inputs[24].shrink(1);
+                                inputs[25].shrink(1);
+                                inputs[26].shrink(1);
+                                inputs[27].shrink(1);
+                                inputs[28].shrink(1);
+                                inputs[29].shrink(1);
 
-                            handler.setStackInSlot(0, inputs[0]);
-                            handler.setStackInSlot(1, inputs[1]);
-                            handler.setStackInSlot(4, inputs[2]);
-                            handler.setStackInSlot(22, inputs[3]);
-                            handler.setStackInSlot(5, inputs[4]);
-                            handler.setStackInSlot(6, inputs[5]);
-                            handler.setStackInSlot(7, inputs[6]);
-                            handler.setStackInSlot(8, inputs[7]);
-                            handler.setStackInSlot(9, inputs[8]);
+                                handler.setStackInSlot(0, inputs[0]);
+                                handler.setStackInSlot(1, inputs[1]);
+                                handler.setStackInSlot(4, inputs[2]);
+                                handler.setStackInSlot(22, inputs[3]);
+                                handler.setStackInSlot(5, inputs[4]);
+                                handler.setStackInSlot(6, inputs[5]);
+                                handler.setStackInSlot(7, inputs[6]);
+                                handler.setStackInSlot(8, inputs[7]);
+                                handler.setStackInSlot(9, inputs[8]);
 
-                            handler.setStackInSlot(10, inputs[9]);
-                            handler.setStackInSlot(11, inputs[10]);
-                            handler.setStackInSlot(12, inputs[11]);
-                            handler.setStackInSlot(31, inputs[12]);
-                            handler.setStackInSlot(13, inputs[13]);
-                            handler.setStackInSlot(14, inputs[14]);
-                            handler.setStackInSlot(15, inputs[15]);
-                            handler.setStackInSlot(16, inputs[16]);
-                            handler.setStackInSlot(17, inputs[17]);
+                                handler.setStackInSlot(10, inputs[9]);
+                                handler.setStackInSlot(11, inputs[10]);
+                                handler.setStackInSlot(12, inputs[11]);
+                                handler.setStackInSlot(31, inputs[12]);
+                                handler.setStackInSlot(13, inputs[13]);
+                                handler.setStackInSlot(14, inputs[14]);
+                                handler.setStackInSlot(15, inputs[15]);
+                                handler.setStackInSlot(16, inputs[16]);
+                                handler.setStackInSlot(17, inputs[17]);
 
-                            handler.setStackInSlot(18, inputs[18]);
-                            handler.setStackInSlot(19, inputs[19]);
-                            handler.setStackInSlot(20, inputs[20]);
-                            handler.setStackInSlot(30, inputs[21]);
-                            handler.setStackInSlot(21, inputs[22]);
-                            handler.setStackInSlot(23, inputs[23]);
-                            handler.setStackInSlot(24, inputs[24]);
-                            handler.setStackInSlot(25, inputs[25]);
-                            handler.setStackInSlot(26, inputs[26]);
+                                handler.setStackInSlot(18, inputs[18]);
+                                handler.setStackInSlot(19, inputs[19]);
+                                handler.setStackInSlot(20, inputs[20]);
+                                handler.setStackInSlot(30, inputs[21]);
+                                handler.setStackInSlot(21, inputs[22]);
+                                handler.setStackInSlot(23, inputs[23]);
+                                handler.setStackInSlot(24, inputs[24]);
+                                handler.setStackInSlot(25, inputs[25]);
+                                handler.setStackInSlot(26, inputs[26]);
 
-                            handler.setStackInSlot(27, inputs[27]);
-                            handler.setStackInSlot(28, inputs[28]);
-                            handler.setStackInSlot(29, inputs[29]);
+                                handler.setStackInSlot(27, inputs[27]);
+                                handler.setStackInSlot(28, inputs[28]);
+                                handler.setStackInSlot(29, inputs[29]);
+
+                            }
 
                         }
-
                     }
                 }
             }

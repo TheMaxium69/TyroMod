@@ -28,7 +28,7 @@ public class TyroLogger {
                 TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ Dossier de logs créé : " + PLAYER_DIR.toAbsolutePath());
             }
         } catch (IOException e) {
-            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Erreur lors de la création du dossier de logs serveur");
+            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Erreur lors de la création du dossier de logs serveur");
         }
 
         try {
@@ -37,7 +37,7 @@ public class TyroLogger {
                 TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ Dossier de logs créé : " + FUSION_DIR.toAbsolutePath());
             }
         } catch (IOException e) {
-            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Erreur lors de la création du dossier de fusions serveur");
+            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Erreur lors de la création du dossier de fusions serveur");
         }
     }
 
@@ -64,7 +64,7 @@ public class TyroLogger {
             );
 
         } catch (IOException e) {
-            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le log serveur pour " + playerName);
+            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le log serveur pour " + playerName);
         }
     }
 
@@ -90,7 +90,33 @@ public class TyroLogger {
             );
 
         } catch (IOException e) {
-            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le log serveur pour connexion");
+            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le log serveur pour connexion");
+        }
+    }
+
+    public static void logServerApiRequest(String message) {
+        try {
+            if (!Files.exists(LOG_DIR)) {
+                Files.createDirectories(LOG_DIR);
+            }
+
+            // Format de date pour le fichier : Maxime-08-11-2025.log
+            String dateForFile = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+            Path logFile = LOG_DIR.resolve("api-" + dateForFile + ".log");
+
+            // Format de temps dans le log : [08-11-2025 16:30:12]
+            String time = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date());
+            String logMessage = "[" + time + "] " + message + System.lineSeparator();
+
+            Files.write(
+                    logFile,
+                    logMessage.getBytes(),
+                    StandardOpenOption.CREATE,
+                    StandardOpenOption.APPEND
+            );
+
+        } catch (IOException e) {
+            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le log serveur pour api request");
         }
     }
 
@@ -116,7 +142,7 @@ public class TyroLogger {
             );
 
         } catch (IOException e) {
-            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le log serveur pour fusion");
+            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le log serveur pour fusion");
         }
     }
 
@@ -134,7 +160,7 @@ public class TyroLogger {
                 TyroMod.logger.info(Global.PREFIX_LOGGER + "ℹ️ Dossier de logs créé : " + LOG_DIR.toAbsolutePath());
             }
         } catch (IOException e) {
-            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Erreur lors de la création du dossier de logs");
+            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Erreur lors de la création du dossier de logs");
         }
     }
 
@@ -168,7 +194,7 @@ public class TyroLogger {
             );
 
         } catch (IOException e) {
-            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le fichier log de base");
+            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le fichier log de base");
         }
     }
 
@@ -195,7 +221,7 @@ public class TyroLogger {
             );
 
         } catch (IOException e) {
-            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le fichier log de login");
+            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Impossible d'écrire dans le fichier log de login");
         }
     }
 

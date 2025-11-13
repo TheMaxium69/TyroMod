@@ -38,7 +38,24 @@ public class PacketToken {
 
         }
 
-        if (pseudoExisting != 2)  {
+        if (pseudoExisting == 2) {
+
+            /* DEJA VERIFIER */
+//            System.out.println("TOKEN : DEJA VERIFIER POUR " + pseudo);
+
+        } else if (Global.DEBUG_NOTVERIF_USERITIUM) {
+
+            TyroMod.logger.info(Global.PREFIX_LOGGER + "⚠️ " + playerEntity.getName() + " a passé outre la vérification de Useritium.");
+            TyroLogger.logServerPlayer(playerEntity.getName(), "⚠️ " + playerEntity.getName() + " a passé outre la vérification de Useritium.");
+
+            TyroMod.playersVerifToken.add(playerEntity);
+
+        } else {
+
+            if (Global.DEBUG_VIEW_REQUEST) {
+                TyroMod.logger.debug(Global.PREFIX_LOGGER + "§e[DEBUG] ⚠️ REQUEST API USERTIUM");
+            }
+            TyroLogger.logServerApiRequest("⬆️ REQUEST API USERTIUM");
 
             String apiUrl = Global.API_USERITIUM; // change this to be your actual API url
             try {

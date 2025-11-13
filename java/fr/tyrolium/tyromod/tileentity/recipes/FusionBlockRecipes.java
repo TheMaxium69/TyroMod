@@ -15,6 +15,7 @@ import fr.tyrolium.tyromod.Global;
 import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.global.DefaultItem;
 import fr.tyrolium.tyromod.init.ItemsMod;
+import fr.tyrolium.tyromod.security.TyroLogger;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -93,6 +94,12 @@ public class FusionBlockRecipes {
     }
 
     private static String requestFusion(ItemStack input1, ItemStack input2){
+
+        if (Global.DEBUG_VIEW_REQUEST) {
+            TyroMod.logger.debug(Global.PREFIX_LOGGER + "§e[DEBUG] ⚠️ REQUEST API FUSION (Tier1)");
+        }
+        TyroLogger.logServerApiRequest("⬆️ REQUEST API FUSION (Tier1)");
+
         String apiUrl = Global.API_FUSION + "?tier=1&item1="+ input1.getUnlocalizedName() +"&item2="+ input2.getUnlocalizedName(); // change this to be your actual API url
         try {
             URL url = new URL(apiUrl);

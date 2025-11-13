@@ -21,7 +21,7 @@ public class EventClient {
     @SubscribeEvent
     public static void onEvent(EntityJoinWorldEvent event) {
 
-        if (Global.USERITIUM_VERIF == 1) {
+        if (!Global.DEBUG_NOTVERIF) {
 
             /******************
              *

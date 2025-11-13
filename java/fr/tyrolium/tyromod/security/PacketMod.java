@@ -40,7 +40,7 @@ public class PacketMod {
             /* DEJA VERIFIER */
 //            System.out.println("MOD : DEJA VERIFIER POUR " + pseudo);
 
-        } else if (Global.NOTVERIF_MOD) {
+        } else if (Global.DEBUG_NOTVERIF_MOD) {
 
             TyroMod.logger.info(Global.PREFIX_LOGGER + "⚠️ " + playerEntity.getName() + " a passé outre la vérification des mods.");
             TyroLogger.logServerPlayer(playerEntity.getName(), "⚠️ " + playerEntity.getName() + " a passé outre la vérification des mods.");
@@ -57,6 +57,11 @@ public class PacketMod {
             if (TableauModClient.isJsonArray()) {
 
                 JsonArray ModsClientJSON = TableauModClient.getAsJsonArray();
+
+                if (Global.DEBUG_VIEW_REQUEST) {
+                    TyroMod.logger.debug(Global.PREFIX_LOGGER + "§e[DEBUG] ⚠️ REQUEST API MODLIST");
+                }
+                TyroLogger.logServerApiRequest("⬆️ REQUEST API MODLIST");
 
                 String apiUrl = Global.API_MODLIST;
                 try {

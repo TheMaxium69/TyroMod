@@ -79,6 +79,17 @@ public class ItemGenerateClass {
 
     }
 
+    public String getUnlocalizedName() {
+
+        if (this.type == "classic") {
+            return "item." + this.name;
+        } else {
+            return "item." + this.name + "_" + this.type;
+        }
+
+
+    }
+
     public Boolean getClassName() {
         return className;
     }

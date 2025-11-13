@@ -39,7 +39,7 @@ public class LauncherToken {
             }
             myReaderJsonA2F.close();
 
-            if (!Global.DEBUG_TOKEN) {
+            if (!Global.DEBUG_NOTDELETE_TOKEN) {
                 Path pathJson = Paths.get(TokenUserFile);
                 Files.delete(pathJson);
 
@@ -60,7 +60,7 @@ public class LauncherToken {
 
         } catch (FileNotFoundException e) {
             if (countLog == 0) {
-                TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Erreur de récupération du Token (FileNotFound)");
+                TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Erreur de récupération du Token (FileNotFound)");
                 TyroLogger.logClientBase("❌ Erreur de récupération du Token (FileNotFound)");
             }
             countLog = countLog + 1;
@@ -69,7 +69,7 @@ public class LauncherToken {
         } catch (IOException e) {
 
             if (countLog == 0) {
-                TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ Erreur de récupération du Token (IOException)");
+                TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ Erreur de récupération du Token (IOException)");
                 TyroLogger.logClientBase("❌ Erreur de récupération du Token (IOException)");
             }
             countLog = countLog + 1;

@@ -120,18 +120,23 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
             ItemStack result = this.handler.getStackInSlot(3);
 
             if (!fuel.isEmpty() && !this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0) {
-                ItemStack output = FusionBlockRecipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
-                if (!this.isBurning() && this.canSmelt(output)) {
-                    this.burnTime = getItemBurnTime(fuel);
-                    this.currentBurnTime = burnTime;
 
-                    if (this.isBurning() && !fuel.isEmpty()) {
-                        Item item = fuel.getItem();
-                        fuel.shrink(1);
+                if (FusionRegistry.verifFusion("1", inputs[0].getUnlocalizedName(), inputs[1].getUnlocalizedName())) {
 
-                        if (fuel.isEmpty()) {
-                            ItemStack item1 = item.getContainerItem(fuel);
-                            this.handler.setStackInSlot(2, item1);
+                    /* REQUETE POUR LA FUSION */
+                    ItemStack output = FusionBlockRecipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
+                    if (!this.isBurning() && this.canSmelt(output)) {
+                        this.burnTime = getItemBurnTime(fuel);
+                        this.currentBurnTime = burnTime;
+
+                        if (this.isBurning() && !fuel.isEmpty()) {
+                            Item item = fuel.getItem();
+                            fuel.shrink(1);
+
+                            if (fuel.isEmpty()) {
+                                ItemStack item1 = item.getContainerItem(fuel);
+                                this.handler.setStackInSlot(2, item1);
+                            }
                         }
                     }
                 }
@@ -155,19 +160,23 @@ public class TileEntityFusionBlock extends TileEntity implements IInventory, ITi
                 }
             } else {
                 if (!this.handler.getStackInSlot(0).isEmpty() && !this.handler.getStackInSlot(1).isEmpty() && cookTime == 0) {
-                    ItemStack output = FusionBlockRecipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
-                    if (this.canSmelt(output) && this.isBurning()) {
-                        if (!output.isEmpty()) {
-                            TyroLogger.logServerFusion("1", "ℹ️ Fusion démarré (" + inputs[0].getUnlocalizedName() + " + " + inputs[1].getUnlocalizedName() + " = " + output.getUnlocalizedName() + ") dans le World : " + world.getWorldInfo().getWorldName() + " à x:" + pos.getX() + " y:" + pos.getY() + " z:" + pos.getZ());
 
-                            smelting = output;
-                            cookTime++;
-                            inputs[0].shrink(1);
-                            inputs[1].shrink(1);
-                            handler.setStackInSlot(0, inputs[0]);
-                            handler.setStackInSlot(1, inputs[1]);
+                    if (FusionRegistry.verifFusion("1", inputs[0].getUnlocalizedName(), inputs[1].getUnlocalizedName()) && this.isBurning()) {
+
+                        /* REQUETE POUR LA FUSION */
+                        ItemStack output = FusionBlockRecipes.getInstance().getSinteringResult(inputs[0], inputs[1]);
+                        if (this.canSmelt(output)) {
+                            if (!output.isEmpty()) {
+                                TyroLogger.logServerFusion("1", "ℹ️ Fusion démarré (" + inputs[0].getUnlocalizedName() + " + " + inputs[1].getUnlocalizedName() + " = " + output.getUnlocalizedName() + ") dans le World : " + world.getWorldInfo().getWorldName() + " à x:" + pos.getX() + " y:" + pos.getY() + " z:" + pos.getZ());
+
+                                smelting = output;
+                                cookTime++;
+                                inputs[0].shrink(1);
+                                inputs[1].shrink(1);
+                                handler.setStackInSlot(0, inputs[0]);
+                                handler.setStackInSlot(1, inputs[1]);
+                            }
                         }
-
                     }
                 }
             }

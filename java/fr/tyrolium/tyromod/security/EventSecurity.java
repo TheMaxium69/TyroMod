@@ -25,7 +25,7 @@ public class EventSecurity {
     @SubscribeEvent
     public static void onEvent(EntityJoinWorldEvent event) {
 
-        if (Global.USERITIUM_VERIF == 1) {
+        if (!Global.DEBUG_NOTVERIF) {
 
             /******************
              *
@@ -173,7 +173,7 @@ public class EventSecurity {
 //                            System.out.println("CLIENT INVALIDE DE "+ pseudo);
                             TyroLogger.logServerPlayer(pseudo, "❌ Vérifications échouées");
 
-                            TyroMod.logger.info(Global.PREFIX_LOGGER + "❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
+                            TyroMod.logger.error(Global.PREFIX_LOGGER + "❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
                             TyroLogger.logClientBase("❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
                             TyroLogger.logServerConnection("❌ "+ pseudo +" a été refusé par l'algorithme de vérification");
 

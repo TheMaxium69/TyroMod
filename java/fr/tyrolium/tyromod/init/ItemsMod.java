@@ -1,6 +1,7 @@
 package fr.tyrolium.tyromod.init;
 
 import fr.tyrolium.tyromod.Global;
+import fr.tyrolium.tyromod.TyroMod;
 import fr.tyrolium.tyromod.generate.ItemGenerateClass;
 import fr.tyrolium.tyromod.global.*;
 
@@ -9,8 +10,11 @@ import fr.tyrolium.tyromod.items.Radar;
 import fr.tyrolium.tyromod.items.Tyrolium;
 import fr.tyrolium.tyromod.items.armor.*;
 import fr.tyrolium.tyromod.items.tool.*;
+import fr.tyrolium.tyromod.security.TyroLogger;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
+import org.lwjgl.Sys;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -1533,7 +1537,7 @@ public class ItemsMod {
 
     public static void _STOCKDB(String name, int tyroid, String tier, int customClass, String version, String className){
 
-        if (Global.DB_LAUNCH_ITEM == 1) {
+        if (Global.DEBUG_INSERTITEM) {
 
             String customClassDB;
             if (customClass == 0) {
@@ -1553,6 +1557,11 @@ public class ItemsMod {
             } else {
                 tyroidDB = String.valueOf(tyroid);
             }
+
+            if (Global.DEBUG_VIEW_REQUEST) {
+                TyroMod.logger.debug(Global.PREFIX_LOGGER + "§e[DEBUG] ⚠️ REQUEST API FUSION (InsertItem)");
+            }
+            TyroLogger.logServerApiRequest("⬆️ REQUEST API FUSION (InsertItem)");
 
 
             String apiUrl = Global.API_FUSION + "insert.php?name="+ name +"&tyroid="+ tyroidDB + "&tier=" + tierDB + "&customClass=" + customClassDB+ "&version=" + version + "&className=" + className;
@@ -1582,5 +1591,22 @@ public class ItemsMod {
 
         }
 
+    }
+
+    // Méthode pour trouver un item selon typeName (ex: tyrolium_sword)
+    public static ItemGenerateClass getItem(String typeName) {
+        for (ItemGenerateClass item : ItemList) {
+//            System.out.println(item.getUnlocalizedName() + " = " + typeName);
+            if (item.getUnlocalizedName().equalsIgnoreCase(typeName)) {
+                return item;
+            }
+        }
+        return null; // rien trouvé
+    }
+
+    // Méthode pour obtenir directement le tier selon typeName (ex: tyrolium_sword)
+    public static String getTier(String typeName) {
+        ItemGenerateClass item = getItem(typeName);
+        return (item != null) ? item.getOreTier() : null;
     }
 }
