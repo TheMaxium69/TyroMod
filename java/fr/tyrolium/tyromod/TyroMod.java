@@ -42,7 +42,11 @@ public class TyroMod
 
     @SidedProxy(clientSide = Global.CLIENT_PROXY, serverSide = Global.SERVER_PROXY)
     public static CommonProxy proxy;
+
+    /*ENV*/
     public static Logger logger;
+    public static Boolean isServer = false;
+
 
     /* CREATIVE TAB*/
     public static final CreativeTabs TyroModTabV1 = new TyroModTabV1();
@@ -110,6 +114,8 @@ public class TyroMod
 
         logger.info(Global.PREFIX_LOGGER + "ℹ️ TyroMod initialisé côté serveur dédié");
         TyroLogger.logClientBase("ℹ️ TyroMod initialisé côté serveur dédié");
+        isServer = true;
+
         logger.info(Global.PREFIX_LOGGER + "✅ TyroServ est lancé");
         TyroLogger.logClientBase("✅ TyroServ est lancé");
 

@@ -4,7 +4,7 @@ public class Global {
 
     /* GLOBAL */
     public static final String BUILD_TYPE = "SERVER"; /* SERVER or PUBLIC */
-    public static final String ENV_TYPE = "DEV"; /* DEV or PROD */
+    public static final String ENV_TYPE = "PROD"; /* DEV or PROD */
 
     /* ENV */
     public static final String MODID = "tyromod";
@@ -36,13 +36,13 @@ public class Global {
     public static final boolean DEBUG_NOTVERIF = BUILD_TYPE.equals("PUBLIC") ? true : false; /*  DEFAULT : FALSE */
     public static final boolean DEBUG_NOTVERIF_USERITIUM = false; /*  DEFAULT : FALSE */
     public static final boolean DEBUG_NOTVERIF_MOD = false; /* DEFAULT : FALSE */
-    public static final boolean DEBUG_NOTDELETE_TOKEN = true; /* DEFAULT : FALSE */
+    public static final boolean DEBUG_NOTDELETE_TOKEN = false; /* DEFAULT : FALSE */
 
     public static final boolean DEBUG_INSERTITEM = false; /* DEFAULT : FALSE */
     public static final boolean DEBUG_INSERTBLOCK = false; /* DEFAULT : FALSE */
 
-    public static final boolean DEBUG_VIEW_REQUEST = true; /* DEFAULT : FALSE */
-    public static final boolean DEBUG_VIEW_VERIF_FUSION = true; /* DEFAULT : FALSE */
+    public static final boolean DEBUG_VIEW_REQUEST = false; /* DEFAULT : FALSE */
+    public static final boolean DEBUG_VIEW_VERIF_FUSION = false; /* DEFAULT : FALSE */
 
 
 }

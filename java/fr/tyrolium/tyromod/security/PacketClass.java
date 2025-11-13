@@ -44,26 +44,31 @@ public class PacketClass implements IMessage {
         public IMessage onMessage(PacketClass message, MessageContext ctx) {
             EntityPlayerMP playerEntity = ctx.getServerHandler().player;
 
-            /* VERIFIE SI L'UTILISATEUR EST DEJA VERIFIER (EMPECHE LA REVERIF AVEC LES CHANGE DE WORLD)*/
-            String pseudo = playerEntity.getName();
-            int pseudoExisting = 1;
-            for (EntityPlayer player : TyroMod.playersWaitingWithPaquet) {
-                if (player.getName().equals(pseudo)) {
-                    pseudoExisting = 2;
+            /* VERIFIER SI IL EST BIEN LANCER SUR SERVEUR*/
+            if (TyroMod.isServer) {
+
+                /* VERIFIE SI L'UTILISATEUR EST DEJA VERIFIER (EMPECHE LA REVERIF AVEC LES CHANGE DE WORLD)*/
+                String pseudo = playerEntity.getName();
+                int pseudoExisting = 1;
+                for (EntityPlayer player : TyroMod.playersWaitingWithPaquet) {
+                    if (player.getName().equals(pseudo)) {
+                        pseudoExisting = 2;
+                    }
+                }
+
+                if (pseudoExisting == 2) {
+//                TyroLogger.logServerPlayer(playerEntity.getName(), "ℹ️ Envoie de paquet inutile.");
+                } else {
+                    TyroMod.playersWaitingWithPaquet.add(playerEntity);
+
+                    TyroMod.logger.info(Global.PREFIX_LOGGER + "✅ " + playerEntity.getName() + " a envoyé un paquet au serveur.");
+                    TyroLogger.logServerPlayer(playerEntity.getName(), "✅ Réception d'un paquet.");
+
+                    PacketToken.postDataToApi(message.token, message.tokenOld, (EntityPlayerMP) playerEntity);
+                    PacketMod.verifModToApi(message.modList, (EntityPlayerMP) playerEntity);
                 }
             }
 
-            if (pseudoExisting == 2) {
-//                TyroLogger.logServerPlayer(playerEntity.getName(), "ℹ️ Envoie de paquet inutile.");
-            } else {
-                TyroMod.playersWaitingWithPaquet.add(playerEntity);
-
-                TyroMod.logger.info(Global.PREFIX_LOGGER + "✅ " + playerEntity.getName() + " a envoyé un paquet au serveur.");
-                TyroLogger.logServerPlayer(playerEntity.getName(), "✅ Réception d'un paquet.");
-
-                PacketToken.postDataToApi(message.token, message.tokenOld, (EntityPlayerMP) playerEntity);
-                PacketMod.verifModToApi(message.modList, (EntityPlayerMP) playerEntity);
-            }
             return null;
         }
     }
